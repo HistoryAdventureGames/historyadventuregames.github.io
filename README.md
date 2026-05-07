@@ -1,24 +1,5 @@
 # Global History Adventure Library
 
-Static GitHub Pages version of the Global History adventure game library.
-
-## Deploy on GitHub Pages
-
-1. Create a new GitHub repository.
-2. Upload every file and folder from this package into the root of the repository.
-3. Commit the files to the `main` branch.
-4. In GitHub, open repository Settings.
-5. Open Pages.
-6. Set Source to `Deploy from a branch`.
-7. Set Branch to `main`.
-8. Set Folder to `/root`.
-9. Save.
-
-GitHub will publish the site at a URL like:
-
-```text
-https://your-username.github.io/your-repository-name/
-```
 
 ## Important Files
 
