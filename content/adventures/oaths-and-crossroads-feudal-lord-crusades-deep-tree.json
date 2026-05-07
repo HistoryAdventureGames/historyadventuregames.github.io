@@ -1,0 +1,2799 @@
+{
+  "id": "high-middle-ages-feudal-lord-crusades-deep-tree",
+  "title": "Oaths and Crossroads: A Feudal Lord in the High Middle Ages",
+  "description": "Play as a feudal lord managing vassals, knights, serfs, taxes, Church authority, manor obligations, and the pope's call for knights during the Crusades.",
+  "coverImage": {
+    "src": "public/images/high-middle-ages-feudal-lord.svg",
+    "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+  },
+  "startingSceneId": "start",
+  "branchingPathCount": 226,
+  "keyTerms": [
+    "feudalism",
+    "manorialism",
+    "lord",
+    "vassal",
+    "knight",
+    "serf",
+    "fief",
+    "homage",
+    "tithe",
+    "monastery",
+    "self-sufficient",
+    "hierarchy",
+    "Crusades",
+    "pope",
+    "Holy Land",
+    "pilgrimage",
+    "Christendom",
+    "Islam",
+    "cross-cultural contact",
+    "trade network"
+  ],
+  "curriculumTags": [
+    "NYS Global 9",
+    "High Middle Ages",
+    "Feudalism",
+    "Manorialism",
+    "Crusades",
+    "Medieval Europe",
+    "Cross-Cultural Contact"
+  ],
+  "teacherNotes": "This deep-tree adventure places students in the role of a feudal lord during the High Middle Ages. Students manage feudal obligations, manor economics, Church relationships, local justice, road safety, and later the pope's call for crusade. The Crusades are presented with respect for multiple cultures and communities, including western Christians, eastern Christians, Muslims, Jews, Byzantines, pilgrims, merchants, and civilians.",
+  "reviewFocus": "how feudalism, manorialism, Church authority, and the Crusades shaped society during the High Middle Ages",
+  "topicQuestion": "how did feudal obligations and the Crusades shape life during the High Middle Ages?",
+  "scenes": {
+    "start": {
+      "title": "The Oath Hall",
+      "step": 1,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You are Lord Avelin of Montclair, a young feudal lord in western Europe during the High Middle Ages.",
+        "Your stone hall sits above fields, mills, workshops, and a small village chapel. Your family holds this land from a greater noble, and others hold smaller fiefs from you.",
+        "Your power looks strong from the outside, but it depends on many people: vassals who promise loyalty, knights who owe military service, peasants who work the manor, and Church leaders who shape belief and authority.",
+        "Winter has ended. The manor needs order. Your choices will decide whether your lordship becomes stable, unjust, respected, or broken."
+      ],
+      "choices": [
+        {
+          "text": "Hold court and settle disputes among vassals.",
+          "nextSceneId": "vassal-court",
+          "hint": "Feudal loyalty must be maintained through land, law, and honor."
+        },
+        {
+          "text": "Inspect the manor fields, rents, and labor duties.",
+          "nextSceneId": "manor-inspection",
+          "hint": "Manorialism supports the lordship's food and income."
+        },
+        {
+          "text": "Meet with the parish priest about tithes, charity, and Church expectations.",
+          "nextSceneId": "church-meeting",
+          "hint": "The Church shapes daily life and political legitimacy."
+        },
+        {
+          "text": "Review the castle defenses and knight service owed to you.",
+          "nextSceneId": "knight-review",
+          "hint": "Military protection is central to feudal obligations."
+        }
+      ]
+    },
+    "vassal-court": {
+      "title": "Vassals Before the Chair",
+      "step": 2,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "Your vassals kneel in the hall and renew homage, promising loyalty in exchange for protection and land.",
+        "Sir Roland claims that another vassal has failed to provide the mounted knights owed for his fief.",
+        "Lady Ysabel argues that the harvest was poor and her household cannot meet every obligation this season. The hall waits for your judgment."
+      ],
+      "choices": [
+        {
+          "text": "Enforce the feudal contract strictly and demand full service.",
+          "nextSceneId": "strict-service",
+          "hint": "This strengthens authority but may create resentment."
+        },
+        {
+          "text": "Investigate the harvest before deciding.",
+          "nextSceneId": "harvest-inquiry",
+          "hint": "Evidence may help you rule more fairly."
+        },
+        {
+          "text": "Offer a compromise: fewer knights now, more service later.",
+          "nextSceneId": "vassal-compromise",
+          "hint": "Flexibility may protect loyalty."
+        },
+        {
+          "text": "Favor Sir Roland because his knights are useful.",
+          "nextSceneId": "favor-roland",
+          "hint": "Favoritism may weaken trust."
+        }
+      ]
+    },
+    "manor-inspection": {
+      "title": "Fields of the Manor",
+      "step": 2,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You walk between strips of plowed land while serfs repair fences and guide oxen through mud.",
+        "The reeve explains that the manor is meant to be mostly self-sufficient. It produces grain, wool, ale, tools, and rent.",
+        "But a late frost damaged crops, and several families ask for lower labor duties so they can feed their children."
+      ],
+      "choices": [
+        {
+          "text": "Lower some labor duties until the next harvest.",
+          "nextSceneId": "mercy-in-fields",
+          "hint": "Mercy may build loyalty but reduce short-term income."
+        },
+        {
+          "text": "Keep all labor duties because the manor must supply your household.",
+          "nextSceneId": "hard-labor",
+          "hint": "Strict demands may protect resources but increase suffering."
+        },
+        {
+          "text": "Invest in the mill and plow teams to improve production.",
+          "nextSceneId": "manor-investment",
+          "hint": "Investment may strengthen the manor over time."
+        },
+        {
+          "text": "Ask the monastery for advice on storage and charity.",
+          "nextSceneId": "monastery-advice",
+          "hint": "Religious institutions often preserved knowledge and aided communities."
+        }
+      ]
+    },
+    "church-meeting": {
+      "title": "The Priest's Ledger",
+      "step": 2,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "Father Matthieu shows you the tithe records. Each family is expected to give one-tenth of its produce to the Church.",
+        "Some villagers complain that between rent, labor, and tithe, too little remains.",
+        "The priest reminds you that charity protects souls and social peace. He also reminds you that lords who ignore the Church may lose moral authority."
+      ],
+      "choices": [
+        {
+          "text": "Support full tithe collection and Church authority.",
+          "nextSceneId": "full-tithe",
+          "hint": "This strengthens ties with the Church but may burden peasants."
+        },
+        {
+          "text": "Ask the priest to use part of the tithe for famine relief.",
+          "nextSceneId": "charity-tithe",
+          "hint": "Charity may reduce suffering and build trust."
+        },
+        {
+          "text": "Challenge the priest and demand Church grain for your soldiers.",
+          "nextSceneId": "conflict-with-church",
+          "hint": "Conflict with the Church may damage legitimacy."
+        },
+        {
+          "text": "Visit the monastery to learn how other manors manage hardship.",
+          "nextSceneId": "monastery-advice",
+          "hint": "Monasteries can provide knowledge and support."
+        }
+      ]
+    },
+    "knight-review": {
+      "title": "Steel in the Yard",
+      "step": 2,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "Your knights gather in the yard with mail shirts, lances, and horses.",
+        "A castle guard reports that bandits have attacked travelers near the forest road. Merchants may avoid your market if the road remains unsafe.",
+        "Your knights owe service, but some complain that patrols cost time and horses."
+      ],
+      "choices": [
+        {
+          "text": "Order immediate patrols along the forest road.",
+          "nextSceneId": "road-patrols",
+          "hint": "Protection is a lord's duty, but it costs resources."
+        },
+        {
+          "text": "Ask vassals to contribute more knights for shared defense.",
+          "nextSceneId": "strict-service",
+          "hint": "This reinforces feudal obligations."
+        },
+        {
+          "text": "Negotiate with nearby lords for a joint patrol.",
+          "nextSceneId": "neighbor-pact",
+          "hint": "Cooperation may protect trade routes."
+        },
+        {
+          "text": "Ignore the bandits and focus on manor income.",
+          "nextSceneId": "ignored-bandits",
+          "hint": "Neglecting protection may damage your authority."
+        }
+      ]
+    },
+    "strict-service": {
+      "title": "The Weight of Obligation",
+      "step": 3,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You announce that every vassal must provide the military service owed by oath.",
+        "Sir Roland smiles with approval, but Lady Ysabel's jaw tightens. Her harvest was weak, and a full call-up may leave her lands unguarded.",
+        "Feudalism depends on obligation, but obligation without judgment can become a chain."
+      ],
+      "choices": [
+        {
+          "text": "Demand full service anyway.",
+          "nextSceneId": "resentful-vassals",
+          "hint": "Authority may hold, but loyalty may weaken."
+        },
+        {
+          "text": "Allow hardship appeals if vassals provide evidence.",
+          "nextSceneId": "harvest-inquiry",
+          "hint": "Lawful flexibility may preserve trust."
+        },
+        {
+          "text": "Reward loyal vassals with honors at court.",
+          "nextSceneId": "honor-court",
+          "hint": "Public honor can reinforce loyalty."
+        }
+      ]
+    },
+    "harvest-inquiry": {
+      "title": "Counting Grain",
+      "step": 3,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You send stewards to inspect barns, fields, and village accounts.",
+        "The report is complicated. Some families truly suffered from frost. Others hid grain to avoid dues.",
+        "A lord who cannot tell hardship from deception will rule poorly."
+      ],
+      "choices": [
+        {
+          "text": "Reduce obligations for those with proven hardship.",
+          "nextSceneId": "balanced-dues",
+          "hint": "Fair judgment may build legitimacy."
+        },
+        {
+          "text": "Punish all shortfalls to prevent cheating.",
+          "nextSceneId": "hard-labor",
+          "hint": "Broad punishment may harm the innocent."
+        },
+        {
+          "text": "Create clearer records for rents, harvests, and service.",
+          "nextSceneId": "record-system",
+          "hint": "Better administration may prevent future disputes."
+        }
+      ]
+    },
+    "vassal-compromise": {
+      "title": "A Promise Deferred",
+      "step": 3,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You allow Lady Ysabel to provide fewer knights this month if she sends extra grain and service after harvest.",
+        "Some vassals respect your mercy. Others wonder whether oaths can be negotiated whenever times are hard.",
+        "Compromise can preserve loyalty, but it must not become weakness."
+      ],
+      "choices": [
+        {
+          "text": "Write the agreement clearly before witnesses.",
+          "nextSceneId": "record-system",
+          "hint": "Written records can strengthen trust."
+        },
+        {
+          "text": "Use the compromise quietly without public explanation.",
+          "nextSceneId": "rumor-of-weakness",
+          "hint": "Secrecy may create rumors."
+        },
+        {
+          "text": "Ask the priest to witness the agreement.",
+          "nextSceneId": "church-witness",
+          "hint": "Church involvement may strengthen moral authority."
+        }
+      ]
+    },
+    "favor-roland": {
+      "title": "The Favorite Knight",
+      "step": 3,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You support Sir Roland and dismiss Lady Ysabel's complaint.",
+        "Roland's knights are strong, and his loyalty is useful. Yet others see that influence matters more than justice.",
+        "In a feudal hall, unfair judgment spreads faster than a shouted insult."
+      ],
+      "choices": [
+        {
+          "text": "Continue favoring Roland for military advantage.",
+          "nextSceneId": "powerful-vassal",
+          "hint": "A strong ally may become too strong."
+        },
+        {
+          "text": "Reopen the case to restore trust.",
+          "nextSceneId": "harvest-inquiry",
+          "hint": "It may still be possible to correct injustice."
+        },
+        {
+          "text": "Use Roland's knights to patrol the road.",
+          "nextSceneId": "road-patrols",
+          "hint": "His strength may serve the whole lordship."
+        }
+      ]
+    },
+    "mercy-in-fields": {
+      "title": "Mercy in the Furrows",
+      "step": 3,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You lower some labor duties for families hurt by frost.",
+        "Serfs bow deeply, and the reeve warns that your storehouses will be lighter.",
+        "Mercy can make people loyal. It can also leave a lord unprepared if the next harvest fails."
+      ],
+      "choices": [
+        {
+          "text": "Pair mercy with better storage planning.",
+          "nextSceneId": "record-system",
+          "hint": "Planning may protect future stability."
+        },
+        {
+          "text": "Ask the Church to help feed the poorest families.",
+          "nextSceneId": "charity-tithe",
+          "hint": "Shared responsibility may reduce suffering."
+        },
+        {
+          "text": "Reduce duties without changing anything else.",
+          "nextSceneId": "short-storehouses",
+          "hint": "Kindness without planning may create later danger."
+        }
+      ]
+    },
+    "hard-labor": {
+      "title": "The Manor Groans",
+      "step": 3,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You keep every labor duty in place.",
+        "The fields are worked, the mill turns, and your storehouses fill. But the village grows silent when you pass.",
+        "A manor can be productive and still become bitter."
+      ],
+      "choices": [
+        {
+          "text": "Send guards to enforce labor more strictly.",
+          "nextSceneId": "peasant-anger",
+          "hint": "Force may increase resentment."
+        },
+        {
+          "text": "Offer food from your stores to the weakest families.",
+          "nextSceneId": "late-mercy",
+          "hint": "It may still be possible to soften hardship."
+        },
+        {
+          "text": "Ignore complaints and count the grain.",
+          "nextSceneId": "bad-peasant-revolt",
+          "hint": "Unanswered suffering can become unrest."
+        }
+      ]
+    },
+    "manor-investment": {
+      "title": "Stone, Wood, and Iron",
+      "step": 3,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You repair the mill, improve plow teams, and organize field rotation more carefully.",
+        "The cost is high, but better tools may improve production for years.",
+        "A lordship is not only controlled through force. It is also managed through practical decisions."
+      ],
+      "choices": [
+        {
+          "text": "Fund the investment with moderate taxes on all households.",
+          "nextSceneId": "moderate-tax",
+          "hint": "Shared burden may work if it feels fair."
+        },
+        {
+          "text": "Borrow money from merchants in a nearby town.",
+          "nextSceneId": "merchant-loan",
+          "hint": "Credit may help now but create future obligations."
+        },
+        {
+          "text": "Demand extra labor instead of raising taxes.",
+          "nextSceneId": "labor-for-improvement",
+          "hint": "Public work may help, but forced labor can anger peasants."
+        }
+      ]
+    },
+    "monastery-advice": {
+      "title": "The Monastery Gate",
+      "step": 3,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "At the monastery, monks copy manuscripts, tend gardens, keep records, and store grain for difficult seasons.",
+        "The abbot says a stable manor needs justice, charity, and careful accounting.",
+        "He also warns that prideful lords often confuse control with wisdom."
+      ],
+      "choices": [
+        {
+          "text": "Adopt better record keeping and food storage.",
+          "nextSceneId": "record-system",
+          "hint": "Knowledge can improve administration."
+        },
+        {
+          "text": "Ask the monastery to help care for the poor.",
+          "nextSceneId": "charity-tithe",
+          "hint": "Religious charity may stabilize the manor."
+        },
+        {
+          "text": "Dismiss the monks and rely on military strength.",
+          "nextSceneId": "knight-review",
+          "hint": "Protection matters, but it is not the whole system."
+        }
+      ]
+    },
+    "full-tithe": {
+      "title": "The Full Tithe",
+      "step": 3,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You support full tithe collection.",
+        "Father Matthieu praises your loyalty to the Church, but several families leave the chapel with tight faces.",
+        "The tithe supports priests, churches, charity, and religious life. Yet in a hungry season, even sacred duties can feel heavy."
+      ],
+      "choices": [
+        {
+          "text": "Require the priest to set aside tithe grain for relief.",
+          "nextSceneId": "charity-tithe",
+          "hint": "This connects religious duty to social support."
+        },
+        {
+          "text": "Enforce the tithe without exception.",
+          "nextSceneId": "peasant-anger",
+          "hint": "Strict collection may increase resentment."
+        },
+        {
+          "text": "Ask Church leaders to publicly bless your rule.",
+          "nextSceneId": "church-witness",
+          "hint": "Religious approval can strengthen legitimacy."
+        }
+      ]
+    },
+    "charity-tithe": {
+      "title": "Bread at the Chapel Door",
+      "step": 3,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "The priest uses part of the tithe to feed families facing hunger.",
+        "Villagers gather quietly at the chapel door. Some cry with relief. Others still worry about rent and labor dues.",
+        "Charity does not erase hierarchy, but it can keep despair from becoming rage."
+      ],
+      "choices": [
+        {
+          "text": "Coordinate Church charity with manor records.",
+          "nextSceneId": "record-system",
+          "hint": "Administration and charity may support each other."
+        },
+        {
+          "text": "Make a public ceremony of the charity to gain praise.",
+          "nextSceneId": "pious-display",
+          "hint": "Public piety may help or seem selfish."
+        },
+        {
+          "text": "Continue relief quietly and reduce peasant burdens.",
+          "nextSceneId": "balanced-dues",
+          "hint": "Quiet mercy may build deeper trust."
+        }
+      ]
+    },
+    "conflict-with-church": {
+      "title": "A Cold Chapel",
+      "step": 3,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You demand Church grain for your soldiers.",
+        "Father Matthieu refuses. He says grain meant for the poor and the altar cannot become a lord's private store.",
+        "The chapel bells still ring, but they no longer sound welcoming."
+      ],
+      "choices": [
+        {
+          "text": "Apologize and negotiate shared relief instead.",
+          "nextSceneId": "charity-tithe",
+          "hint": "Repairing Church relations may restore legitimacy."
+        },
+        {
+          "text": "Seize some grain anyway.",
+          "nextSceneId": "bad-church-conflict",
+          "hint": "Attacking Church authority is dangerous."
+        },
+        {
+          "text": "Appeal to the bishop for mediation.",
+          "nextSceneId": "bishop-mediation",
+          "hint": "Higher Church authority may resolve the conflict."
+        }
+      ]
+    },
+    "road-patrols": {
+      "title": "The Forest Road",
+      "step": 3,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "Your knights ride under dripping branches with lances ready.",
+        "They find a burned cart, scattered cloth, and footprints leading into the woods.",
+        "Merchants will not come to market if your roads are unsafe. Protection is more than honor. It is economics."
+      ],
+      "choices": [
+        {
+          "text": "Pursue the bandits immediately.",
+          "nextSceneId": "bandit-pursuit",
+          "hint": "Swift action may restore safety."
+        },
+        {
+          "text": "Fortify the road and escort merchants.",
+          "nextSceneId": "merchant-road",
+          "hint": "Protection may support trade."
+        },
+        {
+          "text": "Question villagers about why banditry is growing.",
+          "nextSceneId": "roots-of-banditry",
+          "hint": "Crime may have social causes."
+        }
+      ]
+    },
+    "neighbor-pact": {
+      "title": "A Pact With Neighbors",
+      "step": 3,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You send riders to nearby lords, proposing a joint patrol.",
+        "Some welcome cooperation. Others worry that shared forces could hide ambition.",
+        "Feudal society is personal. Alliances depend on trust, reputation, and advantage."
+      ],
+      "choices": [
+        {
+          "text": "Share costs and patrol duties equally.",
+          "nextSceneId": "merchant-road",
+          "hint": "Cooperation may protect trade."
+        },
+        {
+          "text": "Try to command the patrol yourself.",
+          "nextSceneId": "neighbor-jealousy",
+          "hint": "Ambition may damage alliances."
+        },
+        {
+          "text": "Invite the bishop to bless the agreement.",
+          "nextSceneId": "church-witness",
+          "hint": "Religious authority may strengthen the pact."
+        }
+      ]
+    },
+    "ignored-bandits": {
+      "title": "The Road Left Dark",
+      "step": 3,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You decide that fields and rents matter more than distant travelers.",
+        "Within weeks, merchants avoid your market. Prices rise. Villagers complain that salt and iron cost more.",
+        "Ignoring protection has made the manor less self-sufficient, not more."
+      ],
+      "choices": [
+        {
+          "text": "Organize patrols before trade collapses.",
+          "nextSceneId": "road-patrols",
+          "hint": "It may still be possible to act."
+        },
+        {
+          "text": "Raise taxes to cover lost income.",
+          "nextSceneId": "tax-pressure",
+          "hint": "This may burden the village."
+        },
+        {
+          "text": "Blame outsiders and do nothing.",
+          "nextSceneId": "bad-economic-decline",
+          "hint": "Neglect may weaken the lordship."
+        }
+      ]
+    },
+    "balanced-dues": {
+      "title": "The Balanced Ledger",
+      "step": 4,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You adjust rents and labor duties based on harvest records.",
+        "Some vassals call you wise. Others mutter that mercy will invite laziness.",
+        "A lord's judgment must be firm enough to command respect and fair enough to deserve it."
+      ],
+      "choices": [
+        {
+          "text": "Create a yearly manor court to review obligations.",
+          "nextSceneId": "record-system",
+          "hint": "Regular review may strengthen administration."
+        },
+        {
+          "text": "Ask the priest to announce the policy as just.",
+          "nextSceneId": "church-witness",
+          "hint": "Church support may improve legitimacy."
+        },
+        {
+          "text": "Use the goodwill to raise knights for road patrols.",
+          "nextSceneId": "road-patrols",
+          "hint": "Trust may help military organization."
+        }
+      ]
+    },
+    "record-system": {
+      "title": "Ink and Obligation",
+      "step": 4,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "Your scribes begin recording fiefs, rents, labor days, knight service, harvests, and tithe relief.",
+        "Some older vassals dislike written records. They prefer memory, custom, and personal influence.",
+        "But ink can protect the weak from lies and protect the lord from confusion."
+      ],
+      "choices": [
+        {
+          "text": "Use records to settle disputes fairly.",
+          "nextSceneId": "shared-feudal-stability",
+          "hint": "Good administration may stabilize the lordship."
+        },
+        {
+          "text": "Use records mainly to collect more taxes.",
+          "nextSceneId": "tax-pressure",
+          "hint": "Records can become tools of exploitation."
+        },
+        {
+          "text": "Share records with priest and reeve for accountability.",
+          "nextSceneId": "shared-manor-council",
+          "hint": "Shared oversight may build trust."
+        }
+      ]
+    },
+    "church-witness": {
+      "title": "Before God and Neighbors",
+      "step": 4,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "Father Matthieu witnesses oaths, agreements, and settlements.",
+        "His presence gives your decisions moral weight, but it also means your actions must appear just.",
+        "In the High Middle Ages, lordship and Church authority often stood beside one another."
+      ],
+      "choices": [
+        {
+          "text": "Use Church witness to strengthen fair rule.",
+          "nextSceneId": "shared-feudal-stability",
+          "hint": "Legitimacy may grow."
+        },
+        {
+          "text": "Use Church ceremonies to hide unfair decisions.",
+          "nextSceneId": "pious-display",
+          "hint": "Piety without justice may create cynicism."
+        },
+        {
+          "text": "Ask for guidance about the pope's growing call for knights.",
+          "nextSceneId": "rumors-of-crusade",
+          "hint": "This begins the crusade arc."
+        }
+      ]
+    },
+    "rumor-of-weakness": {
+      "title": "Whispers in the Hall",
+      "step": 4,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "Because your compromise was not explained clearly, rumors spread.",
+        "Some say you are merciful. Others say you are weak. Sir Roland suggests that stronger lords do not negotiate.",
+        "Feudal authority depends not only on decisions, but on how people understand them."
+      ],
+      "choices": [
+        {
+          "text": "Call a public court to clarify the agreement.",
+          "nextSceneId": "record-system",
+          "hint": "Transparency may repair trust."
+        },
+        {
+          "text": "Punish rumor-spreaders.",
+          "nextSceneId": "peasant-anger",
+          "hint": "Punishment may silence but not persuade."
+        },
+        {
+          "text": "Give Roland more authority to prove strength.",
+          "nextSceneId": "powerful-vassal",
+          "hint": "A useful vassal may become dangerous."
+        }
+      ]
+    },
+    "powerful-vassal": {
+      "title": "Roland's Shadow",
+      "step": 4,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "Sir Roland patrols roads, commands men, and speaks confidently in your hall.",
+        "His service is useful, but villagers now bring some problems to him before bringing them to you.",
+        "A vassal who grows too powerful can begin to look like a rival."
+      ],
+      "choices": [
+        {
+          "text": "Honor Roland but limit his independent authority.",
+          "nextSceneId": "honor-court",
+          "hint": "Balance may preserve loyalty."
+        },
+        {
+          "text": "Depend on Roland for all military matters.",
+          "nextSceneId": "bad-vassal-rivalry",
+          "hint": "Overdependence may weaken your rule."
+        },
+        {
+          "text": "Strengthen ties with other vassals to balance him.",
+          "nextSceneId": "neighbor-pact",
+          "hint": "Broader alliances may reduce risk."
+        }
+      ]
+    },
+    "honor-court": {
+      "title": "Honor in the Hall",
+      "step": 4,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You hold a formal court and praise loyal service before witnesses.",
+        "Vassals value honor because reputation shapes power, marriage, land, and loyalty.",
+        "Public recognition costs little, but it can bind people strongly."
+      ],
+      "choices": [
+        {
+          "text": "Combine honor with clear obligations.",
+          "nextSceneId": "record-system",
+          "hint": "Honor and administration can work together."
+        },
+        {
+          "text": "Reward only military strength.",
+          "nextSceneId": "powerful-vassal",
+          "hint": "This may elevate dangerous vassals."
+        },
+        {
+          "text": "Praise service to peasants and Church as well as warfare.",
+          "nextSceneId": "shared-manor-council",
+          "hint": "This broadens the meaning of good lordship."
+        }
+      ]
+    },
+    "resentful-vassals": {
+      "title": "Oaths Under Strain",
+      "step": 4,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "Your strict command is obeyed, but several vassals leave the hall with cold expressions.",
+        "They send the required knights, yet the spirit of loyalty has weakened.",
+        "In feudalism, obedience without trust can become brittle."
+      ],
+      "choices": [
+        {
+          "text": "Call them back and allow hardship appeals.",
+          "nextSceneId": "harvest-inquiry",
+          "hint": "It may still be possible to restore loyalty."
+        },
+        {
+          "text": "Rely on Sir Roland to keep them in line.",
+          "nextSceneId": "powerful-vassal",
+          "hint": "A strong enforcer may become too powerful."
+        },
+        {
+          "text": "Ignore their resentment.",
+          "nextSceneId": "bad-vassal-rivalry",
+          "hint": "Resentment can become rivalry."
+        }
+      ]
+    },
+    "short-storehouses": {
+      "title": "Empty Corners",
+      "step": 4,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "Your mercy is praised, but the storehouse corners remain bare.",
+        "If another crisis comes, kindness alone will not fill the bins.",
+        "Good intentions need systems behind them."
+      ],
+      "choices": [
+        {
+          "text": "Create better storage and records.",
+          "nextSceneId": "record-system",
+          "hint": "Planning may fix the weakness."
+        },
+        {
+          "text": "Raise emergency taxes.",
+          "nextSceneId": "tax-pressure",
+          "hint": "This may burden the people."
+        },
+        {
+          "text": "Seek help from the monastery.",
+          "nextSceneId": "monastery-advice",
+          "hint": "Outside support may help."
+        }
+      ]
+    },
+    "late-mercy": {
+      "title": "A Late Loaf",
+      "step": 4,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You open your stores to the weakest families after weeks of harsh labor demands.",
+        "Some villagers are grateful. Others wonder why compassion came only after suffering.",
+        "Trust can be repaired, but slowly."
+      ],
+      "choices": [
+        {
+          "text": "Pair relief with lower duties and fair records.",
+          "nextSceneId": "balanced-dues",
+          "hint": "Real reform may restore trust."
+        },
+        {
+          "text": "Offer one-time charity and return to strict duties.",
+          "nextSceneId": "peasant-anger",
+          "hint": "Temporary mercy may not be enough."
+        },
+        {
+          "text": "Ask the priest to help distribute relief.",
+          "nextSceneId": "charity-tithe",
+          "hint": "Church support may reduce tension."
+        }
+      ]
+    },
+    "moderate-tax": {
+      "title": "The Moderate Tax",
+      "step": 4,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You set a modest tax to repair the mill and improve plows.",
+        "Peasants dislike paying more, but many understand that better tools may help future harvests.",
+        "A tax feels different when people can see its purpose."
+      ],
+      "choices": [
+        {
+          "text": "Show villagers how the tax improves the manor.",
+          "nextSceneId": "shared-manor-council",
+          "hint": "Transparency may build trust."
+        },
+        {
+          "text": "Expand the tax once people accept it.",
+          "nextSceneId": "tax-pressure",
+          "hint": "Success may tempt overreach."
+        },
+        {
+          "text": "Ask vassals to contribute too.",
+          "nextSceneId": "vassal-court",
+          "hint": "Shared obligation may seem fair."
+        }
+      ]
+    },
+    "merchant-loan": {
+      "title": "Silver From Town",
+      "step": 4,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "A town merchant lends money for mill repairs.",
+        "The investment begins quickly, but the debt must be repaid after harvest.",
+        "Your rural lordship is more connected to trade and towns than your ancestors would have admitted."
+      ],
+      "choices": [
+        {
+          "text": "Use trade profits to repay the loan carefully.",
+          "nextSceneId": "merchant-road",
+          "hint": "Safe roads and trade may help."
+        },
+        {
+          "text": "Raise taxes to repay the debt quickly.",
+          "nextSceneId": "tax-pressure",
+          "hint": "Debt may fall on peasants."
+        },
+        {
+          "text": "Refuse repayment by claiming noble privilege.",
+          "nextSceneId": "bad-economic-decline",
+          "hint": "Breaking trust may damage trade."
+        }
+      ]
+    },
+    "labor-for-improvement": {
+      "title": "Forced Improvement",
+      "step": 4,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You demand extra labor to repair the mill and improve roads.",
+        "The work may help everyone later, but exhausted families see only another burden now.",
+        "Public works can support a manor, but forced labor can feel like punishment."
+      ],
+      "choices": [
+        {
+          "text": "Limit extra labor and provide food during work.",
+          "nextSceneId": "shared-manor-council",
+          "hint": "Support may reduce resentment."
+        },
+        {
+          "text": "Demand more labor until projects are finished.",
+          "nextSceneId": "peasant-anger",
+          "hint": "Exhaustion may become anger."
+        },
+        {
+          "text": "Ask knights and vassals to contribute labor too.",
+          "nextSceneId": "balanced-dues",
+          "hint": "Shared sacrifice may feel fairer."
+        }
+      ]
+    },
+    "pious-display": {
+      "title": "Piety on Display",
+      "step": 4,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You make a public show of prayer, charity, and respect for the Church.",
+        "Some praise you. Others whisper that you are polishing your reputation more than helping the poor.",
+        "Public faith can inspire trust when matched by justice. Without justice, it can feel hollow."
+      ],
+      "choices": [
+        {
+          "text": "Turn display into real relief and fair policy.",
+          "nextSceneId": "charity-tithe",
+          "hint": "Action may restore sincerity."
+        },
+        {
+          "text": "Use religious praise to silence critics.",
+          "nextSceneId": "bad-church-conflict",
+          "hint": "Misusing faith may damage trust."
+        },
+        {
+          "text": "Seek the bishop's guidance on just lordship.",
+          "nextSceneId": "bishop-mediation",
+          "hint": "Higher authority may help."
+        }
+      ]
+    },
+    "bishop-mediation": {
+      "title": "The Bishop's Letter",
+      "step": 4,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "The bishop sends a letter urging peace between lord and priest.",
+        "He praises order, charity, and obedience, but warns that lords are judged by how they protect the vulnerable.",
+        "Church authority can restrain lords as well as support them."
+      ],
+      "choices": [
+        {
+          "text": "Accept mediation and restore Church cooperation.",
+          "nextSceneId": "church-witness",
+          "hint": "Legitimacy may be repaired."
+        },
+        {
+          "text": "Obey publicly but resent Church interference.",
+          "nextSceneId": "rumors-of-crusade",
+          "hint": "The pope's wider call may complicate this tension."
+        },
+        {
+          "text": "Reject the bishop's warning.",
+          "nextSceneId": "bad-church-conflict",
+          "hint": "Defying Church authority may isolate you."
+        }
+      ]
+    },
+    "bandit-pursuit": {
+      "title": "Into the Wood",
+      "step": 4,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "Your knights follow tracks into the forest and capture several bandits.",
+        "One is a former peasant from a failed harvest. Another is a deserter from a distant lord's retinue.",
+        "Crime has faces. Punishment alone may not answer why the road became dangerous."
+      ],
+      "choices": [
+        {
+          "text": "Punish the bandits publicly.",
+          "nextSceneId": "order-by-fear",
+          "hint": "This may deter crime but ignore causes."
+        },
+        {
+          "text": "Question them and address hunger and unpaid soldiers.",
+          "nextSceneId": "roots-of-banditry",
+          "hint": "Understanding causes may prevent more bandits."
+        },
+        {
+          "text": "Offer mercy to those who return stolen goods and labor on road repairs.",
+          "nextSceneId": "road-repair-service",
+          "hint": "Restorative justice may be risky but useful."
+        }
+      ]
+    },
+    "merchant-road": {
+      "title": "The Merchant Road",
+      "step": 4,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "With escorts and better road maintenance, merchants return to your market.",
+        "Salt, iron, cloth, and news move through your land. Your manor remains mostly self-sufficient, but it benefits from trade.",
+        "A safe road can make a lordship stronger than a closed gate."
+      ],
+      "choices": [
+        {
+          "text": "Set fair tolls to maintain the road.",
+          "nextSceneId": "moderate-tolls",
+          "hint": "Tolls can support protection if fair."
+        },
+        {
+          "text": "Raise tolls sharply to increase income.",
+          "nextSceneId": "tax-pressure",
+          "hint": "Overtaxing trade may backfire."
+        },
+        {
+          "text": "Welcome travelers and listen for news beyond your land.",
+          "nextSceneId": "rumors-of-crusade",
+          "hint": "News from outside may change your future."
+        }
+      ]
+    },
+    "roots-of-banditry": {
+      "title": "Why Men Take to Roads",
+      "step": 4,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You learn that some bandits were hungry peasants, some were unpaid fighters, and some were simple criminals.",
+        "A lord must protect roads, but also understand the conditions that make roads unsafe.",
+        "Justice is harder than revenge."
+      ],
+      "choices": [
+        {
+          "text": "Improve relief and employment on road repairs.",
+          "nextSceneId": "road-repair-service",
+          "hint": "Work may reduce future crime."
+        },
+        {
+          "text": "Punish all bandits the same way.",
+          "nextSceneId": "order-by-fear",
+          "hint": "Simple justice may not be fair justice."
+        },
+        {
+          "text": "Ask neighboring lords to address the problem together.",
+          "nextSceneId": "neighbor-pact",
+          "hint": "Regional cooperation may help."
+        }
+      ]
+    },
+    "neighbor-jealousy": {
+      "title": "Neighbors With Narrow Eyes",
+      "step": 4,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "Your attempt to command the joint patrol offends nearby lords.",
+        "They accuse you of using bandits as an excuse to expand influence.",
+        "In feudal politics, even cooperation can become competition."
+      ],
+      "choices": [
+        {
+          "text": "Apologize and return to equal terms.",
+          "nextSceneId": "neighbor-pact",
+          "hint": "Diplomacy may repair the pact."
+        },
+        {
+          "text": "Challenge the neighboring lord's honor.",
+          "nextSceneId": "bad-vassal-rivalry",
+          "hint": "Conflict may spread."
+        },
+        {
+          "text": "Ask the bishop to mediate the patrol agreement.",
+          "nextSceneId": "bishop-mediation",
+          "hint": "Church mediation may calm tensions."
+        }
+      ]
+    },
+    "tax-pressure": {
+      "title": "The Tax Burden",
+      "step": 5,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You raise taxes to cover repairs, debts, patrols, and household needs.",
+        "Each reason sounds sensible alone. Together, they weigh heavily on the village.",
+        "Peasants begin counting your demands the way you count their grain."
+      ],
+      "choices": [
+        {
+          "text": "Reduce taxes and create clearer priorities.",
+          "nextSceneId": "shared-manor-council",
+          "hint": "Reform may reduce anger."
+        },
+        {
+          "text": "Enforce collection through guards.",
+          "nextSceneId": "peasant-anger",
+          "hint": "Force may lead to unrest."
+        },
+        {
+          "text": "Seek income from trade tolls instead.",
+          "nextSceneId": "merchant-road",
+          "hint": "Trade may reduce pressure on peasants."
+        }
+      ]
+    },
+    "peasant-anger": {
+      "title": "Murmurs by the Mill",
+      "step": 5,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "Villagers gather near the mill after dark.",
+        "They do not speak of rebellion openly, but they speak of hunger, unfairness, and leaving the manor if they could.",
+        "Serfs are legally tied to the land, but despair can still move."
+      ],
+      "choices": [
+        {
+          "text": "Call a manor council and listen to grievances.",
+          "nextSceneId": "shared-manor-council",
+          "hint": "Listening may prevent unrest."
+        },
+        {
+          "text": "Arrest the loudest villagers.",
+          "nextSceneId": "bad-peasant-revolt",
+          "hint": "Repression may ignite resistance."
+        },
+        {
+          "text": "Ask the priest to calm the village while you reduce burdens.",
+          "nextSceneId": "charity-tithe",
+          "hint": "Religious authority and policy change may help."
+        }
+      ]
+    },
+    "moderate-tolls": {
+      "title": "The Fair Toll",
+      "step": 5,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You set a modest toll on merchants using the forest road.",
+        "The money pays for patrols, bridge repair, and market guards.",
+        "Merchants complain, as merchants do, but they keep coming."
+      ],
+      "choices": [
+        {
+          "text": "Use toll income for visible road improvements.",
+          "nextSceneId": "shared-feudal-stability",
+          "hint": "Trust grows when money has a clear purpose."
+        },
+        {
+          "text": "Divert toll income to your household luxuries.",
+          "nextSceneId": "bad-economic-decline",
+          "hint": "Misuse of money may damage trust."
+        },
+        {
+          "text": "Use the road to gather news about the eastern Mediterranean.",
+          "nextSceneId": "rumors-of-crusade",
+          "hint": "Travelers carry news of wider events."
+        }
+      ]
+    },
+    "order-by-fear": {
+      "title": "Justice at the Crossroads",
+      "step": 5,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "Punishment is carried out at the crossroads where travelers can see.",
+        "The road grows safer for a time, but some villagers turn away as they pass.",
+        "Fear can protect trade. It can also harden hearts."
+      ],
+      "choices": [
+        {
+          "text": "Pair punishment with relief and patrol reforms.",
+          "nextSceneId": "road-repair-service",
+          "hint": "Balance may prevent future crime."
+        },
+        {
+          "text": "Rely on fear for all future problems.",
+          "nextSceneId": "bad-peasant-revolt",
+          "hint": "Rule by fear can break trust."
+        },
+        {
+          "text": "Ask the priest to preach about law and mercy.",
+          "nextSceneId": "church-witness",
+          "hint": "Moral framing may soften harshness."
+        }
+      ]
+    },
+    "road-repair-service": {
+      "title": "Repairing the Road",
+      "step": 5,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "Some captured bandits return stolen goods and work under guard repairing the road.",
+        "Not everyone approves. Sir Roland says mercy invites weakness.",
+        "But merchants return, and fewer desperate men vanish into the forest."
+      ],
+      "choices": [
+        {
+          "text": "Make road repair part of a broader manor plan.",
+          "nextSceneId": "shared-manor-council",
+          "hint": "Practical reform may stabilize the lordship."
+        },
+        {
+          "text": "Let Roland handle future justice his way.",
+          "nextSceneId": "powerful-vassal",
+          "hint": "A hard military hand may gain influence."
+        },
+        {
+          "text": "Use road safety to prepare for wider military obligations.",
+          "nextSceneId": "rumors-of-crusade",
+          "hint": "A safer road may help later mobilization."
+        }
+      ]
+    },
+    "shared-manor-council": {
+      "title": "The Manor Council",
+      "step": 6,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You gather the reeve, priest, vassals, miller, village elders, and several knights.",
+        "The meeting is uncomfortable. Each group sees the lordship from a different place in the hierarchy.",
+        "Yet the manor works only when their labor, protection, faith, and obligations hold together."
+      ],
+      "choices": [
+        {
+          "text": "Create a balanced plan for rents, labor, charity, and defense.",
+          "nextSceneId": "shared-feudal-stability",
+          "hint": "Balanced leadership may make the lordship resilient."
+        },
+        {
+          "text": "Let vassals dominate the council.",
+          "nextSceneId": "vassal-domination",
+          "hint": "Noble privilege may silence others."
+        },
+        {
+          "text": "Use the council mainly to announce new taxes.",
+          "nextSceneId": "tax-pressure",
+          "hint": "This may deepen resentment."
+        },
+        {
+          "text": "Ask the priest to speak about news from the pope.",
+          "nextSceneId": "rumors-of-crusade",
+          "hint": "The crusade call begins to enter local politics."
+        }
+      ]
+    },
+    "shared-feudal-stability": {
+      "title": "A Lordship in Balance",
+      "step": 6,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "Your decisions begin to strengthen the lordship.",
+        "Vassals know their obligations. Peasants know duties will be reviewed. The Church supports relief. Roads become safer.",
+        "The hierarchy remains unequal, but it is not collapsing."
+      ],
+      "choices": [
+        {
+          "text": "Use the stability to improve the manor further.",
+          "nextSceneId": "castle-and-mill",
+          "hint": "Local development may strengthen your home."
+        },
+        {
+          "text": "Prepare for possible military service beyond your lands.",
+          "nextSceneId": "rumors-of-crusade",
+          "hint": "A stable lordship may answer wider calls."
+        },
+        {
+          "text": "Grow proud and increase demands now that order has returned.",
+          "nextSceneId": "tax-pressure",
+          "hint": "Success can tempt overreach."
+        }
+      ]
+    },
+    "vassal-domination": {
+      "title": "The Hall of Nobles",
+      "step": 6,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "Your vassals dominate the meeting.",
+        "Peasant grievances are shortened. The priest's charity concerns are noted but delayed.",
+        "The council looks orderly, but only because many voices were pushed aside."
+      ],
+      "choices": [
+        {
+          "text": "Reopen the council to include village concerns.",
+          "nextSceneId": "shared-manor-council",
+          "hint": "Inclusion may repair trust."
+        },
+        {
+          "text": "Accept noble dominance as the natural hierarchy.",
+          "nextSceneId": "neutral-harsh-order",
+          "hint": "This may lead to order with hardship."
+        },
+        {
+          "text": "Let vassals extract more from their fiefs.",
+          "nextSceneId": "bad-peasant-revolt",
+          "hint": "Overreach may cause unrest."
+        }
+      ]
+    },
+    "castle-and-mill": {
+      "title": "Castle and Mill",
+      "step": 7,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "Your castle walls are repaired. The mill turns more reliably. The storehouses are better counted.",
+        "The manor is still not rich, but it is less fragile.",
+        "Then riders arrive with news from Clermont: the pope has called for knights to take up the cross and travel east."
+      ],
+      "choices": [
+        {
+          "text": "Listen carefully to the pope's call and consider joining.",
+          "nextSceneId": "rumors-of-crusade",
+          "hint": "Religious duty and feudal politics now intersect."
+        },
+        {
+          "text": "Focus only on local prosperity and avoid distant wars.",
+          "nextSceneId": "local-first",
+          "hint": "This may preserve the manor but affect your reputation."
+        },
+        {
+          "text": "Ask vassals how many knights could leave without harming the manor.",
+          "nextSceneId": "crusade-muster",
+          "hint": "Planning may reduce risk."
+        }
+      ]
+    },
+    "rumors-of-crusade": {
+      "title": "The Pope's Call",
+      "step": 7,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "Travelers, priests, and knights carry the same news: the pope has called western Christians to take up arms and travel east.",
+        "They speak of aiding eastern Christians, pilgrimage, penance, and the Holy Land. They also speak, sometimes too eagerly, of land, glory, and plunder.",
+        "You know the eastern Mediterranean is not empty. It is home to Muslims, Christians, Jews, Byzantines, merchants, farmers, scholars, and many local communities.",
+        "The call is powerful, but your manor cannot be abandoned without consequence."
+      ],
+      "choices": [
+        {
+          "text": "Answer the pope's call personally and prepare to go east.",
+          "nextSceneId": "crusade-personal",
+          "hint": "This may bring honor and spiritual reward, but risks your lordship."
+        },
+        {
+          "text": "Send knights and money while remaining to govern.",
+          "nextSceneId": "crusade-support",
+          "hint": "This balances religious duty and local responsibility."
+        },
+        {
+          "text": "Refuse the call and focus on your people at home.",
+          "nextSceneId": "local-first",
+          "hint": "This protects the manor but may damage reputation."
+        },
+        {
+          "text": "Ask for more information from monks and travelers before deciding.",
+          "nextSceneId": "learn-east",
+          "hint": "Knowledge may encourage more responsible decisions."
+        }
+      ]
+    },
+    "crusade-muster": {
+      "title": "Counting Knights for the Cross",
+      "step": 8,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You ask each vassal what service could be offered without stripping the manor of protection.",
+        "The answers reveal more than numbers. Some seek faith, some glory, some escape from debt, and some fear leaving their families unprotected.",
+        "A crusade begins in sermons, but it moves through ledgers, fields, stables, and households."
+      ],
+      "choices": [
+        {
+          "text": "Send a measured force and protect local defense.",
+          "nextSceneId": "measured-contingent",
+          "hint": "Planning may reduce harm."
+        },
+        {
+          "text": "Demand every vassal send maximum service.",
+          "nextSceneId": "overcommitted-knights",
+          "hint": "Prestige may weaken the manor."
+        },
+        {
+          "text": "Allow only volunteers whose households can survive absence.",
+          "nextSceneId": "voluntary-vows",
+          "hint": "Voluntary service may preserve loyalty."
+        }
+      ]
+    },
+    "crusade-personal": {
+      "title": "Taking the Cross",
+      "step": 8,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You stand before the chapel and vow to join the crusade.",
+        "Some villagers cheer. Some weep because they know knights, horses, and coin will leave with you.",
+        "A vow can lift the heart and empty the storehouse at the same time."
+      ],
+      "choices": [
+        {
+          "text": "Appoint a fair steward to govern while you are gone.",
+          "nextSceneId": "appoint-steward",
+          "hint": "Good preparation may protect the manor."
+        },
+        {
+          "text": "Leave quickly with your most loyal knights.",
+          "nextSceneId": "hasty-departure",
+          "hint": "Speed may show zeal but risk disorder."
+        },
+        {
+          "text": "Raise heavy taxes to fund the journey.",
+          "nextSceneId": "crusade-tax",
+          "hint": "Financing war can burden those left behind."
+        },
+        {
+          "text": "Invite vassals to join voluntarily rather than forcing them.",
+          "nextSceneId": "voluntary-vows",
+          "hint": "Voluntary commitment may preserve loyalty."
+        }
+      ]
+    },
+    "crusade-support": {
+      "title": "Support From Home",
+      "step": 8,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You decide not to leave personally, but you pledge knights, supplies, and funds.",
+        "The priest praises your devotion, though some knights say true honor requires your own sword.",
+        "Your choice tries to balance faith, reputation, and local responsibility."
+      ],
+      "choices": [
+        {
+          "text": "Send a small, well-supplied group of volunteers.",
+          "nextSceneId": "measured-contingent",
+          "hint": "Careful support may reduce harm."
+        },
+        {
+          "text": "Send many knights to gain prestige.",
+          "nextSceneId": "overcommitted-knights",
+          "hint": "Prestige may weaken local defense."
+        },
+        {
+          "text": "Send money for pilgrims and relief instead of many fighters.",
+          "nextSceneId": "pilgrim-relief",
+          "hint": "Noncombat support may reflect faith differently."
+        },
+        {
+          "text": "Use the crusade to remove troublesome vassals.",
+          "nextSceneId": "cynical-crusade",
+          "hint": "Self-serving motives may damage trust."
+        }
+      ]
+    },
+    "local-first": {
+      "title": "The Manor Before the World",
+      "step": 8,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You decide your first duty is to the people who depend on your protection.",
+        "Some call you prudent. Others whisper that you lack courage or faith.",
+        "A lord's responsibilities can point in different directions at the same time."
+      ],
+      "choices": [
+        {
+          "text": "Explain publicly that protecting the manor is also a Christian duty.",
+          "nextSceneId": "local-defense-plan",
+          "hint": "Clear reasoning may protect legitimacy."
+        },
+        {
+          "text": "Quietly avoid the subject and hope the pressure passes.",
+          "nextSceneId": "reputation-doubt",
+          "hint": "Silence may feed rumors."
+        },
+        {
+          "text": "Fund charity for pilgrims and the poor instead of sending knights.",
+          "nextSceneId": "pilgrim-relief",
+          "hint": "This offers another form of religious support."
+        }
+      ]
+    },
+    "learn-east": {
+      "title": "Maps, Stories, and Warnings",
+      "step": 8,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "At the monastery, you hear accounts from pilgrims and merchants.",
+        "They describe Constantinople, Muslim-ruled cities, Jewish communities, Armenian Christians, Arab scholars, Turkish warriors, and markets filled with languages you do not know.",
+        "The abbot warns you not to mistake faith for permission to hate entire peoples. War may come, but cruelty will stain any cause."
+      ],
+      "choices": [
+        {
+          "text": "Join only after ordering your knights to protect civilians and pilgrims.",
+          "nextSceneId": "rules-for-knights",
+          "hint": "Ethical limits may matter even in war."
+        },
+        {
+          "text": "Send support but focus on relief and safe conduct.",
+          "nextSceneId": "pilgrim-relief",
+          "hint": "This emphasizes protection and responsibility."
+        },
+        {
+          "text": "Ignore the warnings and chase glory.",
+          "nextSceneId": "glory-crusade",
+          "hint": "Glory without restraint can lead to harm."
+        },
+        {
+          "text": "Stay home but promote learning from travelers and merchants.",
+          "nextSceneId": "cross-cultural-learning",
+          "hint": "Contact can spread knowledge without conquest."
+        }
+      ]
+    },
+    "appoint-steward": {
+      "title": "The Steward's Seal",
+      "step": 9,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You appoint Mira, your capable steward, to govern with written instructions.",
+        "She is to protect the harvest, limit emergency taxes, respect Church relief, and keep vassals from abusing peasants.",
+        "A lord leaving for war must decide whether his authority will become protection or a weapon in someone else's hands."
+      ],
+      "choices": [
+        {
+          "text": "Give Mira authority over vassals and taxes.",
+          "nextSceneId": "steward-strong",
+          "hint": "Strong delegated authority may protect the manor."
+        },
+        {
+          "text": "Let Sir Roland command while Mira manages records.",
+          "nextSceneId": "roland-at-home",
+          "hint": "Military strength may overshadow administration."
+        },
+        {
+          "text": "Leave vague instructions to avoid offending vassals.",
+          "nextSceneId": "vague-stewardship",
+          "hint": "Vagueness may create conflict."
+        }
+      ]
+    },
+    "hasty-departure": {
+      "title": "Before the Fields Are Ready",
+      "step": 9,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You leave before the spring work is organized.",
+        "Your knights ride proudly, banners bright in the wind. Behind them, peasants stare at unfinished repairs and emptying barns.",
+        "A holy vow does not make local problems disappear."
+      ],
+      "choices": [
+        {
+          "text": "Turn back long enough to organize governance.",
+          "nextSceneId": "appoint-steward",
+          "hint": "Delay may save the manor."
+        },
+        {
+          "text": "Continue east and trust others to manage.",
+          "nextSceneId": "bad-absent-lord",
+          "hint": "Absence without planning may harm those left behind."
+        },
+        {
+          "text": "Send letters ordering reduced burdens while away.",
+          "nextSceneId": "steward-strong",
+          "hint": "Written commands may help if followed."
+        }
+      ]
+    },
+    "crusade-tax": {
+      "title": "The Crusade Tax",
+      "step": 9,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You levy a special tax to fund horses, armor, supplies, and passage.",
+        "The priest says sacrifice can be holy. The villagers ask why their children must hunger for a war far away.",
+        "Religious movements still require material costs."
+      ],
+      "choices": [
+        {
+          "text": "Reduce the tax and seek voluntary contributions.",
+          "nextSceneId": "voluntary-vows",
+          "hint": "This may preserve trust."
+        },
+        {
+          "text": "Keep the tax but protect the poorest families.",
+          "nextSceneId": "measured-contingent",
+          "hint": "Burden with safeguards may work."
+        },
+        {
+          "text": "Collect harshly and punish refusal.",
+          "nextSceneId": "bad-crusade-burden",
+          "hint": "Harsh financing may create suffering."
+        }
+      ]
+    },
+    "voluntary-vows": {
+      "title": "Those Who Choose",
+      "step": 9,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You ask knights to volunteer rather than forcing every obligation.",
+        "Some come forward for faith, honor, adventure, debt, or hope of land.",
+        "Motives mix in every human heart. Your task is to lead them responsibly."
+      ],
+      "choices": [
+        {
+          "text": "Accept only those whose households can survive their absence.",
+          "nextSceneId": "measured-contingent",
+          "hint": "Careful selection may protect the manor."
+        },
+        {
+          "text": "Accept everyone who seeks glory.",
+          "nextSceneId": "overcommitted-knights",
+          "hint": "Too many departures may weaken local order."
+        },
+        {
+          "text": "Require all volunteers to swear rules of conduct.",
+          "nextSceneId": "rules-for-knights",
+          "hint": "Discipline may reduce harm."
+        }
+      ]
+    },
+    "measured-contingent": {
+      "title": "A Measured Contingent",
+      "step": 9,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You send a smaller group of knights with proper supplies, clear leadership, and instructions to respect allies, pilgrims, and civilians.",
+        "Some mock the caution. Others recognize wisdom.",
+        "A smaller force with discipline may serve better than a large force without restraint."
+      ],
+      "choices": [
+        {
+          "text": "Keep strong defenses at home while supporting the crusade.",
+          "nextSceneId": "home-and-crusade-balance",
+          "hint": "Balance may lead to a strong ending."
+        },
+        {
+          "text": "Join the contingent later after the harvest.",
+          "nextSceneId": "delayed-departure",
+          "hint": "Timing may reduce harm."
+        },
+        {
+          "text": "Use the contingent to improve your reputation at court.",
+          "nextSceneId": "prestige-politics",
+          "hint": "Prestige may help or corrupt motives."
+        }
+      ]
+    },
+    "overcommitted-knights": {
+      "title": "Too Many Gone",
+      "step": 9,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You send many knights east.",
+        "Your name is praised in nearby courts, but your roads become less safe. Vassals argue. Peasants worry that bandits will return.",
+        "Glory abroad can create weakness at home."
+      ],
+      "choices": [
+        {
+          "text": "Recall some knights before they depart.",
+          "nextSceneId": "measured-contingent",
+          "hint": "Correction may restore balance."
+        },
+        {
+          "text": "Hire temporary guards using higher taxes.",
+          "nextSceneId": "crusade-tax",
+          "hint": "This may solve defense but burden peasants."
+        },
+        {
+          "text": "Ignore local weakness for the sake of honor.",
+          "nextSceneId": "bad-absent-lord",
+          "hint": "Neglect may cause collapse."
+        }
+      ]
+    },
+    "pilgrim-relief": {
+      "title": "Bread for Pilgrims",
+      "step": 9,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "Instead of sending many fighters, you fund food, lodging, and protection for pilgrims and poor travelers.",
+        "Some knights think this lacks glory. The priest says mercy is not lesser faith.",
+        "The Crusades were not only battles. They also involved pilgrimage, movement, fear, hope, and contact between many peoples."
+      ],
+      "choices": [
+        {
+          "text": "Create a safe hostel with Church support.",
+          "nextSceneId": "good-pilgrim-protector",
+          "hint": "This can lead to a good ending."
+        },
+        {
+          "text": "Combine relief with a small knight contingent.",
+          "nextSceneId": "measured-contingent",
+          "hint": "This balances service and protection."
+        },
+        {
+          "text": "Advertise charity mainly to improve your reputation.",
+          "nextSceneId": "prestige-politics",
+          "hint": "Mixed motives may lead to a neutral outcome."
+        }
+      ]
+    },
+    "cynical-crusade": {
+      "title": "A Convenient Vow",
+      "step": 9,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You encourage troublesome vassals to take the cross, hoping distance will solve local politics.",
+        "It works for a moment. Then their families demand support, their lands need protection, and their allies question your motives.",
+        "Using a religious movement for personal convenience carries a cost."
+      ],
+      "choices": [
+        {
+          "text": "Admit the mistake and support their households fairly.",
+          "nextSceneId": "measured-contingent",
+          "hint": "You may still repair trust."
+        },
+        {
+          "text": "Seize their lands while they are away.",
+          "nextSceneId": "bad-vassal-rivalry",
+          "hint": "Betrayal may destroy feudal trust."
+        },
+        {
+          "text": "Use their absence to strengthen central control carefully.",
+          "nextSceneId": "prestige-politics",
+          "hint": "This may lead to mixed political gains."
+        }
+      ]
+    },
+    "local-defense-plan": {
+      "title": "A Duty at Home",
+      "step": 9,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You gather villagers, vassals, and the priest to explain your choice.",
+        "You will not abandon the manor while harvests remain fragile and roads need protection. You will support charity and pilgrims instead.",
+        "Some still disagree, but they understand your reasoning."
+      ],
+      "choices": [
+        {
+          "text": "Strengthen the manor and support pilgrims through charity.",
+          "nextSceneId": "good-local-steward",
+          "hint": "This can lead to a good local ending."
+        },
+        {
+          "text": "Send a token donation to protect your reputation.",
+          "nextSceneId": "reputation-doubt",
+          "hint": "This may lead to a neutral outcome."
+        },
+        {
+          "text": "Mock those who choose to go east.",
+          "nextSceneId": "bad-reputation-loss",
+          "hint": "Disrespecting sincere faith may isolate you."
+        }
+      ]
+    },
+    "reputation-doubt": {
+      "title": "Whispers of Cowardice",
+      "step": 9,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "Rumors spread that you refused the crusade out of fear or greed.",
+        "You know your reasons were more complicated, but silence has allowed others to write the story.",
+        "In feudal society, reputation can be as valuable as stone walls."
+      ],
+      "choices": [
+        {
+          "text": "Explain your decision publicly and fund relief.",
+          "nextSceneId": "local-defense-plan",
+          "hint": "Clear leadership may repair reputation."
+        },
+        {
+          "text": "Ignore the rumors and focus on local prosperity.",
+          "nextSceneId": "neutral-local-prosperity",
+          "hint": "This may preserve home but limit honor."
+        },
+        {
+          "text": "Overcorrect by joining hastily.",
+          "nextSceneId": "hasty-departure",
+          "hint": "Rushing may create worse problems."
+        }
+      ]
+    },
+    "rules-for-knights": {
+      "title": "Rules for Those Who Ride",
+      "step": 9,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "Before any knight leaves, you require an oath: protect pilgrims, respect allies, do not attack civilians, and remember that Muslims, Jews, eastern Christians, and local communities are not all the same.",
+        "Some knights call the rules unnecessary. You answer that discipline is part of honor.",
+        "War will still bring suffering, but leadership can choose restraint over cruelty."
+      ],
+      "choices": [
+        {
+          "text": "Send disciplined knights with clear supplies and leadership.",
+          "nextSceneId": "measured-contingent",
+          "hint": "Responsible planning may support a good path."
+        },
+        {
+          "text": "Travel personally to enforce the rules.",
+          "nextSceneId": "disciplined-journey",
+          "hint": "Personal leadership may matter."
+        },
+        {
+          "text": "Drop the rules when knights complain.",
+          "nextSceneId": "glory-crusade",
+          "hint": "Glory without restraint can become dangerous."
+        }
+      ]
+    },
+    "glory-crusade": {
+      "title": "The Bright Banner",
+      "step": 9,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You speak of glory more than responsibility.",
+        "Young knights cheer. Older villagers look at the storehouse and say nothing.",
+        "A bright banner can hide hunger, pride, and fear beneath its folds."
+      ],
+      "choices": [
+        {
+          "text": "Pause and add rules of conduct before departure.",
+          "nextSceneId": "rules-for-knights",
+          "hint": "It may still be possible to lead responsibly."
+        },
+        {
+          "text": "Raise taxes and leave quickly.",
+          "nextSceneId": "bad-crusade-burden",
+          "hint": "Glory can burden the vulnerable."
+        },
+        {
+          "text": "Seek fame through reckless action abroad.",
+          "nextSceneId": "bad-cruelty-abroad",
+          "hint": "Unrestrained warfare can harm many communities."
+        }
+      ]
+    },
+    "cross-cultural-learning": {
+      "title": "Stories From the Roads",
+      "step": 9,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You welcome travelers, merchants, monks, and returning pilgrims to share what they have seen.",
+        "They speak of Islamic scholarship, Byzantine walls, eastern Christian rites, Jewish communities, spices, medicines, mathematics, and markets larger than any fair you know.",
+        "Contact does not require conquest to change a society."
+      ],
+      "choices": [
+        {
+          "text": "Encourage learning and trade while maintaining local stability.",
+          "nextSceneId": "good-cross-cultural-contact",
+          "hint": "This can lead to a good learning ending."
+        },
+        {
+          "text": "Treat foreign knowledge as useful but socially unsettling.",
+          "nextSceneId": "neutral-learning-limits",
+          "hint": "This may lead to a mixed outcome."
+        },
+        {
+          "text": "Twist travelers' stories into fear of outsiders.",
+          "nextSceneId": "bad-cultural-fear",
+          "hint": "Fear can fuel prejudice."
+        }
+      ]
+    },
+    "steward-strong": {
+      "title": "The Strong Steward",
+      "step": 10,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "Mira governs firmly with your seal.",
+        "She limits emergency taxes, keeps records, works with the priest, and prevents vassals from exploiting your absence.",
+        "Some nobles dislike being checked by a steward, but the manor remains steady."
+      ],
+      "choices": [
+        {
+          "text": "Trust Mira's governance and continue responsibly.",
+          "nextSceneId": "disciplined-journey",
+          "hint": "Strong home leadership may support your journey."
+        },
+        {
+          "text": "Let resentful vassals undermine her.",
+          "nextSceneId": "vague-stewardship",
+          "hint": "Weak support may damage the manor."
+        },
+        {
+          "text": "Send letters praising her authority before witnesses.",
+          "nextSceneId": "home-and-crusade-balance",
+          "hint": "Public backing may protect the manor."
+        }
+      ]
+    },
+    "roland-at-home": {
+      "title": "Roland Holds the Yard",
+      "step": 10,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "Sir Roland commands the knights at home while Mira keeps records.",
+        "At first, the arrangement works. Then Roland begins deciding disputes that should belong to your steward.",
+        "Military command can easily become political power."
+      ],
+      "choices": [
+        {
+          "text": "Clarify that Mira governs and Roland defends.",
+          "nextSceneId": "steward-strong",
+          "hint": "Clear roles may prevent rivalry."
+        },
+        {
+          "text": "Let Roland dominate because he is useful.",
+          "nextSceneId": "bad-vassal-rivalry",
+          "hint": "A powerful vassal may become a rival."
+        },
+        {
+          "text": "Ask the priest to witness the division of authority.",
+          "nextSceneId": "church-witness",
+          "hint": "Moral authority may help."
+        }
+      ]
+    },
+    "vague-stewardship": {
+      "title": "Orders With Holes",
+      "step": 10,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "Your instructions are vague.",
+        "Vassals interpret them one way. Mira interprets them another. The priest tries to mediate.",
+        "Ambiguity lets powerful people hear what they want."
+      ],
+      "choices": [
+        {
+          "text": "Send clearer written orders before leaving port.",
+          "nextSceneId": "steward-strong",
+          "hint": "Good records may still repair confusion."
+        },
+        {
+          "text": "Allow vassals to settle matters themselves.",
+          "nextSceneId": "bad-vassal-rivalry",
+          "hint": "This may weaken central authority."
+        },
+        {
+          "text": "Return home and abandon the journey.",
+          "nextSceneId": "local-defense-plan",
+          "hint": "Local duty may take priority."
+        }
+      ]
+    },
+    "delayed-departure": {
+      "title": "After the Harvest",
+      "step": 10,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You delay departure until after planting, road patrols, and storehouse counts are complete.",
+        "Some accuse you of hesitation, but your people understand the reason.",
+        "Timing is not cowardice when others depend on you."
+      ],
+      "choices": [
+        {
+          "text": "Depart with a disciplined contingent.",
+          "nextSceneId": "disciplined-journey",
+          "hint": "Preparation may lead to a good path."
+        },
+        {
+          "text": "Decide your duty is still at home.",
+          "nextSceneId": "good-local-steward",
+          "hint": "This leads to a good local ending."
+        },
+        {
+          "text": "Add more knights now that the manor is stable.",
+          "nextSceneId": "overcommitted-knights",
+          "hint": "Success may tempt overcommitment."
+        }
+      ]
+    },
+    "home-and-crusade-balance": {
+      "title": "Two Duties Held Together",
+      "step": 10,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "Your manor remains protected while a measured group supports the crusade.",
+        "Villagers still sacrifice, but not beyond endurance. Vassals serve, but not beyond reason.",
+        "You have not solved every problem. You have balanced competing duties."
+      ],
+      "choices": [
+        {
+          "text": "Continue disciplined support and protect the manor.",
+          "nextSceneId": "good-balanced-crusader",
+          "hint": "This leads to a good ending."
+        },
+        {
+          "text": "Use the success to seek greater prestige.",
+          "nextSceneId": "prestige-politics",
+          "hint": "Ambition may complicate the outcome."
+        },
+        {
+          "text": "Reduce local protections after praise arrives.",
+          "nextSceneId": "bad-absent-lord",
+          "hint": "Neglect may return."
+        }
+      ]
+    },
+    "prestige-politics": {
+      "title": "The Taste of Praise",
+      "step": 10,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "Other nobles praise your piety, courage, or generosity.",
+        "Their words feel good. Too good.",
+        "A lord can begin serving reputation instead of people without noticing the moment it happens."
+      ],
+      "choices": [
+        {
+          "text": "Accept praise but keep decisions measured.",
+          "nextSceneId": "neutral-honorable-name",
+          "hint": "This leads to a neutral outcome."
+        },
+        {
+          "text": "Chase more glory at greater cost.",
+          "nextSceneId": "glory-crusade",
+          "hint": "Ambition may become dangerous."
+        },
+        {
+          "text": "Use your reputation to promote relief and discipline.",
+          "nextSceneId": "good-balanced-crusader",
+          "hint": "Prestige can be used responsibly."
+        }
+      ]
+    },
+    "disciplined-journey": {
+      "title": "The Long Road East",
+      "step": 10,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "The road east is longer than songs made it sound.",
+        "You pass through lands with different languages, customs, churches, and markets. You see fear, faith, greed, courage, and exhaustion in equal measure.",
+        "You remind your knights that the people they meet are not symbols. They are human beings living through history from their own side."
+      ],
+      "choices": [
+        {
+          "text": "Keep discipline and protect noncombatants where possible.",
+          "nextSceneId": "good-responsible-crusader",
+          "hint": "This leads to a good ending."
+        },
+        {
+          "text": "Let hunger and fear loosen discipline.",
+          "nextSceneId": "bad-cruelty-abroad",
+          "hint": "Failure of discipline harms many people."
+        },
+        {
+          "text": "Return home changed by what you have seen.",
+          "nextSceneId": "cross-cultural-learning",
+          "hint": "Experience may lead to learning."
+        }
+      ]
+    },
+    "good-balanced-crusader": {
+      "title": "The Lord Who Balanced Oaths",
+      "step": 11,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "Your manor remains stable while your measured support reaches the crusading armies.",
+        "You are praised not for sending the most knights, but for keeping faith without destroying the people who depend on you.",
+        "Vassals, villagers, and Church leaders do not always agree with you, but most believe your rule is serious, disciplined, and just."
+      ],
+      "ending": "good",
+      "teachingSummary": "This ending shows that medieval lords had competing obligations. A lord could support the pope's call while still protecting vassals, peasants, local order, and manor stability.",
+      "keyTermReview": "Vocabulary review: This adventure connects feudalism and manorialism to life in the High Middle Ages. Students examine how lords granted fiefs to vassals, how knights owed military service, how serfs owed labor and rents, how the Church collected tithes and shaped daily life, and how the pope's call for crusade connected western Europe to the Holy Land, Byzantium, Islamic states, trade networks, and cross-cultural contact.",
+      "reflectionQuestions": [
+        "How did your choices show the strengths and weaknesses of feudalism?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the feudal lord's power depend on vassals, knights, peasants, and the Church?",
+        "What tradeoff did your character face between loyalty, wealth, justice, faith, and survival?",
+        "How did the pope's call for crusade create both opportunities and dangers for a medieval lord?",
+        "How did contact with other cultures during the Crusades affect European society?",
+        "How did this game show that the Crusades involved Christians, Muslims, Jews, Byzantines, and many local communities with different experiences?"
+      ]
+    },
+    "good-responsible-crusader": {
+      "title": "A Hard Road With Restraint",
+      "step": 11,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You cannot make war gentle, and you cannot remove the suffering caused by crusading armies.",
+        "But your knights remain disciplined. They protect pilgrims where they can, respect allies, and avoid treating entire cultures as enemies.",
+        "You return with scars, knowledge, and a more complicated understanding of the world beyond your manor."
+      ],
+      "ending": "good",
+      "teachingSummary": "This ending shows a historically respectful approach to the Crusades. The Crusades involved religious devotion, warfare, politics, travel, and contact among Christians, Muslims, Jews, Byzantines, and many local communities.",
+      "keyTermReview": "Vocabulary review: This adventure connects feudalism and manorialism to life in the High Middle Ages. Students examine how lords granted fiefs to vassals, how knights owed military service, how serfs owed labor and rents, how the Church collected tithes and shaped daily life, and how the pope's call for crusade connected western Europe to the Holy Land, Byzantium, Islamic states, trade networks, and cross-cultural contact.",
+      "reflectionQuestions": [
+        "How did your choices show the strengths and weaknesses of feudalism?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the feudal lord's power depend on vassals, knights, peasants, and the Church?",
+        "What tradeoff did your character face between loyalty, wealth, justice, faith, and survival?",
+        "How did the pope's call for crusade create both opportunities and dangers for a medieval lord?",
+        "How did contact with other cultures during the Crusades affect European society?",
+        "How did this game show that the Crusades involved Christians, Muslims, Jews, Byzantines, and many local communities with different experiences?"
+      ]
+    },
+    "good-local-steward": {
+      "title": "The Lord Who Stayed",
+      "step": 11,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You do not gain the glory of distant battle.",
+        "Instead, your roads grow safer, your storehouses steadier, and your village less fearful of hunger.",
+        "Some still say you should have gone east, but those who live under your protection know why you stayed."
+      ],
+      "ending": "good",
+      "teachingSummary": "This ending shows that a feudal lord's first responsibility was often local protection and management. Staying home could be a serious choice rooted in duty, not simply cowardice.",
+      "keyTermReview": "Vocabulary review: This adventure connects feudalism and manorialism to life in the High Middle Ages. Students examine how lords granted fiefs to vassals, how knights owed military service, how serfs owed labor and rents, how the Church collected tithes and shaped daily life, and how the pope's call for crusade connected western Europe to the Holy Land, Byzantium, Islamic states, trade networks, and cross-cultural contact.",
+      "reflectionQuestions": [
+        "How did your choices show the strengths and weaknesses of feudalism?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the feudal lord's power depend on vassals, knights, peasants, and the Church?",
+        "What tradeoff did your character face between loyalty, wealth, justice, faith, and survival?",
+        "How did the pope's call for crusade create both opportunities and dangers for a medieval lord?",
+        "How did contact with other cultures during the Crusades affect European society?",
+        "How did this game show that the Crusades involved Christians, Muslims, Jews, Byzantines, and many local communities with different experiences?"
+      ]
+    },
+    "good-cross-cultural-contact": {
+      "title": "Windows Opened by Travelers",
+      "step": 11,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "Your hall becomes a place where travelers share knowledge from Byzantium, Islamic cities, Jewish communities, ports, and pilgrimage roads.",
+        "New goods, stories, medical ideas, and mathematical knowledge slowly enter local life.",
+        "You learn that contact across cultures can change societies through exchange as well as conflict."
+      ],
+      "ending": "good",
+      "teachingSummary": "This ending shows how the Crusades and wider Mediterranean contact contributed to cultural exchange, trade, and the movement of ideas between Europe and other regions.",
+      "keyTermReview": "Vocabulary review: This adventure connects feudalism and manorialism to life in the High Middle Ages. Students examine how lords granted fiefs to vassals, how knights owed military service, how serfs owed labor and rents, how the Church collected tithes and shaped daily life, and how the pope's call for crusade connected western Europe to the Holy Land, Byzantium, Islamic states, trade networks, and cross-cultural contact.",
+      "reflectionQuestions": [
+        "How did your choices show the strengths and weaknesses of feudalism?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the feudal lord's power depend on vassals, knights, peasants, and the Church?",
+        "What tradeoff did your character face between loyalty, wealth, justice, faith, and survival?",
+        "How did the pope's call for crusade create both opportunities and dangers for a medieval lord?",
+        "How did contact with other cultures during the Crusades affect European society?",
+        "How did this game show that the Crusades involved Christians, Muslims, Jews, Byzantines, and many local communities with different experiences?"
+      ]
+    },
+    "good-pilgrim-protector": {
+      "title": "Shelter on the Road",
+      "step": 11,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "Your hostel feeds pilgrims, poor travelers, and returning strangers with stories of the wider world.",
+        "The chapel becomes known not for speeches of glory, but for bread, bandages, maps, and safe rest.",
+        "In a violent age, protection can also be a form of faith."
+      ],
+      "ending": "good",
+      "teachingSummary": "This ending shows that religious life in the Middle Ages included pilgrimage, charity, protection, and community support, not only warfare.",
+      "keyTermReview": "Vocabulary review: This adventure connects feudalism and manorialism to life in the High Middle Ages. Students examine how lords granted fiefs to vassals, how knights owed military service, how serfs owed labor and rents, how the Church collected tithes and shaped daily life, and how the pope's call for crusade connected western Europe to the Holy Land, Byzantium, Islamic states, trade networks, and cross-cultural contact.",
+      "reflectionQuestions": [
+        "How did your choices show the strengths and weaknesses of feudalism?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the feudal lord's power depend on vassals, knights, peasants, and the Church?",
+        "What tradeoff did your character face between loyalty, wealth, justice, faith, and survival?",
+        "How did the pope's call for crusade create both opportunities and dangers for a medieval lord?",
+        "How did contact with other cultures during the Crusades affect European society?",
+        "How did this game show that the Crusades involved Christians, Muslims, Jews, Byzantines, and many local communities with different experiences?"
+      ]
+    },
+    "neutral-harsh-order": {
+      "title": "Order With Bent Backs",
+      "step": 11,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "Your lordship remains orderly.",
+        "Vassals are satisfied. Storehouses are filled. Peasants continue to work under heavy burdens.",
+        "The manor survives, but its peace rests more on hierarchy than trust."
+      ],
+      "ending": "neutral",
+      "teachingSummary": "This ending shows that feudalism could create order and protection while also reinforcing inequality and heavy obligations for peasants and serfs.",
+      "keyTermReview": "Vocabulary review: This adventure connects feudalism and manorialism to life in the High Middle Ages. Students examine how lords granted fiefs to vassals, how knights owed military service, how serfs owed labor and rents, how the Church collected tithes and shaped daily life, and how the pope's call for crusade connected western Europe to the Holy Land, Byzantium, Islamic states, trade networks, and cross-cultural contact.",
+      "reflectionQuestions": [
+        "How did your choices show the strengths and weaknesses of feudalism?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the feudal lord's power depend on vassals, knights, peasants, and the Church?",
+        "What tradeoff did your character face between loyalty, wealth, justice, faith, and survival?",
+        "How did the pope's call for crusade create both opportunities and dangers for a medieval lord?",
+        "How did contact with other cultures during the Crusades affect European society?",
+        "How did this game show that the Crusades involved Christians, Muslims, Jews, Byzantines, and many local communities with different experiences?"
+      ]
+    },
+    "neutral-local-prosperity": {
+      "title": "A Prosperous but Questioned Manor",
+      "step": 11,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "Your manor improves. The mill turns, roads are safer, and harvest records are clearer.",
+        "Yet some nobles continue to question your refusal to take the cross.",
+        "You have prosperity at home, but not universal respect."
+      ],
+      "ending": "neutral",
+      "teachingSummary": "This ending shows that medieval leaders often faced tension between local responsibilities and wider religious or political expectations.",
+      "keyTermReview": "Vocabulary review: This adventure connects feudalism and manorialism to life in the High Middle Ages. Students examine how lords granted fiefs to vassals, how knights owed military service, how serfs owed labor and rents, how the Church collected tithes and shaped daily life, and how the pope's call for crusade connected western Europe to the Holy Land, Byzantium, Islamic states, trade networks, and cross-cultural contact.",
+      "reflectionQuestions": [
+        "How did your choices show the strengths and weaknesses of feudalism?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the feudal lord's power depend on vassals, knights, peasants, and the Church?",
+        "What tradeoff did your character face between loyalty, wealth, justice, faith, and survival?",
+        "How did the pope's call for crusade create both opportunities and dangers for a medieval lord?",
+        "How did contact with other cultures during the Crusades affect European society?",
+        "How did this game show that the Crusades involved Christians, Muslims, Jews, Byzantines, and many local communities with different experiences?"
+      ]
+    },
+    "neutral-learning-limits": {
+      "title": "Useful Knowledge, Uneasy Minds",
+      "step": 11,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "Travelers bring new ideas, goods, and stories from the eastern Mediterranean.",
+        "You allow some learning while keeping tight control over what spreads.",
+        "Your people gain knowledge, but fear still limits curiosity."
+      ],
+      "ending": "neutral",
+      "teachingSummary": "This ending shows that cross-cultural contact could spread knowledge and trade, but medieval societies did not always accept outside ideas easily.",
+      "keyTermReview": "Vocabulary review: This adventure connects feudalism and manorialism to life in the High Middle Ages. Students examine how lords granted fiefs to vassals, how knights owed military service, how serfs owed labor and rents, how the Church collected tithes and shaped daily life, and how the pope's call for crusade connected western Europe to the Holy Land, Byzantium, Islamic states, trade networks, and cross-cultural contact.",
+      "reflectionQuestions": [
+        "How did your choices show the strengths and weaknesses of feudalism?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the feudal lord's power depend on vassals, knights, peasants, and the Church?",
+        "What tradeoff did your character face between loyalty, wealth, justice, faith, and survival?",
+        "How did the pope's call for crusade create both opportunities and dangers for a medieval lord?",
+        "How did contact with other cultures during the Crusades affect European society?",
+        "How did this game show that the Crusades involved Christians, Muslims, Jews, Byzantines, and many local communities with different experiences?"
+      ]
+    },
+    "neutral-honorable-name": {
+      "title": "A Name Remembered Carefully",
+      "step": 11,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You gain honor for supporting the crusade without ruining your manor.",
+        "Some praise your prudence. Others say you might have done more.",
+        "Your reputation survives, balanced between faith, caution, and ambition."
+      ],
+      "ending": "neutral",
+      "teachingSummary": "This ending shows that medieval reputation depended on many audiences: nobles, clergy, vassals, peasants, and other warriors.",
+      "keyTermReview": "Vocabulary review: This adventure connects feudalism and manorialism to life in the High Middle Ages. Students examine how lords granted fiefs to vassals, how knights owed military service, how serfs owed labor and rents, how the Church collected tithes and shaped daily life, and how the pope's call for crusade connected western Europe to the Holy Land, Byzantium, Islamic states, trade networks, and cross-cultural contact.",
+      "reflectionQuestions": [
+        "How did your choices show the strengths and weaknesses of feudalism?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the feudal lord's power depend on vassals, knights, peasants, and the Church?",
+        "What tradeoff did your character face between loyalty, wealth, justice, faith, and survival?",
+        "How did the pope's call for crusade create both opportunities and dangers for a medieval lord?",
+        "How did contact with other cultures during the Crusades affect European society?",
+        "How did this game show that the Crusades involved Christians, Muslims, Jews, Byzantines, and many local communities with different experiences?"
+      ]
+    },
+    "bad-peasant-revolt": {
+      "title": "Fire Near the Mill",
+      "step": 11,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "The anger you ignored becomes action.",
+        "Villagers burn records at the mill and refuse labor duties. Your knights restore order, but the manor is wounded.",
+        "You kept authority too long by pressure and lost the trust that made authority workable."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows that harsh labor demands, unfair taxes, and ignored hardship could destabilize the manorial system.",
+      "keyTermReview": "Vocabulary review: This adventure connects feudalism and manorialism to life in the High Middle Ages. Students examine how lords granted fiefs to vassals, how knights owed military service, how serfs owed labor and rents, how the Church collected tithes and shaped daily life, and how the pope's call for crusade connected western Europe to the Holy Land, Byzantium, Islamic states, trade networks, and cross-cultural contact.",
+      "reflectionQuestions": [
+        "How did your choices show the strengths and weaknesses of feudalism?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the feudal lord's power depend on vassals, knights, peasants, and the Church?",
+        "What tradeoff did your character face between loyalty, wealth, justice, faith, and survival?",
+        "How did the pope's call for crusade create both opportunities and dangers for a medieval lord?",
+        "How did contact with other cultures during the Crusades affect European society?",
+        "How did this game show that the Crusades involved Christians, Muslims, Jews, Byzantines, and many local communities with different experiences?"
+      ]
+    },
+    "bad-vassal-rivalry": {
+      "title": "A Vassal Too Strong",
+      "step": 11,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "A powerful vassal begins acting like a lord in his own right.",
+        "Other vassals choose sides. Peasants wait to see whose men will take grain next.",
+        "Feudalism depended on loyalty, but loyalty could fracture when personal power grew too large."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows a weakness of feudalism: decentralized power could create rivalry among lords, vassals, and knights.",
+      "keyTermReview": "Vocabulary review: This adventure connects feudalism and manorialism to life in the High Middle Ages. Students examine how lords granted fiefs to vassals, how knights owed military service, how serfs owed labor and rents, how the Church collected tithes and shaped daily life, and how the pope's call for crusade connected western Europe to the Holy Land, Byzantium, Islamic states, trade networks, and cross-cultural contact.",
+      "reflectionQuestions": [
+        "How did your choices show the strengths and weaknesses of feudalism?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the feudal lord's power depend on vassals, knights, peasants, and the Church?",
+        "What tradeoff did your character face between loyalty, wealth, justice, faith, and survival?",
+        "How did the pope's call for crusade create both opportunities and dangers for a medieval lord?",
+        "How did contact with other cultures during the Crusades affect European society?",
+        "How did this game show that the Crusades involved Christians, Muslims, Jews, Byzantines, and many local communities with different experiences?"
+      ]
+    },
+    "bad-church-conflict": {
+      "title": "The Chapel Doors Close",
+      "step": 11,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "Your conflict with Church leaders isolates you.",
+        "The priest no longer defends your decisions. The bishop condemns your actions. Villagers wonder whether a lord without Church support can be trusted.",
+        "Stone walls cannot protect a ruler from losing moral legitimacy."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows the power of the medieval Church. Lords often depended on Church support for legitimacy, social order, and spiritual authority.",
+      "keyTermReview": "Vocabulary review: This adventure connects feudalism and manorialism to life in the High Middle Ages. Students examine how lords granted fiefs to vassals, how knights owed military service, how serfs owed labor and rents, how the Church collected tithes and shaped daily life, and how the pope's call for crusade connected western Europe to the Holy Land, Byzantium, Islamic states, trade networks, and cross-cultural contact.",
+      "reflectionQuestions": [
+        "How did your choices show the strengths and weaknesses of feudalism?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the feudal lord's power depend on vassals, knights, peasants, and the Church?",
+        "What tradeoff did your character face between loyalty, wealth, justice, faith, and survival?",
+        "How did the pope's call for crusade create both opportunities and dangers for a medieval lord?",
+        "How did contact with other cultures during the Crusades affect European society?",
+        "How did this game show that the Crusades involved Christians, Muslims, Jews, Byzantines, and many local communities with different experiences?"
+      ]
+    },
+    "bad-economic-decline": {
+      "title": "The Market Goes Quiet",
+      "step": 11,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "Merchants avoid your road. The mill falls behind. Iron costs more. Salt becomes scarce.",
+        "Your manor tried to stand alone, but even a self-sufficient estate needed safe roads, trust, and exchange.",
+        "Neglect has made your lordship poorer and weaker."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows that medieval manors aimed for self-sufficiency, but they still depended on roads, markets, tools, and regional exchange.",
+      "keyTermReview": "Vocabulary review: This adventure connects feudalism and manorialism to life in the High Middle Ages. Students examine how lords granted fiefs to vassals, how knights owed military service, how serfs owed labor and rents, how the Church collected tithes and shaped daily life, and how the pope's call for crusade connected western Europe to the Holy Land, Byzantium, Islamic states, trade networks, and cross-cultural contact.",
+      "reflectionQuestions": [
+        "How did your choices show the strengths and weaknesses of feudalism?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the feudal lord's power depend on vassals, knights, peasants, and the Church?",
+        "What tradeoff did your character face between loyalty, wealth, justice, faith, and survival?",
+        "How did the pope's call for crusade create both opportunities and dangers for a medieval lord?",
+        "How did contact with other cultures during the Crusades affect European society?",
+        "How did this game show that the Crusades involved Christians, Muslims, Jews, Byzantines, and many local communities with different experiences?"
+      ]
+    },
+    "bad-crusade-burden": {
+      "title": "The Cost of a Holy Banner",
+      "step": 11,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "Your crusade tax empties village stores.",
+        "Knights ride east while children eat thin porridge. The priest prays for the Holy Land, but villagers pray for bread.",
+        "A religious cause has become a local burden too heavy to carry."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows that crusading required money, labor, horses, weapons, and supplies. The costs often fell on local communities.",
+      "keyTermReview": "Vocabulary review: This adventure connects feudalism and manorialism to life in the High Middle Ages. Students examine how lords granted fiefs to vassals, how knights owed military service, how serfs owed labor and rents, how the Church collected tithes and shaped daily life, and how the pope's call for crusade connected western Europe to the Holy Land, Byzantium, Islamic states, trade networks, and cross-cultural contact.",
+      "reflectionQuestions": [
+        "How did your choices show the strengths and weaknesses of feudalism?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the feudal lord's power depend on vassals, knights, peasants, and the Church?",
+        "What tradeoff did your character face between loyalty, wealth, justice, faith, and survival?",
+        "How did the pope's call for crusade create both opportunities and dangers for a medieval lord?",
+        "How did contact with other cultures during the Crusades affect European society?",
+        "How did this game show that the Crusades involved Christians, Muslims, Jews, Byzantines, and many local communities with different experiences?"
+      ]
+    },
+    "bad-absent-lord": {
+      "title": "The Empty Chair",
+      "step": 11,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You leave without organizing the lordship.",
+        "Vassals quarrel. Taxes rise unevenly. Bandits return to the road. The manor hall still has your chair, but no trusted judgment sits in it.",
+        "A lord's absence can be as powerful as his presence."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows how feudal authority depended on personal relationships and local management. Leaving without planning could weaken a lordship.",
+      "keyTermReview": "Vocabulary review: This adventure connects feudalism and manorialism to life in the High Middle Ages. Students examine how lords granted fiefs to vassals, how knights owed military service, how serfs owed labor and rents, how the Church collected tithes and shaped daily life, and how the pope's call for crusade connected western Europe to the Holy Land, Byzantium, Islamic states, trade networks, and cross-cultural contact.",
+      "reflectionQuestions": [
+        "How did your choices show the strengths and weaknesses of feudalism?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the feudal lord's power depend on vassals, knights, peasants, and the Church?",
+        "What tradeoff did your character face between loyalty, wealth, justice, faith, and survival?",
+        "How did the pope's call for crusade create both opportunities and dangers for a medieval lord?",
+        "How did contact with other cultures during the Crusades affect European society?",
+        "How did this game show that the Crusades involved Christians, Muslims, Jews, Byzantines, and many local communities with different experiences?"
+      ]
+    },
+    "bad-cruelty-abroad": {
+      "title": "A Stained Cross",
+      "step": 11,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "Discipline fails. Fear turns into cruelty. People who were not responsible for your hardships suffer because your knights see them only as enemies.",
+        "Whatever honor you sought is darkened by the harm done to civilians and communities in the East.",
+        "War reveals what kind of leadership rode beneath the banner."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows that the Crusades caused real suffering for many communities, including Muslims, Jews, eastern Christians, and local civilians. Historically respectful study must recognize multiple perspectives and human costs.",
+      "keyTermReview": "Vocabulary review: This adventure connects feudalism and manorialism to life in the High Middle Ages. Students examine how lords granted fiefs to vassals, how knights owed military service, how serfs owed labor and rents, how the Church collected tithes and shaped daily life, and how the pope's call for crusade connected western Europe to the Holy Land, Byzantium, Islamic states, trade networks, and cross-cultural contact.",
+      "reflectionQuestions": [
+        "How did your choices show the strengths and weaknesses of feudalism?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the feudal lord's power depend on vassals, knights, peasants, and the Church?",
+        "What tradeoff did your character face between loyalty, wealth, justice, faith, and survival?",
+        "How did the pope's call for crusade create both opportunities and dangers for a medieval lord?",
+        "How did contact with other cultures during the Crusades affect European society?",
+        "How did this game show that the Crusades involved Christians, Muslims, Jews, Byzantines, and many local communities with different experiences?"
+      ]
+    },
+    "bad-cultural-fear": {
+      "title": "Stories Turned to Fear",
+      "step": 11,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "Travelers bring stories of distant peoples, but you twist them into suspicion.",
+        "Soon your hall hears less about learning, trade, and human difference, and more about fear.",
+        "A closed mind can turn contact into prejudice."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows that cross-cultural contact can lead to learning or prejudice. How people interpret difference matters.",
+      "keyTermReview": "Vocabulary review: This adventure connects feudalism and manorialism to life in the High Middle Ages. Students examine how lords granted fiefs to vassals, how knights owed military service, how serfs owed labor and rents, how the Church collected tithes and shaped daily life, and how the pope's call for crusade connected western Europe to the Holy Land, Byzantium, Islamic states, trade networks, and cross-cultural contact.",
+      "reflectionQuestions": [
+        "How did your choices show the strengths and weaknesses of feudalism?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the feudal lord's power depend on vassals, knights, peasants, and the Church?",
+        "What tradeoff did your character face between loyalty, wealth, justice, faith, and survival?",
+        "How did the pope's call for crusade create both opportunities and dangers for a medieval lord?",
+        "How did contact with other cultures during the Crusades affect European society?",
+        "How did this game show that the Crusades involved Christians, Muslims, Jews, Byzantines, and many local communities with different experiences?"
+      ]
+    },
+    "bad-reputation-loss": {
+      "title": "Honor Turned Sour",
+      "step": 11,
+      "image": {
+        "src": "public/images/high-middle-ages-feudal-lord.svg",
+        "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
+      },
+      "pathFocus": "Key terms for this route: feudalism, manorialism, lord, vassal, knight, serf, fief, homage, tithe, monastery, self-sufficient, hierarchy, Crusades, pope, Holy Land, pilgrimage, Christendom, Islam, cross-cultural contact, and trade network.",
+      "body": [
+        "You mock those who choose the crusade, and your words travel farther than you expect.",
+        "Vassals question your faith. The priest grows distant. Even those who agree with staying home wish you had shown more respect.",
+        "A lord can make a wise decision foolish by speaking without humility."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows that reputation and religious respect mattered deeply in medieval society. Disrespecting sincere belief could weaken a lord's legitimacy.",
+      "keyTermReview": "Vocabulary review: This adventure connects feudalism and manorialism to life in the High Middle Ages. Students examine how lords granted fiefs to vassals, how knights owed military service, how serfs owed labor and rents, how the Church collected tithes and shaped daily life, and how the pope's call for crusade connected western Europe to the Holy Land, Byzantium, Islamic states, trade networks, and cross-cultural contact.",
+      "reflectionQuestions": [
+        "How did your choices show the strengths and weaknesses of feudalism?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the feudal lord's power depend on vassals, knights, peasants, and the Church?",
+        "What tradeoff did your character face between loyalty, wealth, justice, faith, and survival?",
+        "How did the pope's call for crusade create both opportunities and dangers for a medieval lord?",
+        "How did contact with other cultures during the Crusades affect European society?",
+        "How did this game show that the Crusades involved Christians, Muslims, Jews, Byzantines, and many local communities with different experiences?"
+      ]
+    }
+  }
+}

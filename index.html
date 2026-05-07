@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Global History Adventure Library</title>
+    <meta
+      name="description"
+      content="A student-facing library of Global History branching adventure games."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <div>
+          <p class="eyebrow">Student Adventure Library</p>
+          <h1>Global History Adventure Library</h1>
+          <p class="subtitle">
+            Choose a historical scenario, make decisions, and see how choices shape outcomes.
+          </p>
+        </div>
+        <button class="secondary-button hidden" id="libraryButton" type="button">
+          Return to library
+        </button>
+      </div>
+    </header>
+
+    <main id="app" class="app-shell" tabindex="-1">
+      <section class="status-panel">
+        <h2>Loading adventures...</h2>
+        <p>Getting the classroom library ready.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Teachers can add games by placing JSON files in
+        <code>/public/content/adventures/</code> and updating
+        <code>/public/content/adventure-manifest.json</code>.
+      </p>
+    </footer>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>

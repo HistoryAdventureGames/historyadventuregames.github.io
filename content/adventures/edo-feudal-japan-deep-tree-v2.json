@@ -1,0 +1,2438 @@
+{
+  "id": "edo-feudal-japan-deep-tree-v2",
+  "title": "Paths of Power: Life in Edo Japan",
+  "description": "Choose life as a samurai, shogun, or artisan during the Edo period and navigate honor, hierarchy, isolation, economic change, and political stability under the Tokugawa shogunate.",
+  "coverImage": {
+    "src": "public/images/edo-japan.svg",
+    "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+  },
+  "startingSceneId": "start",
+  "branchingPathCount": 52,
+  "keyTerms": [
+    "Tokugawa shogunate",
+    "Edo period",
+    "shogun",
+    "samurai",
+    "daimyo",
+    "bushido",
+    "artisan",
+    "merchant",
+    "social hierarchy",
+    "isolation",
+    "sakoku",
+    "rice economy",
+    "castle town",
+    "urbanization",
+    "Neo-Confucianism"
+  ],
+  "curriculumTags": [
+    "NYS Global 9",
+    "Feudal Japan",
+    "Edo Period",
+    "Tokugawa Shogunate",
+    "Social Hierarchy"
+  ],
+  "teacherNotes": "This deep-tree adventure uses three role-based openings that later merge into shared social, political, and economic crises. Students explore how Edo Japan preserved stability while facing tensions from samurai debt, merchant wealth, artisan labor, daimyo control, isolation, and urban growth.",
+  "reviewFocus": "how social hierarchy, political control, isolation, and economic change shaped life during the Tokugawa shogunate",
+  "topicQuestion": "how did feudalism and social hierarchy shape life in Edo Japan?",
+  "scenes": {
+    "start": {
+      "title": "Three Roads in Edo Japan",
+      "step": 1,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "You live in Japan during the Edo period, when the Tokugawa shogunate rules from Edo.",
+        "The land is peaceful compared to the age of civil wars, but peace has a price. Everyone is expected to know their place.",
+        "A samurai is supposed to serve with honor. A shogun is supposed to preserve order. An artisan is supposed to create useful goods without challenging those above them.",
+        "Your story begins with a choice of role. Each path will reveal a different part of Japan's strict social hierarchy."
+      ],
+      "choices": [
+        {
+          "text": "Live as a young samurai serving a daimyo in a castle town.",
+          "nextSceneId": "samurai-1",
+          "hint": "This path explores bushido, duty, status, and adaptation during peace."
+        },
+        {
+          "text": "Rule as a shogun trying to control daimyo and preserve stability.",
+          "nextSceneId": "shogun-1",
+          "hint": "This path explores political control, isolation, and state power."
+        },
+        {
+          "text": "Work as an artisan in a growing city where skill brings respect but not high status.",
+          "nextSceneId": "artisan-1",
+          "hint": "This path explores urban life, class limits, trade, and economic change."
+        }
+      ]
+    },
+    "samurai-1": {
+      "title": "The Sword in a Time of Peace",
+      "step": 2,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "You are Ren, the child of a samurai family. Your father served your daimyo when swords still decided power.",
+        "Now the castle town is peaceful. The streets are full of merchants, paper lanterns, apprentices, and officials carrying records instead of weapons.",
+        "You wear the swords of your class, but you wonder what a warrior is supposed to become when there is no war."
+      ],
+      "choices": [
+        {
+          "text": "Train harder and prove your loyalty through strict bushido.",
+          "nextSceneId": "samurai-duty-2",
+          "hint": "Honor may protect your status."
+        },
+        {
+          "text": "Study reading, writing, and accounting to serve as an official.",
+          "nextSceneId": "samurai-scholar-2",
+          "hint": "Peace may require a new kind of service."
+        },
+        {
+          "text": "Spend time in the markets and learn how merchants are gaining wealth.",
+          "nextSceneId": "samurai-market-2",
+          "hint": "Economic change may challenge old ideas about status."
+        }
+      ]
+    },
+    "samurai-duty-2": {
+      "title": "The Practice Yard",
+      "step": 3,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "Each morning, you train with wooden swords until your palms sting.",
+        "Your instructor repeats that bushido means loyalty, discipline, and self-control.",
+        "Yet when you walk home, you pass shops where merchants count coins while samurai families quietly sell heirlooms to survive."
+      ],
+      "choices": [
+        {
+          "text": "Stay focused on honor and ignore the market's temptations.",
+          "nextSceneId": "samurai-patrol-3",
+          "hint": "This preserves tradition but may ignore economic pressure."
+        },
+        {
+          "text": "Ask your instructor why samurai are poor while merchants grow wealthy.",
+          "nextSceneId": "samurai-question-3",
+          "hint": "This may open a difficult discussion."
+        },
+        {
+          "text": "Secretly borrow money from a merchant to protect your family's status.",
+          "nextSceneId": "samurai-debt-3",
+          "hint": "Debt may solve one problem while creating another."
+        }
+      ]
+    },
+    "samurai-scholar-2": {
+      "title": "Brush Instead of Blade",
+      "step": 3,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "You study law codes, rice records, and Neo-Confucian teachings about order and duty.",
+        "Some older warriors say a samurai who spends too much time with books grows soft.",
+        "But your daimyo needs officials who can manage taxes, settle disputes, and report to the shogunate."
+      ],
+      "choices": [
+        {
+          "text": "Become a clerk and help manage rice taxes fairly.",
+          "nextSceneId": "samurai-rice-records-3",
+          "hint": "This adapts samurai service to government work."
+        },
+        {
+          "text": "Use your learning to question unfair class rules.",
+          "nextSceneId": "samurai-question-3",
+          "hint": "This may challenge the social hierarchy."
+        },
+        {
+          "text": "Hide your interest in scholarship and return to weapons training.",
+          "nextSceneId": "samurai-patrol-3",
+          "hint": "This returns to the traditional samurai path."
+        }
+      ]
+    },
+    "samurai-market-2": {
+      "title": "Coins in the Market",
+      "step": 3,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "The market is louder than the training yard. Artisans sell lacquerware, paper fans, and woodblock prints.",
+        "Merchants bow politely to samurai, but everyone knows many merchants have more money than the warriors who outrank them.",
+        "A merchant offers to teach you how credit works. Your family could use the help."
+      ],
+      "choices": [
+        {
+          "text": "Accept the lesson but keep your distance.",
+          "nextSceneId": "samurai-debt-3",
+          "hint": "Learning about money may help, but it risks your honor."
+        },
+        {
+          "text": "Visit an artisan workshop to understand city life better.",
+          "nextSceneId": "artisan-bridge-4",
+          "hint": "This connects your samurai path to the artisan world."
+        },
+        {
+          "text": "Report the merchant for disrespecting the social order.",
+          "nextSceneId": "samurai-order-3",
+          "hint": "Defending hierarchy may preserve status but create resentment."
+        }
+      ]
+    },
+    "samurai-patrol-3": {
+      "title": "Patrol Through the Castle Town",
+      "step": 4,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "You patrol the castle town wearing your swords with pride.",
+        "A crowd gathers outside a rice broker's storehouse. Peasants complain that rice payments are unfair, while merchants say prices are rising.",
+        "You have authority, but using it carelessly could turn hunger into unrest."
+      ],
+      "choices": [
+        {
+          "text": "Calm the crowd and investigate the rice records.",
+          "nextSceneId": "shared-rice-dispute-5",
+          "hint": "Evidence may prevent unrest."
+        },
+        {
+          "text": "Threaten punishment until everyone leaves.",
+          "nextSceneId": "samurai-crackdown-4",
+          "hint": "Force may restore order briefly."
+        },
+        {
+          "text": "Protect the merchant because he has lent money to samurai families.",
+          "nextSceneId": "samurai-corruption-4",
+          "hint": "Personal interest may damage trust."
+        }
+      ]
+    },
+    "samurai-question-3": {
+      "title": "Questions No One Wants",
+      "step": 4,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "You ask why status does not match wealth, and why duty does not always feed a family.",
+        "Your teacher warns you that Edo society depends on each class accepting its role.",
+        "Still, even he admits that peace has changed the meaning of samurai life."
+      ],
+      "choices": [
+        {
+          "text": "Argue for reform while staying loyal to your daimyo.",
+          "nextSceneId": "samurai-reform-4",
+          "hint": "Careful reform may be possible."
+        },
+        {
+          "text": "Keep your questions private and serve quietly.",
+          "nextSceneId": "samurai-rice-records-3",
+          "hint": "Quiet service may still help people."
+        },
+        {
+          "text": "Reject the system and consider becoming a ronin.",
+          "nextSceneId": "samurai-ronin-4",
+          "hint": "Leaving the system is dangerous."
+        }
+      ]
+    },
+    "samurai-debt-3": {
+      "title": "The Merchant's Ledger",
+      "step": 4,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "The merchant writes your family's name into a ledger.",
+        "The loan saves your household from embarrassment, but it also gives a lower-status merchant quiet power over you.",
+        "In Edo Japan, status and wealth do not always point in the same direction."
+      ],
+      "choices": [
+        {
+          "text": "Repay the debt honestly by taking official work.",
+          "nextSceneId": "samurai-rice-records-3",
+          "hint": "Duty and discipline may restore balance."
+        },
+        {
+          "text": "Use your status to intimidate the merchant into silence.",
+          "nextSceneId": "samurai-corruption-4",
+          "hint": "Abusing status may lead to a bad path."
+        },
+        {
+          "text": "Ask the merchant to introduce you to artisan producers.",
+          "nextSceneId": "artisan-bridge-4",
+          "hint": "This may reveal how the city economy works."
+        }
+      ]
+    },
+    "samurai-order-3": {
+      "title": "Defending the Old Order",
+      "step": 4,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "You report the merchant's boldness to a local official.",
+        "The merchant bows and apologizes, but his eyes show anger.",
+        "The social hierarchy remains intact on the surface, yet pressure builds underneath."
+      ],
+      "choices": [
+        {
+          "text": "Use the moment to call for stricter class rules.",
+          "nextSceneId": "shared-class-edict-5",
+          "hint": "This may support order but increase resentment."
+        },
+        {
+          "text": "Realize punishment alone will not solve economic change.",
+          "nextSceneId": "shared-rice-dispute-5",
+          "hint": "A more careful response may be needed."
+        },
+        {
+          "text": "Continue using your rank to silence criticism.",
+          "nextSceneId": "samurai-crackdown-4",
+          "hint": "Power without trust can become dangerous."
+        }
+      ]
+    },
+    "samurai-rice-records-3": {
+      "title": "Rice Records",
+      "step": 4,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "You copy rice tax records by lamplight. Names, fields, harvests, payments.",
+        "The rice economy supports samurai stipends, daimyo obligations, and the shogunate's control.",
+        "One set of numbers looks wrong. Someone is hiding grain or shifting the burden onto weaker families."
+      ],
+      "choices": [
+        {
+          "text": "Investigate the records carefully.",
+          "nextSceneId": "shared-rice-dispute-5",
+          "hint": "Evidence can reveal the problem."
+        },
+        {
+          "text": "Ignore the error to avoid angering powerful people.",
+          "nextSceneId": "samurai-silence-4",
+          "hint": "Silence may protect you but harm others."
+        },
+        {
+          "text": "Warn your daimyo that unfair taxes could create unrest.",
+          "nextSceneId": "daimyo-warning-5",
+          "hint": "Leaders may respond if they understand the danger."
+        }
+      ]
+    },
+    "samurai-crackdown-4": {
+      "title": "Order by Fear",
+      "step": 5,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "You raise your voice and order the crowd to scatter.",
+        "For a moment, the street empties. But the anger does not disappear. It moves indoors, behind screens and closed doors.",
+        "Fear can quiet a town. It cannot make people trust you."
+      ],
+      "choices": [
+        {
+          "text": "Report that order has been restored and move on.",
+          "nextSceneId": "bad-unrest",
+          "hint": "Ignoring causes may lead to instability."
+        },
+        {
+          "text": "Return later and listen to the complaints.",
+          "nextSceneId": "shared-rice-dispute-5",
+          "hint": "It may still be possible to repair trust."
+        },
+        {
+          "text": "Push for harsher punishments against dissent.",
+          "nextSceneId": "shared-class-edict-5",
+          "hint": "Stricter control may preserve order or deepen resentment."
+        }
+      ]
+    },
+    "samurai-corruption-4": {
+      "title": "A Favor Repaid",
+      "step": 5,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "You protect the merchant who helped your family.",
+        "He smiles with relief, but others notice. Soon people whisper that samurai justice can be bought.",
+        "Your honor is not lost in one moment. It begins to fray thread by thread."
+      ],
+      "choices": [
+        {
+          "text": "Confess the conflict of interest to your daimyo.",
+          "nextSceneId": "samurai-reform-4",
+          "hint": "Honesty may restore honor."
+        },
+        {
+          "text": "Continue accepting favors from the merchant.",
+          "nextSceneId": "bad-corruption",
+          "hint": "Corruption can damage social order."
+        },
+        {
+          "text": "Break ties and investigate the dispute fairly.",
+          "nextSceneId": "shared-rice-dispute-5",
+          "hint": "You may still repair the damage."
+        }
+      ]
+    },
+    "samurai-silence-4": {
+      "title": "The Safe Silence",
+      "step": 5,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "You close the ledger and say nothing.",
+        "No one criticizes you. No one punishes you. Your family remains safe for now.",
+        "But the families paying unfairly will remember who had the power to speak and chose silence."
+      ],
+      "choices": [
+        {
+          "text": "Stay silent and protect your household.",
+          "nextSceneId": "neutral-samurai-survival",
+          "hint": "This leads to a limited but safe outcome."
+        },
+        {
+          "text": "Change your mind and warn the daimyo.",
+          "nextSceneId": "daimyo-warning-5",
+          "hint": "It may still be possible to act."
+        },
+        {
+          "text": "Quietly give the information to an artisan family affected by the taxes.",
+          "nextSceneId": "artisan-bridge-4",
+          "hint": "This connects your path to lower-status townspeople."
+        }
+      ]
+    },
+    "samurai-reform-4": {
+      "title": "Honor Reimagined",
+      "step": 5,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "You argue that bushido should mean more than obedience.",
+        "If a samurai protects order while ignoring suffering, is that honor or pride?",
+        "Some younger samurai listen. Older officials warn that too much change invites disorder."
+      ],
+      "choices": [
+        {
+          "text": "Work within the system to correct unfair rice records.",
+          "nextSceneId": "shared-rice-dispute-5",
+          "hint": "Reform through evidence may succeed."
+        },
+        {
+          "text": "Teach young samurai that service now requires learning and administration.",
+          "nextSceneId": "good-samurai-service",
+          "hint": "This can lead to a good samurai ending."
+        },
+        {
+          "text": "Speak too openly against your superiors.",
+          "nextSceneId": "samurai-ronin-4",
+          "hint": "Reform without caution may cost your position."
+        }
+      ]
+    },
+    "samurai-ronin-4": {
+      "title": "The Road of the Ronin",
+      "step": 5,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "You imagine leaving your lord's service and becoming a ronin, a masterless samurai.",
+        "Freedom calls to you, but so does hunger. Without a lord, your swords may bring fear instead of respect.",
+        "A society built on hierarchy has little room for someone who steps outside it."
+      ],
+      "choices": [
+        {
+          "text": "Seek a teaching position and live humbly.",
+          "nextSceneId": "neutral-samurai-scholar",
+          "hint": "This may preserve dignity outside warfare."
+        },
+        {
+          "text": "Sell your sword to whoever pays.",
+          "nextSceneId": "bad-ronin",
+          "hint": "This path risks violence and dishonor."
+        },
+        {
+          "text": "Return to your daimyo and accept disciplined service.",
+          "nextSceneId": "samurai-reform-4",
+          "hint": "You may still serve with a new understanding."
+        }
+      ]
+    },
+    "daimyo-warning-5": {
+      "title": "Warning the Daimyo",
+      "step": 6,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "You kneel before your daimyo and explain the danger.",
+        "Unfair rice records, merchant debt, and hungry townspeople are not separate problems. Together, they threaten stability.",
+        "Your daimyo listens, but he also fears looking weak before the shogunate."
+      ],
+      "choices": [
+        {
+          "text": "Recommend fair tax review and calm investigation.",
+          "nextSceneId": "shared-rice-dispute-5",
+          "hint": "Careful reform may prevent unrest."
+        },
+        {
+          "text": "Recommend stricter surveillance of townspeople.",
+          "nextSceneId": "shared-class-edict-5",
+          "hint": "Control may preserve order but raise fear."
+        },
+        {
+          "text": "Recommend hiding the problem from Edo.",
+          "nextSceneId": "bad-corruption",
+          "hint": "Covering up weakness may make collapse worse."
+        }
+      ]
+    },
+    "shogun-1": {
+      "title": "The Weight of Edo",
+      "step": 2,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "You are Ietsuna, heir to the authority of the Tokugawa shogunate.",
+        "From Edo, your officials watch daimyo domains, castle towns, roads, ports, temples, and markets.",
+        "Peace has lasted because power is carefully balanced. A careless decision could awaken old rivalries."
+      ],
+      "choices": [
+        {
+          "text": "Focus on controlling the daimyo.",
+          "nextSceneId": "shogun-daimyo-2",
+          "hint": "Daimyo power is the greatest political threat."
+        },
+        {
+          "text": "Focus on isolation policies and foreign influence.",
+          "nextSceneId": "shogun-isolation-2",
+          "hint": "Sakoku helps limit outside disruption."
+        },
+        {
+          "text": "Focus on economic problems in castle towns.",
+          "nextSceneId": "shogun-economy-2",
+          "hint": "Urban growth and merchant wealth challenge hierarchy."
+        }
+      ]
+    },
+    "shogun-daimyo-2": {
+      "title": "Daimyo Under Watch",
+      "step": 3,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "Daimyo rule their domains, but they must respect the shogun's authority.",
+        "Your advisors recommend strict attendance in Edo, costly travel, and careful monitoring of marriages and castle repairs.",
+        "Control keeps peace, but too much pressure may create quiet resentment."
+      ],
+      "choices": [
+        {
+          "text": "Strengthen alternate attendance requirements.",
+          "nextSceneId": "alternate-attendance-3",
+          "hint": "This keeps daimyo close and costly."
+        },
+        {
+          "text": "Trust loyal daimyo with more freedom.",
+          "nextSceneId": "daimyo-freedom-3",
+          "hint": "Trust may reduce resentment but weaken control."
+        },
+        {
+          "text": "Use spies to watch suspicious domains.",
+          "nextSceneId": "spy-network-3",
+          "hint": "Information can protect power, but fear spreads."
+        }
+      ]
+    },
+    "shogun-isolation-2": {
+      "title": "The Closed Gate",
+      "step": 3,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "Reports arrive of foreign traders and missionaries seeking influence near Japan's coasts.",
+        "Your advisors warn that outside ideas could weaken loyalty and disturb the social order.",
+        "Others argue that controlled trade could bring knowledge, silver, medicine, and weapons."
+      ],
+      "choices": [
+        {
+          "text": "Maintain strict sakoku policies.",
+          "nextSceneId": "sakoku-edict-3",
+          "hint": "Isolation may protect stability."
+        },
+        {
+          "text": "Allow limited trade through controlled ports.",
+          "nextSceneId": "controlled-port-3",
+          "hint": "Careful contact may bring benefits."
+        },
+        {
+          "text": "Open trade more widely to increase wealth.",
+          "nextSceneId": "wide-trade-3",
+          "hint": "Rapid change may destabilize hierarchy."
+        }
+      ]
+    },
+    "shogun-economy-2": {
+      "title": "The Problem of Peace",
+      "step": 3,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "Peace has filled castle towns with artisans, merchants, theaters, restaurants, and schools.",
+        "Samurai still rank above merchants, but merchants increasingly control loans, goods, and urban wealth.",
+        "The social hierarchy says one thing. The economy says another."
+      ],
+      "choices": [
+        {
+          "text": "Regulate merchants and protect samurai status.",
+          "nextSceneId": "merchant-regulation-3",
+          "hint": "This defends hierarchy."
+        },
+        {
+          "text": "Encourage urban growth while watching for unrest.",
+          "nextSceneId": "urban-growth-3",
+          "hint": "Economic activity may strengthen society."
+        },
+        {
+          "text": "Ignore the economy because political order matters more.",
+          "nextSceneId": "ignored-economy-3",
+          "hint": "Unaddressed pressure may grow."
+        }
+      ]
+    },
+    "alternate-attendance-3": {
+      "title": "Roads to Edo",
+      "step": 4,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "Daimyo processions travel to Edo with retainers, supplies, and symbols of loyalty.",
+        "The cost keeps daimyo from building private armies, but it also drains their domains.",
+        "Peasants along the roads provide labor and goods. Stability rests on many tired backs."
+      ],
+      "choices": [
+        {
+          "text": "Keep the policy but reduce unfair burdens on villages.",
+          "nextSceneId": "balanced-control-4",
+          "hint": "Balanced rule may preserve legitimacy."
+        },
+        {
+          "text": "Increase the costs to weaken daimyo further.",
+          "nextSceneId": "daimyo-strain-4",
+          "hint": "This may prevent rebellion but create suffering."
+        },
+        {
+          "text": "Use the roads to improve communication and trade.",
+          "nextSceneId": "shared-urban-crossroads-5",
+          "hint": "Infrastructure can support a larger system."
+        }
+      ]
+    },
+    "daimyo-freedom-3": {
+      "title": "Trusting the Lords",
+      "step": 4,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "You loosen restrictions on loyal daimyo.",
+        "They praise your wisdom in public, but your advisors worry that freedom can become ambition.",
+        "In a feudal system, loyalty often depends on what power can enforce."
+      ],
+      "choices": [
+        {
+          "text": "Grant freedom only to domains with proven loyalty.",
+          "nextSceneId": "balanced-control-4",
+          "hint": "Selective trust may work."
+        },
+        {
+          "text": "Let daimyo manage themselves without interference.",
+          "nextSceneId": "bad-daimyo-revolt",
+          "hint": "This risks weakening the shogunate."
+        },
+        {
+          "text": "Pair freedom with closer economic reporting.",
+          "nextSceneId": "rice-report-system-4",
+          "hint": "Records may replace some direct control."
+        }
+      ]
+    },
+    "spy-network-3": {
+      "title": "Eyes in Every Province",
+      "step": 4,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "Messengers, inspectors, and informants send reports to Edo.",
+        "You learn which daimyo spend too much, which samurai complain, and which towns grow restless.",
+        "Information gives power, but people who feel watched may stop offering honest advice."
+      ],
+      "choices": [
+        {
+          "text": "Use reports to solve problems before unrest begins.",
+          "nextSceneId": "rice-report-system-4",
+          "hint": "Information can support good government."
+        },
+        {
+          "text": "Punish suspicious domains harshly.",
+          "nextSceneId": "daimyo-strain-4",
+          "hint": "Fear may enforce obedience."
+        },
+        {
+          "text": "Spy on merchants and artisans as well.",
+          "nextSceneId": "shared-class-edict-5",
+          "hint": "Broad control may increase resentment."
+        }
+      ]
+    },
+    "sakoku-edict-3": {
+      "title": "The Sakoku Edict",
+      "step": 4,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "You strengthen the policy of sakoku, limiting foreign contact and controlling trade.",
+        "Officials praise the decision. Religious and political threats from outside are reduced.",
+        "Yet some scholars whisper that Japan may fall behind if it learns too little from the wider world."
+      ],
+      "choices": [
+        {
+          "text": "Allow carefully controlled Dutch and Chinese trade at one port.",
+          "nextSceneId": "controlled-port-3",
+          "hint": "Limited exchange may preserve control."
+        },
+        {
+          "text": "Ban nearly all foreign books and contact.",
+          "nextSceneId": "strict-isolation-4",
+          "hint": "This protects order but limits knowledge."
+        },
+        {
+          "text": "Use isolation to strengthen internal roads, schools, and cities.",
+          "nextSceneId": "shared-urban-crossroads-5",
+          "hint": "Internal development may balance limited outside contact."
+        }
+      ]
+    },
+    "controlled-port-3": {
+      "title": "A Narrow Window",
+      "step": 4,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "You allow limited trade through a tightly controlled port.",
+        "Foreign goods, maps, medicines, and ideas enter slowly, watched by officials.",
+        "A narrow window can bring light. It can also let in a storm if left unguarded."
+      ],
+      "choices": [
+        {
+          "text": "Study useful foreign knowledge while limiting political influence.",
+          "nextSceneId": "rangaku-path-4",
+          "hint": "Careful learning may benefit Japan."
+        },
+        {
+          "text": "Let merchants expand the trade quietly.",
+          "nextSceneId": "merchant-wealth-rises-4",
+          "hint": "Merchant wealth may challenge status."
+        },
+        {
+          "text": "Close the window again after rumors spread.",
+          "nextSceneId": "strict-isolation-4",
+          "hint": "Fear may limit opportunity."
+        }
+      ]
+    },
+    "wide-trade-3": {
+      "title": "Too Many Ships",
+      "step": 4,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "Ports become crowded with foreign goods and unfamiliar ideas.",
+        "Merchants grow rich quickly. Some daimyo seek private deals.",
+        "The flow of trade is exciting, but it moves faster than your officials can control."
+      ],
+      "choices": [
+        {
+          "text": "Pull back and create controlled trade rules.",
+          "nextSceneId": "controlled-port-3",
+          "hint": "A correction may restore balance."
+        },
+        {
+          "text": "Allow daimyo to trade independently.",
+          "nextSceneId": "bad-daimyo-revolt",
+          "hint": "Private wealth may weaken central control."
+        },
+        {
+          "text": "Tax the trade heavily to fund the shogunate.",
+          "nextSceneId": "merchant-regulation-3",
+          "hint": "This may bring revenue but anger merchants."
+        }
+      ]
+    },
+    "merchant-regulation-3": {
+      "title": "Rules for the Market",
+      "step": 4,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "You issue regulations on merchant clothing, prices, and public display of wealth.",
+        "Samurai families approve. Merchants bow and obey in public.",
+        "But trade does not disappear because a law dislikes it."
+      ],
+      "choices": [
+        {
+          "text": "Regulate luxury while allowing useful trade.",
+          "nextSceneId": "balanced-economy-4",
+          "hint": "Balance may preserve order."
+        },
+        {
+          "text": "Punish merchants who appear too wealthy.",
+          "nextSceneId": "artisan-merchant-anger-4",
+          "hint": "This may increase resentment."
+        },
+        {
+          "text": "Create official channels for loans and rice exchange.",
+          "nextSceneId": "rice-report-system-4",
+          "hint": "Managing the economy may reduce conflict."
+        }
+      ]
+    },
+    "urban-growth-3": {
+      "title": "The Expanding City",
+      "step": 4,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "Edo grows larger and louder.",
+        "Artisans make goods for samurai households. Merchants move rice, cloth, paper, and tools. Entertainment districts draw crowds.",
+        "Urbanization creates opportunity, but also anxiety among officials."
+      ],
+      "choices": [
+        {
+          "text": "Support urban growth with rules for fire safety, roads, and markets.",
+          "nextSceneId": "shared-urban-crossroads-5",
+          "hint": "Public order can support city life."
+        },
+        {
+          "text": "Encourage artisan production for domestic trade.",
+          "nextSceneId": "artisan-bridge-4",
+          "hint": "This connects political policy to artisan life."
+        },
+        {
+          "text": "Fear urban culture and restrict public gatherings.",
+          "nextSceneId": "shared-class-edict-5",
+          "hint": "Restriction may protect order but limit growth."
+        }
+      ]
+    },
+    "ignored-economy-3": {
+      "title": "The Problem Left Alone",
+      "step": 4,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "You decide that class order matters more than economic complaints.",
+        "Samurai debt grows. Merchant wealth grows. Artisans work longer hours for uncertain pay.",
+        "The problem does not shout at first. It waits."
+      ],
+      "choices": [
+        {
+          "text": "Respond once rice disputes spread.",
+          "nextSceneId": "shared-rice-dispute-5",
+          "hint": "Delayed action may still help."
+        },
+        {
+          "text": "Suppress complaints as disrespect.",
+          "nextSceneId": "shared-class-edict-5",
+          "hint": "Control may increase fear."
+        },
+        {
+          "text": "Continue ignoring the economy.",
+          "nextSceneId": "bad-unrest",
+          "hint": "Unaddressed pressure may explode."
+        }
+      ]
+    },
+    "balanced-control-4": {
+      "title": "Firm Hands, Open Ears",
+      "step": 5,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "You keep daimyo under control but reduce unnecessary burdens on villages.",
+        "Officials still watch domains, but they also listen to reports about harvests, debt, and road labor.",
+        "Authority feels strongest when people believe it has limits."
+      ],
+      "choices": [
+        {
+          "text": "Create a better rice reporting system.",
+          "nextSceneId": "rice-report-system-4",
+          "hint": "Records may help prevent crisis."
+        },
+        {
+          "text": "Use this stability to improve castle town roads and markets.",
+          "nextSceneId": "shared-urban-crossroads-5",
+          "hint": "Urban growth can be managed."
+        },
+        {
+          "text": "Declare the system perfect and stop listening.",
+          "nextSceneId": "ignored-economy-3",
+          "hint": "Complacency may create future trouble."
+        }
+      ]
+    },
+    "daimyo-strain-4": {
+      "title": "Domains Under Strain",
+      "step": 5,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "Daimyo obey, but their domains struggle.",
+        "Road labor, travel costs, and taxes fall heavily on common people.",
+        "A system designed to prevent war may still create suffering."
+      ],
+      "choices": [
+        {
+          "text": "Reduce the burden before resentment grows.",
+          "nextSceneId": "balanced-control-4",
+          "hint": "Correction may preserve order."
+        },
+        {
+          "text": "Blame local officials and punish them publicly.",
+          "nextSceneId": "shared-class-edict-5",
+          "hint": "Punishment may hide deeper problems."
+        },
+        {
+          "text": "Demand even more proof of loyalty.",
+          "nextSceneId": "bad-daimyo-revolt",
+          "hint": "Too much pressure may backfire."
+        }
+      ]
+    },
+    "rice-report-system-4": {
+      "title": "Measuring Rice, Measuring Power",
+      "step": 5,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "Your officials create clearer records of rice production, stipends, loans, and taxes.",
+        "Rice is more than food. It is salary, status, tax, and political power.",
+        "Better information reveals uncomfortable truths."
+      ],
+      "choices": [
+        {
+          "text": "Use the records to correct unfair burdens.",
+          "nextSceneId": "shared-rice-dispute-5",
+          "hint": "Fairness may prevent unrest."
+        },
+        {
+          "text": "Use the records mostly to protect samurai stipends.",
+          "nextSceneId": "shared-class-edict-5",
+          "hint": "Protecting status may worsen inequality."
+        },
+        {
+          "text": "Share limited findings with daimyo and town leaders.",
+          "nextSceneId": "shared-urban-crossroads-5",
+          "hint": "Cooperation may stabilize society."
+        }
+      ]
+    },
+    "strict-isolation-4": {
+      "title": "Walls Without Stone",
+      "step": 5,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "Japan's coasts remain watched. Foreign contact stays narrow.",
+        "The policy helps protect political order and limits outside religious influence.",
+        "But some officials fear that a country can be peaceful and still become unprepared."
+      ],
+      "choices": [
+        {
+          "text": "Pair isolation with internal learning and strong administration.",
+          "nextSceneId": "good-shogun-stability",
+          "hint": "This can lead to a good shogun ending."
+        },
+        {
+          "text": "Refuse almost all outside knowledge.",
+          "nextSceneId": "neutral-closed-order",
+          "hint": "This may preserve order with limits."
+        },
+        {
+          "text": "Use fear of outsiders to punish internal critics.",
+          "nextSceneId": "bad-repression",
+          "hint": "Fear can become a tool of abuse."
+        }
+      ]
+    },
+    "rangaku-path-4": {
+      "title": "Learning Through a Narrow Gate",
+      "step": 5,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "Doctors, translators, and scholars study limited foreign texts under official supervision.",
+        "The knowledge is useful, but carefully contained.",
+        "You begin to see that isolation and learning do not have to be complete opposites."
+      ],
+      "choices": [
+        {
+          "text": "Support useful learning while maintaining political control.",
+          "nextSceneId": "good-controlled-learning",
+          "hint": "This can lead to a good ending."
+        },
+        {
+          "text": "Allow scholars to share knowledge gradually with officials.",
+          "nextSceneId": "shared-urban-crossroads-5",
+          "hint": "Careful diffusion may strengthen the state."
+        },
+        {
+          "text": "Panic when critics accuse scholars of loving foreign ways.",
+          "nextSceneId": "strict-isolation-4",
+          "hint": "Fear may shut down learning."
+        }
+      ]
+    },
+    "merchant-wealth-rises-4": {
+      "title": "Wealth Without Rank",
+      "step": 5,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "Merchants expand trade and credit.",
+        "They remain low in the official social hierarchy, but their money moves through the city like an invisible river.",
+        "Samurai need them, artisans work with them, and officials distrust them."
+      ],
+      "choices": [
+        {
+          "text": "Regulate merchant wealth without destroying trade.",
+          "nextSceneId": "balanced-economy-4",
+          "hint": "Balance may reduce tension."
+        },
+        {
+          "text": "Let merchant wealth grow unchecked.",
+          "nextSceneId": "neutral-merchant-rise",
+          "hint": "This leads to economic growth with social tension."
+        },
+        {
+          "text": "Punish merchants to defend hierarchy.",
+          "nextSceneId": "artisan-merchant-anger-4",
+          "hint": "This may spread resentment."
+        }
+      ]
+    },
+    "balanced-economy-4": {
+      "title": "A Measured Market",
+      "step": 5,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "You allow useful trade, regulate public displays of wealth, and protect rice exchange from abuse.",
+        "No group gets everything it wants.",
+        "That may be why the plan has a chance."
+      ],
+      "choices": [
+        {
+          "text": "Invite samurai, merchants, and artisans to help resolve rice disputes.",
+          "nextSceneId": "shared-rice-dispute-5",
+          "hint": "Cross-class cooperation may help."
+        },
+        {
+          "text": "Support city rules that help production and safety.",
+          "nextSceneId": "shared-urban-crossroads-5",
+          "hint": "Managed urbanization can strengthen society."
+        },
+        {
+          "text": "Favor samurai needs whenever conflict appears.",
+          "nextSceneId": "shared-class-edict-5",
+          "hint": "Hierarchy may overpower fairness."
+        }
+      ]
+    },
+    "artisan-merchant-anger-4": {
+      "title": "Quiet Anger in the Shops",
+      "step": 5,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "Merchants hide their wealth. Artisans hide their frustration.",
+        "In workshops and back rooms, people complain that the official hierarchy does not match real life.",
+        "The shogunate can control clothing and titles. It cannot easily control resentment."
+      ],
+      "choices": [
+        {
+          "text": "Open a formal petition process for townspeople.",
+          "nextSceneId": "shared-urban-crossroads-5",
+          "hint": "A safe outlet may reduce unrest."
+        },
+        {
+          "text": "Order inspectors to punish complaints.",
+          "nextSceneId": "bad-repression",
+          "hint": "Repression may create fear and instability."
+        },
+        {
+          "text": "Ask town leaders to mediate disputes.",
+          "nextSceneId": "shared-rice-dispute-5",
+          "hint": "Local leadership may help."
+        }
+      ]
+    },
+    "artisan-1": {
+      "title": "Hands That Shape the City",
+      "step": 2,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "You are Aki, the child of an artisan family in a busy castle town.",
+        "Your household makes lacquered boxes, paper lanterns, and carved wooden trays for samurai homes.",
+        "Your work is valued, but your class is ranked below farmers and samurai. Skill brings pride, not power."
+      ],
+      "choices": [
+        {
+          "text": "Focus on mastering your craft.",
+          "nextSceneId": "artisan-craft-2",
+          "hint": "Skill may bring stability and reputation."
+        },
+        {
+          "text": "Work closely with merchants to sell more goods.",
+          "nextSceneId": "artisan-merchant-2",
+          "hint": "Trade may bring wealth but class tension."
+        },
+        {
+          "text": "Question why artisans have little voice in town decisions.",
+          "nextSceneId": "artisan-voice-2",
+          "hint": "Challenging hierarchy can be risky."
+        }
+      ]
+    },
+    "artisan-craft-2": {
+      "title": "The Master's Workshop",
+      "step": 3,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "Your teacher places a flawed tray in front of you and says, 'A rushed hand dishonors the house.'",
+        "You sand, polish, and paint until your fingers ache.",
+        "A samurai household orders your work for a ceremony. The payment could help your family."
+      ],
+      "choices": [
+        {
+          "text": "Make the finest work possible, even if it takes longer.",
+          "nextSceneId": "artisan-reputation-3",
+          "hint": "Quality may build reputation."
+        },
+        {
+          "text": "Finish quickly to fill more orders.",
+          "nextSceneId": "artisan-overwork-3",
+          "hint": "Speed may bring income but risk quality."
+        },
+        {
+          "text": "Ask why samurai customers can delay payment while artisans cannot delay rent.",
+          "nextSceneId": "artisan-voice-2",
+          "hint": "Economic unfairness may push you toward reform."
+        }
+      ]
+    },
+    "artisan-merchant-2": {
+      "title": "The Merchant's Offer",
+      "step": 3,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "A merchant offers to sell your family's goods to wealthier customers in Edo.",
+        "He promises more orders, better materials, and wider reputation.",
+        "But he will control the prices, and your family will depend on his connections."
+      ],
+      "choices": [
+        {
+          "text": "Accept the partnership but demand fair terms.",
+          "nextSceneId": "artisan-contract-3",
+          "hint": "Careful negotiation may protect your family."
+        },
+        {
+          "text": "Accept quickly because your family needs money.",
+          "nextSceneId": "artisan-dependence-3",
+          "hint": "Need can create unequal bargains."
+        },
+        {
+          "text": "Refuse and sell only through traditional local networks.",
+          "nextSceneId": "artisan-reputation-3",
+          "hint": "Independence may protect pride but limit growth."
+        }
+      ]
+    },
+    "artisan-voice-2": {
+      "title": "A Voice Below the Balcony",
+      "step": 3,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "Town officials announce new rules from a raised balcony.",
+        "Samurai stand near the front. Merchants whisper behind them. Artisans listen from the side streets.",
+        "You wonder why the people who build the city have so little say in how it is governed."
+      ],
+      "choices": [
+        {
+          "text": "Write a respectful petition asking for fairer market rules.",
+          "nextSceneId": "artisan-petition-3",
+          "hint": "Respectful action may be heard."
+        },
+        {
+          "text": "Organize other artisans to refuse unfair orders.",
+          "nextSceneId": "artisan-strike-3",
+          "hint": "Collective action is powerful but dangerous."
+        },
+        {
+          "text": "Stay quiet and focus on family survival.",
+          "nextSceneId": "artisan-quiet-3",
+          "hint": "Safety may mean accepting limits."
+        }
+      ]
+    },
+    "artisan-reputation-3": {
+      "title": "A Name on Fine Work",
+      "step": 4,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "Your work becomes known in the castle town.",
+        "Samurai households request your designs. Merchants praise your skill. Your family eats more regularly.",
+        "Still, when officials pass, you bow low. Reputation has not erased hierarchy."
+      ],
+      "choices": [
+        {
+          "text": "Use your reputation to request fair contracts.",
+          "nextSceneId": "artisan-contract-3",
+          "hint": "Status through skill may give leverage."
+        },
+        {
+          "text": "Teach apprentices and build a stronger workshop.",
+          "nextSceneId": "artisan-apprentices-4",
+          "hint": "Shared skill may create stability."
+        },
+        {
+          "text": "Accept your place and avoid risk.",
+          "nextSceneId": "neutral-artisan-stability",
+          "hint": "This leads to a stable but limited ending."
+        }
+      ]
+    },
+    "artisan-overwork-3": {
+      "title": "Too Many Orders",
+      "step": 4,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "The workshop fills with unfinished goods.",
+        "You sleep beside drying lacquer and wake before sunrise. Mistakes become harder to hide.",
+        "The city demands more than your hands can give."
+      ],
+      "choices": [
+        {
+          "text": "Hire apprentices and teach them carefully.",
+          "nextSceneId": "artisan-apprentices-4",
+          "hint": "Training others may solve the problem."
+        },
+        {
+          "text": "Cut quality to meet demand.",
+          "nextSceneId": "artisan-bad-goods-4",
+          "hint": "Poor goods may damage trust."
+        },
+        {
+          "text": "Ask the merchant to reduce orders and raise prices.",
+          "nextSceneId": "artisan-contract-3",
+          "hint": "Negotiation may protect your labor."
+        }
+      ]
+    },
+    "artisan-contract-3": {
+      "title": "Ink on Paper",
+      "step": 4,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "You negotiate with the merchant over prices, delivery times, and materials.",
+        "He is lower in official status than samurai, but his wealth gives him confidence.",
+        "You realize the city runs on relationships that the official hierarchy does not fully explain."
+      ],
+      "choices": [
+        {
+          "text": "Create a fair contract that protects both sides.",
+          "nextSceneId": "artisan-merchant-network-4",
+          "hint": "Cooperation may support urban growth."
+        },
+        {
+          "text": "Let the merchant set the terms because you need work.",
+          "nextSceneId": "artisan-dependence-3",
+          "hint": "Dependence may limit your choices."
+        },
+        {
+          "text": "Ask town officials to regulate merchant contracts.",
+          "nextSceneId": "shared-urban-crossroads-5",
+          "hint": "This connects artisan problems to government policy."
+        }
+      ]
+    },
+    "artisan-dependence-3": {
+      "title": "Dependent on the Ledger",
+      "step": 4,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "The merchant brings more orders, but he also controls payment.",
+        "Your family works harder while the ledger grows more confusing.",
+        "Wealth moves upward, while the tired hands remain in the workshop."
+      ],
+      "choices": [
+        {
+          "text": "Demand clearer terms before accepting more work.",
+          "nextSceneId": "artisan-contract-3",
+          "hint": "You may regain some control."
+        },
+        {
+          "text": "Keep working because refusing feels impossible.",
+          "nextSceneId": "artisan-overwork-3",
+          "hint": "Pressure may deepen."
+        },
+        {
+          "text": "Join other artisans asking for fairer rules.",
+          "nextSceneId": "artisan-petition-3",
+          "hint": "Collective pressure may help."
+        }
+      ]
+    },
+    "artisan-petition-3": {
+      "title": "The Petition",
+      "step": 4,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "You help write a careful petition.",
+        "It does not attack the shogun or daimyo. It asks for fair payment, safer workshops, and clearer market rules.",
+        "Even respectful words can feel dangerous when they rise from below."
+      ],
+      "choices": [
+        {
+          "text": "Submit the petition through proper officials.",
+          "nextSceneId": "shared-urban-crossroads-5",
+          "hint": "Official channels may work."
+        },
+        {
+          "text": "Ask a sympathetic samurai to support the petition.",
+          "nextSceneId": "artisan-bridge-4",
+          "hint": "A higher-status ally may help."
+        },
+        {
+          "text": "Make copies and spread it through the city.",
+          "nextSceneId": "artisan-strike-3",
+          "hint": "Public pressure may bring risk."
+        }
+      ]
+    },
+    "artisan-strike-3": {
+      "title": "Closed Workshop Doors",
+      "step": 4,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "Several workshops close their doors for one morning.",
+        "The silence feels powerful. It also feels dangerous.",
+        "By afternoon, officials arrive asking who began the disruption."
+      ],
+      "choices": [
+        {
+          "text": "Explain the complaints respectfully.",
+          "nextSceneId": "shared-urban-crossroads-5",
+          "hint": "Careful words may turn protest into negotiation."
+        },
+        {
+          "text": "Refuse to name leaders and continue resistance.",
+          "nextSceneId": "bad-punishment",
+          "hint": "Defiance may bring harsh punishment."
+        },
+        {
+          "text": "End the protest and return to work.",
+          "nextSceneId": "neutral-artisan-stability",
+          "hint": "Safety may preserve the household."
+        }
+      ]
+    },
+    "artisan-quiet-3": {
+      "title": "Quiet Hands",
+      "step": 4,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "You say nothing.",
+        "You work, bow, pay, and endure. Your family survives, and some days that feels like victory.",
+        "But every unfair rule becomes easier for officials to ignore when no one speaks."
+      ],
+      "choices": [
+        {
+          "text": "Accept a quiet but stable life.",
+          "nextSceneId": "neutral-artisan-stability",
+          "hint": "This leads to a neutral ending."
+        },
+        {
+          "text": "Later support a respectful petition.",
+          "nextSceneId": "artisan-petition-3",
+          "hint": "It may not be too late to act."
+        },
+        {
+          "text": "Seek a merchant partnership for private advancement.",
+          "nextSceneId": "artisan-merchant-2",
+          "hint": "Economic opportunity may offer another route."
+        }
+      ]
+    },
+    "artisan-apprentices-4": {
+      "title": "Teaching the Next Hands",
+      "step": 5,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "You teach apprentices how to cut wood, mix color, and wait patiently between layers.",
+        "The workshop becomes more productive, but also more responsible for young lives.",
+        "Skill is no longer only personal. It becomes a system."
+      ],
+      "choices": [
+        {
+          "text": "Build a respected workshop with fair rules.",
+          "nextSceneId": "good-artisan-guild",
+          "hint": "This can lead to a good artisan ending."
+        },
+        {
+          "text": "Take too many apprentices and overwork them.",
+          "nextSceneId": "artisan-bad-goods-4",
+          "hint": "Growth without care can fail."
+        },
+        {
+          "text": "Use your workshop's reputation to support town reforms.",
+          "nextSceneId": "shared-urban-crossroads-5",
+          "hint": "Artisan success may influence society."
+        }
+      ]
+    },
+    "artisan-bad-goods-4": {
+      "title": "Cracked Lacquer",
+      "step": 5,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "A tray cracks after delivery to a samurai household.",
+        "The customer is furious. The merchant blames your family. Your teacher says reputation takes years to build and one careless season to lose.",
+        "Economic pressure has damaged the craft that gave your family pride."
+      ],
+      "choices": [
+        {
+          "text": "Apologize and repair the goods at your own cost.",
+          "nextSceneId": "artisan-reputation-3",
+          "hint": "Responsibility may restore trust."
+        },
+        {
+          "text": "Blame apprentices and punish them.",
+          "nextSceneId": "bad-punishment",
+          "hint": "Unfair blame may damage the workshop."
+        },
+        {
+          "text": "Demand the merchant share responsibility for rushed orders.",
+          "nextSceneId": "artisan-contract-3",
+          "hint": "The contract problem may need solving."
+        }
+      ]
+    },
+    "artisan-merchant-network-4": {
+      "title": "Goods Across the City",
+      "step": 5,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "Your goods travel through shops, bridges, and markets.",
+        "Samurai families use them. Merchants profit from them. Townspeople admire them.",
+        "The artisan class remains officially low, but the city depends on your labor."
+      ],
+      "choices": [
+        {
+          "text": "Use the network to improve life for your workshop.",
+          "nextSceneId": "good-artisan-guild",
+          "hint": "This can lead to a good artisan ending."
+        },
+        {
+          "text": "Work with merchants to quietly gain wealth.",
+          "nextSceneId": "neutral-merchant-rise",
+          "hint": "This leads to wealth with social tension."
+        },
+        {
+          "text": "Ask officials to recognize artisan contributions.",
+          "nextSceneId": "shared-urban-crossroads-5",
+          "hint": "This may connect to wider reform."
+        }
+      ]
+    },
+    "artisan-bridge-4": {
+      "title": "A Conversation Across Classes",
+      "step": 5,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "A samurai listens as you explain workshop debts, delayed payments, and merchant pressure.",
+        "He seems surprised by how much the castle town depends on people below his rank.",
+        "For a moment, the hierarchy feels less like a wall and more like a bridge that might be crossed carefully."
+      ],
+      "choices": [
+        {
+          "text": "Ask the samurai to review unfair rice and market records.",
+          "nextSceneId": "shared-rice-dispute-5",
+          "hint": "This connects artisan concerns to official reform."
+        },
+        {
+          "text": "Use the alliance to submit a respectful petition.",
+          "nextSceneId": "shared-urban-crossroads-5",
+          "hint": "Cross-class cooperation may work."
+        },
+        {
+          "text": "Trust the samurai completely and stop organizing artisans.",
+          "nextSceneId": "neutral-artisan-stability",
+          "hint": "Depending on one ally may limit change."
+        }
+      ]
+    },
+    "shared-rice-dispute-5": {
+      "title": "The Rice Dispute",
+      "step": 6,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "The dispute grows beyond one shop or one family.",
+        "Rice prices rise. Samurai stipends lose value. Merchants defend their ledgers. Artisans complain that customers delay payment.",
+        "In Edo Japan, rice connects class, economy, and power."
+      ],
+      "choices": [
+        {
+          "text": "Review the records publicly and correct unfair burdens.",
+          "nextSceneId": "shared-fair-review-6",
+          "hint": "Transparency may build trust."
+        },
+        {
+          "text": "Protect samurai stipends first because they preserve order.",
+          "nextSceneId": "shared-samurai-first-6",
+          "hint": "This defends hierarchy but may anger townspeople."
+        },
+        {
+          "text": "Let merchants manage the crisis through credit.",
+          "nextSceneId": "shared-merchant-credit-6",
+          "hint": "Markets may help, but debt can deepen dependence."
+        }
+      ]
+    },
+    "shared-urban-crossroads-5": {
+      "title": "The Castle Town Crossroads",
+      "step": 6,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "The castle town has become a world of its own.",
+        "Samurai need merchants. Merchants need artisans. Artisans need customers. Officials need everyone to obey.",
+        "The official hierarchy remains strict, but daily life is more connected than the rules admit."
+      ],
+      "choices": [
+        {
+          "text": "Create city rules that balance order, trade, and public safety.",
+          "nextSceneId": "shared-balanced-city-6",
+          "hint": "Balanced policy may strengthen Edo society."
+        },
+        {
+          "text": "Restrict gatherings and luxury to protect hierarchy.",
+          "nextSceneId": "shared-class-edict-5",
+          "hint": "Control may reduce change but increase resentment."
+        },
+        {
+          "text": "Allow economic growth while ignoring class tension.",
+          "nextSceneId": "shared-merchant-credit-6",
+          "hint": "Growth without fairness may bring mixed results."
+        }
+      ]
+    },
+    "shared-class-edict-5": {
+      "title": "The Class Edict",
+      "step": 6,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "Officials announce stricter rules about clothing, spending, gatherings, and proper behavior by class.",
+        "Samurai nod in approval. Merchants hide fine fabrics. Artisans lower their eyes.",
+        "The edict protects the appearance of order, but appearances are not the same as peace."
+      ],
+      "choices": [
+        {
+          "text": "Pair the edict with fair economic reforms.",
+          "nextSceneId": "shared-fair-review-6",
+          "hint": "Order and fairness may work together."
+        },
+        {
+          "text": "Enforce the edict harshly.",
+          "nextSceneId": "bad-repression",
+          "hint": "Harsh control may damage society."
+        },
+        {
+          "text": "Relax the edict after townspeople petition respectfully.",
+          "nextSceneId": "shared-balanced-city-6",
+          "hint": "Listening may preserve legitimacy."
+        }
+      ]
+    },
+    "shared-fair-review-6": {
+      "title": "Records Opened",
+      "step": 7,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "Officials, town leaders, and domain representatives review records together.",
+        "The process is slow and tense. No group gets everything it wants.",
+        "But people begin to believe that the system can correct itself without collapsing."
+      ],
+      "choices": [
+        {
+          "text": "Use the review to reform rice payments and debt rules.",
+          "nextSceneId": "final-reform-council",
+          "hint": "This may lead to a strong ending."
+        },
+        {
+          "text": "Limit the reforms to avoid angering elites.",
+          "nextSceneId": "final-compromise-council",
+          "hint": "This may lead to a neutral ending."
+        },
+        {
+          "text": "Abandon the review when powerful families complain.",
+          "nextSceneId": "shared-samurai-first-6",
+          "hint": "Pressure may weaken reform."
+        }
+      ]
+    },
+    "shared-samurai-first-6": {
+      "title": "Samurai First",
+      "step": 7,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "Officials protect samurai stipends and status first.",
+        "The decision makes sense to those who believe warriors preserve order.",
+        "But merchants, artisans, and peasants feel the burden shift onto their backs."
+      ],
+      "choices": [
+        {
+          "text": "Add protections for lower-status townspeople.",
+          "nextSceneId": "shared-fair-review-6",
+          "hint": "A correction may restore balance."
+        },
+        {
+          "text": "Continue prioritizing samurai status.",
+          "nextSceneId": "final-compromise-council",
+          "hint": "This may preserve order with inequality."
+        },
+        {
+          "text": "Suppress complaints from below.",
+          "nextSceneId": "bad-repression",
+          "hint": "Silencing resentment may lead to harm."
+        }
+      ]
+    },
+    "shared-merchant-credit-6": {
+      "title": "Ledgers and Promises",
+      "step": 7,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "Merchants offer loans, delayed payments, and new contracts.",
+        "The crisis eases for some families, but debt spreads through the city.",
+        "Money solves problems quickly. It also creates new chains."
+      ],
+      "choices": [
+        {
+          "text": "Regulate credit so debt cannot trap families forever.",
+          "nextSceneId": "shared-balanced-city-6",
+          "hint": "Economic rules may reduce harm."
+        },
+        {
+          "text": "Allow credit to expand freely.",
+          "nextSceneId": "neutral-merchant-rise",
+          "hint": "This may lead to wealth with tension."
+        },
+        {
+          "text": "Blame merchants for the entire crisis and punish them.",
+          "nextSceneId": "artisan-merchant-anger-4",
+          "hint": "Scapegoating may worsen resentment."
+        }
+      ]
+    },
+    "shared-balanced-city-6": {
+      "title": "Rules for a Living City",
+      "step": 7,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "New rules improve fire safety, market contracts, rice exchange, and public order.",
+        "Samurai keep status. Merchants keep trade. Artisans gain clearer protections.",
+        "The hierarchy remains, but it bends enough to keep from breaking."
+      ],
+      "choices": [
+        {
+          "text": "Bring these reforms to the final council.",
+          "nextSceneId": "final-reform-council",
+          "hint": "This may lead to a good ending."
+        },
+        {
+          "text": "Keep reforms local and avoid larger change.",
+          "nextSceneId": "final-compromise-council",
+          "hint": "This may lead to a neutral ending."
+        },
+        {
+          "text": "Let officials take credit while ignoring workers' needs.",
+          "nextSceneId": "final-strain-council",
+          "hint": "This may lead to a bad or mixed ending."
+        }
+      ]
+    },
+    "final-reform-council": {
+      "title": "The Council of Order and Change",
+      "step": 8,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "Representatives gather in a formal hall. Samurai sit closest to authority. Merchants and artisans wait farther back.",
+        "The question is not whether Edo society will remain hierarchical. It will.",
+        "The question is whether leaders can preserve order while responding to the changes peace has created."
+      ],
+      "choices": [
+        {
+          "text": "Balance hierarchy with fair records, controlled trade, and protections for townspeople.",
+          "nextSceneId": "good-stable-reform",
+          "hint": "This leads to a good ending."
+        },
+        {
+          "text": "Preserve hierarchy but allow limited economic protections.",
+          "nextSceneId": "neutral-order-limits",
+          "hint": "This leads to a neutral ending."
+        },
+        {
+          "text": "Promise reform but change almost nothing.",
+          "nextSceneId": "final-strain-council",
+          "hint": "False reform may deepen mistrust."
+        }
+      ]
+    },
+    "final-compromise-council": {
+      "title": "The Compromise",
+      "step": 8,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "The final decision avoids dramatic change.",
+        "Samurai status remains protected. Merchants face rules but keep working. Artisans gain small protections, not real power.",
+        "The compromise is not justice. It is survival within limits."
+      ],
+      "choices": [
+        {
+          "text": "Accept the compromise as the price of peace.",
+          "nextSceneId": "neutral-order-limits",
+          "hint": "This leads to a neutral ending."
+        },
+        {
+          "text": "Use the compromise as a foundation for gradual improvement.",
+          "nextSceneId": "good-gradual-change",
+          "hint": "This can lead to a good ending."
+        },
+        {
+          "text": "Let powerful groups quietly ignore the compromise.",
+          "nextSceneId": "bad-unrest",
+          "hint": "Weak enforcement may cause unrest."
+        }
+      ]
+    },
+    "final-strain-council": {
+      "title": "Pressure Under the Floorboards",
+      "step": 8,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "The council ends with polite words, but little trust.",
+        "Samurai debt remains. Merchant resentment remains. Artisan frustration remains. Daimyo domains remain strained.",
+        "The floorboards of Edo society do not break today, but they creak beneath everyone's feet."
+      ],
+      "choices": [
+        {
+          "text": "Reopen the review before anger spreads.",
+          "nextSceneId": "shared-fair-review-6",
+          "hint": "It may still be possible to act."
+        },
+        {
+          "text": "Use surveillance and punishment to force quiet.",
+          "nextSceneId": "bad-repression",
+          "hint": "Fear may create a bad ending."
+        },
+        {
+          "text": "Accept a tense but functioning society.",
+          "nextSceneId": "neutral-tense-peace",
+          "hint": "This leads to a neutral ending."
+        }
+      ]
+    },
+    "good-stable-reform": {
+      "title": "Peace With Listening",
+      "step": 9,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "The shogunate keeps order, but it also listens more carefully.",
+        "Rice records are reviewed. Merchant credit is regulated. Artisan contracts become clearer. Samurai service expands into administration and education.",
+        "No one mistakes Edo Japan for an equal society, but the system becomes more stable because leaders respond to real problems."
+      ],
+      "ending": "good",
+      "teachingSummary": "This ending shows that the Tokugawa shogunate preserved stability through hierarchy, control, and administration. It also shows that long-lasting order required leaders to manage economic change, class tension, and urban growth.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Tokugawa shogunate and Edo period to Japan's strict social hierarchy. Students examine how the shogun controlled daimyo, how samurai followed bushido while adapting to peace, how artisans and merchants shaped castle towns and urbanization, and how policies such as isolation and sakoku helped preserve order while limiting outside influence.",
+      "reflectionQuestions": [
+        "How did your role in Edo society shape the choices available to you?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the Tokugawa shogunate maintain order during the Edo period?",
+        "Was stability worth the limits placed on different social classes? Explain.",
+        "How did economic change challenge Japan's strict social hierarchy?",
+        "What tradeoff did your character face between duty, survival, status, and change?"
+      ]
+    },
+    "good-gradual-change": {
+      "title": "Small Changes, Stronger Peace",
+      "step": 9,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "The compromise becomes the beginning of gradual change.",
+        "Samurai learn administrative roles. Artisans gain more reliable protections. Merchants continue to support the urban economy under watchful rules.",
+        "The society remains hierarchical, but it survives because it adapts without tearing itself apart."
+      ],
+      "ending": "good",
+      "teachingSummary": "This ending shows how Edo Japan balanced continuity and change. The social hierarchy remained strict, but peaceful adaptation helped castle towns, artisans, merchants, and samurai function within the Tokugawa system.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Tokugawa shogunate and Edo period to Japan's strict social hierarchy. Students examine how the shogun controlled daimyo, how samurai followed bushido while adapting to peace, how artisans and merchants shaped castle towns and urbanization, and how policies such as isolation and sakoku helped preserve order while limiting outside influence.",
+      "reflectionQuestions": [
+        "How did your role in Edo society shape the choices available to you?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the Tokugawa shogunate maintain order during the Edo period?",
+        "Was stability worth the limits placed on different social classes? Explain.",
+        "How did economic change challenge Japan's strict social hierarchy?",
+        "What tradeoff did your character face between duty, survival, status, and change?"
+      ]
+    },
+    "good-shogun-stability": {
+      "title": "The Shogun's Long Peace",
+      "step": 9,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "Your rule strengthens internal roads, schools, rice records, and domain oversight.",
+        "Foreign influence remains limited, but internal administration improves.",
+        "The Tokugawa peace holds because authority is organized, watchful, and practical."
+      ],
+      "ending": "good",
+      "teachingSummary": "This ending shows how the Tokugawa shogunate maintained peace through centralized authority, daimyo control, isolation policies, and careful administration.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Tokugawa shogunate and Edo period to Japan's strict social hierarchy. Students examine how the shogun controlled daimyo, how samurai followed bushido while adapting to peace, how artisans and merchants shaped castle towns and urbanization, and how policies such as isolation and sakoku helped preserve order while limiting outside influence.",
+      "reflectionQuestions": [
+        "How did your role in Edo society shape the choices available to you?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the Tokugawa shogunate maintain order during the Edo period?",
+        "Was stability worth the limits placed on different social classes? Explain.",
+        "How did economic change challenge Japan's strict social hierarchy?",
+        "What tradeoff did your character face between duty, survival, status, and change?"
+      ]
+    },
+    "good-controlled-learning": {
+      "title": "Knowledge Through a Narrow Gate",
+      "step": 9,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "Japan remains mostly closed, but useful knowledge enters through controlled channels.",
+        "Doctors, translators, and officials study carefully without allowing foreign powers to dominate politics.",
+        "The gate stays narrow, but it does not fully close."
+      ],
+      "ending": "good",
+      "teachingSummary": "This ending shows that sakoku did not mean total ignorance of the outside world. Limited, controlled exchange allowed some useful knowledge while preserving Tokugawa political order.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Tokugawa shogunate and Edo period to Japan's strict social hierarchy. Students examine how the shogun controlled daimyo, how samurai followed bushido while adapting to peace, how artisans and merchants shaped castle towns and urbanization, and how policies such as isolation and sakoku helped preserve order while limiting outside influence.",
+      "reflectionQuestions": [
+        "How did your role in Edo society shape the choices available to you?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the Tokugawa shogunate maintain order during the Edo period?",
+        "Was stability worth the limits placed on different social classes? Explain.",
+        "How did economic change challenge Japan's strict social hierarchy?",
+        "What tradeoff did your character face between duty, survival, status, and change?"
+      ]
+    },
+    "good-samurai-service": {
+      "title": "A New Meaning of Service",
+      "step": 9,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "You become known as a samurai who serves with brush and judgment as well as sword.",
+        "You teach younger samurai that bushido can include honesty, learning, and protection of the people.",
+        "Peace has changed the warrior class, and you change with it."
+      ],
+      "ending": "good",
+      "teachingSummary": "This ending shows how samurai roles changed during the peaceful Edo period. Many samurai had to adapt from warriors into officials, scholars, teachers, and administrators.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Tokugawa shogunate and Edo period to Japan's strict social hierarchy. Students examine how the shogun controlled daimyo, how samurai followed bushido while adapting to peace, how artisans and merchants shaped castle towns and urbanization, and how policies such as isolation and sakoku helped preserve order while limiting outside influence.",
+      "reflectionQuestions": [
+        "How did your role in Edo society shape the choices available to you?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the Tokugawa shogunate maintain order during the Edo period?",
+        "Was stability worth the limits placed on different social classes? Explain.",
+        "How did economic change challenge Japan's strict social hierarchy?",
+        "What tradeoff did your character face between duty, survival, status, and change?"
+      ]
+    },
+    "good-artisan-guild": {
+      "title": "The Workshop That Endures",
+      "step": 9,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "Your workshop becomes respected for quality and fair treatment.",
+        "Apprentices learn carefully. Merchants trust your contracts. Samurai households continue ordering your goods.",
+        "You do not overthrow the hierarchy, but you carve out dignity within it."
+      ],
+      "ending": "good",
+      "teachingSummary": "This ending shows how artisans contributed to Edo urban life through skilled labor and production. Even with low official status, artisans helped support castle towns and economic growth.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Tokugawa shogunate and Edo period to Japan's strict social hierarchy. Students examine how the shogun controlled daimyo, how samurai followed bushido while adapting to peace, how artisans and merchants shaped castle towns and urbanization, and how policies such as isolation and sakoku helped preserve order while limiting outside influence.",
+      "reflectionQuestions": [
+        "How did your role in Edo society shape the choices available to you?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the Tokugawa shogunate maintain order during the Edo period?",
+        "Was stability worth the limits placed on different social classes? Explain.",
+        "How did economic change challenge Japan's strict social hierarchy?",
+        "What tradeoff did your character face between duty, survival, status, and change?"
+      ]
+    },
+    "neutral-order-limits": {
+      "title": "Order With Limits",
+      "step": 9,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "The hierarchy remains firm.",
+        "Some unfair records are corrected. Some contracts improve. But samurai still stand above artisans and merchants, even when merchants hold more wealth.",
+        "Life continues, stable but unequal."
+      ],
+      "ending": "neutral",
+      "teachingSummary": "This ending shows that Edo Japan's social hierarchy created stability while limiting social mobility. Many people lived secure but restricted lives within assigned class roles.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Tokugawa shogunate and Edo period to Japan's strict social hierarchy. Students examine how the shogun controlled daimyo, how samurai followed bushido while adapting to peace, how artisans and merchants shaped castle towns and urbanization, and how policies such as isolation and sakoku helped preserve order while limiting outside influence.",
+      "reflectionQuestions": [
+        "How did your role in Edo society shape the choices available to you?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the Tokugawa shogunate maintain order during the Edo period?",
+        "Was stability worth the limits placed on different social classes? Explain.",
+        "How did economic change challenge Japan's strict social hierarchy?",
+        "What tradeoff did your character face between duty, survival, status, and change?"
+      ]
+    },
+    "neutral-tense-peace": {
+      "title": "The Tense Peace",
+      "step": 9,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "No rebellion breaks out. No reform fully succeeds.",
+        "The town returns to work, but complaints remain beneath the surface.",
+        "The Tokugawa order survives today. Tomorrow will bring the same questions back again."
+      ],
+      "ending": "neutral",
+      "teachingSummary": "This ending shows that political stability can continue even when social and economic tensions remain unresolved. Edo Japan's peace often depended on managing tension rather than eliminating it.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Tokugawa shogunate and Edo period to Japan's strict social hierarchy. Students examine how the shogun controlled daimyo, how samurai followed bushido while adapting to peace, how artisans and merchants shaped castle towns and urbanization, and how policies such as isolation and sakoku helped preserve order while limiting outside influence.",
+      "reflectionQuestions": [
+        "How did your role in Edo society shape the choices available to you?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the Tokugawa shogunate maintain order during the Edo period?",
+        "Was stability worth the limits placed on different social classes? Explain.",
+        "How did economic change challenge Japan's strict social hierarchy?",
+        "What tradeoff did your character face between duty, survival, status, and change?"
+      ]
+    },
+    "neutral-closed-order": {
+      "title": "A Peaceful Closed Gate",
+      "step": 9,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "Foreign contact remains extremely limited.",
+        "The shogunate feels secure, and social order continues. Yet scholars wonder what knowledge has been kept outside the gate.",
+        "Peace survives, but so do limits."
+      ],
+      "ending": "neutral",
+      "teachingSummary": "This ending shows the tradeoff of isolation. Sakoku helped protect Tokugawa stability and limit outside influence, but it also restricted broader exchange.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Tokugawa shogunate and Edo period to Japan's strict social hierarchy. Students examine how the shogun controlled daimyo, how samurai followed bushido while adapting to peace, how artisans and merchants shaped castle towns and urbanization, and how policies such as isolation and sakoku helped preserve order while limiting outside influence.",
+      "reflectionQuestions": [
+        "How did your role in Edo society shape the choices available to you?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the Tokugawa shogunate maintain order during the Edo period?",
+        "Was stability worth the limits placed on different social classes? Explain.",
+        "How did economic change challenge Japan's strict social hierarchy?",
+        "What tradeoff did your character face between duty, survival, status, and change?"
+      ]
+    },
+    "neutral-merchant-rise": {
+      "title": "Wealth Below the Rank",
+      "step": 9,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "Merchants grow wealthier while remaining officially low in status.",
+        "Artisans find more customers. Samurai borrow more money. Officials pretend the hierarchy is unchanged.",
+        "The city thrives, but the gap between rank and reality grows wider."
+      ],
+      "ending": "neutral",
+      "teachingSummary": "This ending shows how economic change challenged Edo Japan's official social hierarchy. Merchants and urban producers became important even though they ranked below samurai.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Tokugawa shogunate and Edo period to Japan's strict social hierarchy. Students examine how the shogun controlled daimyo, how samurai followed bushido while adapting to peace, how artisans and merchants shaped castle towns and urbanization, and how policies such as isolation and sakoku helped preserve order while limiting outside influence.",
+      "reflectionQuestions": [
+        "How did your role in Edo society shape the choices available to you?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the Tokugawa shogunate maintain order during the Edo period?",
+        "Was stability worth the limits placed on different social classes? Explain.",
+        "How did economic change challenge Japan's strict social hierarchy?",
+        "What tradeoff did your character face between duty, survival, status, and change?"
+      ]
+    },
+    "neutral-artisan-stability": {
+      "title": "A Life of Skilled Limits",
+      "step": 9,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "Your household survives through careful work.",
+        "You gain reputation, feed your family, and train your hands to create beauty in a strict world.",
+        "You do not gain political power, but you preserve dignity and stability."
+      ],
+      "ending": "neutral",
+      "teachingSummary": "This ending shows that artisans had important economic and cultural roles in Edo Japan, even though the social hierarchy limited their power and status.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Tokugawa shogunate and Edo period to Japan's strict social hierarchy. Students examine how the shogun controlled daimyo, how samurai followed bushido while adapting to peace, how artisans and merchants shaped castle towns and urbanization, and how policies such as isolation and sakoku helped preserve order while limiting outside influence.",
+      "reflectionQuestions": [
+        "How did your role in Edo society shape the choices available to you?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the Tokugawa shogunate maintain order during the Edo period?",
+        "Was stability worth the limits placed on different social classes? Explain.",
+        "How did economic change challenge Japan's strict social hierarchy?",
+        "What tradeoff did your character face between duty, survival, status, and change?"
+      ]
+    },
+    "neutral-samurai-survival": {
+      "title": "Honor and Hunger",
+      "step": 9,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "You protect your family and remain within the samurai class.",
+        "Your honor survives in public, though you know you avoided a harder choice.",
+        "Many samurai in peaceful Edo Japan lived with this tension between status and economic reality."
+      ],
+      "ending": "neutral",
+      "teachingSummary": "This ending shows that samurai status did not always mean wealth. During the Edo period, many samurai faced financial pressure while trying to preserve honor and rank.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Tokugawa shogunate and Edo period to Japan's strict social hierarchy. Students examine how the shogun controlled daimyo, how samurai followed bushido while adapting to peace, how artisans and merchants shaped castle towns and urbanization, and how policies such as isolation and sakoku helped preserve order while limiting outside influence.",
+      "reflectionQuestions": [
+        "How did your role in Edo society shape the choices available to you?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the Tokugawa shogunate maintain order during the Edo period?",
+        "Was stability worth the limits placed on different social classes? Explain.",
+        "How did economic change challenge Japan's strict social hierarchy?",
+        "What tradeoff did your character face between duty, survival, status, and change?"
+      ]
+    },
+    "neutral-samurai-scholar": {
+      "title": "The Quiet Teacher",
+      "step": 9,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "You leave the dream of battlefield glory behind and teach students in a small room near the market.",
+        "Some still call you a fallen warrior. Others bring their children to learn from you.",
+        "Your life is smaller than you imagined, but it is useful."
+      ],
+      "ending": "neutral",
+      "teachingSummary": "This ending shows how peace changed samurai identity. Some samurai adapted through teaching, scholarship, and service outside warfare.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Tokugawa shogunate and Edo period to Japan's strict social hierarchy. Students examine how the shogun controlled daimyo, how samurai followed bushido while adapting to peace, how artisans and merchants shaped castle towns and urbanization, and how policies such as isolation and sakoku helped preserve order while limiting outside influence.",
+      "reflectionQuestions": [
+        "How did your role in Edo society shape the choices available to you?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the Tokugawa shogunate maintain order during the Edo period?",
+        "Was stability worth the limits placed on different social classes? Explain.",
+        "How did economic change challenge Japan's strict social hierarchy?",
+        "What tradeoff did your character face between duty, survival, status, and change?"
+      ]
+    },
+    "bad-unrest": {
+      "title": "Rice in the Streets",
+      "step": 9,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "The warnings were ignored for too long.",
+        "Crowds gather outside storehouses. Officials shout orders. Someone throws a stone, and fear spreads through the street.",
+        "The system survives, but trust has been badly damaged."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows how economic pressure and unfair resource management could threaten social order in Edo Japan. Stability required more than punishment.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Tokugawa shogunate and Edo period to Japan's strict social hierarchy. Students examine how the shogun controlled daimyo, how samurai followed bushido while adapting to peace, how artisans and merchants shaped castle towns and urbanization, and how policies such as isolation and sakoku helped preserve order while limiting outside influence.",
+      "reflectionQuestions": [
+        "How did your role in Edo society shape the choices available to you?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the Tokugawa shogunate maintain order during the Edo period?",
+        "Was stability worth the limits placed on different social classes? Explain.",
+        "How did economic change challenge Japan's strict social hierarchy?",
+        "What tradeoff did your character face between duty, survival, status, and change?"
+      ]
+    },
+    "bad-repression": {
+      "title": "Peace by Fear",
+      "step": 9,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "Inspectors fill the streets. Petitions disappear. Shops grow quiet when officials pass.",
+        "There is order, but it is the order of held breath.",
+        "A society can be silent without being healthy."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows that harsh control could preserve the appearance of stability while increasing fear and resentment under the Tokugawa system.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Tokugawa shogunate and Edo period to Japan's strict social hierarchy. Students examine how the shogun controlled daimyo, how samurai followed bushido while adapting to peace, how artisans and merchants shaped castle towns and urbanization, and how policies such as isolation and sakoku helped preserve order while limiting outside influence.",
+      "reflectionQuestions": [
+        "How did your role in Edo society shape the choices available to you?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the Tokugawa shogunate maintain order during the Edo period?",
+        "Was stability worth the limits placed on different social classes? Explain.",
+        "How did economic change challenge Japan's strict social hierarchy?",
+        "What tradeoff did your character face between duty, survival, status, and change?"
+      ]
+    },
+    "bad-corruption": {
+      "title": "Ledgers of Shame",
+      "step": 9,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "Favors, hidden debts, and false records spread through the town.",
+        "Samurai authority loses respect. Merchants protect themselves. Artisans and peasants pay for decisions made above them.",
+        "The hierarchy remains standing, but its foundation weakens."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows how corruption could weaken trust in Edo society. A strict hierarchy depended on the belief that officials and samurai acted with duty and responsibility.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Tokugawa shogunate and Edo period to Japan's strict social hierarchy. Students examine how the shogun controlled daimyo, how samurai followed bushido while adapting to peace, how artisans and merchants shaped castle towns and urbanization, and how policies such as isolation and sakoku helped preserve order while limiting outside influence.",
+      "reflectionQuestions": [
+        "How did your role in Edo society shape the choices available to you?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the Tokugawa shogunate maintain order during the Edo period?",
+        "Was stability worth the limits placed on different social classes? Explain.",
+        "How did economic change challenge Japan's strict social hierarchy?",
+        "What tradeoff did your character face between duty, survival, status, and change?"
+      ]
+    },
+    "bad-ronin": {
+      "title": "A Sword Without a Lord",
+      "step": 9,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "You become a ronin, feared by some and trusted by few.",
+        "Without a lord, stipend, or stable place in society, your sword brings danger more often than honor.",
+        "Freedom outside the hierarchy is lonelier than you imagined."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows how difficult it could be to live outside Edo Japan's class structure. Samurai identity depended heavily on loyalty, service, and recognized status.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Tokugawa shogunate and Edo period to Japan's strict social hierarchy. Students examine how the shogun controlled daimyo, how samurai followed bushido while adapting to peace, how artisans and merchants shaped castle towns and urbanization, and how policies such as isolation and sakoku helped preserve order while limiting outside influence.",
+      "reflectionQuestions": [
+        "How did your role in Edo society shape the choices available to you?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the Tokugawa shogunate maintain order during the Edo period?",
+        "Was stability worth the limits placed on different social classes? Explain.",
+        "How did economic change challenge Japan's strict social hierarchy?",
+        "What tradeoff did your character face between duty, survival, status, and change?"
+      ]
+    },
+    "bad-daimyo-revolt": {
+      "title": "The Daimyo Test the Chain",
+      "step": 9,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "Daimyo grow bolder. Private deals, hidden wealth, and quiet military preparations spread between domains.",
+        "The shogun's authority no longer feels certain.",
+        "The peace built after years of conflict begins to tremble."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows why the Tokugawa shogunate carefully controlled daimyo. Central authority and daimyo restrictions were key to maintaining peace.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Tokugawa shogunate and Edo period to Japan's strict social hierarchy. Students examine how the shogun controlled daimyo, how samurai followed bushido while adapting to peace, how artisans and merchants shaped castle towns and urbanization, and how policies such as isolation and sakoku helped preserve order while limiting outside influence.",
+      "reflectionQuestions": [
+        "How did your role in Edo society shape the choices available to you?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the Tokugawa shogunate maintain order during the Edo period?",
+        "Was stability worth the limits placed on different social classes? Explain.",
+        "How did economic change challenge Japan's strict social hierarchy?",
+        "What tradeoff did your character face between duty, survival, status, and change?"
+      ]
+    },
+    "bad-punishment": {
+      "title": "Punished for Speaking",
+      "step": 9,
+      "image": {
+        "src": "public/images/edo-japan.svg",
+        "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
+      },
+      "pathFocus": "Key terms for this route: Tokugawa shogunate, Edo period, shogun, samurai, daimyo, bushido, artisan, merchant, social hierarchy, isolation, sakoku, rice economy, castle town, urbanization, and Neo-Confucianism.",
+      "body": [
+        "Officials decide that your challenge threatens public order.",
+        "The workshop is fined. Leaders are punished. Others learn to stay silent.",
+        "Your complaint was not meaningless, but the system was not ready to hear it."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows how difficult it was for lower-status groups to challenge the social hierarchy. Edo society valued order and often punished open disruption.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Tokugawa shogunate and Edo period to Japan's strict social hierarchy. Students examine how the shogun controlled daimyo, how samurai followed bushido while adapting to peace, how artisans and merchants shaped castle towns and urbanization, and how policies such as isolation and sakoku helped preserve order while limiting outside influence.",
+      "reflectionQuestions": [
+        "How did your role in Edo society shape the choices available to you?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the Tokugawa shogunate maintain order during the Edo period?",
+        "Was stability worth the limits placed on different social classes? Explain.",
+        "How did economic change challenge Japan's strict social hierarchy?",
+        "What tradeoff did your character face between duty, survival, status, and change?"
+      ]
+    }
+  }
+}

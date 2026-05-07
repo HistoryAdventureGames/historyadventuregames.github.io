@@ -1,0 +1,34 @@
+[
+  {
+    "id": "black-death-peasant-survival-deep-tree",
+    "title": "The Bell Behind You: A Peasant During the Black Death",
+    "topic": "Medieval Europe",
+    "description": "Try to survive the Black Death as a peasant in medieval Europe.",
+    "estimatedTime": "25-35 minutes",
+    "file": "content/adventures/black-death-peasant-survival-deep-tree.json"
+  },
+  {
+    "id": "high-middle-ages-feudal-lord-crusades-deep-tree",
+    "title": "Oaths and Crossroads: A Feudal Lord in the High Middle Ages",
+    "topic": "Medieval Europe and the Crusades",
+    "description": "Navigate loyalty, faith, land, and power during the age of feudalism and crusading.",
+    "estimatedTime": "25-35 minutes",
+    "file": "content/adventures/oaths-and-crossroads-feudal-lord-crusades-deep-tree.json"
+  },
+  {
+    "id": "edo-feudal-japan-deep-tree-v2",
+    "title": "Paths of Power: Life in Edo Japan",
+    "topic": "Feudal Japan",
+    "description": "Make choices in Edo Japan while balancing duty, status, and social order.",
+    "estimatedTime": "25-35 minutes",
+    "file": "content/adventures/edo-feudal-japan-deep-tree-v2.json"
+  },
+  {
+    "id": "seeds-of-change-paleolithic-deep-tree",
+    "title": "Seeds of Change: Paleolithic Choices",
+    "topic": "Early Humans and the Neolithic Revolution",
+    "description": "Decide how your community responds to food, migration, and the first signs of farming.",
+    "estimatedTime": "20-30 minutes",
+    "file": "content/adventures/seeds-of-change-paleolithic-deep-tree.json"
+  }
+]

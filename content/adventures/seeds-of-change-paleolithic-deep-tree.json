@@ -1,0 +1,2676 @@
+{
+  "id": "seeds-of-change-paleolithic-deep-tree",
+  "title": "Seeds of Change: A Paleolithic Adventure",
+  "description": "Play as Kara, a young gatherer deciding whether her people should continue the old nomadic ways or risk the first steps toward agriculture.",
+  "coverImage": {
+    "src": "public/images/foragers-to-farmers.svg",
+    "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+  },
+  "startingSceneId": "start",
+  "branchingPathCount": 36,
+  "keyTerms": [
+    "Paleolithic",
+    "Neolithic Revolution",
+    "nomad",
+    "domestication",
+    "agriculture",
+    "irrigation",
+    "surplus",
+    "river valley",
+    "civilization",
+    "job specialization"
+  ],
+  "curriculumTags": [
+    "NYS Global 9",
+    "9.1",
+    "Early Humans",
+    "Paleolithic Era",
+    "Neolithic Revolution",
+    "Agriculture"
+  ],
+  "teacherNotes": "This deep-tree adventure focuses on human-environment interaction, the risks of innovation, cooperation, food surplus, and the transition from hunter-gatherer life to settled farming communities.",
+  "reviewFocus": "how the shift from hunting and gathering to agriculture changed survival, settlement, labor, and social organization",
+  "topicQuestion": "how the Neolithic Revolution changed human life",
+  "scenes": {
+    "start": {
+      "title": "The Edge of Survival",
+      "step": 1,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "You are Kara, a young gatherer in a Paleolithic band that has always survived by moving with the seasons.",
+        "The herds have changed their path. Wild berries are harder to find. Your younger brother Tavi walks beside the fire with one hand pressed against his stomach.",
+        "Near the river, you notice something strange. Plants you saw weeks ago have grown back thicker in the same patch of damp soil.",
+        "You kneel and roll a seed between your fingers. For the first time, you wonder if food has to be chased forever."
+      ],
+      "choices": [
+        {
+          "text": "Study the plants before telling anyone.",
+          "nextSceneId": "watch-river",
+          "hint": "Careful observation may reveal a pattern in the environment."
+        },
+        {
+          "text": "Bring seeds back to camp and experiment in secret.",
+          "nextSceneId": "secret-seeds",
+          "hint": "Innovation can begin quietly, but working alone is risky."
+        },
+        {
+          "text": "Tell Elder Nima what you noticed.",
+          "nextSceneId": "elder-warning",
+          "hint": "A respected elder may help or resist change."
+        },
+        {
+          "text": "Ignore the plants and follow the hunters.",
+          "nextSceneId": "old-road",
+          "hint": "The old ways are familiar, but food is becoming uncertain."
+        }
+      ]
+    },
+    "watch-river": {
+      "title": "Patterns in the Mud",
+      "step": 2,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "You return to the river before sunrise. Mist hangs over the water, and the mud is cool beneath your feet.",
+        "Seeds fall. Days pass. Green shoots rise. The strongest plants grow closest to the floodwater.",
+        "You do not have the word agriculture yet, but you are beginning to understand its first secret. Food may be grown where people choose to stay."
+      ],
+      "choices": [
+        {
+          "text": "Mark the places where seeds grow best.",
+          "nextSceneId": "marked-ground",
+          "hint": "Evidence may help you convince others."
+        },
+        {
+          "text": "Ask your friend Sela to observe with you.",
+          "nextSceneId": "sela-joins",
+          "hint": "Shared knowledge can become shared action."
+        },
+        {
+          "text": "Tell the whole group immediately.",
+          "nextSceneId": "council-fire",
+          "hint": "The group may listen, but they may ask for proof."
+        }
+      ]
+    },
+    "secret-seeds": {
+      "title": "Seeds in Secret",
+      "step": 2,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "You hide seeds in a fold of animal skin and press them into damp soil near the river.",
+        "At first, nothing happens. Then tiny shoots break through the ground.",
+        "Your chest tightens with excitement. The land is answering you, but the plants are fragile and you are only one person."
+      ],
+      "choices": [
+        {
+          "text": "Protect the seedlings from animals.",
+          "nextSceneId": "animal-tracks",
+          "hint": "Early farming requires protection and planning."
+        },
+        {
+          "text": "Keep the experiment hidden until the plants grow taller.",
+          "nextSceneId": "hidden-field",
+          "hint": "More proof may help, but secrecy creates risk."
+        },
+        {
+          "text": "Tell Tavi and ask him to help water the plants.",
+          "nextSceneId": "tavi-helps",
+          "hint": "Family stakes may deepen Kara's commitment."
+        }
+      ]
+    },
+    "elder-warning": {
+      "title": "The Elder's Warning",
+      "step": 2,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "Elder Nima listens without interrupting. Her face is lined by many hungry seasons.",
+        "She says, 'The land gives and takes. People who forget to move may become bones beside the river.'",
+        "Still, she does not dismiss you. She asks what proof you have."
+      ],
+      "choices": [
+        {
+          "text": "Promise to gather evidence before the next migration.",
+          "nextSceneId": "marked-ground",
+          "hint": "Evidence may persuade cautious leaders."
+        },
+        {
+          "text": "Argue that the old ways are already failing.",
+          "nextSceneId": "tense-council",
+          "hint": "Fear can persuade, but it can also divide the group."
+        },
+        {
+          "text": "Ask Nima to teach you what she knows about plants.",
+          "nextSceneId": "nima-lessons",
+          "hint": "Old knowledge may support a new idea."
+        }
+      ]
+    },
+    "old-road": {
+      "title": "The Old Road",
+      "step": 2,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "You turn away from the river and follow the hunters.",
+        "Your father Orun walks beside you with his spear over his shoulder. He says survival means movement.",
+        "By nightfall, the hunters return with little meat. The old road still works, but not as well as it once did."
+      ],
+      "choices": [
+        {
+          "text": "Help the hunters track the herd more carefully.",
+          "nextSceneId": "hard-hunt",
+          "hint": "Improved hunting may help the group survive."
+        },
+        {
+          "text": "Suggest returning to the river after the hunt.",
+          "nextSceneId": "return-river",
+          "hint": "Kara may still move toward agriculture."
+        },
+        {
+          "text": "Accept the old ways and keep moving.",
+          "nextSceneId": "long-migration",
+          "hint": "Tradition may preserve unity, but hunger remains."
+        }
+      ]
+    },
+    "marked-ground": {
+      "title": "Proof in the Soil",
+      "step": 3,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "You place stones beside the strongest plants and scratch marks into a flat piece of bark.",
+        "The best growth happens near the river where floodwater leaves dark soil behind.",
+        "The river valley is no longer just a place to pass through. It may be a place where people can stay."
+      ],
+      "choices": [
+        {
+          "text": "Create a small test field using the best soil.",
+          "nextSceneId": "test-field",
+          "hint": "This moves Kara closer to agriculture."
+        },
+        {
+          "text": "Show the marked ground to Elder Nima.",
+          "nextSceneId": "council-fire",
+          "hint": "Evidence may make the council listen."
+        },
+        {
+          "text": "Study old flood marks before choosing a camp.",
+          "nextSceneId": "river-memory",
+          "hint": "Understanding geography may prevent disaster."
+        }
+      ]
+    },
+    "sela-joins": {
+      "title": "Two Sets of Eyes",
+      "step": 3,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "Sela laughs at first. Then she sees the pattern too.",
+        "Together, you track where seeds fall, where animals feed, and where the soil stays wet longest.",
+        "The idea feels less impossible now that someone else believes it."
+      ],
+      "choices": [
+        {
+          "text": "Ask Sela to help build barriers around the plants.",
+          "nextSceneId": "animal-tracks",
+          "hint": "Protecting crops is an early farming challenge."
+        },
+        {
+          "text": "Have Sela speak with younger members of the group.",
+          "nextSceneId": "young-listeners",
+          "hint": "Support within the group may grow."
+        },
+        {
+          "text": "Prepare a careful argument for the council.",
+          "nextSceneId": "council-fire",
+          "hint": "Persuasion may help the group choose settlement."
+        }
+      ]
+    },
+    "council-fire": {
+      "title": "The Council Fire",
+      "step": 4,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "That night, the group gathers around the fire. You speak with muddy hands and a shaking voice.",
+        "You explain that seeds can be planted, that river soil helps them grow, and that staying might create a steadier food supply.",
+        "Some faces brighten. Others harden with fear."
+      ],
+      "choices": [
+        {
+          "text": "Argue that farming could create a food surplus.",
+          "nextSceneId": "surplus-dream",
+          "hint": "Surplus is a major turning point toward civilization."
+        },
+        {
+          "text": "Suggest a temporary settlement as a test.",
+          "nextSceneId": "trial-settlement",
+          "hint": "A compromise may avoid total risk."
+        },
+        {
+          "text": "Ask the group to divide labor between hunting and planting.",
+          "nextSceneId": "divided-labor",
+          "hint": "This may balance old and new ways."
+        }
+      ]
+    },
+    "tense-council": {
+      "title": "Words Like Sparks",
+      "step": 3,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "Your words come out sharper than you meant. 'The old ways are failing,' you say. 'Tavi is starving. Others are too.'",
+        "The fire goes quiet. Your father looks away. Some agree with you, but others think you have insulted the ancestors."
+      ],
+      "choices": [
+        {
+          "text": "Apologize and explain your idea more carefully.",
+          "nextSceneId": "council-fire",
+          "hint": "Repairing trust may help later."
+        },
+        {
+          "text": "Stand firm and demand that the group stay.",
+          "nextSceneId": "split-camp",
+          "hint": "Forceful leadership may deepen conflict."
+        },
+        {
+          "text": "Ask Nima to speak for you.",
+          "nextSceneId": "nima-speaks",
+          "hint": "A respected elder may calm the group."
+        }
+      ]
+    },
+    "nima-lessons": {
+      "title": "Old Knowledge, New Question",
+      "step": 3,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "Nima teaches you which plants return after rain, which roots poison the stomach, and which seeds birds fight over.",
+        "You realize your idea is not separate from the old ways. It grows from them.",
+        "Maybe innovation means carrying tradition into a new problem."
+      ],
+      "choices": [
+        {
+          "text": "Use Nima's knowledge to choose the strongest seeds.",
+          "nextSceneId": "chosen-seeds",
+          "hint": "This supports early domestication."
+        },
+        {
+          "text": "Ask Nima to support you at council.",
+          "nextSceneId": "nima-speaks",
+          "hint": "Elder support may change the group decision."
+        },
+        {
+          "text": "Plan a small experiment rather than a full change.",
+          "nextSceneId": "test-field",
+          "hint": "Careful innovation lowers risk."
+        }
+      ]
+    },
+    "animal-tracks": {
+      "title": "Tracks in the Field",
+      "step": 3,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "In the morning, you find tracks pressed deep into the mud.",
+        "Some seedlings are bitten down to stubs. The plants can grow, but they cannot protect themselves.",
+        "Farming does not end hunger by magic. It creates new work."
+      ],
+      "choices": [
+        {
+          "text": "Build a thorn barrier around the plants.",
+          "nextSceneId": "thorn-barrier",
+          "hint": "Protection may improve the harvest."
+        },
+        {
+          "text": "Ask hunters to guard the field at night.",
+          "nextSceneId": "hunter-guards",
+          "hint": "This requires cooperation between old and new roles."
+        },
+        {
+          "text": "Move the test field closer to camp.",
+          "nextSceneId": "camp-field",
+          "hint": "Location choices matter in settlement planning."
+        }
+      ]
+    },
+    "hidden-field": {
+      "title": "The Secret Grows",
+      "step": 3,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "The plants grow taller behind the reeds.",
+        "Each day, you feel more certain. Each night, you feel more afraid.",
+        "If the group moves before the plants mature, your proof disappears. If you reveal it too soon, they may laugh and leave anyway."
+      ],
+      "choices": [
+        {
+          "text": "Reveal the hidden field now.",
+          "nextSceneId": "revealed-field",
+          "hint": "Early honesty may build trust."
+        },
+        {
+          "text": "Wait until the plants produce seeds.",
+          "nextSceneId": "wait-harvest",
+          "hint": "More proof may come at a cost."
+        },
+        {
+          "text": "Ask Tavi to help you convince your father first.",
+          "nextSceneId": "father-orun",
+          "hint": "Family support may influence the group."
+        }
+      ]
+    },
+    "tavi-helps": {
+      "title": "Tavi's Small Hands",
+      "step": 3,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "Tavi carries water in a hollowed shell, spilling half before reaching the plants.",
+        "He laughs for the first time in days.",
+        "This is no longer only about an idea. It is about whether your family lives."
+      ],
+      "choices": [
+        {
+          "text": "Teach Tavi to water the plants each morning.",
+          "nextSceneId": "daily-rhythm",
+          "hint": "Routine supports settled life."
+        },
+        {
+          "text": "Bring your father to see Tavi helping.",
+          "nextSceneId": "father-orun",
+          "hint": "Family evidence may persuade Orun."
+        },
+        {
+          "text": "Protect the plants before animals return.",
+          "nextSceneId": "animal-tracks",
+          "hint": "Planning may prevent failure."
+        }
+      ]
+    },
+    "hard-hunt": {
+      "title": "The Hard Hunt",
+      "step": 3,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "You study broken grass, hoofprints, and droppings.",
+        "The hunters find a small herd near a dry streambed. The hunt succeeds, but barely.",
+        "There is meat tonight, not enough for many nights. Skill keeps you alive, but scarcity keeps following."
+      ],
+      "choices": [
+        {
+          "text": "Keep improving the group's hunting methods.",
+          "nextSceneId": "hunter-pride",
+          "hint": "This strengthens the nomadic path."
+        },
+        {
+          "text": "Use the successful hunt to buy time for river experiments.",
+          "nextSceneId": "return-river",
+          "hint": "Food from hunting may support farming trials."
+        },
+        {
+          "text": "Argue that hunting alone is no longer enough.",
+          "nextSceneId": "father-disagrees",
+          "hint": "This may create tension with hunters."
+        }
+      ]
+    },
+    "return-river": {
+      "title": "Back to the Green Place",
+      "step": 3,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "You convince a few others to return to the river.",
+        "The plants are still there, bending in the wind. The sight feels like a question waiting for an answer.",
+        "This time, you are not alone."
+      ],
+      "choices": [
+        {
+          "text": "Begin a shared test field.",
+          "nextSceneId": "test-field",
+          "hint": "Cooperation supports agriculture."
+        },
+        {
+          "text": "Call a council before taking action.",
+          "nextSceneId": "council-fire",
+          "hint": "The whole group must decide."
+        },
+        {
+          "text": "Use the river only as a temporary food stop.",
+          "nextSceneId": "between-two-worlds",
+          "hint": "This keeps the group between old and new ways."
+        }
+      ]
+    },
+    "long-migration": {
+      "title": "Farther From the River",
+      "step": 3,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "The group moves farther from the river valley.",
+        "The land becomes drier. The children walk more slowly. At night, people speak less.",
+        "Hunger makes every sound feel sharper."
+      ],
+      "choices": [
+        {
+          "text": "Encourage the group to turn back before it is too late.",
+          "nextSceneId": "turn-back",
+          "hint": "Kara may still change the path."
+        },
+        {
+          "text": "Search for new hunting grounds.",
+          "nextSceneId": "unknown-plains",
+          "hint": "This continues the nomadic path."
+        },
+        {
+          "text": "Stay loyal to the migration and say nothing.",
+          "nextSceneId": "silent-hunger",
+          "hint": "Silence may avoid conflict, but danger grows."
+        }
+      ]
+    },
+    "young-listeners": {
+      "title": "The Younger Circle",
+      "step": 4,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "Sela gathers the younger members of the group near the riverbank.",
+        "They listen as you show them the shoots, the damp soil, and the marked stones.",
+        "They have less fear of changing old patterns, but they have less power to decide."
+      ],
+      "choices": [
+        {
+          "text": "Ask them to help build and guard a test field.",
+          "nextSceneId": "divided-labor",
+          "hint": "Many hands can support a new system."
+        },
+        {
+          "text": "Send them to persuade their families.",
+          "nextSceneId": "council-fire",
+          "hint": "Support may spread through the group."
+        },
+        {
+          "text": "Move ahead without the elders.",
+          "nextSceneId": "split-camp",
+          "hint": "Youthful confidence may divide the camp."
+        }
+      ]
+    },
+    "river-memory": {
+      "title": "The River's Memory",
+      "step": 4,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "You study marks left by old floods on stones and tree trunks.",
+        "The river feeds the soil, but it can also swallow a camp.",
+        "A settlement will need more than seeds. It will need planning."
+      ],
+      "choices": [
+        {
+          "text": "Build shelters on higher ground.",
+          "nextSceneId": "high-ground",
+          "hint": "Good settlement planning may prevent disaster."
+        },
+        {
+          "text": "Dig small channels to guide water.",
+          "nextSceneId": "first-channels",
+          "hint": "This is a step toward irrigation."
+        },
+        {
+          "text": "Warn the council that the river must be respected.",
+          "nextSceneId": "council-fire",
+          "hint": "Planning may influence the group decision."
+        }
+      ]
+    },
+    "surplus-dream": {
+      "title": "A Dream of Full Baskets",
+      "step": 5,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "You tell the group that if crops grow well, there may be more food than the group needs for one meal.",
+        "The word surplus does not exist around your fire, but the idea makes everyone quiet.",
+        "Extra food could mean fewer hungry nights. It could also mean arguments over who controls it."
+      ],
+      "choices": [
+        {
+          "text": "Propose shared storage for the whole group.",
+          "nextSceneId": "seed-storage",
+          "hint": "Shared storage may build trust."
+        },
+        {
+          "text": "Ask strong families to guard the food.",
+          "nextSceneId": "resource-jealousy",
+          "hint": "Power over food may create hierarchy."
+        },
+        {
+          "text": "Focus first on proving the harvest can happen.",
+          "nextSceneId": "trial-settlement",
+          "hint": "Evidence may matter before rules."
+        }
+      ]
+    },
+    "trial-settlement": {
+      "title": "The Trial Settlement",
+      "step": 5,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "The group agrees to stay near the river for one season.",
+        "The shelters are still light enough to move, but the fires remain in the same place night after night.",
+        "You have been given time, but not trust."
+      ],
+      "choices": [
+        {
+          "text": "Build a careful farming plan for the season.",
+          "nextSceneId": "planned-growth",
+          "hint": "Planning may lead to success."
+        },
+        {
+          "text": "Keep hunting and gathering while crops grow.",
+          "nextSceneId": "hunt-and-field",
+          "hint": "Balance may protect against failure."
+        },
+        {
+          "text": "Push the group to become fully settled immediately.",
+          "nextSceneId": "first-settlement",
+          "hint": "Full commitment can bring reward or disaster."
+        }
+      ]
+    },
+    "divided-labor": {
+      "title": "Many Hands",
+      "step": 5,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "The group begins dividing work.",
+        "Hunters still track animals. Gatherers collect wild plants. Others guard the field, carry water, shape tools, or repair shelters.",
+        "No one calls this job specialization yet, but different tasks are beginning to shape daily life."
+      ],
+      "choices": [
+        {
+          "text": "Create fair work rotations so no one feels trapped.",
+          "nextSceneId": "fair-roles",
+          "hint": "Fair systems build trust."
+        },
+        {
+          "text": "Let the strongest families control the best jobs.",
+          "nextSceneId": "resource-jealousy",
+          "hint": "This may create hierarchy and conflict."
+        },
+        {
+          "text": "Ask Nima to organize work using experience and need.",
+          "nextSceneId": "nima-organizes",
+          "hint": "Elder leadership may stabilize the group."
+        }
+      ]
+    },
+    "split-camp": {
+      "title": "The Split Camp",
+      "step": 5,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "The group splits.",
+        "Some families stay near the river. Others prepare to follow the old migration route.",
+        "Your father stands between the two camps, torn between fear and hope.",
+        "A divided group has fewer hands for every task."
+      ],
+      "choices": [
+        {
+          "text": "Negotiate a shared plan between both camps.",
+          "nextSceneId": "shared-plan",
+          "hint": "Cooperation may repair the split."
+        },
+        {
+          "text": "Focus only on the farming camp.",
+          "nextSceneId": "small-settlement",
+          "hint": "Commitment helps farming, but isolation is risky."
+        },
+        {
+          "text": "Leave with the migrating camp to protect family unity.",
+          "nextSceneId": "nomadic-balance",
+          "hint": "This returns to a nomadic path."
+        }
+      ]
+    },
+    "chosen-seeds": {
+      "title": "Choosing the Strongest",
+      "step": 4,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "With Nima's help, you choose seeds from the plants that grow tallest and return fastest.",
+        "You do not know it yet, but this is a step toward domestication.",
+        "Humans are beginning to shape which plants survive."
+      ],
+      "choices": [
+        {
+          "text": "Plant only the strongest seeds.",
+          "nextSceneId": "test-field",
+          "hint": "This supports domestication."
+        },
+        {
+          "text": "Save some seeds in case the first planting fails.",
+          "nextSceneId": "seed-storage",
+          "hint": "Storage can protect against risk."
+        },
+        {
+          "text": "Teach others how to identify strong seeds.",
+          "nextSceneId": "young-listeners",
+          "hint": "Shared knowledge supports the group."
+        }
+      ]
+    },
+    "nima-speaks": {
+      "title": "Nima's Voice",
+      "step": 4,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "Nima stands beside you at the fire.",
+        "She says, 'We followed the herds because the land taught us to move. Perhaps now the river is teaching us to stay.'",
+        "For the first time, the group listens without laughter."
+      ],
+      "choices": [
+        {
+          "text": "Ask for a full season to test farming.",
+          "nextSceneId": "trial-settlement",
+          "hint": "A longer trial may allow real results."
+        },
+        {
+          "text": "Ask only a few families to stay and test the idea.",
+          "nextSceneId": "split-camp",
+          "hint": "A smaller test lowers risk but may divide the group."
+        },
+        {
+          "text": "Ask everyone to begin building a settlement.",
+          "nextSceneId": "first-settlement",
+          "hint": "Full commitment can bring reward or disaster."
+        }
+      ]
+    },
+    "thorn-barrier": {
+      "title": "The Thorn Fence",
+      "step": 4,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "You and Sela drag thorn branches through the mud until your arms ache.",
+        "The barrier is ugly, but it works. In the morning, animal tracks circle the field instead of crossing it.",
+        "For the first time, the plants survive the night."
+      ],
+      "choices": [
+        {
+          "text": "Teach others how to protect the field.",
+          "nextSceneId": "divided-labor",
+          "hint": "Shared labor strengthens the settlement."
+        },
+        {
+          "text": "Expand the barrier before expanding the field.",
+          "nextSceneId": "planned-growth",
+          "hint": "Careful planning may prevent crop loss."
+        },
+        {
+          "text": "Focus only on the field and neglect hunting.",
+          "nextSceneId": "crop-dependence",
+          "hint": "Too much reliance on crops may be dangerous."
+        }
+      ]
+    },
+    "hunter-guards": {
+      "title": "Hunters at the Field",
+      "step": 4,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "The hunters agree to guard the field, but they grumble.",
+        "One says, 'Spears are for herds, not plants.'",
+        "By morning, even the proudest hunter admits the field may be worth protecting."
+      ],
+      "choices": [
+        {
+          "text": "Thank the hunters and keep hunting as part of the plan.",
+          "nextSceneId": "hunt-and-field",
+          "hint": "Balance may produce a safer path."
+        },
+        {
+          "text": "Suggest that some hunters become field guards.",
+          "nextSceneId": "divided-labor",
+          "hint": "This moves toward job specialization."
+        },
+        {
+          "text": "Say farming matters more than hunting now.",
+      "nextSceneId": "hunter-pride",
+          "hint": "Disrespecting old roles may cause conflict."
+        }
+      ]
+    },
+    "camp-field": {
+      "title": "A Field Near the Fires",
+      "step": 4,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "You move the test field closer to camp.",
+        "It is easier to protect, but the soil is not as rich as the riverbank.",
+        "Every choice has a tradeoff."
+      ],
+      "choices": [
+        {
+          "text": "Carry river mud to improve the camp field.",
+          "nextSceneId": "soil-work",
+          "hint": "Labor can modify the environment."
+        },
+        {
+          "text": "Move camp closer to the fertile riverbank.",
+          "nextSceneId": "riverbank-camp",
+          "hint": "This improves access but increases flood risk."
+        },
+        {
+          "text": "Keep two small fields in different places.",
+          "nextSceneId": "two-fields",
+          "hint": "Diversifying risk may help survival."
+        }
+      ]
+    },
+    "revealed-field": {
+      "title": "The Hidden Field Revealed",
+      "step": 4,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "You lead your father, Nima, and several others through the reeds.",
+        "When they see the growing plants, no one speaks at first.",
+        "Your father touches one leaf as if it might disappear."
+      ],
+      "choices": [
+        {
+          "text": "Admit you hid the field because you feared they would leave.",
+      "nextSceneId": "shared-plan",
+          "hint": "Honesty may rebuild trust."
+        },
+        {
+          "text": "Use the proof to demand that the group stay.",
+          "nextSceneId": "split-camp",
+          "hint": "Proof without humility may create conflict."
+        },
+        {
+          "text": "Ask the group to help protect the field until harvest.",
+          "nextSceneId": "divided-labor",
+          "hint": "Cooperation may lead toward settlement."
+        }
+      ]
+    },
+    "wait-harvest": {
+      "title": "Waiting Too Long",
+      "step": 4,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "You wait for the plants to mature.",
+        "The proof grows stronger, but the group prepares to migrate.",
+        "A good idea can fail if it arrives too late."
+      ],
+      "choices": [
+        {
+          "text": "Reveal the field before the group leaves.",
+          "nextSceneId": "revealed-field",
+          "hint": "There is still time to change direction."
+        },
+        {
+          "text": "Stay behind alone to finish the harvest.",
+          "nextSceneId": "alone-river",
+          "hint": "Isolation makes survival dangerous."
+        },
+        {
+          "text": "Cut the young plants and bring them as proof.",
+          "nextSceneId": "cut-proof",
+          "hint": "This may convince people, but destroys the harvest."
+        }
+      ]
+    },
+    "father-orun": {
+      "title": "Your Father's Silence",
+      "step": 4,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "Your father stands over the seedlings in silence.",
+        "He has always trusted movement, tracks, and spears.",
+        "Now he sees Tavi watering plants with careful hands."
+      ],
+      "choices": [
+        {
+          "text": "Ask your father to support a temporary settlement.",
+          "nextSceneId": "trial-settlement",
+          "hint": "Family support may shift the council."
+        },
+        {
+          "text": "Ask your father to organize hunters while others plant.",
+          "nextSceneId": "divided-labor",
+          "hint": "Balanced labor may help survival."
+        },
+        {
+          "text": "Challenge your father's belief in the old ways.",
+          "nextSceneId": "father-disagrees",
+          "hint": "Conflict with tradition may split support."
+        }
+      ]
+    },
+    "daily-rhythm": {
+      "title": "A New Rhythm",
+      "step": 4,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "Each morning, Tavi waters the plants. Each afternoon, you clear weeds from the soil.",
+        "The days begin to feel different. Not easier, but more predictable.",
+        "A settled life begins with repeated tasks."
+      ],
+      "choices": [
+        {
+          "text": "Invite others into the routine.",
+          "nextSceneId": "divided-labor",
+          "hint": "Shared routines support settlement."
+        },
+        {
+          "text": "Create a place to store seeds and tools.",
+          "nextSceneId": "seed-storage",
+          "hint": "Storage supports future planning."
+        },
+        {
+          "text": "Focus on the field and stop moving with hunters.",
+          "nextSceneId": "crop-dependence",
+          "hint": "Commitment may help farming but risk hunger."
+        }
+      ]
+    },
+    "hunter-pride": {
+      "title": "Pride of the Hunters",
+      "step": 4,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "The hunters celebrate the meat they bring back.",
+        "For several days, your group eats better. People praise the old ways again.",
+        "But when the meat is gone, hunger returns."
+      ],
+      "choices": [
+        {
+          "text": "Accept that hunting and gathering remain best for now.",
+          "nextSceneId": "nomadic-balance",
+          "hint": "This may lead toward a neutral ending."
+        },
+        {
+          "text": "Use full stomachs as a chance to experiment.",
+          "nextSceneId": "test-field",
+          "hint": "Temporary security can allow innovation."
+        },
+        {
+          "text": "Push the group to follow the herds even farther.",
+          "nextSceneId": "unknown-plains",
+          "hint": "This may become dangerous."
+        }
+      ]
+    },
+    "father-disagrees": {
+      "title": "A Crack in the Family",
+      "step": 4,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "Your father shakes his head. 'You think hunger is new?' he says. 'You think fear is new?'",
+        "His words sting because you know he is afraid for you.",
+        "The future is pulling one way. Your family is pulling another."
+      ],
+      "choices": [
+        {
+          "text": "Listen to your father and look for compromise.",
+          "nextSceneId": "hunt-and-field",
+          "hint": "Compromise may preserve trust."
+        },
+        {
+          "text": "Choose the river even if your father refuses.",
+          "nextSceneId": "split-camp",
+          "hint": "This may create a split."
+        },
+        {
+          "text": "Abandon the farming idea to keep peace.",
+          "nextSceneId": "nomadic-balance",
+          "hint": "This may preserve family unity but slow change."
+        }
+      ]
+    },
+    "turn-back": {
+      "title": "The Debate to Turn Back",
+      "step": 4,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "You ask the group to turn back toward the river.",
+        "Some are too tired to argue. Others fear losing the herd tracks.",
+        "The choice is no longer between comfort and danger. It is between two dangers."
+      ],
+      "choices": [
+        {
+          "text": "Return to the river as a whole group.",
+          "nextSceneId": "return-river",
+          "hint": "The agricultural path can still continue."
+        },
+        {
+          "text": "Send a small group back to test the river.",
+          "nextSceneId": "split-camp",
+          "hint": "This lowers risk but divides people."
+        },
+        {
+          "text": "Continue migration despite doubts.",
+          "nextSceneId": "unknown-plains",
+          "hint": "This continues the risky nomadic route."
+        }
+      ]
+    },
+    "unknown-plains": {
+      "title": "The Unknown Plains",
+      "step": 4,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "The plains stretch farther than anyone expected.",
+        "There are tracks, but no herd. Clouds gather without rain.",
+        "The group still moves because movement is what it knows."
+      ],
+      "choices": [
+        {
+          "text": "Organize scouts to search in different directions.",
+          "nextSceneId": "scout-search",
+          "hint": "Better organization may help survival."
+        },
+        {
+          "text": "Turn back before the weakest collapse.",
+          "nextSceneId": "return-river",
+          "hint": "Returning may save the group."
+        },
+        {
+          "text": "Keep pushing forward and hope for a herd.",
+          "nextSceneId": "migration-crisis",
+          "hint": "Hope without evidence can be dangerous."
+        }
+      ]
+    },
+    "silent-hunger": {
+      "title": "Silent Hunger",
+      "step": 4,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "You say nothing.",
+        "The group keeps moving, and hunger settles into everyone like cold rain.",
+        "Tavi no longer complains. That frightens you most."
+      ],
+      "choices": [
+        {
+          "text": "Finally speak up and ask to return to the river.",
+          "nextSceneId": "turn-back",
+          "hint": "There may still be time."
+        },
+        {
+          "text": "Help gather whatever food can be found.",
+          "nextSceneId": "nomadic-balance",
+          "hint": "Adaptation may support survival."
+        },
+        {
+          "text": "Continue in silence.",
+          "nextSceneId": "migration-crisis",
+          "hint": "This may lead toward disaster."
+        }
+      ]
+    },
+    "test-field": {
+      "title": "The First Field",
+      "step": 5,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "You press chosen seeds into the best soil.",
+        "Sela spaces them apart. Tavi waters them carefully.",
+        "Each seed feels like a promise, but promises can fail."
+      ],
+      "choices": [
+        {
+          "text": "Create a watering routine using river water.",
+          "nextSceneId": "water-routine",
+          "hint": "This may lead toward irrigation."
+        },
+        {
+          "text": "Plant as many seeds as possible to increase the harvest.",
+          "nextSceneId": "too-many-seeds",
+          "hint": "Rapid expansion may be risky."
+        },
+        {
+          "text": "Keep hunting while the field grows.",
+          "nextSceneId": "hunt-and-field",
+          "hint": "Balance may protect the group."
+        }
+      ]
+    },
+    "between-two-worlds": {
+      "title": "Between Two Worlds",
+      "step": 5,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "The group returns to the river when food is available, then moves when the land becomes uncertain.",
+        "You plant a little, gather a little, and hunt when you can.",
+        "This is not a revolution yet. It is a slow experiment."
+      ],
+      "choices": [
+        {
+          "text": "Keep this mixed lifestyle for another season.",
+          "nextSceneId": "season-balance",
+          "hint": "This may lead toward a neutral ending."
+        },
+        {
+          "text": "Use the pattern to prepare for settlement.",
+          "nextSceneId": "planned-growth",
+          "hint": "This may lead toward stronger farming."
+        },
+        {
+          "text": "Give up farming and return fully to migration.",
+          "nextSceneId": "nomadic-balance",
+          "hint": "This preserves the old ways."
+        }
+      ]
+    },
+    "first-settlement": {
+      "title": "The First Settlement",
+      "step": 6,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "The group begins building stronger shelters.",
+        "Stones circle the fires. Storage pits are dug into the ground.",
+        "The camp starts to look less like a stopping place and more like a home."
+      ],
+      "choices": [
+        {
+          "text": "Build on higher ground away from floodwater.",
+          "nextSceneId": "high-ground",
+          "hint": "Good geography supports settlement."
+        },
+        {
+          "text": "Build close to the river for easy water access.",
+          "nextSceneId": "riverbank-camp",
+          "hint": "Convenience may increase flood risk."
+        },
+        {
+          "text": "Build shelters around shared storage pits.",
+          "nextSceneId": "seed-storage",
+          "hint": "Storage may support surplus and planning."
+        }
+      ]
+    },
+    "planned-growth": {
+      "title": "Slow Growth",
+      "step": 6,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "You choose a smaller field than some people want.",
+        "You leave space between plants, save seeds, and keep hunters active.",
+        "The plan feels slow, but the plants grow stronger."
+      ],
+      "choices": [
+        {
+          "text": "Develop irrigation channels before expanding.",
+          "nextSceneId": "first-channels",
+          "hint": "Water control may lead toward a strong settlement."
+        },
+        {
+          "text": "Train more people in seed selection and planting.",
+          "nextSceneId": "teaching-circle",
+          "hint": "Shared knowledge strengthens the community."
+        },
+        {
+          "text": "Prepare for a harvest gathering to unite the group.",
+          "nextSceneId": "harvest-gathering",
+          "hint": "Shared culture can support community."
+        }
+      ]
+    },
+    "hunt-and-field": {
+      "title": "Between Spear and Seed",
+      "step": 6,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "Some people hunt. Some tend the field. Some gather wild foods.",
+        "The group is stretched thin, but no single failure can destroy everyone.",
+        "Change does not have to happen all at once."
+      ],
+      "choices": [
+        {
+          "text": "Keep the balanced system for another season.",
+          "nextSceneId": "season-balance",
+          "hint": "This may lead toward a neutral ending."
+        },
+        {
+          "text": "Use the balance to prepare for full settlement.",
+          "nextSceneId": "planned-growth",
+          "hint": "This may lead toward a good ending."
+        },
+        {
+          "text": "Let each family choose its own path.",
+          "nextSceneId": "loose-community",
+          "hint": "Freedom may reduce conflict or weaken cooperation."
+        }
+      ]
+    },
+    "seed-storage": {
+      "title": "Food for Tomorrow",
+      "step": 6,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "You dig lined pits and store seeds in dry baskets.",
+        "For people used to eating what they find, saving food feels strange.",
+        "Tavi asks why he cannot eat the seeds now. You tell him, 'Because tomorrow is hungry too.'"
+      ],
+      "choices": [
+        {
+          "text": "Create rules for shared seed storage.",
+          "nextSceneId": "fair-storage",
+          "hint": "Fair resource management builds trust."
+        },
+        {
+          "text": "Let each family store its own seeds.",
+          "nextSceneId": "family-storage",
+          "hint": "This protects independence but may increase inequality."
+        },
+        {
+          "text": "Use most seeds now to feed hungry children.",
+          "nextSceneId": "hard-sacrifice",
+          "hint": "Immediate survival may weaken the future harvest."
+        }
+      ]
+    },
+    "high-ground": {
+      "title": "Above the Flood Line",
+      "step": 7,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "You place shelters above the old flood marks.",
+        "The river is farther away, but the camp feels safer.",
+        "When rain comes, people watch the water rise without panic."
+      ],
+      "choices": [
+        {
+          "text": "Connect the camp to the fields with paths and storage areas.",
+          "nextSceneId": "storage-paths",
+          "hint": "Organization supports settled life."
+        },
+        {
+          "text": "Dig channels to bring water toward the crops.",
+          "nextSceneId": "first-channels",
+          "hint": "This develops irrigation."
+        },
+        {
+          "text": "Focus on barriers around the camp and fields.",
+          "nextSceneId": "protected-settlement",
+          "hint": "Protection matters as settlement grows."
+        }
+      ]
+    },
+    "riverbank-camp": {
+      "title": "Too Close to the Water",
+      "step": 7,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "The river makes life easier at first. Water is close. Crops are close. Fish are close.",
+        "Then heavy rain falls in hills beyond sight. By morning, the river rises like an animal waking hungry."
+      ],
+      "choices": [
+        {
+          "text": "Move the shelters to higher ground immediately.",
+          "nextSceneId": "high-ground",
+          "hint": "Adapting quickly may prevent disaster."
+        },
+        {
+          "text": "Build barriers and hope the water stops rising.",
+          "nextSceneId": "flood-test",
+          "hint": "This may work, but it is risky."
+        },
+        {
+          "text": "Stay close to protect the fields.",
+          "nextSceneId": "flood-loss",
+          "hint": "Protecting crops over people may be dangerous."
+        }
+      ]
+    },
+    "first-channels": {
+      "title": "The First Channels",
+      "step": 7,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "You and the others dig shallow paths through the mud.",
+        "At first, the water wanders. Then it follows the channels toward the field.",
+        "The group cheers as the river begins to work with you."
+      ],
+      "choices": [
+        {
+          "text": "Expand the channels slowly and maintain them together.",
+          "nextSceneId": "irrigation-system",
+          "hint": "Cooperation may create reliable agriculture."
+        },
+        {
+          "text": "Expand too quickly before learning the water flow.",
+      "nextSceneId": "flood-loss",
+          "hint": "Poor planning may cause damage."
+        },
+        {
+          "text": "Use channels only for one field and keep hunting too.",
+          "nextSceneId": "season-balance",
+          "hint": "This creates a mixed survival strategy."
+        }
+      ]
+    },
+    "fair-roles": {
+      "title": "A Fair Rotation",
+      "step": 6,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "Nima helps create a work rotation.",
+        "No family guards the field every night. No hunter is forced to stop hunting forever.",
+        "People still argue, but the rules give them words to argue with instead of fists."
+      ],
+      "choices": [
+        {
+          "text": "Apply the same fairness to stored food.",
+          "nextSceneId": "fair-storage",
+          "hint": "Fair systems can reinforce each other."
+        },
+        {
+          "text": "Use the rotation to expand the settlement.",
+          "nextSceneId": "storage-paths",
+          "hint": "Organized labor supports complexity."
+        },
+        {
+          "text": "Let the system weaken when powerful families complain.",
+          "nextSceneId": "resource-jealousy",
+          "hint": "Unequal power may grow."
+        }
+      ]
+    },
+    "resource-jealousy": {
+      "title": "Seeds of Jealousy",
+      "step": 6,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "Some families begin to claim the best tools, best storage pits, and best sleeping places.",
+        "The same food that creates security also creates power.",
+        "You see the first signs of hierarchy forming around stored grain."
+      ],
+      "choices": [
+        {
+          "text": "Call a meeting to create fair storage rules.",
+          "nextSceneId": "fair-storage",
+          "hint": "It may still be possible to rebuild trust."
+        },
+        {
+          "text": "Let powerful families control the surplus.",
+          "nextSceneId": "elite-control",
+          "hint": "This may create order with inequality."
+        },
+        {
+          "text": "Steal grain for hungry families at night.",
+          "nextSceneId": "grain-theft",
+          "hint": "This may help briefly but damage trust."
+        }
+      ]
+    },
+    "nima-organizes": {
+      "title": "Nima Organizes the Work",
+      "step": 6,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "Nima assigns work based on strength, skill, and need.",
+        "Hunters still hunt. Children gather fuel. Skilled hands shape tools. Careful eyes watch the fields.",
+        "The group begins to feel like something more organized than a traveling band."
+      ],
+      "choices": [
+        {
+          "text": "Use this organization to build irrigation.",
+          "nextSceneId": "first-channels",
+          "hint": "Organized labor can support public works."
+        },
+        {
+          "text": "Use this organization to create shared storage.",
+          "nextSceneId": "fair-storage",
+          "hint": "Shared systems can protect surplus."
+        },
+        {
+          "text": "Depend too heavily on Nima alone.",
+          "nextSceneId": "leader-strain",
+          "hint": "A system must outlast one leader."
+        }
+      ]
+    },
+    "shared-plan": {
+      "title": "The Shared Plan",
+      "step": 6,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "You move between the camps carrying messages.",
+        "The hunters agree to return with meat when they can. The farming families agree to share any harvest.",
+        "It is not trust yet, but it is a bridge."
+      ],
+      "choices": [
+        {
+          "text": "Keep both camps connected through shared storage.",
+          "nextSceneId": "fair-storage",
+          "hint": "Shared resources may preserve unity."
+        },
+        {
+          "text": "Invite the hunters back for the harvest gathering.",
+          "nextSceneId": "harvest-gathering",
+          "hint": "Community rituals may repair trust."
+        },
+        {
+          "text": "Let the camps drift apart after the agreement.",
+          "nextSceneId": "loose-community",
+          "hint": "Weak ties may lead to a mixed outcome."
+        }
+      ]
+    },
+    "small-settlement": {
+      "title": "Too Few Hands",
+      "step": 6,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "The farming camp works hard, but there are not enough hands.",
+        "When animals come, there are too few guards. When weeds spread, there are too few workers.",
+        "A new way of life cannot grow easily from isolation."
+      ],
+      "choices": [
+        {
+          "text": "Ask the migrating families to return.",
+          "nextSceneId": "shared-plan",
+          "hint": "Rebuilding cooperation may help."
+        },
+        {
+          "text": "Reduce the field to what the small group can manage.",
+          "nextSceneId": "planned-growth",
+          "hint": "Smaller plans may survive."
+        },
+        {
+          "text": "Keep expanding despite too few workers.",
+          "nextSceneId": "crop-failure-path",
+          "hint": "Overextension may lead to failure."
+        }
+      ]
+    },
+    "nomadic-balance": {
+      "title": "The Old Ways Continue",
+      "step": 6,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "Your group survives by moving carefully, hunting wisely, and gathering what the land offers.",
+        "Tavi survives, though some nights he still goes to sleep hungry.",
+        "You think often of the river, but the group remains a band of nomads."
+      ],
+      "choices": [
+        {
+          "text": "Accept survival without full settlement.",
+          "nextSceneId": "neutral-old-ways",
+          "hint": "This leads to a neutral ending."
+        },
+        {
+          "text": "Return to the river each year for seasonal planting.",
+          "nextSceneId": "neutral-seasonal",
+          "hint": "This leads to a mixed ending."
+        },
+        {
+          "text": "Teach children both hunting skills and seed knowledge.",
+          "nextSceneId": "neutral-knowledge",
+          "hint": "This preserves change without full revolution."
+        }
+      ]
+    },
+    "water-routine": {
+      "title": "Carrying the River",
+      "step": 6,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "Every morning, people carry water from the river to the field.",
+        "At first, the work feels manageable. Then the sun grows hotter.",
+        "The plants need more water than arms can easily carry."
+      ],
+      "choices": [
+        {
+          "text": "Dig narrow channels from the river toward the field.",
+          "nextSceneId": "first-channels",
+          "hint": "This leads toward irrigation."
+        },
+        {
+          "text": "Assign more people to carry water.",
+          "nextSceneId": "labor-strain",
+          "hint": "More labor may help, but creates strain."
+        },
+        {
+          "text": "Reduce the field size to match available water.",
+          "nextSceneId": "planned-growth",
+          "hint": "Careful limits may prevent collapse."
+        }
+      ]
+    },
+    "too-many-seeds": {
+      "title": "Too Much Hope",
+      "step": 6,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "You plant every seed you can find.",
+        "At first, the field looks full of promise. Then the plants crowd one another. The soil dries faster.",
+        "Hope has become heavy."
+      ],
+      "choices": [
+        {
+          "text": "Thin the field and save the strongest plants.",
+          "nextSceneId": "chosen-seeds",
+          "hint": "Correcting mistakes may protect the harvest."
+        },
+        {
+          "text": "Demand more water and more labor.",
+          "nextSceneId": "labor-strain",
+          "hint": "Pressure on the group may create resentment."
+        },
+        {
+          "text": "Ignore the warning signs.",
+          "nextSceneId": "crop-failure-path",
+          "hint": "Ignoring environmental limits can lead to failure."
+        }
+      ]
+    },
+    "crop-dependence": {
+      "title": "All Eyes on the Field",
+      "step": 6,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "The hunters go out less often. Gatherers stay near camp.",
+        "The crops become more than food. They become hope, fear, and argument.",
+        "If they fail, there is no backup."
+      ],
+      "choices": [
+        {
+          "text": "Restore hunting and gathering as backup.",
+          "nextSceneId": "hunt-and-field",
+          "hint": "Balance may protect survival."
+        },
+        {
+          "text": "Double down on farming despite the risk.",
+          "nextSceneId": "crop-failure-path",
+          "hint": "Dependence can be dangerous."
+        },
+        {
+          "text": "Build storage and irrigation to reduce risk.",
+          "nextSceneId": "first-channels",
+          "hint": "Planning may save the settlement."
+        }
+      ]
+    },
+    "soil-work": {
+      "title": "Working the Soil",
+      "step": 5,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "You carry baskets of dark river mud to the weaker field near camp.",
+        "It is exhausting work, but the soil improves.",
+        "Your people are not just living in the environment now. They are changing it."
+      ],
+      "choices": [
+        {
+          "text": "Use this method carefully for small fields.",
+          "nextSceneId": "planned-growth",
+          "hint": "Small changes may support success."
+        },
+        {
+          "text": "Demand that everyone carry soil every day.",
+          "nextSceneId": "labor-strain",
+          "hint": "Too much forced labor may create conflict."
+        },
+        {
+          "text": "Move the settlement closer to better soil.",
+          "nextSceneId": "riverbank-camp",
+          "hint": "This improves farming but increases flood risk."
+        }
+      ]
+    },
+    "two-fields": {
+      "title": "Two Fields, Two Risks",
+      "step": 5,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "One field grows near camp. The other grows near the riverbank.",
+        "Neither is perfect. Together, they give the group more than one chance.",
+        "Risk feels different when it is spread out."
+      ],
+      "choices": [
+        {
+          "text": "Keep both fields small and protected.",
+          "nextSceneId": "planned-growth",
+          "hint": "Careful planning supports survival."
+        },
+        {
+          "text": "Focus only on the river field because it grows faster.",
+          "nextSceneId": "riverbank-camp",
+          "hint": "Better soil may bring greater flood risk."
+        },
+        {
+          "text": "Let families control different fields.",
+          "nextSceneId": "family-storage",
+          "hint": "This may protect independence but increase division."
+        }
+      ]
+    },
+    "scout-search": {
+      "title": "Scouts in the Dry Grass",
+      "step": 5,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "Scouts travel in three directions.",
+        "One finds dry tracks. One finds bitter roots. One does not return until nightfall, shaking with exhaustion.",
+        "The land is not empty, but it is not generous."
+      ],
+      "choices": [
+        {
+          "text": "Turn back toward the river with this evidence.",
+          "nextSceneId": "return-river",
+          "hint": "Evidence can change direction."
+        },
+        {
+          "text": "Continue carefully with smaller scouting groups.",
+          "nextSceneId": "neutral-old-ways",
+          "hint": "This leads toward nomadic survival."
+        },
+        {
+          "text": "Ignore the scouts and push forward.",
+          "nextSceneId": "migration-crisis",
+          "hint": "Ignoring evidence may lead to disaster."
+        }
+      ]
+    },
+    "migration-crisis": {
+      "title": "When Movement Fails",
+      "step": 5,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "The group moves, but the land gives little.",
+        "Tavi collapses beside a dry stream. Your father lifts him, but his own legs shake.",
+        "The old ways have not betrayed you. The environment has changed faster than your plans."
+      ],
+      "choices": [
+        {
+          "text": "Turn back in desperation.",
+          "nextSceneId": "return-river",
+          "hint": "There may still be a path back."
+        },
+        {
+          "text": "Break into small groups to search for food.",
+          "nextSceneId": "bad-scattered",
+          "hint": "Division in crisis is dangerous."
+        },
+        {
+          "text": "Keep moving until a herd appears.",
+          "nextSceneId": "bad-starvation",
+          "hint": "This leads toward a bad ending."
+        }
+      ]
+    },
+    "season-balance": {
+      "title": "A Season of Balance",
+      "step": 7,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "The group hunts, gathers, and plants small fields near the river.",
+        "No one is fully satisfied, but no one is fully ignored.",
+        "The future arrives slowly, one compromise at a time."
+      ],
+      "choices": [
+        {
+          "text": "Choose the balanced way of life as the group's future.",
+          "nextSceneId": "neutral-seasonal",
+          "hint": "This leads to a neutral ending."
+        },
+        {
+          "text": "Use balance as preparation for full settlement.",
+          "nextSceneId": "storage-paths",
+          "hint": "This may lead toward a good ending."
+        },
+        {
+          "text": "Let the balance fall apart when pressure rises.",
+          "nextSceneId": "loose-community",
+          "hint": "Weak cooperation may limit success."
+        }
+      ]
+    },
+    "loose-community": {
+      "title": "Everyone Chooses Alone",
+      "step": 7,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "Each family chooses its own path.",
+        "Some plant. Some hunt. Some store food privately. Some share.",
+        "There is less arguing, but also less trust."
+      ],
+      "choices": [
+        {
+          "text": "Accept a loose mixed lifestyle.",
+          "nextSceneId": "neutral-knowledge",
+          "hint": "This leads to a neutral ending."
+        },
+        {
+          "text": "Rebuild common rules before harvest.",
+          "nextSceneId": "fair-storage",
+          "hint": "Trust may still return."
+        },
+        {
+          "text": "Let stronger families take control.",
+          "nextSceneId": "elite-control",
+          "hint": "This may lead to inequality."
+        }
+      ]
+    },
+    "fair-storage": {
+      "title": "Rules for the Storehouse",
+      "step": 7,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "The group gathers beside the storage pits.",
+        "Nima helps create rules. Seeds for planting are separate from food for eating. Families in need will receive help.",
+        "Surplus becomes less frightening when people trust how it will be used."
+      ],
+      "choices": [
+        {
+          "text": "Use shared storage to support irrigation work.",
+          "nextSceneId": "irrigation-system",
+          "hint": "Surplus can support community projects."
+        },
+        {
+          "text": "Use shared storage to survive winter cautiously.",
+          "nextSceneId": "final-harvest-council",
+          "hint": "Careful resource management may succeed."
+        },
+        {
+          "text": "Let the rules weaken under pressure from powerful families.",
+          "nextSceneId": "elite-control",
+          "hint": "Inequality may grow."
+        }
+      ]
+    },
+    "family-storage": {
+      "title": "Private Baskets",
+      "step": 7,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "Each family stores its own seeds.",
+        "At first, this feels fair. Then some baskets fill while others stay nearly empty.",
+        "A settled life is creating new questions about ownership and responsibility."
+      ],
+      "choices": [
+        {
+          "text": "Create emergency sharing rules.",
+          "nextSceneId": "fair-storage",
+          "hint": "The group may still build trust."
+        },
+        {
+          "text": "Accept unequal storage as the price of independence.",
+          "nextSceneId": "neutral-unequal",
+          "hint": "This leads to a neutral ending."
+        },
+        {
+          "text": "Let hunger turn into theft and blame.",
+          "nextSceneId": "grain-theft",
+          "hint": "Conflict may worsen."
+        }
+      ]
+    },
+    "hard-sacrifice": {
+      "title": "Seeds or Children",
+      "step": 7,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "The children are hungry now. The seeds are food now too.",
+        "But every seed eaten is a plant that will not grow later.",
+        "Survival asks a cruel question. Who is tomorrow for if today does not live?"
+      ],
+      "choices": [
+        {
+          "text": "Share some seeds but protect enough for planting.",
+          "nextSceneId": "final-harvest-council",
+          "hint": "A painful balance may work."
+        },
+        {
+          "text": "Eat nearly all the seeds.",
+          "nextSceneId": "neutral-old-ways",
+          "hint": "The group may survive but lose the farming future."
+        },
+        {
+          "text": "Refuse to share seeds with hungry families.",
+          "nextSceneId": "grain-theft",
+          "hint": "Desperation may damage trust."
+        }
+      ]
+    },
+    "storage-paths": {
+      "title": "Paths, Pits, and Plans",
+      "step": 8,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "Paths now connect shelters, fields, water, and storage pits.",
+        "Children know where tools belong. Hunters know when the field must be guarded.",
+        "The camp feels less temporary with each sunrise."
+      ],
+      "choices": [
+        {
+          "text": "Hold a harvest council to plan the next season.",
+          "nextSceneId": "final-harvest-council",
+          "hint": "Planning can secure the settlement."
+        },
+        {
+          "text": "Build irrigation before the next dry season.",
+          "nextSceneId": "irrigation-system",
+          "hint": "Water control can strengthen agriculture."
+        },
+        {
+          "text": "Expand too quickly now that things seem stable.",
+      "nextSceneId": "crop-failure-path",
+          "hint": "Confidence can become carelessness."
+        }
+      ]
+    },
+    "protected-settlement": {
+      "title": "Barriers and Watchfires",
+      "step": 8,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "The group builds barriers around fields and lights watchfires near storage.",
+        "Protection brings comfort, but also makes the camp feel permanent.",
+        "Some people like that. Others feel trapped."
+      ],
+      "choices": [
+        {
+          "text": "Use protection to support a stable settlement.",
+          "nextSceneId": "final-harvest-council",
+          "hint": "Security may support civilization."
+        },
+        {
+          "text": "Keep exits open for seasonal migration.",
+          "nextSceneId": "neutral-seasonal",
+          "hint": "This preserves flexibility."
+        },
+        {
+          "text": "Let fear of outsiders control every decision.",
+          "nextSceneId": "neutral-unequal",
+          "hint": "Fear may create stability with limits."
+        }
+      ]
+    },
+    "flood-test": {
+      "title": "The Flood Test",
+      "step": 8,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "The barriers hold for one night.",
+        "By morning, water presses against them, heavy and brown.",
+        "The group must decide whether pride matters more than safety."
+      ],
+      "choices": [
+        {
+          "text": "Retreat to high ground with seeds and tools.",
+          "nextSceneId": "high-ground",
+          "hint": "Adapting may save the group."
+        },
+        {
+          "text": "Stay and fight the flood.",
+          "nextSceneId": "flood-loss",
+          "hint": "This is dangerous."
+        },
+        {
+          "text": "Save the children first and abandon part of the field.",
+          "nextSceneId": "final-harvest-council",
+          "hint": "A painful choice may preserve the future."
+        }
+      ]
+    },
+    "flood-loss": {
+      "title": "Water Over the Fields",
+      "step": 8,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "The river breaks through the camp.",
+        "Baskets float away. Young plants vanish under brown water.",
+        "The river that promised life has reminded everyone that it cannot be controlled without knowledge."
+      ],
+      "choices": [
+        {
+          "text": "Rebuild on higher ground with what remains.",
+          "nextSceneId": "neutral-seasonal",
+          "hint": "This leads to a cautious mixed future."
+        },
+        {
+          "text": "Blame one another until the group divides.",
+          "nextSceneId": "bad-collapse",
+          "hint": "Conflict after disaster may destroy the settlement."
+        },
+        {
+          "text": "Learn from the flood and build channels properly.",
+          "nextSceneId": "first-channels",
+          "hint": "Failure can still teach."
+        }
+      ]
+    },
+    "irrigation-system": {
+      "title": "Mastering the River",
+      "step": 9,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "The channels deepen. Water moves from the river to the fields.",
+        "People take turns clearing mud and repairing the banks.",
+        "The river is still powerful, but now the group has learned to work with it."
+      ],
+      "choices": [
+        {
+          "text": "Share the water and storage fairly.",
+          "nextSceneId": "good-civilization",
+          "hint": "This leads to a good ending."
+        },
+        {
+          "text": "Let a few families control the best watered fields.",
+          "nextSceneId": "neutral-unequal",
+          "hint": "This leads to a mixed ending."
+        },
+        {
+          "text": "Expand beyond what the channels can support.",
+      "nextSceneId": "crop-failure-path",
+          "hint": "Overexpansion may cause failure."
+        }
+      ]
+    },
+    "teaching-circle": {
+      "title": "The Teaching Circle",
+      "step": 7,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "You teach children and adults how to choose strong seeds, clear weeds, and watch the soil.",
+        "Knowledge no longer lives only in your hands.",
+        "A community grows stronger when useful knowledge is shared."
+      ],
+      "choices": [
+        {
+          "text": "Combine teaching with shared storage rules.",
+          "nextSceneId": "fair-storage",
+          "hint": "Knowledge and fairness can support success."
+        },
+        {
+          "text": "Train specialists for planting, tools, and guarding.",
+          "nextSceneId": "storage-paths",
+          "hint": "This supports job specialization."
+        },
+        {
+          "text": "Keep the best knowledge for your own family.",
+          "nextSceneId": "family-storage",
+          "hint": "Private control may increase inequality."
+        }
+      ]
+    },
+    "harvest-gathering": {
+      "title": "The Harvest Gathering",
+      "step": 8,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "The first harvest is small, but real.",
+        "People gather around baskets of grain. Tavi reaches toward them, and for once, no one pulls his hand away.",
+        "The group has not escaped hunger forever, but it has created a new possibility."
+      ],
+      "choices": [
+        {
+          "text": "Save the strongest seeds for next season.",
+          "nextSceneId": "final-harvest-council",
+          "hint": "Planning may secure the future."
+        },
+        {
+          "text": "Eat most of the harvest in celebration.",
+          "nextSceneId": "hard-sacrifice",
+          "hint": "Joy now may create risk later."
+        },
+        {
+          "text": "Use the harvest to bring the split camp back together.",
+          "nextSceneId": "shared-plan",
+          "hint": "Food may repair trust."
+        }
+      ]
+    },
+    "labor-strain": {
+      "title": "Hands That Ache",
+      "step": 7,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "People carry water, pull weeds, gather wood, and guard the fields.",
+        "Some begin to say farming is just another kind of hunger.",
+        "If the work feels unfair, the settlement will not hold."
+      ],
+      "choices": [
+        {
+          "text": "Create fair work rotations.",
+          "nextSceneId": "fair-roles",
+          "hint": "Fairness may restore trust."
+        },
+        {
+          "text": "Force tired families to keep working.",
+          "nextSceneId": "bad-collapse",
+          "hint": "Forced labor may break the group."
+        },
+        {
+          "text": "Reduce the field and return to balance.",
+          "nextSceneId": "season-balance",
+          "hint": "Smaller goals may survive."
+        }
+      ]
+    },
+    "crop-failure-path": {
+      "title": "The Field Turns Yellow",
+      "step": 7,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "The plants yellow in the sun.",
+        "Too many seeds, too little water, too little planning.",
+        "People stare at the field as if anger alone can make it green again."
+      ],
+      "choices": [
+        {
+          "text": "Admit the mistake and return to balanced survival.",
+          "nextSceneId": "neutral-seasonal",
+          "hint": "This leads to a neutral ending."
+        },
+        {
+          "text": "Blame others and protect your own family's food.",
+          "nextSceneId": "bad-collapse",
+          "hint": "Blame may destroy cooperation."
+        },
+        {
+          "text": "Try to rebuild with irrigation and smaller fields.",
+          "nextSceneId": "first-channels",
+          "hint": "Learning from failure may still help."
+        }
+      ]
+    },
+    "elite-control": {
+      "title": "The First Powerful Families",
+      "step": 8,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "The strongest families begin guarding the best fields and fullest storage pits.",
+        "They promise order, but others whisper that surplus has become a weapon.",
+        "A settled life has created new power."
+      ],
+      "choices": [
+        {
+          "text": "Accept order with inequality.",
+          "nextSceneId": "neutral-unequal",
+          "hint": "This leads to a neutral ending."
+        },
+        {
+          "text": "Challenge the powerful families and restore shared rules.",
+          "nextSceneId": "fair-storage",
+          "hint": "Trust may still be rebuilt."
+        },
+        {
+          "text": "Let hunger and anger break into open conflict.",
+          "nextSceneId": "bad-collapse",
+          "hint": "This may lead to a bad ending."
+        }
+      ]
+    },
+    "grain-theft": {
+      "title": "Night at the Storage Pit",
+      "step": 8,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "Someone steals grain in the dark.",
+        "By morning, accusations move faster than truth. Families grip tools as if they are weapons.",
+        "Stored food was meant to protect the group. Now it threatens to divide it."
+      ],
+      "choices": [
+        {
+          "text": "Investigate calmly and create sharing rules.",
+          "nextSceneId": "fair-storage",
+          "hint": "Justice may restore trust."
+        },
+        {
+          "text": "Punish a weak family without proof.",
+          "nextSceneId": "bad-collapse",
+          "hint": "Unfair punishment may destroy unity."
+        },
+        {
+          "text": "End shared storage and return to family control.",
+          "nextSceneId": "neutral-unequal",
+          "hint": "This leads to a mixed outcome."
+        }
+      ]
+    },
+    "leader-strain": {
+      "title": "Too Much on Nima",
+      "step": 7,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "Everyone brings problems to Nima.",
+        "Where should water go? Who should guard the field? Who receives grain first?",
+        "Even the wisest elder cannot become the whole system."
+      ],
+      "choices": [
+        {
+          "text": "Create shared rules so the system outlasts one leader.",
+          "nextSceneId": "fair-storage",
+          "hint": "Institutions may support settlement."
+        },
+        {
+          "text": "Let Nima decide everything.",
+          "nextSceneId": "neutral-unequal",
+          "hint": "This may keep order but limit fairness."
+        },
+        {
+          "text": "Ignore Nima when her decisions become difficult.",
+          "nextSceneId": "bad-collapse",
+          "hint": "Losing trusted leadership may break the group."
+        }
+      ]
+    },
+    "cut-proof": {
+      "title": "Proof in Your Hands",
+      "step": 5,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "You cut the young plants and carry them to camp.",
+        "People finally believe you, but the hidden harvest is gone.",
+        "Proof has a cost."
+      ],
+      "choices": [
+        {
+          "text": "Use the proof to begin again with group support.",
+          "nextSceneId": "trial-settlement",
+          "hint": "The idea may survive."
+        },
+        {
+          "text": "Accept that the group must move for now.",
+          "nextSceneId": "neutral-knowledge",
+          "hint": "Knowledge may carry forward."
+        },
+        {
+          "text": "Blame the group for making you destroy the plants.",
+          "nextSceneId": "split-camp",
+          "hint": "Anger may divide people."
+        }
+      ]
+    },
+    "alone-river": {
+      "title": "Alone at the River",
+      "step": 5,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "You stay behind when the group leaves.",
+        "For two days, the plants keep you company. On the third, you hear animals in the reeds at night.",
+        "A new idea is not enough when you must face the land alone."
+      ],
+      "choices": [
+        {
+          "text": "Try to find the group and return.",
+          "nextSceneId": "neutral-knowledge",
+          "hint": "You may survive with hard-earned knowledge."
+        },
+        {
+          "text": "Keep guarding the field alone.",
+          "nextSceneId": "bad-alone",
+          "hint": "Isolation is dangerous."
+        },
+        {
+          "text": "Signal with smoke and hope someone comes back.",
+          "nextSceneId": "shared-plan",
+          "hint": "Cooperation may still save the idea."
+        }
+      ]
+    },
+    "final-harvest-council": {
+      "title": "The Harvest Council",
+      "step": 10,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "The harvest is not huge, but it is real.",
+        "There is food for now and seeds for later, if people choose carefully.",
+        "The group gathers beside the storage pits. This decision will shape the future."
+      ],
+      "choices": [
+        {
+          "text": "Share food fairly, save seeds, and prepare the next planting.",
+          "nextSceneId": "good-civilization",
+          "hint": "This leads to a good ending."
+        },
+        {
+          "text": "Save some seeds while continuing hunting and gathering.",
+          "nextSceneId": "neutral-seasonal",
+          "hint": "This leads to a neutral ending."
+        },
+        {
+          "text": "Let powerful families control most of the grain.",
+          "nextSceneId": "neutral-unequal",
+          "hint": "This leads to a mixed ending."
+        }
+      ]
+    },
+    "neutral-old-ways": {
+      "title": "Survival Without Change",
+      "step": 11,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "Your group continues moving with the seasons.",
+        "You hunt, gather, track weather, and follow the land's signals as your ancestors did.",
+        "Tavi survives, though hunger still visits. Sometimes you dream of the river plants and wonder what might have been."
+      ],
+      "ending": "neutral",
+      "teachingSummary": "This ending shows that Paleolithic hunter-gatherers were skilled at adapting to their environments. Not all groups adopted agriculture immediately, and survival could continue through nomadic movement and environmental knowledge.",
+      "keyTermReview": "Vocabulary review: This adventure connects Paleolithic nomadic life to the Neolithic Revolution. Students see how domestication, agriculture, irrigation, surplus food, river valleys, and job specialization helped create the foundations of civilization.",
+      "reflectionQuestions": [
+        "How did Kara's choices reflect the risks and rewards of the Neolithic Revolution?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the environment shape the choices available to Kara's group?",
+        "Was agriculture worth the risk for Kara's people? Explain using details from your path.",
+        "What tradeoff did Kara's group face between survival, tradition, and change?"
+      ]
+    },
+    "neutral-seasonal": {
+      "title": "Between Two Worlds",
+      "step": 11,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "Your group returns to the river each year.",
+        "You plant small fields, gather wild foods, and still follow herds when needed.",
+        "The change is slow, but it is real. Your people live between the Paleolithic past and the Neolithic future."
+      ],
+      "ending": "neutral",
+      "teachingSummary": "This ending shows that the shift to agriculture was gradual. Some communities blended hunting, gathering, seasonal movement, and early farming before becoming fully settled.",
+      "keyTermReview": "Vocabulary review: This adventure connects Paleolithic nomadic life to the Neolithic Revolution. Students see how domestication, agriculture, irrigation, surplus food, river valleys, and job specialization helped create the foundations of civilization.",
+      "reflectionQuestions": [
+        "How did Kara's choices reflect the risks and rewards of the Neolithic Revolution?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the environment shape the choices available to Kara's group?",
+        "Was agriculture worth the risk for Kara's people? Explain using details from your path.",
+        "What tradeoff did Kara's group face between survival, tradition, and change?"
+      ]
+    },
+    "neutral-knowledge": {
+      "title": "Knowledge Carried Forward",
+      "step": 11,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "The group does not settle, but it does not forget.",
+        "Children learn which seeds grow best, where the river leaves rich soil, and why stored food matters.",
+        "The future has not arrived yet, but someone will be ready when it does."
+      ],
+      "ending": "neutral",
+      "teachingSummary": "This ending shows that knowledge can spread before a full revolution occurs. Observation, experimentation, and shared memory helped prepare humans for later agricultural change.",
+      "keyTermReview": "Vocabulary review: This adventure connects Paleolithic nomadic life to the Neolithic Revolution. Students see how domestication, agriculture, irrigation, surplus food, river valleys, and job specialization helped create the foundations of civilization.",
+      "reflectionQuestions": [
+        "How did Kara's choices reflect the risks and rewards of the Neolithic Revolution?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the environment shape the choices available to Kara's group?",
+        "Was agriculture worth the risk for Kara's people? Explain using details from your path.",
+        "What tradeoff did Kara's group face between survival, tradition, and change?"
+      ]
+    },
+    "neutral-unequal": {
+      "title": "Order With Unequal Baskets",
+      "step": 11,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "The settlement survives, but not everyone benefits equally.",
+        "Some families control better fields and fuller storage pits. Others depend on their decisions.",
+        "Agriculture brings stability, but it also begins to create new differences in power and status."
+      ],
+      "ending": "neutral",
+      "teachingSummary": "This ending shows that agriculture and surplus could create both stability and inequality. Settled life helped communities grow, but it could also lead to social hierarchy.",
+      "keyTermReview": "Vocabulary review: This adventure connects Paleolithic nomadic life to the Neolithic Revolution. Students see how domestication, agriculture, irrigation, surplus food, river valleys, and job specialization helped create the foundations of civilization.",
+      "reflectionQuestions": [
+        "How did Kara's choices reflect the risks and rewards of the Neolithic Revolution?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the environment shape the choices available to Kara's group?",
+        "Was agriculture worth the risk for Kara's people? Explain using details from your path.",
+        "What tradeoff did Kara's group face between survival, tradition, and change?"
+      ]
+    },
+    "good-civilization": {
+      "title": "Seeds of Civilization",
+      "step": 11,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "The next season begins with planning instead of panic.",
+        "Channels carry river water toward the fields. Seeds are saved, planted, and protected. Tavi grows stronger.",
+        "Some people farm, some hunt, some shape tools, and some guard the storage pits.",
+        "Your people are no longer only surviving. They are building the first pieces of settled life."
+      ],
+      "ending": "good",
+      "teachingSummary": "This ending shows how the Neolithic Revolution helped humans create agriculture, surplus food, permanent settlements, irrigation, job specialization, and the foundations of civilization.",
+      "keyTermReview": "Vocabulary review: This adventure connects Paleolithic nomadic life to the Neolithic Revolution. Students see how domestication, agriculture, irrigation, surplus food, river valleys, and job specialization helped create the foundations of civilization.",
+      "reflectionQuestions": [
+        "How did Kara's choices reflect the risks and rewards of the Neolithic Revolution?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the environment shape the choices available to Kara's group?",
+        "Was agriculture worth the risk for Kara's people? Explain using details from your path.",
+        "What tradeoff did Kara's group face between survival, tradition, and change?"
+      ]
+    },
+    "bad-collapse": {
+      "title": "The Cost of Failure",
+      "step": 11,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "The fields weaken. Stored food disappears into private shelters. The hunters leave angry, and the children grow hungry again.",
+        "When the river floods, no one has prepared safe storage or working channels.",
+        "You discovered a new way to live, but without planning and cooperation, the new way collapses."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows that agriculture was risky. Early farming required environmental knowledge, cooperation, water control, resource management, and trust.",
+      "keyTermReview": "Vocabulary review: This adventure connects Paleolithic nomadic life to the Neolithic Revolution. Students see how domestication, agriculture, irrigation, surplus food, river valleys, and job specialization helped create the foundations of civilization.",
+      "reflectionQuestions": [
+        "How did Kara's choices reflect the risks and rewards of the Neolithic Revolution?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the environment shape the choices available to Kara's group?",
+        "Was agriculture worth the risk for Kara's people? Explain using details from your path.",
+        "What tradeoff did Kara's group face between survival, tradition, and change?"
+      ]
+    },
+    "bad-starvation": {
+      "title": "No Herd on the Horizon",
+      "step": 11,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "The group keeps walking, waiting for the herd to appear.",
+        "It never does.",
+        "By the time the elders speak of turning back, Tavi can no longer stand without help. The old ways needed land that could still provide, and this land has failed you."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows that Paleolithic survival depended on available resources and successful adaptation. When environments changed, groups that could not adjust faced serious danger.",
+      "keyTermReview": "Vocabulary review: This adventure connects Paleolithic nomadic life to the Neolithic Revolution. Students see how domestication, agriculture, irrigation, surplus food, river valleys, and job specialization helped create the foundations of civilization.",
+      "reflectionQuestions": [
+        "How did Kara's choices reflect the risks and rewards of the Neolithic Revolution?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the environment shape the choices available to Kara's group?",
+        "Was agriculture worth the risk for Kara's people? Explain using details from your path.",
+        "What tradeoff did Kara's group face between survival, tradition, and change?"
+      ]
+    },
+    "bad-scattered": {
+      "title": "Scattered Fires",
+      "step": 11,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "The group breaks apart to search for food.",
+        "Small fires appear across the dark plain, each one weaker than the full campfire used to be.",
+        "Without cooperation, every danger grows larger."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows why cooperation mattered for early human survival. Whether hunting, gathering, or farming, humans depended on group organization and shared support.",
+      "keyTermReview": "Vocabulary review: This adventure connects Paleolithic nomadic life to the Neolithic Revolution. Students see how domestication, agriculture, irrigation, surplus food, river valleys, and job specialization helped create the foundations of civilization.",
+      "reflectionQuestions": [
+        "How did Kara's choices reflect the risks and rewards of the Neolithic Revolution?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the environment shape the choices available to Kara's group?",
+        "Was agriculture worth the risk for Kara's people? Explain using details from your path.",
+        "What tradeoff did Kara's group face between survival, tradition, and change?"
+      ]
+    },
+    "bad-alone": {
+      "title": "Alone With the Field",
+      "step": 11,
+      "image": {
+        "src": "public/images/foragers-to-farmers.svg",
+        "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
+      },
+      "pathFocus": "Key terms for this route: Paleolithic, Neolithic Revolution, nomad, domestication, agriculture, irrigation, surplus, river valley, civilization, and job specialization.",
+      "body": [
+        "You guard the field alone until your food runs out.",
+        "The plants still grow, but they cannot gather water, build shelter, or watch the reeds at night.",
+        "A discovery can begin with one person, but survival requires a community."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows that innovation alone was not enough. Early agriculture required cooperation, labor, protection, and shared planning.",
+      "keyTermReview": "Vocabulary review: This adventure connects Paleolithic nomadic life to the Neolithic Revolution. Students see how domestication, agriculture, irrigation, surplus food, river valleys, and job specialization helped create the foundations of civilization.",
+      "reflectionQuestions": [
+        "How did Kara's choices reflect the risks and rewards of the Neolithic Revolution?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "How did the environment shape the choices available to Kara's group?",
+        "Was agriculture worth the risk for Kara's people? Explain using details from your path.",
+        "What tradeoff did Kara's group face between survival, tradition, and change?"
+      ]
+    }
+  }
+}

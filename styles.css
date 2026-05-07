@@ -1,0 +1,390 @@
+:root {
+  color-scheme: light;
+  --bg: #f6f1e8;
+  --surface: #fffdf8;
+  --surface-strong: #ffffff;
+  --ink: #1c2520;
+  --muted: #58645d;
+  --line: #cfc6b8;
+  --accent: #1f6f68;
+  --accent-dark: #164f4b;
+  --accent-soft: #dcefeb;
+  --gold: #a96d1f;
+  --danger: #9b2f2f;
+  --danger-soft: #f7dddd;
+  --good: #1f7a3f;
+  --neutral: #6b5f2a;
+  --shadow: 0 16px 40px rgba(46, 37, 24, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background:
+    linear-gradient(180deg, rgba(31, 111, 104, 0.08), transparent 260px),
+    var(--bg);
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+button {
+  font: inherit;
+}
+
+code {
+  background: rgba(28, 37, 32, 0.08);
+  border-radius: 4px;
+  padding: 0.1rem 0.25rem;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 253, 248, 0.9);
+}
+
+.header-inner,
+.app-shell,
+.site-footer {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 32px 0 28px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--accent-dark);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.15;
+}
+
+h1 {
+  max-width: 780px;
+  margin: 0;
+  font-size: clamp(2rem, 6vw, 3.6rem);
+}
+
+h2 {
+  margin: 0 0 12px;
+  font-size: clamp(1.55rem, 4vw, 2.2rem);
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.18rem;
+}
+
+.subtitle {
+  max-width: 760px;
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.app-shell {
+  padding: 32px 0 44px;
+}
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.92rem;
+  padding: 20px 0 32px;
+}
+
+.library-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.adventure-card,
+.status-panel,
+.game-panel,
+.error-panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.adventure-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-height: 410px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.adventure-card.failed {
+  border-color: rgba(155, 47, 47, 0.35);
+  background: var(--danger-soft);
+}
+
+.card-meta,
+.scene-meta {
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.card-description {
+  color: var(--muted);
+  margin: 0;
+}
+
+.card-image,
+.scene-image {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-image {
+  aspect-ratio: 16 / 9;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+}
+
+.scene-image {
+  aspect-ratio: 21 / 8;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  max-height: 280px;
+}
+
+.topic-question {
+  background: var(--accent-soft);
+  border-left: 5px solid var(--accent);
+  margin: 0;
+  padding: 10px 12px;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag-list span {
+  background: rgba(169, 109, 31, 0.12);
+  border: 1px solid rgba(169, 109, 31, 0.3);
+  border-radius: 999px;
+  color: #67410f;
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+}
+
+.card-actions {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.primary-button,
+.secondary-button,
+.choice-button,
+.text-button {
+  border: 0;
+  border-radius: 7px;
+  cursor: pointer;
+  min-height: 48px;
+  text-align: center;
+}
+
+.primary-button,
+.choice-button {
+  background: var(--accent);
+  color: #ffffff;
+  font-weight: 700;
+  padding: 0.85rem 1rem;
+}
+
+.primary-button:hover,
+.choice-button:hover,
+.primary-button:focus-visible,
+.choice-button:focus-visible {
+  background: var(--accent-dark);
+}
+
+.secondary-button,
+.text-button {
+  background: var(--surface-strong);
+  border: 1px solid var(--accent);
+  color: var(--accent-dark);
+  font-weight: 700;
+  padding: 0.75rem 1rem;
+}
+
+.secondary-button:hover,
+.secondary-button:focus-visible,
+.text-button:hover,
+.text-button:focus-visible {
+  background: var(--accent-soft);
+}
+
+.primary-button:disabled,
+.secondary-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.hidden {
+  display: none;
+}
+
+.status-panel,
+.error-panel,
+.game-panel {
+  padding: clamp(20px, 4vw, 34px);
+}
+
+.error-panel {
+  border-color: rgba(155, 47, 47, 0.35);
+  background: var(--danger-soft);
+}
+
+.warning-panel {
+  background: #fff6df;
+  border: 1px solid rgba(169, 109, 31, 0.35);
+  border-radius: 8px;
+  margin-top: 18px;
+  padding: 16px 18px;
+}
+
+.warning-panel h3 {
+  margin-bottom: 8px;
+}
+
+.error-list {
+  margin: 14px 0 0;
+  padding-left: 1.2rem;
+}
+
+.game-panel {
+  display: grid;
+  gap: 24px;
+}
+
+.scene-title-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.scene-text {
+  max-width: 78ch;
+  margin: 0;
+  white-space: pre-line;
+}
+
+.path-focus {
+  background: var(--accent-soft);
+  border-left: 6px solid var(--accent);
+  padding: 14px 16px;
+}
+
+.choice-list {
+  display: grid;
+  gap: 12px;
+}
+
+.choice-button {
+  width: 100%;
+  text-align: left;
+}
+
+.choice-hint {
+  display: block;
+  font-size: 0.92rem;
+  font-weight: 400;
+  margin-top: 6px;
+  opacity: 0.92;
+}
+
+.classroom-box,
+.ending-details {
+  border-left: 6px solid var(--gold);
+  background: #fff6df;
+  padding: 16px 18px;
+}
+
+.classroom-box h3,
+.ending-details h3 {
+  margin-bottom: 8px;
+}
+
+.ending-badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  color: #ffffff;
+  font-size: 0.86rem;
+  font-weight: 700;
+  min-height: 32px;
+  padding: 0.25rem 0.75rem;
+}
+
+.ending-good {
+  background: var(--good);
+}
+
+.ending-bad {
+  background: var(--danger);
+}
+
+.ending-neutral {
+  background: var(--neutral);
+}
+
+.game-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+@media (max-width: 720px) {
+  body {
+    font-size: 17px;
+  }
+
+  .header-inner {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .scene-title-row,
+  .card-actions {
+    flex-direction: column;
+  }
+
+  .primary-button,
+  .secondary-button,
+  .text-button {
+    width: 100%;
+  }
+}

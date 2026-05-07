@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Medieval village during the Black Death</title>
+  <desc id="desc">A medieval European village road with a chapel, fields, carts, and distant town walls.</desc>
+  <rect width="1200" height="675" fill="#efe4cf"/>
+  <rect y="430" width="1200" height="245" fill="#6f7f4f"/>
+  <path d="M0 500 C210 430 400 465 590 520 C780 575 970 525 1200 455 L1200 675 L0 675 Z" fill="#806447"/>
+  <path d="M760 190 h250 v190 h-250z" fill="#9d8d78"/>
+  <path d="M745 190 h280 l-140 -95z" fill="#6e3d32"/>
+  <rect x="850" y="105" width="70" height="165" fill="#8c7a66"/>
+  <polygon points="835,105 935,105 885,55" fill="#6e3d32"/>
+  <rect x="874" y="145" width="22" height="46" fill="#2d3c3b"/>
+  <rect x="180" y="310" width="155" height="105" fill="#bda47e"/>
+  <polygon points="165,310 350,310 258,245" fill="#6e3d32"/>
+  <rect x="435" y="350" width="190" height="95" fill="#c8ae82"/>
+  <polygon points="420,350 640,350 530,278" fill="#73513a"/>
+  <path d="M0 392 C125 360 250 378 380 398 C520 420 675 405 830 375 C990 344 1115 356 1200 380" fill="none" stroke="#5f5142" stroke-width="18"/>
+  <circle cx="170" cy="462" r="28" fill="#4b3a2a"/>
+  <circle cx="300" cy="462" r="28" fill="#4b3a2a"/>
+  <rect x="170" y="400" width="135" height="48" fill="#8f5f35"/>
+  <path d="M85 270 C180 200 300 190 405 250" fill="none" stroke="#5b6f75" stroke-width="18" opacity="0.45"/>
+  <path d="M95 300 C220 240 325 245 460 300" fill="none" stroke="#5b6f75" stroke-width="12" opacity="0.35"/>
+  <g fill="#2c2a25">
+    <circle cx="690" cy="455" r="9"/>
+    <circle cx="723" cy="468" r="7"/>
+    <circle cx="662" cy="482" r="6"/>
+  </g>
+  <path d="M40 560 C165 520 260 545 360 590 C470 642 590 622 700 580" fill="none" stroke="#d5bd85" stroke-width="12"/>
+</svg>

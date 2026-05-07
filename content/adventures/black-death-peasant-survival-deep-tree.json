@@ -1,0 +1,2588 @@
+{
+  "id": "black-death-peasant-survival-deep-tree",
+  "title": "The Bell Behind You: A Peasant During the Black Death",
+  "description": "Play as Tomas, a medieval peasant trying to survive the Black Death. Most paths lead to plague. The only survival route requires leaving immediately and avoiding population centers.",
+  "coverImage": {
+    "src": "public/images/black-death-medieval-europe.svg",
+    "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+  },
+  "startingSceneId": "start",
+  "branchingPathCount": 234,
+  "keyTerms": [
+    "Black Death",
+    "bubonic plague",
+    "pandemic",
+    "trade network",
+    "Silk Roads",
+    "urbanization",
+    "feudalism",
+    "manorialism",
+    "serf",
+    "labor shortage",
+    "quarantine",
+    "flagellants",
+    "scapegoating",
+    "anti-Semitism",
+    "monastery",
+    "tithe",
+    "population decline",
+    "social mobility",
+    "public health",
+    "cross-cultural contact"
+  ],
+  "curriculumTags": [
+    "NYS Global 9",
+    "Black Death",
+    "Middle Ages",
+    "Medieval Europe",
+    "Pandemic",
+    "Feudalism",
+    "Trade Networks"
+  ],
+  "teacherNotes": "This deep-tree adventure is intentionally difficult. Most choices lead to infection because the lesson is that survival during the Black Death was unlikely once disease reached a community. The only successful path requires immediate flight before exposure, avoiding roads, towns, ports, carts, barns, crowds, and infected goods. The story handles scapegoating and anti-Semitism directly, clearly identifying such accusations as false, harmful, and historically dangerous.",
+  "reviewFocus": "how the Black Death spread through medieval Europe, how people responded to fear and disease, and how the pandemic contributed to social and economic change",
+  "topicQuestion": "how did the Black Death affect medieval European society?",
+  "scenes": {
+    "start": {
+      "title": "The Bell Over Saint Cera's",
+      "step": 1,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "You are Tomas, a serf on a manor in western Europe in the year 1348.",
+        "Your village is small: strips of farmland, a mill, a chapel, a muddy road, and a manor house watching from the hill.",
+        "You owe labor to Lord Renard, rent from your harvest, and a tithe to the Church. Most years, survival means obeying the seasons.",
+        "But this spring, travelers bring news of a sickness moving across ports, roads, and market towns. They say whole streets have gone silent.",
+        "The chapel bell rings for a funeral before sunrise. By sunset, it rings again."
+      ],
+      "choices": [
+        {
+          "text": "Continue your normal work in the fields.",
+          "nextSceneId": "field-work",
+          "hint": "Daily obligations feel safer than panic, but exposure may grow."
+        },
+        {
+          "text": "Go to the crowded chapel for prayer and answers.",
+          "nextSceneId": "crowded-chapel",
+          "hint": "Religious comfort may bring people close together."
+        },
+        {
+          "text": "Listen carefully to travelers at the road crossing.",
+          "nextSceneId": "road-rumors",
+          "hint": "Information may be your only advantage."
+        },
+        {
+          "text": "Ask the manor reeve whether anyone is allowed to leave.",
+          "nextSceneId": "reeve-permission",
+          "hint": "Feudal obligations may trap you in place."
+        }
+      ]
+    },
+    "field-work": {
+      "title": "Work Does Not Stop",
+      "step": 2,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "The barley must be weeded, no matter what rumors travel the road.",
+        "You work beside your sister Alis and two neighbors. One neighbor coughs into his sleeve. Another says the sickness is only in port cities and cannot reach a poor village.",
+        "By noon, a cart from the market town passes the field. The driver has dark circles under his eyes and a bundle of cloth tied over his mouth."
+      ],
+      "choices": [
+        {
+          "text": "Keep working beside your neighbors.",
+          "nextSceneId": "neighbor-cough",
+          "hint": "Close contact increases risk."
+        },
+        {
+          "text": "Step away and ask the cart driver what he saw.",
+          "nextSceneId": "cart-driver",
+          "hint": "News may help, but travelers can carry disease."
+        },
+        {
+          "text": "Return home and tell your family to avoid others.",
+          "nextSceneId": "family-warning",
+          "hint": "Isolation may help if done early enough."
+        },
+        {
+          "text": "Report the sick neighbor to the reeve.",
+          "nextSceneId": "reeve-report",
+          "hint": "Manor authority may respond, but slowly."
+        }
+      ]
+    },
+    "crowded-chapel": {
+      "title": "The Chapel Packed With Fear",
+      "step": 2,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "Saint Cera's chapel is packed shoulder to shoulder.",
+        "People pray, cry, confess, and ask Father Martin why God allows the sickness to spread.",
+        "The air is warm from too many bodies. Someone near the door collapses before the final prayer."
+      ],
+      "choices": [
+        {
+          "text": "Stay through the service and pray with everyone.",
+          "nextSceneId": "chapel-exposure",
+          "hint": "Crowds are dangerous during a pandemic."
+        },
+        {
+          "text": "Leave immediately when the person collapses.",
+          "nextSceneId": "family-warning",
+          "hint": "Leaving lowers some risk, but exposure may already have happened."
+        },
+        {
+          "text": "Help carry the collapsed person home.",
+          "nextSceneId": "carry-sick",
+          "hint": "Compassion is human, but close contact is dangerous."
+        },
+        {
+          "text": "Ask Father Martin whether fleeing is a sin.",
+          "nextSceneId": "priest-counsel",
+          "hint": "Religious advice may influence your decision."
+        }
+      ]
+    },
+    "road-rumors": {
+      "title": "Travelers at the Road Crossing",
+      "step": 2,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "You hide behind a cart shed and listen to travelers argue.",
+        "A wool merchant says the sickness followed ships into ports, then moved inland with trade. A pilgrim says towns are closing gates.",
+        "A tired woman whispers that families who left before the sickness arrived sometimes survived, but those who waited too long found every road full of the dying."
+      ],
+      "choices": [
+        {
+          "text": "Leave Europe immediately with only what you can carry.",
+          "nextSceneId": "escape-night",
+          "hint": "This is dangerous, but it is the only path that can avoid exposure early enough."
+        },
+        {
+          "text": "Go home first to gather family, tools, and food.",
+          "nextSceneId": "family-warning",
+          "hint": "Delay may be costly."
+        },
+        {
+          "text": "Wait one more day for proof.",
+          "nextSceneId": "wait-for-proof",
+          "hint": "Waiting during a pandemic can be fatal."
+        },
+        {
+          "text": "Ask the merchant which roads are still open.",
+          "nextSceneId": "merchant-map",
+          "hint": "Better information may help, but every conversation is a risk."
+        }
+      ]
+    },
+    "reeve-permission": {
+      "title": "The Reeve's Answer",
+      "step": 2,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "The reeve stands beside the manor barn with a tally stick in his hand.",
+        "He reminds you that serfs are tied to the land. The lord needs labor, rent, and harvests. People cannot simply vanish because of rumor.",
+        "Still, his voice shakes when the chapel bell rings again."
+      ],
+      "choices": [
+        {
+          "text": "Obey the reeve and stay on the manor.",
+          "nextSceneId": "field-work",
+          "hint": "Obedience preserves order but keeps you in danger."
+        },
+        {
+          "text": "Beg permission to leave for a distant cousin's village.",
+          "nextSceneId": "beg-permission",
+          "hint": "Permission may take too long."
+        },
+        {
+          "text": "Sneak away tonight without permission.",
+          "nextSceneId": "escape-night",
+          "hint": "Leaving immediately is risky, but staying is worse."
+        },
+        {
+          "text": "Warn other peasants that the reeve is trapping them.",
+          "nextSceneId": "village-panic",
+          "hint": "Panic may spread faster than useful action."
+        }
+      ]
+    },
+    "neighbor-cough": {
+      "title": "A Cough in the Furrows",
+      "step": 3,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "The coughing neighbor grows weaker by afternoon.",
+        "He says it is only a chill. Then he pulls his tunic aside and you see a dark swelling near his neck.",
+        "The word plague has not yet been spoken aloud in the field, but everyone feels it arrive."
+      ],
+      "choices": [
+        {
+          "text": "Run home and bar the door.",
+          "nextSceneId": "too-late-home",
+          "hint": "You may already have been exposed."
+        },
+        {
+          "text": "Help him reach his family.",
+          "nextSceneId": "carry-sick",
+          "hint": "Care increases contact."
+        },
+        {
+          "text": "Tell the reeve to isolate the household.",
+          "nextSceneId": "reeve-report",
+          "hint": "Manor response may be too slow."
+        },
+        {
+          "text": "Leave the village immediately without returning home.",
+          "nextSceneId": "late-flight",
+          "hint": "Leaving after exposure is not the same as leaving early."
+        }
+      ]
+    },
+    "cart-driver": {
+      "title": "The Cart From Town",
+      "step": 3,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "The cart driver says the market town has bodies in doorways and no one left to bury them all.",
+        "He traded cloth there three days ago. Now he is trying to reach his brother's farm.",
+        "A rat slips from beneath the cart and disappears into the grass."
+      ],
+      "choices": [
+        {
+          "text": "Step back and let the cart pass.",
+          "nextSceneId": "family-warning",
+          "hint": "Distance may help, but the danger is already nearby."
+        },
+        {
+          "text": "Ask for a ride away from the manor.",
+          "nextSceneId": "infected-cart",
+          "hint": "The cart may carry more than news."
+        },
+        {
+          "text": "Search the cart for useful supplies.",
+          "nextSceneId": "infected-goods",
+          "hint": "Goods can carry fleas and risk."
+        },
+        {
+          "text": "Run straight for the forest road.",
+          "nextSceneId": "late-flight",
+          "hint": "Flight after contact is uncertain."
+        }
+      ]
+    },
+    "family-warning": {
+      "title": "The Door Barred",
+      "step": 3,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "You rush home to your mother, Alis, and your little brother Jakob.",
+        "You tell them no one should enter and no one should leave. Your mother stares at the thin food stores near the hearth.",
+        "Avoiding people is easier for those with enough bread."
+      ],
+      "choices": [
+        {
+          "text": "Stay shut inside with your family.",
+          "nextSceneId": "hunger-inside",
+          "hint": "Isolation without supplies may fail."
+        },
+        {
+          "text": "Leave together before the village closes.",
+          "nextSceneId": "family-delay",
+          "hint": "Gathering family takes time."
+        },
+        {
+          "text": "Send Alis to fetch more grain from a neighbor.",
+          "nextSceneId": "neighbor-house",
+          "hint": "Seeking supplies increases contact."
+        },
+        {
+          "text": "Leave alone immediately while you still can.",
+          "nextSceneId": "escape-night",
+          "hint": "This is harsh, but it avoids delay."
+        }
+      ]
+    },
+    "reeve-report": {
+      "title": "The Manor Tries to Respond",
+      "step": 3,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "The reeve orders the sick neighbor's family to remain inside.",
+        "But people still bring water, bread, blankets, and prayers. Children peek through doorways. Dogs run between houses.",
+        "No one understands invisible infection. The village tries to be kind and accidentally spreads danger."
+      ],
+      "choices": [
+        {
+          "text": "Help deliver food to the isolated house.",
+          "nextSceneId": "deliver-food",
+          "hint": "Helping can create exposure."
+        },
+        {
+          "text": "Avoid the house and urge stricter isolation.",
+          "nextSceneId": "village-anger",
+          "hint": "Strict measures may anger neighbors."
+        },
+        {
+          "text": "Leave before more households fall sick.",
+          "nextSceneId": "late-flight",
+          "hint": "Leaving now may be too late, but it is better than waiting."
+        },
+        {
+          "text": "Trust the reeve to manage the crisis.",
+          "nextSceneId": "manor-lockdown",
+          "hint": "Local authority lacks modern public health tools."
+        }
+      ]
+    },
+    "chapel-exposure": {
+      "title": "Breath in the Chapel",
+      "step": 3,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "You stay until the final prayer.",
+        "People press past you to touch the altar cloth. A woman sobs into your shoulder. Father Martin blesses the crowd with shaking hands.",
+        "By evening, three families near the front of the chapel report fever."
+      ],
+      "choices": [
+        {
+          "text": "Return to prayer the next morning.",
+          "nextSceneId": "flagellant-procession",
+          "hint": "More crowds increase danger."
+        },
+        {
+          "text": "Go home and isolate.",
+          "nextSceneId": "too-late-home",
+          "hint": "Isolation after exposure may not save you."
+        },
+        {
+          "text": "Help Father Martin care for the sick.",
+          "nextSceneId": "care-for-sick",
+          "hint": "Compassion increases exposure."
+        },
+        {
+          "text": "Run from the village in fear.",
+          "nextSceneId": "late-flight",
+          "hint": "Leaving after exposure may carry disease with you."
+        }
+      ]
+    },
+    "carry-sick": {
+      "title": "The Weight of a Body",
+      "step": 3,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "You lift the sick person under the arms.",
+        "His skin burns with fever. He groans as you carry him across the road.",
+        "When you wash your hands afterward, the water looks clear. That makes you feel safer than you are."
+      ],
+      "choices": [
+        {
+          "text": "Continue helping sick households.",
+          "nextSceneId": "care-for-sick",
+          "hint": "Repeated contact increases risk."
+        },
+        {
+          "text": "Return home and avoid everyone.",
+          "nextSceneId": "too-late-home",
+          "hint": "Exposure may already be enough."
+        },
+        {
+          "text": "Seek advice from the monastery infirmary.",
+          "nextSceneId": "monastery-infirmary",
+          "hint": "Monks may know care practices, but infirmaries are dangerous."
+        },
+        {
+          "text": "Leave the village in panic.",
+          "nextSceneId": "late-flight",
+          "hint": "Flight after exposure risks carrying infection."
+        }
+      ]
+    },
+    "priest-counsel": {
+      "title": "Father Martin's Counsel",
+      "step": 3,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "Father Martin looks exhausted.",
+        "He says some must stay to bury the dead, comfort the living, and pray. Then, quieter, he admits that crowded prayer may be dangerous.",
+        "He does not tell you what to do. He only says that fear should not become cruelty."
+      ],
+      "choices": [
+        {
+          "text": "Stay to help the priest.",
+          "nextSceneId": "care-for-sick",
+          "hint": "Care work is deeply risky."
+        },
+        {
+          "text": "Avoid crowds but remain in the village.",
+          "nextSceneId": "too-late-home",
+          "hint": "Remaining nearby keeps risk high."
+        },
+        {
+          "text": "Leave immediately and pray on the road.",
+          "nextSceneId": "escape-night",
+          "hint": "Immediate flight is the only survival route."
+        },
+        {
+          "text": "Join people blaming outsiders for the sickness.",
+          "nextSceneId": "scapegoat-rumors",
+          "hint": "Fear can turn into persecution."
+        }
+      ]
+    },
+    "wait-for-proof": {
+      "title": "One More Day",
+      "step": 3,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "You wait one more day.",
+        "By morning, the miller's wife is dead. By afternoon, the reeve's son has fever. By night, the road is crowded with people trying to leave.",
+        "Proof has arrived, and with it, the chance to escape has nearly disappeared."
+      ],
+      "choices": [
+        {
+          "text": "Try to leave with the crowd.",
+          "nextSceneId": "crowded-road",
+          "hint": "Crowded flight spreads disease."
+        },
+        {
+          "text": "Stay and help your family prepare.",
+          "nextSceneId": "family-delay",
+          "hint": "More delay increases danger."
+        },
+        {
+          "text": "Hide in the barn until the roads clear.",
+          "nextSceneId": "barn-hiding",
+          "hint": "Rats and fleas thrive near stored grain."
+        },
+        {
+          "text": "Go to the chapel for confession.",
+          "nextSceneId": "chapel-exposure",
+          "hint": "Crowds remain dangerous."
+        }
+      ]
+    },
+    "merchant-map": {
+      "title": "The Merchant's Map",
+      "step": 3,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "The merchant draws lines in the dirt with a stick.",
+        "He says ports are dangerous, market towns are worse, and main roads are filling with refugees.",
+        "He points south and east beyond the familiar lands. 'If you go, go now. Avoid towns. Avoid carts. Avoid kindness that brings you too close.'"
+      ],
+      "choices": [
+        {
+          "text": "Leave immediately by the empty ridge path.",
+          "nextSceneId": "escape-night",
+          "hint": "Immediate, isolated flight is the survival path."
+        },
+        {
+          "text": "Go home first for family and supplies.",
+          "nextSceneId": "family-delay",
+          "hint": "Delay may close the path."
+        },
+        {
+          "text": "Travel with the merchant's cart.",
+          "nextSceneId": "infected-cart",
+          "hint": "The cart may be contaminated."
+        },
+        {
+          "text": "Wait until dawn for better light.",
+          "nextSceneId": "wait-for-proof",
+          "hint": "Waiting may be fatal."
+        }
+      ]
+    },
+    "beg-permission": {
+      "title": "Permission Delayed",
+      "step": 3,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "The reeve says he must ask the steward, who must ask the lord.",
+        "The lord is away inspecting another manor. The steward says no one may leave until order is restored.",
+        "Feudal obligations move slowly. Disease does not."
+      ],
+      "choices": [
+        {
+          "text": "Wait for official permission.",
+          "nextSceneId": "manor-lockdown",
+          "hint": "Waiting traps you."
+        },
+        {
+          "text": "Sneak away despite the law.",
+          "nextSceneId": "late-flight",
+          "hint": "Leaving late is still dangerous."
+        },
+        {
+          "text": "Bribe the reeve with your family's grain.",
+          "nextSceneId": "reeve-bribe",
+          "hint": "Bribery may cost precious supplies."
+        },
+        {
+          "text": "Obey and return to work.",
+          "nextSceneId": "field-work",
+          "hint": "Obedience keeps you exposed."
+        }
+      ]
+    },
+    "village-panic": {
+      "title": "The Village Breaks Into Fear",
+      "step": 3,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "Your warning spreads through the village.",
+        "Some pack carts. Some run to the chapel. Some accuse travelers, beggars, or strangers of bringing the sickness.",
+        "Fear gives people motion without direction."
+      ],
+      "choices": [
+        {
+          "text": "Try to calm people and organize clean distance.",
+          "nextSceneId": "failed-order",
+          "hint": "Good advice may come too late."
+        },
+        {
+          "text": "Join the road crowd leaving together.",
+          "nextSceneId": "crowded-road",
+          "hint": "Crowds are dangerous."
+        },
+        {
+          "text": "Follow those blaming outsiders.",
+          "nextSceneId": "scapegoat-rumors",
+          "hint": "Scapegoating is dangerous and unjust."
+        },
+        {
+          "text": "Slip away alone while everyone argues.",
+          "nextSceneId": "escape-night",
+          "hint": "Immediate solitary flight remains the only survival route."
+        }
+      ]
+    },
+    "too-late-home": {
+      "title": "Waiting Behind the Door",
+      "step": 4,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "You bar the door and sit with your family in the dim room.",
+        "For one day, it feels like safety. On the second, Alis complains of headache. On the third, your own neck aches.",
+        "A closed door cannot undo yesterday's exposure."
+      ],
+      "choices": [
+        {
+          "text": "Care for Alis.",
+          "nextSceneId": "family-sick",
+          "hint": "Family care creates close contact."
+        },
+        {
+          "text": "Leave before symptoms worsen.",
+          "nextSceneId": "late-flight-symptoms",
+          "hint": "Leaving while symptomatic spreads danger and does not save you."
+        },
+        {
+          "text": "Send for the priest.",
+          "nextSceneId": "priest-last-rites",
+          "hint": "Religious comfort brings contact."
+        },
+        {
+          "text": "Wait and hope it passes.",
+          "nextSceneId": "bad-plague-household",
+          "hint": "The disease overtakes the household."
+        }
+      ]
+    },
+    "hunger-inside": {
+      "title": "The Bread Runs Low",
+      "step": 4,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "For two days, the barred door holds.",
+        "Then the bread is gone. Jakob cries from hunger. Your mother says someone must fetch grain or everyone will weaken.",
+        "Survival is never only about avoiding disease. It is also about food."
+      ],
+      "choices": [
+        {
+          "text": "Go to a neighbor for grain.",
+          "nextSceneId": "neighbor-house",
+          "hint": "Contact increases risk."
+        },
+        {
+          "text": "Break into the abandoned mill store.",
+          "nextSceneId": "barn-hiding",
+          "hint": "Stored grain can attract rats and fleas."
+        },
+        {
+          "text": "Leave the village now with your hungry family.",
+          "nextSceneId": "family-delay",
+          "hint": "Moving together after delay is dangerous."
+        },
+        {
+          "text": "Stay inside without food.",
+          "nextSceneId": "bad-starvation-then-plague",
+          "hint": "Hunger weakens the household."
+        }
+      ]
+    },
+    "family-delay": {
+      "title": "Too Much to Carry",
+      "step": 4,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "Your family tries to prepare.",
+        "Your mother insists on bringing tools. Alis searches for blankets. Jakob cannot walk far without rest.",
+        "By the time you reach the lane, other families are already fleeing. The narrow road has become a moving crowd."
+      ],
+      "choices": [
+        {
+          "text": "Join the crowd because there is safety in numbers.",
+          "nextSceneId": "crowded-road",
+          "hint": "In a pandemic, crowds are dangerous."
+        },
+        {
+          "text": "Turn aside into the woods with your family.",
+          "nextSceneId": "woodland-delay",
+          "hint": "Avoiding crowds helps, but the delay may already matter."
+        },
+        {
+          "text": "Return home because the roads look dangerous.",
+          "nextSceneId": "too-late-home",
+          "hint": "Returning keeps you in the infected village."
+        },
+        {
+          "text": "Leave your family and run alone.",
+          "nextSceneId": "late-flight",
+          "hint": "This is emotionally devastating and still late."
+        }
+      ]
+    },
+    "neighbor-house": {
+      "title": "A Neighbor's Door",
+      "step": 4,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "Your neighbor opens the door only a hand's width.",
+        "Behind her, someone coughs in the dark. She pushes a small sack of grain toward you and begs you not to tell anyone they are sick.",
+        "Kindness and danger arrive in the same sack."
+      ],
+      "choices": [
+        {
+          "text": "Take the grain and leave quickly.",
+          "nextSceneId": "infected-grain",
+          "hint": "Fleas and contact may carry danger."
+        },
+        {
+          "text": "Go inside to help them.",
+          "nextSceneId": "care-for-sick",
+          "hint": "Close contact is very dangerous."
+        },
+        {
+          "text": "Report the sick house to the reeve.",
+          "nextSceneId": "reeve-report",
+          "hint": "Authority may respond slowly."
+        },
+        {
+          "text": "Return home and share the grain.",
+          "nextSceneId": "family-sick",
+          "hint": "Exposure may follow you home."
+        }
+      ]
+    },
+    "deliver-food": {
+      "title": "Bread at the Window",
+      "step": 4,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "You leave bread at the sick family's window.",
+        "A child inside asks for water. You tell yourself you will only step in for a moment.",
+        "The room smells of sweat, smoke, and fear."
+      ],
+      "choices": [
+        {
+          "text": "Step inside with water.",
+          "nextSceneId": "care-for-sick",
+          "hint": "Close contact increases risk."
+        },
+        {
+          "text": "Leave the water outside and walk away.",
+          "nextSceneId": "village-anger",
+          "hint": "Some will call this cruelty."
+        },
+        {
+          "text": "Ask others to help deliver supplies.",
+          "nextSceneId": "failed-order",
+          "hint": "More helpers may mean more exposure."
+        },
+        {
+          "text": "Leave the village after seeing the sickness up close.",
+          "nextSceneId": "late-flight",
+          "hint": "Leaving now may be too late."
+        }
+      ]
+    },
+    "village-anger": {
+      "title": "Called Cruel",
+      "step": 4,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "When you urge distance, neighbors call you cruel.",
+        "They say a Christian village cannot abandon the sick. Others say the sick should be locked in until God decides.",
+        "No one has the knowledge or trust needed for true quarantine."
+      ],
+      "choices": [
+        {
+          "text": "Give in and help the sick directly.",
+          "nextSceneId": "care-for-sick",
+          "hint": "Compassion brings exposure."
+        },
+        {
+          "text": "Keep distance and become isolated from neighbors.",
+          "nextSceneId": "isolated-in-village",
+          "hint": "Social isolation may not prevent environmental risk."
+        },
+        {
+          "text": "Go to the priest for guidance.",
+          "nextSceneId": "priest-counsel",
+          "hint": "Religious guidance may help or expose you."
+        },
+        {
+          "text": "Leave before anger turns against you.",
+          "nextSceneId": "late-flight",
+          "hint": "This is still late."
+        }
+      ]
+    },
+    "manor-lockdown": {
+      "title": "The Manor Gates Close",
+      "step": 4,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "The steward orders the manor road watched.",
+        "No one may leave without permission. The rule is meant to preserve order and labor, but it traps the healthy with the sick.",
+        "By night, people whisper that the lord cares more for harvest than human life."
+      ],
+      "choices": [
+        {
+          "text": "Obey the lockdown.",
+          "nextSceneId": "bad-plague-village",
+          "hint": "Remaining in the infected manor is deadly."
+        },
+        {
+          "text": "Sneak through the drainage ditch.",
+          "nextSceneId": "late-flight",
+          "hint": "Late escape is dangerous but possible to attempt."
+        },
+        {
+          "text": "Join villagers demanding release.",
+          "nextSceneId": "crowd-at-gate",
+          "hint": "Crowds increase exposure."
+        },
+        {
+          "text": "Hide in the barn until guards leave.",
+          "nextSceneId": "barn-hiding",
+          "hint": "Barns can harbor rats and fleas."
+        }
+      ]
+    },
+    "flagellant-procession": {
+      "title": "The Procession of Pain",
+      "step": 4,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "A band of flagellants enters the village, whipping themselves and chanting that suffering may turn away divine punishment.",
+        "Some villagers join them. Others watch in terror.",
+        "The procession moves from town to town, carrying fear, bodies, and possibly disease with it."
+      ],
+      "choices": [
+        {
+          "text": "Join the procession.",
+          "nextSceneId": "bad-procession-plague",
+          "hint": "Moving in crowds spreads disease."
+        },
+        {
+          "text": "Watch from the roadside.",
+          "nextSceneId": "crowded-road",
+          "hint": "Crowds gather around spectacles."
+        },
+        {
+          "text": "Hide at home.",
+          "nextSceneId": "too-late-home",
+          "hint": "Home may already be unsafe."
+        },
+        {
+          "text": "Reject blame and leave immediately.",
+          "nextSceneId": "late-flight",
+          "hint": "Leaving late remains uncertain."
+        }
+      ]
+    },
+    "care-for-sick": {
+      "title": "Hands of Mercy",
+      "step": 4,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "You bring water, wipe faces, and whisper prayers.",
+        "The sick grip your hand with desperate strength. Their suffering is real, and so is your danger.",
+        "In a world without modern medicine, mercy often comes without protection."
+      ],
+      "choices": [
+        {
+          "text": "Continue caring for the sick.",
+          "nextSceneId": "bad-caregiver-plague",
+          "hint": "Repeated exposure is deadly."
+        },
+        {
+          "text": "Return home after helping.",
+          "nextSceneId": "family-sick",
+          "hint": "You may carry danger home."
+        },
+        {
+          "text": "Seek herbs from the healer.",
+          "nextSceneId": "healer-house",
+          "hint": "Healers are overwhelmed and exposed."
+        },
+        {
+          "text": "Run when the swellings appear.",
+          "nextSceneId": "late-flight-symptoms",
+          "hint": "Symptoms mean the escape chance is gone."
+        }
+      ]
+    },
+    "monastery-infirmary": {
+      "title": "The Monastery Infirmary",
+      "step": 4,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "The monastery gates are partly closed.",
+        "Inside, monks try to care for the sick with herbs, prayer, bleeding bowls, clean cloth, and order.",
+        "They know more than many villagers, but they do not know enough to stop the plague."
+      ],
+      "choices": [
+        {
+          "text": "Stay and help the monks.",
+          "nextSceneId": "bad-caregiver-plague",
+          "hint": "Infirmaries are full of infection."
+        },
+        {
+          "text": "Ask for advice and leave quickly.",
+          "nextSceneId": "monk-warning",
+          "hint": "Advice may help if acted on immediately."
+        },
+        {
+          "text": "Bring your sick family there.",
+          "nextSceneId": "family-sick",
+          "hint": "Traveling with the sick is dangerous."
+        },
+        {
+          "text": "Blame the monks when they cannot cure people.",
+          "nextSceneId": "scapegoat-rumors",
+          "hint": "Fear seeks targets."
+        }
+      ]
+    },
+    "scapegoat-rumors": {
+      "title": "Poisoned Words",
+      "step": 4,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "Rumors spread that outsiders, beggars, travelers, or Jewish communities have caused the sickness.",
+        "These accusations are false and dangerous. The plague is a disease, not a crime committed by a people.",
+        "Fear makes some villagers want someone to blame more than they want the truth."
+      ],
+      "choices": [
+        {
+          "text": "Challenge the rumors and refuse scapegoating.",
+          "nextSceneId": "threatened-for-truth",
+          "hint": "Speaking truth may put you at risk socially."
+        },
+        {
+          "text": "Join the accusations.",
+          "nextSceneId": "bad-scapegoating",
+          "hint": "This leads to harm and moral failure."
+        },
+        {
+          "text": "Leave the crowd before violence begins.",
+          "nextSceneId": "late-flight",
+          "hint": "Leaving late may not save you."
+        },
+        {
+          "text": "Ask the priest to condemn the rumors.",
+          "nextSceneId": "priest-condemns-hate",
+          "hint": "Leadership may reduce harm but not disease."
+        }
+      ]
+    },
+    "infected-cart": {
+      "title": "A Ride With Death",
+      "step": 4,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "You climb onto the cart.",
+        "The driver coughs less than some, but his blankets are full of biting fleas. A rat leaps from the axle when the cart stops at dusk.",
+        "You thought movement meant escape. You chose the wrong kind of movement."
+      ],
+      "choices": [
+        {
+          "text": "Stay with the cart toward the next town.",
+          "nextSceneId": "bad-road-plague",
+          "hint": "The cart carries risk."
+        },
+        {
+          "text": "Jump off and walk alone.",
+          "nextSceneId": "late-flight",
+          "hint": "Leaving the cart may help, but exposure has occurred."
+        },
+        {
+          "text": "Take a blanket for warmth.",
+          "nextSceneId": "infected-goods",
+          "hint": "Fleas can travel with belongings."
+        },
+        {
+          "text": "Return to the village.",
+          "nextSceneId": "too-late-home",
+          "hint": "Returning does not remove exposure."
+        }
+      ]
+    },
+    "infected-goods": {
+      "title": "Cloth, Grain, and Fleas",
+      "step": 4,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "The supplies look useful: cloth, sacks, a blanket, a leather strap.",
+        "You do not see the fleas tucked into fibers and seams.",
+        "In this world, danger can hide in the things people need most."
+      ],
+      "choices": [
+        {
+          "text": "Carry the goods home.",
+          "nextSceneId": "family-sick",
+          "hint": "You may bring danger into the household."
+        },
+        {
+          "text": "Use the blanket on the road.",
+          "nextSceneId": "bad-road-plague",
+          "hint": "Exposure continues."
+        },
+        {
+          "text": "Drop the goods and keep moving alone.",
+          "nextSceneId": "late-flight",
+          "hint": "This reduces risk but may be too late."
+        },
+        {
+          "text": "Trade the goods in town.",
+          "nextSceneId": "market-town",
+          "hint": "Towns are extremely dangerous."
+        }
+      ]
+    },
+    "late-flight": {
+      "title": "The Road After Fear Begins",
+      "step": 4,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "You leave after the sickness has touched the village.",
+        "The road is no longer empty. Families push carts. Children cry. A man collapses near a ditch while others step around him.",
+        "Leaving late is not escape. It is joining a moving crowd of exposure."
+      ],
+      "choices": [
+        {
+          "text": "Avoid the main road and cut through fields.",
+          "nextSceneId": "field-flight",
+          "hint": "Distance helps, but exposure may already have happened."
+        },
+        {
+          "text": "Join a group for protection.",
+          "nextSceneId": "crowded-road",
+          "hint": "Groups increase infection risk."
+        },
+        {
+          "text": "Seek shelter in the next town.",
+          "nextSceneId": "market-town",
+          "hint": "Towns are deadly during the plague."
+        },
+        {
+          "text": "Sleep in an abandoned barn.",
+          "nextSceneId": "barn-hiding",
+          "hint": "Barns may carry rats and fleas."
+        }
+      ]
+    },
+    "late-flight-symptoms": {
+      "title": "Fever on the Road",
+      "step": 5,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "You walk until your legs shake.",
+        "By afternoon, fever rises in your body. By evening, the swelling begins.",
+        "The road stretches ahead, but your chance to outrun the plague is gone."
+      ],
+      "choices": [
+        {
+          "text": "Continue walking.",
+          "nextSceneId": "bad-road-plague",
+          "hint": "Symptoms worsen."
+        },
+        {
+          "text": "Ask travelers for help.",
+          "nextSceneId": "bad-road-plague",
+          "hint": "You may spread the sickness."
+        },
+        {
+          "text": "Hide alone in a ditch.",
+          "nextSceneId": "bad-alone-sickness",
+          "hint": "Isolation now cannot save you."
+        }
+      ]
+    },
+    "family-sick": {
+      "title": "The House of Fever",
+      "step": 5,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "Alis develops fever first. Then Jakob. Then your mother.",
+        "You move between them with water and cloth, doing everything a loving person can do.",
+        "Love gives you courage. It does not give you immunity."
+      ],
+      "choices": [
+        {
+          "text": "Stay with them until the end.",
+          "nextSceneId": "bad-household-plague",
+          "hint": "The household falls to plague."
+        },
+        {
+          "text": "Run after realizing everyone is sick.",
+          "nextSceneId": "late-flight-symptoms",
+          "hint": "It is too late."
+        },
+        {
+          "text": "Send for Father Martin.",
+          "nextSceneId": "priest-last-rites",
+          "hint": "Final rites bring comfort but not survival."
+        },
+        {
+          "text": "Carry Jakob to the monastery.",
+          "nextSceneId": "monastery-infirmary",
+          "hint": "The infirmary is overwhelmed."
+        }
+      ]
+    },
+    "priest-last-rites": {
+      "title": "The Last Rites",
+      "step": 5,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "Father Martin comes with oil, prayer, and trembling hands.",
+        "He has visited too many homes this week. His face looks gray with exhaustion.",
+        "The Church offers comfort in a terrifying world, but comfort is not a cure."
+      ],
+      "choices": [
+        {
+          "text": "Pray beside the bed.",
+          "nextSceneId": "bad-household-plague",
+          "hint": "You remain exposed."
+        },
+        {
+          "text": "Help Father Martin visit others.",
+          "nextSceneId": "bad-caregiver-plague",
+          "hint": "Care work is deadly."
+        },
+        {
+          "text": "Ask whether any place is safe.",
+          "nextSceneId": "monk-warning",
+          "hint": "The answer may come too late."
+        }
+      ]
+    },
+    "barn-hiding": {
+      "title": "The Barn With Stored Grain",
+      "step": 5,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "You hide in a barn, breathing the dry smell of straw and stored grain.",
+        "At night, small feet scratch in the darkness. Rats move between sacks.",
+        "You are away from people, but not away from the world that carries disease."
+      ],
+      "choices": [
+        {
+          "text": "Stay hidden in the barn.",
+          "nextSceneId": "bad-flea-plague",
+          "hint": "Rats and fleas make this dangerous."
+        },
+        {
+          "text": "Leave before dawn and avoid all roads.",
+          "nextSceneId": "late-isolated-road",
+          "hint": "This is safer than crowds but still late."
+        },
+        {
+          "text": "Take grain from the barn.",
+          "nextSceneId": "infected-grain",
+          "hint": "Stored grain may carry fleas."
+        },
+        {
+          "text": "Return to the manor.",
+          "nextSceneId": "manor-lockdown",
+          "hint": "The manor remains infected."
+        }
+      ]
+    },
+    "infected-grain": {
+      "title": "Grain That Bites",
+      "step": 5,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "The grain keeps you alive for another day.",
+        "But bites appear around your ankles. You scratch them without thinking.",
+        "The smallest carriers of death are the hardest to notice."
+      ],
+      "choices": [
+        {
+          "text": "Keep carrying the grain.",
+          "nextSceneId": "bad-flea-plague",
+          "hint": "The fleas remain with you."
+        },
+        {
+          "text": "Drop the sack and walk on hungry.",
+          "nextSceneId": "late-isolated-road",
+          "hint": "You reduce one risk but remain weakened."
+        },
+        {
+          "text": "Share the grain with your family.",
+          "nextSceneId": "family-sick",
+          "hint": "Danger enters the household."
+        }
+      ]
+    },
+    "crowded-road": {
+      "title": "The Road of the Living and Dying",
+      "step": 5,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "The road is packed with people fleeing villages, towns, and fear.",
+        "Some are already sick. Some carry fleas in clothing and bedding. Some have no symptoms yet.",
+        "The crowd moves like a single frightened body, and disease moves with it."
+      ],
+      "choices": [
+        {
+          "text": "Stay with the crowd for protection.",
+          "nextSceneId": "bad-road-plague",
+          "hint": "Crowds are deadly."
+        },
+        {
+          "text": "Leave the road and travel alone.",
+          "nextSceneId": "late-isolated-road",
+          "hint": "Distance helps, but this is still late."
+        },
+        {
+          "text": "Enter the next town for food.",
+          "nextSceneId": "market-town",
+          "hint": "Towns are dangerous."
+        },
+        {
+          "text": "Join a prayer procession on the road.",
+          "nextSceneId": "flagellant-procession",
+          "hint": "Processions increase exposure."
+        }
+      ]
+    },
+    "field-flight": {
+      "title": "Across the Empty Fields",
+      "step": 5,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "You cut across fields, avoiding the road.",
+        "For a few hours, the air feels open and clean. Then you cough once, and fear tightens around your ribs.",
+        "You do not know whether the cough is dust, panic, or the beginning."
+      ],
+      "choices": [
+        {
+          "text": "Keep moving away from all villages.",
+          "nextSceneId": "late-isolated-road",
+          "hint": "This is the safest late option, but not safe enough."
+        },
+        {
+          "text": "Rest in a shepherd's hut.",
+          "nextSceneId": "abandoned-hut",
+          "hint": "Shelter may hold fleas or previous sickness."
+        },
+        {
+          "text": "Turn back for your family.",
+          "nextSceneId": "family-sick",
+          "hint": "Returning increases exposure."
+        },
+        {
+          "text": "Seek food at a nearby manor.",
+          "nextSceneId": "another-manor",
+          "hint": "Other communities may already be infected."
+        }
+      ]
+    },
+    "market-town": {
+      "title": "The Market Town",
+      "step": 5,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "The town gates are half open, half guarded.",
+        "Inside, the market square is nearly empty. Shutters are closed. A dog noses at an abandoned stall.",
+        "Towns concentrate people, goods, rats, waste, and fear. You should not have come."
+      ],
+      "choices": [
+        {
+          "text": "Search the market for food.",
+          "nextSceneId": "bad-town-plague",
+          "hint": "Towns carry high exposure."
+        },
+        {
+          "text": "Ask guards for shelter.",
+          "nextSceneId": "bad-town-plague",
+          "hint": "Close contact and crowded shelters are risky."
+        },
+        {
+          "text": "Leave immediately by a side gate.",
+          "nextSceneId": "late-isolated-road",
+          "hint": "Leaving helps, but exposure may already have happened."
+        },
+        {
+          "text": "Go to the town church.",
+          "nextSceneId": "chapel-exposure",
+          "hint": "Crowded religious spaces remain dangerous."
+        }
+      ]
+    },
+    "failed-order": {
+      "title": "Rules No One Trusts",
+      "step": 5,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "You try to organize distance, food delivery, and clean water.",
+        "Some listen. Others say you are pretending to know more than priests, healers, or elders.",
+        "Public health requires trust, and trust is scarce."
+      ],
+      "choices": [
+        {
+          "text": "Keep trying to organize the village.",
+          "nextSceneId": "bad-village-collapse",
+          "hint": "The effort comes too late."
+        },
+        {
+          "text": "Leave when people refuse to listen.",
+          "nextSceneId": "late-flight",
+          "hint": "Leaving late is uncertain."
+        },
+        {
+          "text": "Ask the reeve to enforce your plan.",
+          "nextSceneId": "manor-lockdown",
+          "hint": "Force may trap people."
+        },
+        {
+          "text": "Ask the priest to support the plan.",
+          "nextSceneId": "priest-condemns-hate",
+          "hint": "Moral authority may help reduce harm."
+        }
+      ]
+    },
+    "isolated-in-village": {
+      "title": "Alone Among Neighbors",
+      "step": 5,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "You avoid people, but you remain inside the infected village.",
+        "Rats move through thatch. Fleas bite ankles. The well bucket passes from hand to hand.",
+        "Isolation inside danger is not the same as escape."
+      ],
+      "choices": [
+        {
+          "text": "Stay isolated in the village.",
+          "nextSceneId": "bad-plague-village",
+          "hint": "The village environment remains dangerous."
+        },
+        {
+          "text": "Leave before symptoms begin.",
+          "nextSceneId": "late-flight",
+          "hint": "Leaving now may be too late."
+        },
+        {
+          "text": "Seek food from a storehouse.",
+          "nextSceneId": "barn-hiding",
+          "hint": "Stored grain brings flea risk."
+        },
+        {
+          "text": "Ask the priest for help.",
+          "nextSceneId": "priest-counsel",
+          "hint": "Contact continues."
+        }
+      ]
+    },
+    "healer-house": {
+      "title": "The Healer's Room",
+      "step": 5,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "The healer's room smells of vinegar, herbs, sweat, and smoke.",
+        "People wait on benches, coughing into cloth. Some wear charms. Some carry flowers to block the smell.",
+        "The healer is brave, but the room is full of danger."
+      ],
+      "choices": [
+        {
+          "text": "Wait your turn.",
+          "nextSceneId": "bad-healer-plague",
+          "hint": "Crowded care spaces spread disease."
+        },
+        {
+          "text": "Take herbs and leave quickly.",
+          "nextSceneId": "late-flight-symptoms",
+          "hint": "If you came for symptoms, it is too late."
+        },
+        {
+          "text": "Help the healer because she is overwhelmed.",
+          "nextSceneId": "bad-caregiver-plague",
+          "hint": "Care work brings repeated exposure."
+        },
+        {
+          "text": "Reject the healer and go to church.",
+          "nextSceneId": "chapel-exposure",
+          "hint": "Another crowded place awaits."
+        }
+      ]
+    },
+    "monk-warning": {
+      "title": "The Monk's Warning",
+      "step": 5,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "An old monk pulls you aside.",
+        "He says, 'If you were not already touched by the sickness, I would say leave before the roads fill. Avoid towns. Avoid carts. Avoid bedding. Avoid crowds.'",
+        "Then he looks at your tired face and adds, 'But many hear the truth too late.'"
+      ],
+      "choices": [
+        {
+          "text": "Leave alone by unused paths immediately.",
+          "nextSceneId": "late-isolated-road",
+          "hint": "This is the best late option, but not the true survival path."
+        },
+        {
+          "text": "Stay at the monastery.",
+          "nextSceneId": "bad-caregiver-plague",
+          "hint": "The monastery is overwhelmed."
+        },
+        {
+          "text": "Return home for your family.",
+          "nextSceneId": "family-sick",
+          "hint": "Delay and contact increase danger."
+        },
+        {
+          "text": "Ask the monk about places beyond Europe.",
+          "nextSceneId": "escape-knowledge-late",
+          "hint": "The idea is right, but timing matters."
+        }
+      ]
+    },
+    "priest-condemns-hate": {
+      "title": "Against the Rumors",
+      "step": 5,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "Father Martin speaks against the rumors.",
+        "He says no people should be blamed for a disease, and that harming Jewish neighbors, travelers, beggars, or outsiders is a sin and a crime.",
+        "His words stop some violence, but not the plague."
+      ],
+      "choices": [
+        {
+          "text": "Help spread the message against scapegoating.",
+          "nextSceneId": "threatened-for-truth",
+          "hint": "Truth matters, but contact continues."
+        },
+        {
+          "text": "Focus on leaving after the sermon.",
+          "nextSceneId": "late-flight",
+          "hint": "Leaving after delay remains risky."
+        },
+        {
+          "text": "Stay to protect targeted neighbors.",
+          "nextSceneId": "bad-caregiver-plague",
+          "hint": "Protection may require dangerous contact."
+        },
+        {
+          "text": "Return home and isolate.",
+          "nextSceneId": "too-late-home",
+          "hint": "Exposure may already have happened."
+        }
+      ]
+    },
+    "threatened-for-truth": {
+      "title": "The Cost of Telling the Truth",
+      "step": 5,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "Some villagers turn on you for challenging the rumors.",
+        "They wanted certainty, not accuracy. They wanted a target, not a cause.",
+        "You escape the argument, but the village feels more dangerous than before."
+      ],
+      "choices": [
+        {
+          "text": "Leave the village immediately.",
+          "nextSceneId": "late-flight",
+          "hint": "Leaving is wise, but late."
+        },
+        {
+          "text": "Hide with a family being targeted.",
+          "nextSceneId": "bad-caregiver-plague",
+          "hint": "Crowded hiding increases risk."
+        },
+        {
+          "text": "Go to the reeve for protection.",
+          "nextSceneId": "manor-lockdown",
+          "hint": "Authority may trap you."
+        },
+        {
+          "text": "Speak again in the market square.",
+          "nextSceneId": "bad-scapegoating",
+          "hint": "The violence grows."
+        }
+      ]
+    },
+    "late-isolated-road": {
+      "title": "The Empty Path Too Late",
+      "step": 6,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "You avoid the main road, sleep under hedges, and drink from streams.",
+        "For a time, you think you may have escaped. Then fever rises at sunset.",
+        "You chose the right idea too late."
+      ],
+      "choices": [
+        {
+          "text": "Keep walking through the fever.",
+          "nextSceneId": "bad-road-plague",
+          "hint": "The plague overtakes you."
+        },
+        {
+          "text": "Rest alone under trees.",
+          "nextSceneId": "bad-alone-sickness",
+          "hint": "Isolation now cannot cure infection."
+        },
+        {
+          "text": "Seek help at a distant farm.",
+          "nextSceneId": "another-manor",
+          "hint": "You may spread disease."
+        },
+        {
+          "text": "Try to reach the coast.",
+          "nextSceneId": "coast-too-late",
+          "hint": "The coast is far, and symptoms grow."
+        }
+      ]
+    },
+    "abandoned-hut": {
+      "title": "The Shepherd's Hut",
+      "step": 6,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "The hut is empty, but not clean.",
+        "Old bedding lies in one corner. A bowl of spoiled milk sits near the door. Fleas jump when you move the straw.",
+        "Absence of people does not mean absence of disease."
+      ],
+      "choices": [
+        {
+          "text": "Sleep in the bedding.",
+          "nextSceneId": "bad-flea-plague",
+          "hint": "Fleas carry danger."
+        },
+        {
+          "text": "Sleep outside despite the cold.",
+          "nextSceneId": "late-isolated-road",
+          "hint": "This lowers one risk but not all."
+        },
+        {
+          "text": "Search the hut for food.",
+          "nextSceneId": "infected-goods",
+          "hint": "Useful goods may be risky."
+        },
+        {
+          "text": "Move on without resting.",
+          "nextSceneId": "late-isolated-road",
+          "hint": "Exhaustion grows."
+        }
+      ]
+    },
+    "another-manor": {
+      "title": "Another Lord's Land",
+      "step": 6,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "You reach another manor by dusk.",
+        "The guards do not want refugees. The peasants do not want strangers. The priest does not want another body to bury.",
+        "Fear has made every doorway narrow."
+      ],
+      "choices": [
+        {
+          "text": "Beg for shelter.",
+          "nextSceneId": "bad-road-plague",
+          "hint": "Crowded shelter brings exposure and you may already be sick."
+        },
+        {
+          "text": "Sleep outside the manor wall.",
+          "nextSceneId": "bad-alone-sickness",
+          "hint": "Weakness overtakes you."
+        },
+        {
+          "text": "Keep moving toward the coast.",
+          "nextSceneId": "coast-too-late",
+          "hint": "The journey is too long now."
+        },
+        {
+          "text": "Return toward your village.",
+          "nextSceneId": "bad-plague-village",
+          "hint": "There is no safe return."
+        }
+      ]
+    },
+    "coast-too-late": {
+      "title": "The Coast Beyond Reach",
+      "step": 7,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "You try to reach the coast, imagining a ship away from the dying villages.",
+        "But ships gather people, rats, fleas, cargo, and sickness. Ports are among the most dangerous places of all.",
+        "Your fever worsens before you ever see the sea."
+      ],
+      "choices": [
+        {
+          "text": "Continue toward the port.",
+          "nextSceneId": "bad-port-plague",
+          "hint": "Ports are dangerous and you are already ill."
+        },
+        {
+          "text": "Collapse beside the road.",
+          "nextSceneId": "bad-alone-sickness",
+          "hint": "The illness overtakes you."
+        },
+        {
+          "text": "Seek help from travelers.",
+          "nextSceneId": "bad-road-plague",
+          "hint": "Contact spreads danger."
+        }
+      ]
+    },
+    "escape-knowledge-late": {
+      "title": "The Right Answer Too Late",
+      "step": 6,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "The monk says the safest chance would have been leaving immediately, before the disease touched your village, before crowds filled the roads, before fleas and fear traveled everywhere.",
+        "Beyond Europe, some lands are not yet struck in the same way, but reaching them now is nearly impossible.",
+        "Knowing the answer does not restore the time you lost."
+      ],
+      "choices": [
+        {
+          "text": "Try anyway.",
+          "nextSceneId": "coast-too-late",
+          "hint": "The path exists in theory, but not in time."
+        },
+        {
+          "text": "Stay and help others face death honestly.",
+          "nextSceneId": "bad-caregiver-plague",
+          "hint": "This is compassionate but fatal."
+        },
+        {
+          "text": "Return to your family.",
+          "nextSceneId": "family-sick",
+          "hint": "Love pulls you home."
+        }
+      ]
+    },
+    "escape-night": {
+      "title": "The Night You Leave",
+      "step": 4,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "You leave before the village understands what is coming.",
+        "You do not go to the chapel. You do not touch carts. You do not take bedding. You do not wait for permission.",
+        "You carry a knife, a water skin, hard bread, and the guilt of footsteps that do not turn back.",
+        "Behind you, Saint Cera's bell rings once in the dark."
+      ],
+      "choices": [
+        {
+          "text": "Take the empty ridge path away from villages and roads.",
+          "nextSceneId": "ridge-path",
+          "hint": "Avoiding people and trade routes is essential."
+        },
+        {
+          "text": "Use the main road for speed.",
+          "nextSceneId": "crowded-road",
+          "hint": "Main roads will soon fill with refugees and traders."
+        },
+        {
+          "text": "Stop at a nearby town for supplies.",
+          "nextSceneId": "market-town",
+          "hint": "Towns are dangerous."
+        },
+        {
+          "text": "Return for your family after scouting ahead.",
+          "nextSceneId": "family-delay",
+          "hint": "Returning destroys the timing that made escape possible."
+        }
+      ]
+    },
+    "ridge-path": {
+      "title": "Above the Road",
+      "step": 5,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "You climb the ridge path used mostly by shepherds.",
+        "Below, the main road curves toward market towns and toll gates. You see carts moving like beetles in the distance.",
+        "You are hungry, frightened, and alone, but you are away from crowds."
+      ],
+      "choices": [
+        {
+          "text": "Continue along ridges and avoid every settlement.",
+          "nextSceneId": "avoid-settlements",
+          "hint": "This keeps the survival path open."
+        },
+        {
+          "text": "Approach a village for food.",
+          "nextSceneId": "another-manor",
+          "hint": "Villages may already be infected."
+        },
+        {
+          "text": "Join a small family heading the same direction.",
+          "nextSceneId": "small-group-risk",
+          "hint": "Even small groups carry exposure risk."
+        },
+        {
+          "text": "Sleep in a barn near stored grain.",
+          "nextSceneId": "barn-hiding",
+          "hint": "Rats and fleas make barns dangerous."
+        }
+      ]
+    },
+    "avoid-settlements": {
+      "title": "No Fires, No Bells",
+      "step": 6,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "You travel where there are no chapel bells, no market cries, no crowded wells.",
+        "You eat little. You drink from streams. You sleep in cold places where no one has slept recently.",
+        "Loneliness becomes your protection."
+      ],
+      "choices": [
+        {
+          "text": "Keep avoiding all people, even when hungry.",
+          "nextSceneId": "hunger-on-ridge",
+          "hint": "This is brutal but necessary."
+        },
+        {
+          "text": "Trade with a shepherd from a distance.",
+          "nextSceneId": "distant-trade",
+          "hint": "Distance may preserve safety if handled carefully."
+        },
+        {
+          "text": "Follow a merchant caravan for protection.",
+          "nextSceneId": "infected-cart",
+          "hint": "Caravans are dangerous."
+        },
+        {
+          "text": "Take shelter at a monastery.",
+          "nextSceneId": "monastery-infirmary",
+          "hint": "Monasteries may be overwhelmed."
+        }
+      ]
+    },
+    "small-group-risk": {
+      "title": "The Kind Family",
+      "step": 6,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "The family offers to share fire and dried beans.",
+        "Their kindness nearly breaks your resolve. Then their youngest child coughs twice in her sleep.",
+        "Survival asks you to make choices that feel inhuman."
+      ],
+      "choices": [
+        {
+          "text": "Leave before dawn without sharing the fire.",
+          "nextSceneId": "avoid-settlements",
+          "hint": "Painful distance preserves the survival path."
+        },
+        {
+          "text": "Stay with them because no one should be alone.",
+          "nextSceneId": "bad-road-plague",
+          "hint": "Compassionate closeness brings infection."
+        },
+        {
+          "text": "Share food but keep distance.",
+          "nextSceneId": "distant-trade",
+          "hint": "Careful distance may still work."
+        },
+        {
+          "text": "Guide them toward the main road.",
+          "nextSceneId": "crowded-road",
+          "hint": "This increases their danger."
+        }
+      ]
+    },
+    "distant-trade": {
+      "title": "Bread Across a Stone Wall",
+      "step": 7,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "You meet a shepherd across a low stone wall.",
+        "You place a coin on a rock and step back. He leaves bread and cheese, then steps away.",
+        "Neither of you comes close. Neither of you speaks long.",
+        "It feels rude. It may save your life."
+      ],
+      "choices": [
+        {
+          "text": "Continue with strict distance.",
+          "nextSceneId": "hunger-on-ridge",
+          "hint": "The survival path remains open."
+        },
+        {
+          "text": "Ask to sleep near his flock.",
+          "nextSceneId": "abandoned-hut",
+          "hint": "Shelter may introduce risk."
+        },
+        {
+          "text": "Walk with him for safety.",
+          "nextSceneId": "small-group-risk",
+          "hint": "Companionship increases exposure."
+        },
+        {
+          "text": "Trade for a blanket from his hut.",
+          "nextSceneId": "infected-goods",
+          "hint": "Bedding and cloth may carry fleas."
+        }
+      ]
+    },
+    "hunger-on-ridge": {
+      "title": "Hunger Without Witness",
+      "step": 8,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "Your stomach cramps with hunger.",
+        "You pass a village where smoke rises from cooking fires. You smell bread. You hear a child laugh.",
+        "Then the bell begins to toll, and you keep walking."
+      ],
+      "choices": [
+        {
+          "text": "Keep walking past the village.",
+          "nextSceneId": "beyond-the-border",
+          "hint": "This preserves the only survival route."
+        },
+        {
+          "text": "Enter the village for food.",
+          "nextSceneId": "another-manor",
+          "hint": "Entering settlements is dangerous."
+        },
+        {
+          "text": "Steal food from an outer shed.",
+          "nextSceneId": "barn-hiding",
+          "hint": "Sheds and grain stores carry flea risk."
+        },
+        {
+          "text": "Turn back toward home.",
+          "nextSceneId": "family-sick",
+          "hint": "Returning is fatal."
+        }
+      ]
+    },
+    "beyond-the-border": {
+      "title": "Beyond the Familiar World",
+      "step": 9,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "Days pass. Then weeks.",
+        "The language changes first. Then the coins. Then the shape of roofs and fields.",
+        "You are leaving not only your village, but the world that taught you who you were."
+      ],
+      "choices": [
+        {
+          "text": "Continue away from infected routes and ports.",
+          "nextSceneId": "distant-safe-region",
+          "hint": "You are close to survival."
+        },
+        {
+          "text": "Seek work in the first large town you find.",
+          "nextSceneId": "market-town",
+          "hint": "Large towns remain dangerous."
+        },
+        {
+          "text": "Join travelers heading to a port.",
+          "nextSceneId": "coast-too-late",
+          "hint": "Ports are dangerous."
+        },
+        {
+          "text": "Stop at a crowded shrine to give thanks.",
+          "nextSceneId": "chapel-exposure",
+          "hint": "Crowds remain risky."
+        }
+      ]
+    },
+    "distant-safe-region": {
+      "title": "A Place the Bell Has Not Reached",
+      "step": 10,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "You reach a distant rural region beyond the roads that carried the first wave of death.",
+        "People are suspicious of strangers, so you keep distance and work for food at the edge of fields.",
+        "You hear rumors that the sickness may one day reach even here. But it has not reached today.",
+        "For the first time in weeks, you wake without hearing a funeral bell."
+      ],
+      "choices": [
+        {
+          "text": "Remain isolated, work outdoors, and avoid towns.",
+          "nextSceneId": "good-fled-europe",
+          "hint": "This completes the only survival path."
+        },
+        {
+          "text": "Move into a crowded town for safety and work.",
+          "nextSceneId": "market-town",
+          "hint": "Crowded towns remain dangerous."
+        },
+        {
+          "text": "Return to search for your family.",
+          "nextSceneId": "family-sick",
+          "hint": "Returning to infected areas is fatal."
+        },
+        {
+          "text": "Join merchants traveling back west.",
+          "nextSceneId": "infected-cart",
+          "hint": "Trade routes remain dangerous."
+        }
+      ]
+    },
+    "bad-plague-household": {
+      "title": "The House Goes Quiet",
+      "step": 11,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "The fever takes Alis first. Jakob follows before the next dawn.",
+        "You stop counting the bells because each one sounds like your own name.",
+        "The door stayed shut, but the plague was already inside."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows how deadly the Black Death was in a world without modern medicine, germ theory, antibiotics, or effective public health systems. Most choices could not save people once exposure had occurred.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Black Death to medieval European society. Students examine how a pandemic moved through trade networks, ports, towns, and villages, how crowded urbanization and poor sanitation increased risk, how fear led to religious responses, flagellants, scapegoating, and anti-Semitism, and how population decline eventually contributed to labor shortages, social mobility, and changes in feudalism and manorialism.",
+      "reflectionQuestions": [
+        "How did your choices show the danger of living through a pandemic before modern medicine?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "Why did trade networks and towns help the Black Death spread so quickly?",
+        "Why were most choices in the game unable to save the player?",
+        "How did fear and misinformation shape people's responses to the plague?",
+        "Why is scapegoating historically dangerous and inaccurate?",
+        "How did the Black Death weaken parts of feudalism and manorialism after so many people died?",
+        "Why was leaving early and avoiding population centers the only reliable survival path in this version of the story?"
+      ]
+    },
+    "bad-starvation-then-plague": {
+      "title": "Hunger Before Fever",
+      "step": 11,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "Hunger weakens everyone in the house.",
+        "When fever comes, there is no strength left to fight, no healer who can cure it, and no safe place to go.",
+        "The plague does not arrive alone. It arrives with hunger, fear, and exhaustion."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows that disease and hunger reinforced each other. Medieval peasants had few reserves, so isolation without food was difficult to sustain.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Black Death to medieval European society. Students examine how a pandemic moved through trade networks, ports, towns, and villages, how crowded urbanization and poor sanitation increased risk, how fear led to religious responses, flagellants, scapegoating, and anti-Semitism, and how population decline eventually contributed to labor shortages, social mobility, and changes in feudalism and manorialism.",
+      "reflectionQuestions": [
+        "How did your choices show the danger of living through a pandemic before modern medicine?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "Why did trade networks and towns help the Black Death spread so quickly?",
+        "Why were most choices in the game unable to save the player?",
+        "How did fear and misinformation shape people's responses to the plague?",
+        "Why is scapegoating historically dangerous and inaccurate?",
+        "How did the Black Death weaken parts of feudalism and manorialism after so many people died?",
+        "Why was leaving early and avoiding population centers the only reliable survival path in this version of the story?"
+      ]
+    },
+    "bad-village-collapse": {
+      "title": "The Village of Bells",
+      "step": 11,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "The bell rings until no one has strength to ring it.",
+        "Fields go unworked. Doors hang open. The manor that once seemed permanent becomes fragile in a single season.",
+        "The Black Death has turned daily life into absence."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows the enormous population decline caused by the Black Death and how quickly medieval communities could be overwhelmed.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Black Death to medieval European society. Students examine how a pandemic moved through trade networks, ports, towns, and villages, how crowded urbanization and poor sanitation increased risk, how fear led to religious responses, flagellants, scapegoating, and anti-Semitism, and how population decline eventually contributed to labor shortages, social mobility, and changes in feudalism and manorialism.",
+      "reflectionQuestions": [
+        "How did your choices show the danger of living through a pandemic before modern medicine?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "Why did trade networks and towns help the Black Death spread so quickly?",
+        "Why were most choices in the game unable to save the player?",
+        "How did fear and misinformation shape people's responses to the plague?",
+        "Why is scapegoating historically dangerous and inaccurate?",
+        "How did the Black Death weaken parts of feudalism and manorialism after so many people died?",
+        "Why was leaving early and avoiding population centers the only reliable survival path in this version of the story?"
+      ]
+    },
+    "bad-plague-village": {
+      "title": "Trapped on the Manor",
+      "step": 11,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "The manor lockdown keeps people in place.",
+        "It preserves labor for a few days, then traps the healthy with the infected.",
+        "By the time the steward opens the road, there are too few people left to walk it."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows that medieval authorities often lacked the knowledge needed for effective quarantine. Some restrictions trapped people in dangerous conditions.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Black Death to medieval European society. Students examine how a pandemic moved through trade networks, ports, towns, and villages, how crowded urbanization and poor sanitation increased risk, how fear led to religious responses, flagellants, scapegoating, and anti-Semitism, and how population decline eventually contributed to labor shortages, social mobility, and changes in feudalism and manorialism.",
+      "reflectionQuestions": [
+        "How did your choices show the danger of living through a pandemic before modern medicine?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "Why did trade networks and towns help the Black Death spread so quickly?",
+        "Why were most choices in the game unable to save the player?",
+        "How did fear and misinformation shape people's responses to the plague?",
+        "Why is scapegoating historically dangerous and inaccurate?",
+        "How did the Black Death weaken parts of feudalism and manorialism after so many people died?",
+        "Why was leaving early and avoiding population centers the only reliable survival path in this version of the story?"
+      ]
+    },
+    "bad-procession-plague": {
+      "title": "The Procession Moves On",
+      "step": 11,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "The flagellant procession leaves the village singing.",
+        "You leave with them, shoulder to shoulder with the frightened and the fevered.",
+        "Within days, the sickness moves with the procession."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows how fear-based religious movements and large gatherings could spread disease, even when people believed they were seeking protection.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Black Death to medieval European society. Students examine how a pandemic moved through trade networks, ports, towns, and villages, how crowded urbanization and poor sanitation increased risk, how fear led to religious responses, flagellants, scapegoating, and anti-Semitism, and how population decline eventually contributed to labor shortages, social mobility, and changes in feudalism and manorialism.",
+      "reflectionQuestions": [
+        "How did your choices show the danger of living through a pandemic before modern medicine?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "Why did trade networks and towns help the Black Death spread so quickly?",
+        "Why were most choices in the game unable to save the player?",
+        "How did fear and misinformation shape people's responses to the plague?",
+        "Why is scapegoating historically dangerous and inaccurate?",
+        "How did the Black Death weaken parts of feudalism and manorialism after so many people died?",
+        "Why was leaving early and avoiding population centers the only reliable survival path in this version of the story?"
+      ]
+    },
+    "bad-caregiver-plague": {
+      "title": "Mercy Without Protection",
+      "step": 11,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "You keep bringing water until your own hands shake too badly to lift the cup.",
+        "The people you helped remember your kindness, if they live long enough to remember anything.",
+        "Compassion mattered, but it could not shield you from infection."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows the danger faced by caregivers during the Black Death. Without modern protective equipment or medical knowledge, helping the sick often meant becoming sick.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Black Death to medieval European society. Students examine how a pandemic moved through trade networks, ports, towns, and villages, how crowded urbanization and poor sanitation increased risk, how fear led to religious responses, flagellants, scapegoating, and anti-Semitism, and how population decline eventually contributed to labor shortages, social mobility, and changes in feudalism and manorialism.",
+      "reflectionQuestions": [
+        "How did your choices show the danger of living through a pandemic before modern medicine?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "Why did trade networks and towns help the Black Death spread so quickly?",
+        "Why were most choices in the game unable to save the player?",
+        "How did fear and misinformation shape people's responses to the plague?",
+        "Why is scapegoating historically dangerous and inaccurate?",
+        "How did the Black Death weaken parts of feudalism and manorialism after so many people died?",
+        "Why was leaving early and avoiding population centers the only reliable survival path in this version of the story?"
+      ]
+    },
+    "bad-scapegoating": {
+      "title": "The Lie That Spreads",
+      "step": 11,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "The crowd turns fear into accusation.",
+        "Innocent people are threatened because others want someone to blame. The plague continues anyway.",
+        "You survive the crowd for a moment, but not the disease moving through it."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows that scapegoating was false, dangerous, and morally wrong. During the Black Death, Jewish communities and other outsiders were often unjustly blamed and attacked, even though they did not cause the plague.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Black Death to medieval European society. Students examine how a pandemic moved through trade networks, ports, towns, and villages, how crowded urbanization and poor sanitation increased risk, how fear led to religious responses, flagellants, scapegoating, and anti-Semitism, and how population decline eventually contributed to labor shortages, social mobility, and changes in feudalism and manorialism.",
+      "reflectionQuestions": [
+        "How did your choices show the danger of living through a pandemic before modern medicine?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "Why did trade networks and towns help the Black Death spread so quickly?",
+        "Why were most choices in the game unable to save the player?",
+        "How did fear and misinformation shape people's responses to the plague?",
+        "Why is scapegoating historically dangerous and inaccurate?",
+        "How did the Black Death weaken parts of feudalism and manorialism after so many people died?",
+        "Why was leaving early and avoiding population centers the only reliable survival path in this version of the story?"
+      ]
+    },
+    "bad-road-plague": {
+      "title": "Fever on the Road",
+      "step": 11,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "The road that promised escape becomes another place of death.",
+        "Refugees, carts, bedding, fleas, and fear move together.",
+        "You fall beside a ditch while others hurry past, terrified to help."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows how roads and movement could spread the Black Death. Leaving too late often meant joining infected crowds rather than escaping them.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Black Death to medieval European society. Students examine how a pandemic moved through trade networks, ports, towns, and villages, how crowded urbanization and poor sanitation increased risk, how fear led to religious responses, flagellants, scapegoating, and anti-Semitism, and how population decline eventually contributed to labor shortages, social mobility, and changes in feudalism and manorialism.",
+      "reflectionQuestions": [
+        "How did your choices show the danger of living through a pandemic before modern medicine?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "Why did trade networks and towns help the Black Death spread so quickly?",
+        "Why were most choices in the game unable to save the player?",
+        "How did fear and misinformation shape people's responses to the plague?",
+        "Why is scapegoating historically dangerous and inaccurate?",
+        "How did the Black Death weaken parts of feudalism and manorialism after so many people died?",
+        "Why was leaving early and avoiding population centers the only reliable survival path in this version of the story?"
+      ]
+    },
+    "bad-alone-sickness": {
+      "title": "Alone Under the Trees",
+      "step": 11,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "You die far from the village, under trees that do not know your name.",
+        "You avoided people too late. The sickness had already begun its work.",
+        "The silence you sought becomes final."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows how deadly the Black Death was in a world without modern medicine, germ theory, antibiotics, or effective public health systems. Most choices could not save people once exposure had occurred.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Black Death to medieval European society. Students examine how a pandemic moved through trade networks, ports, towns, and villages, how crowded urbanization and poor sanitation increased risk, how fear led to religious responses, flagellants, scapegoating, and anti-Semitism, and how population decline eventually contributed to labor shortages, social mobility, and changes in feudalism and manorialism.",
+      "reflectionQuestions": [
+        "How did your choices show the danger of living through a pandemic before modern medicine?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "Why did trade networks and towns help the Black Death spread so quickly?",
+        "Why were most choices in the game unable to save the player?",
+        "How did fear and misinformation shape people's responses to the plague?",
+        "Why is scapegoating historically dangerous and inaccurate?",
+        "How did the Black Death weaken parts of feudalism and manorialism after so many people died?",
+        "Why was leaving early and avoiding population centers the only reliable survival path in this version of the story?"
+      ]
+    },
+    "bad-flea-plague": {
+      "title": "The Bite You Barely Felt",
+      "step": 11,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "The bites seemed small at first.",
+        "Then came fever, swelling, and weakness so deep you could not stand.",
+        "The smallest creature in the straw carried more danger than any armed man you had feared."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows the role of fleas and rats in spreading bubonic plague. Medieval people did not understand this transmission clearly.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Black Death to medieval European society. Students examine how a pandemic moved through trade networks, ports, towns, and villages, how crowded urbanization and poor sanitation increased risk, how fear led to religious responses, flagellants, scapegoating, and anti-Semitism, and how population decline eventually contributed to labor shortages, social mobility, and changes in feudalism and manorialism.",
+      "reflectionQuestions": [
+        "How did your choices show the danger of living through a pandemic before modern medicine?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "Why did trade networks and towns help the Black Death spread so quickly?",
+        "Why were most choices in the game unable to save the player?",
+        "How did fear and misinformation shape people's responses to the plague?",
+        "Why is scapegoating historically dangerous and inaccurate?",
+        "How did the Black Death weaken parts of feudalism and manorialism after so many people died?",
+        "Why was leaving early and avoiding population centers the only reliable survival path in this version of the story?"
+      ]
+    },
+    "bad-town-plague": {
+      "title": "The Town of Shutters",
+      "step": 11,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "The town offers walls, wells, and markets, but it also holds people, waste, rats, and infected goods close together.",
+        "By the third night, fever spreads through the shelter where you sleep.",
+        "Walls can keep out armies. They cannot keep out a disease already inside."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows why towns were especially vulnerable during the Black Death. Crowding, trade, poor sanitation, and rats increased danger.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Black Death to medieval European society. Students examine how a pandemic moved through trade networks, ports, towns, and villages, how crowded urbanization and poor sanitation increased risk, how fear led to religious responses, flagellants, scapegoating, and anti-Semitism, and how population decline eventually contributed to labor shortages, social mobility, and changes in feudalism and manorialism.",
+      "reflectionQuestions": [
+        "How did your choices show the danger of living through a pandemic before modern medicine?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "Why did trade networks and towns help the Black Death spread so quickly?",
+        "Why were most choices in the game unable to save the player?",
+        "How did fear and misinformation shape people's responses to the plague?",
+        "Why is scapegoating historically dangerous and inaccurate?",
+        "How did the Black Death weaken parts of feudalism and manorialism after so many people died?",
+        "Why was leaving early and avoiding population centers the only reliable survival path in this version of the story?"
+      ]
+    },
+    "bad-healer-plague": {
+      "title": "No Cure in the Room",
+      "step": 11,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "The healer tries herbs, smoke, charms, and bleeding.",
+        "Some treatments comfort people. None stop the plague.",
+        "You waited in a room full of sickness for a cure the age did not possess."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows that medieval medicine could not reliably cure plague. Many treatments were based on limited medical knowledge, religious belief, or misunderstanding of disease.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Black Death to medieval European society. Students examine how a pandemic moved through trade networks, ports, towns, and villages, how crowded urbanization and poor sanitation increased risk, how fear led to religious responses, flagellants, scapegoating, and anti-Semitism, and how population decline eventually contributed to labor shortages, social mobility, and changes in feudalism and manorialism.",
+      "reflectionQuestions": [
+        "How did your choices show the danger of living through a pandemic before modern medicine?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "Why did trade networks and towns help the Black Death spread so quickly?",
+        "Why were most choices in the game unable to save the player?",
+        "How did fear and misinformation shape people's responses to the plague?",
+        "Why is scapegoating historically dangerous and inaccurate?",
+        "How did the Black Death weaken parts of feudalism and manorialism after so many people died?",
+        "Why was leaving early and avoiding population centers the only reliable survival path in this version of the story?"
+      ]
+    },
+    "bad-port-plague": {
+      "title": "Ships of Sickness",
+      "step": 11,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "The port smells of salt, tar, fish, waste, and fear.",
+        "Ships bring goods from far places, but also rats, fleas, and infected people.",
+        "The sea does not save you. The port was part of the path the plague used."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows how trade networks and ports helped spread the Black Death across regions. Movement of ships, goods, people, rats, and fleas connected distant communities.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Black Death to medieval European society. Students examine how a pandemic moved through trade networks, ports, towns, and villages, how crowded urbanization and poor sanitation increased risk, how fear led to religious responses, flagellants, scapegoating, and anti-Semitism, and how population decline eventually contributed to labor shortages, social mobility, and changes in feudalism and manorialism.",
+      "reflectionQuestions": [
+        "How did your choices show the danger of living through a pandemic before modern medicine?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "Why did trade networks and towns help the Black Death spread so quickly?",
+        "Why were most choices in the game unable to save the player?",
+        "How did fear and misinformation shape people's responses to the plague?",
+        "Why is scapegoating historically dangerous and inaccurate?",
+        "How did the Black Death weaken parts of feudalism and manorialism after so many people died?",
+        "Why was leaving early and avoiding population centers the only reliable survival path in this version of the story?"
+      ]
+    },
+    "good-fled-europe": {
+      "title": "The Bell Behind You",
+      "step": 11,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "You survive because you left before the village understood the danger.",
+        "You avoided roads, towns, carts, crowds, bedding, barns, ports, and infected households. You paid for survival with loneliness, hunger, guilt, and exile.",
+        "Years later, you hear that much of your village died. Wages rose for some survivors. Lords struggled to find workers. The old order changed because so many lives were lost.",
+        "You live, but survival is not triumph. It is the weight of being one of the few who escaped early enough."
+      ],
+      "ending": "good",
+      "teachingSummary": "This ending shows that the Black Death was devastating and difficult to survive once it reached a community. In this realistic version of the adventure, the only successful path is immediate flight away from Europe and away from population centers before exposure. The aftermath contributed to labor shortages, higher wages for some workers, and long-term pressure on feudalism and manorialism.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Black Death to medieval European society. Students examine how a pandemic moved through trade networks, ports, towns, and villages, how crowded urbanization and poor sanitation increased risk, how fear led to religious responses, flagellants, scapegoating, and anti-Semitism, and how population decline eventually contributed to labor shortages, social mobility, and changes in feudalism and manorialism.",
+      "reflectionQuestions": [
+        "How did your choices show the danger of living through a pandemic before modern medicine?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "Why did trade networks and towns help the Black Death spread so quickly?",
+        "Why were most choices in the game unable to save the player?",
+        "How did fear and misinformation shape people's responses to the plague?",
+        "Why is scapegoating historically dangerous and inaccurate?",
+        "How did the Black Death weaken parts of feudalism and manorialism after so many people died?",
+        "Why was leaving early and avoiding population centers the only reliable survival path in this version of the story?"
+      ]
+    },
+    "reeve-bribe": {
+      "title": "A Bribe in the Barn",
+      "step": 4,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "You press a small sack of your family's grain into the reeve's hands.",
+        "He looks toward the manor house, then toward the road. At last, he lets you pass through a side gate.",
+        "But the bribe has cost your family food, and the delay has cost you time."
+      ],
+      "choices": [
+        {
+          "text": "Leave alone before the road fills.",
+          "nextSceneId": "late-flight",
+          "hint": "This is still late and dangerous."
+        },
+        {
+          "text": "Return for more supplies first.",
+          "nextSceneId": "family-delay",
+          "hint": "More delay increases danger."
+        },
+        {
+          "text": "Tell others the reeve can be bribed.",
+          "nextSceneId": "village-panic",
+          "hint": "This may create panic and crowds."
+        }
+      ]
+    },
+    "woodland-delay": {
+      "title": "The Woods With Your Family",
+      "step": 5,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "You lead your family into the woods away from the road.",
+        "Jakob cries from hunger. Your mother cannot walk quickly. Alis keeps looking back toward the village.",
+        "The trees keep you away from crowds, but they cannot undo the delay or exposure already behind you."
+      ],
+      "choices": [
+        {
+          "text": "Keep moving slowly with your family.",
+          "nextSceneId": "bad-road-plague",
+          "hint": "The delay and exposure catch up."
+        },
+        {
+          "text": "Seek shelter in an abandoned hut.",
+          "nextSceneId": "abandoned-hut",
+          "hint": "Shelter may contain fleas or contamination."
+        },
+        {
+          "text": "Return to the village for food.",
+          "nextSceneId": "family-sick",
+          "hint": "Returning is deadly."
+        },
+        {
+          "text": "Leave your family and continue alone.",
+          "nextSceneId": "late-isolated-road",
+          "hint": "This is emotionally brutal and still likely too late."
+        }
+      ]
+    },
+    "crowd-at-gate": {
+      "title": "The Crowd at the Manor Gate",
+      "step": 5,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "Villagers gather at the manor gate, shouting for the right to leave.",
+        "The guards shout back. Someone coughs. Someone falls. The crowd presses tighter instead of spreading out.",
+        "A gate meant to control movement has created another dangerous crowd."
+      ],
+      "choices": [
+        {
+          "text": "Stay in the crowd and demand release.",
+          "nextSceneId": "bad-village-collapse",
+          "hint": "Crowds spread disease."
+        },
+        {
+          "text": "Slip away through the ditch.",
+          "nextSceneId": "late-flight",
+          "hint": "Leaving late is dangerous but better than the crowd."
+        },
+        {
+          "text": "Call for calm distance between families.",
+          "nextSceneId": "failed-order",
+          "hint": "Good advice may be too late."
+        },
+        {
+          "text": "Return home before violence begins.",
+          "nextSceneId": "too-late-home",
+          "hint": "The village remains infected."
+        }
+      ]
+    },
+    "bad-household-plague": {
+      "title": "The Household Falls",
+      "step": 11,
+      "image": {
+        "src": "public/images/black-death-medieval-europe.svg",
+        "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
+      },
+      "pathFocus": "Key terms for this route: Black Death, bubonic plague, pandemic, trade network, Silk Roads, urbanization, feudalism, manorialism, serf, labor shortage, quarantine, flagellants, scapegoating, anti-Semitism, monastery, tithe, population decline, social mobility, public health, and cross-cultural contact.",
+      "body": [
+        "You stay with your family because leaving them feels impossible.",
+        "One by one, the fever takes the room. The straw bedding, the shared cup, the close air, and the bites all become part of the same disaster.",
+        "The house that once protected you becomes the place where the plague finishes its work."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows how quickly the Black Death could move through households. Close contact, shared living spaces, fleas, and lack of effective medical treatment made survival unlikely once disease entered the home.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Black Death to medieval European society. Students examine how a pandemic moved through trade networks, ports, towns, and villages, how crowded urbanization and poor sanitation increased risk, how fear led to religious responses, flagellants, scapegoating, and anti-Semitism, and how population decline eventually contributed to labor shortages, social mobility, and changes in feudalism and manorialism.",
+      "reflectionQuestions": [
+        "How did your choices show the danger of living through a pandemic before modern medicine?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "Why did trade networks and towns help the Black Death spread so quickly?",
+        "Why were most choices in the game unable to save the player?",
+        "How did fear and misinformation shape people's responses to the plague?",
+        "Why is scapegoating historically dangerous and inaccurate?",
+        "How did the Black Death weaken parts of feudalism and manorialism after so many people died?",
+        "Why was leaving early and avoiding population centers the only reliable survival path in this version of the story?"
+      ]
+    }
+  }
+}

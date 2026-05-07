@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Edo Japan castle town</title>
+  <desc id="desc">A castle town with tiled roofs, a castle tower, mountains, and banners from Edo Japan.</desc>
+  <rect width="1200" height="675" fill="#e8f0ee"/>
+  <path d="M0 275 L160 140 L330 280 L470 130 L650 285 L830 115 L1060 292 L1200 175 L1200 675 L0 675 Z" fill="#9eb4aa"/>
+  <path d="M0 385 C170 350 310 365 470 405 C650 450 830 418 1200 350 L1200 675 L0 675 Z" fill="#9a7650"/>
+  <g transform="translate(720 150)">
+    <rect x="0" y="160" width="280" height="145" fill="#d7c6a2"/>
+    <rect x="40" y="85" width="200" height="95" fill="#efe5ca"/>
+    <rect x="78" y="22" width="125" height="85" fill="#f8efd8"/>
+    <path d="M-25 160 h330 l-45 -40 h-240z" fill="#2f3c48"/>
+    <path d="M20 85 h240 l-42 -34 h-156z" fill="#2f3c48"/>
+    <path d="M60 22 h160 l-34 -28 h-92z" fill="#2f3c48"/>
+    <rect x="120" y="205" width="38" height="100" fill="#5b3e2b"/>
+  </g>
+  <g fill="#6d4f3a">
+    <rect x="135" y="405" width="165" height="90"/>
+    <rect x="360" y="385" width="190" height="105"/>
+    <rect x="590" y="420" width="150" height="80"/>
+  </g>
+  <g fill="#2f3c48">
+    <polygon points="115,405 320,405 218,335"/>
+    <polygon points="335,385 575,385 455,310"/>
+    <polygon points="570,420 760,420 665,360"/>
+  </g>
+  <rect x="92" y="350" width="10" height="165" fill="#4f3828"/>
+  <rect x="101" y="360" width="72" height="42" fill="#b13b31"/>
+  <rect x="210" y="500" width="10" height="120" fill="#4f3828"/>
+  <rect x="219" y="510" width="72" height="42" fill="#1f6f68"/>
+  <path d="M0 575 C180 520 310 535 450 585 C590 635 780 615 960 555 C1060 522 1135 520 1200 535" fill="none" stroke="#e7d6a2" stroke-width="14"/>
+</svg>

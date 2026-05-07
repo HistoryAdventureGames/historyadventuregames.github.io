@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Feudal lord and manor in the High Middle Ages</title>
+  <desc id="desc">A fortified manor with fields, banners, a road, and a mounted knight.</desc>
+  <rect width="1200" height="675" fill="#e9dec8"/>
+  <rect y="410" width="1200" height="265" fill="#758752"/>
+  <path d="M735 185 h300 v220 h-300z" fill="#9f927f"/>
+  <rect x="775" y="110" width="75" height="295" fill="#8c806f"/>
+  <rect x="930" y="135" width="75" height="270" fill="#8c806f"/>
+  <path d="M710 185 h350 l-175 -95z" fill="#704232"/>
+  <path d="M760 110 h105 l-52 -42z" fill="#704232"/>
+  <path d="M915 135 h105 l-52 -42z" fill="#704232"/>
+  <rect x="860" y="292" width="48" height="113" fill="#4b3428"/>
+  <path d="M0 460 C175 410 345 420 515 465 C690 512 850 500 1200 425 L1200 675 L0 675 Z" fill="#8a6a43"/>
+  <g stroke="#d3bd82" stroke-width="10">
+    <path d="M30 575 C160 525 250 535 360 590"/>
+    <path d="M130 635 C255 565 390 555 520 620"/>
+    <path d="M470 545 C570 510 680 515 780 560"/>
+  </g>
+  <g transform="translate(255 375)">
+    <path d="M0 70 C45 22 120 20 165 72 C132 88 42 90 0 70 Z" fill="#5a3f2e"/>
+    <circle cx="135" cy="36" r="20" fill="#5a3f2e"/>
+    <rect x="65" y="32" width="54" height="52" fill="#2f3c48"/>
+    <line x1="90" y1="38" x2="90" y2="-35" stroke="#6b402f" stroke-width="8"/>
+    <path d="M96 -35 h62 v45 h-62z" fill="#b13b31"/>
+    <circle cx="50" cy="92" r="18" fill="#2b2620"/>
+    <circle cx="130" cy="92" r="18" fill="#2b2620"/>
+  </g>
+  <rect x="125" y="245" width="120" height="110" fill="#c4a879"/>
+  <polygon points="105,245 265,245 185,185" fill="#704232"/>
+</svg>
