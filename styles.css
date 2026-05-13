@@ -40,6 +40,13 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+body.is-playing {
+  background:
+    linear-gradient(180deg, rgba(245, 245, 247, 0.74), rgba(245, 245, 247, 0.96) 42rem, var(--page)),
+    var(--adventure-bg-image) center top / cover fixed no-repeat,
+    var(--page);
+}
+
 body::selection {
   background: rgba(0, 113, 227, 0.18);
 }
@@ -68,6 +75,12 @@ code {
 .site-header {
   min-height: 92vh;
   padding-bottom: clamp(28px, 7vw, 80px);
+  transition: min-height 180ms ease, padding 180ms ease;
+}
+
+body.is-playing .site-header {
+  min-height: 0;
+  padding-bottom: 0;
 }
 
 .nav-bar,
@@ -89,6 +102,13 @@ code {
   min-height: 64px;
   padding: 10px 0;
   backdrop-filter: blur(24px);
+}
+
+body.is-playing .nav-bar {
+  width: 100%;
+  padding: 10px max(22px, calc((100vw - 1680px) / 2));
+  border-bottom: 1px solid var(--line);
+  background: rgba(245, 245, 247, 0.84);
 }
 
 .brand-mark {
@@ -153,6 +173,10 @@ code {
   padding: clamp(42px, 7vw, 90px) 0 0;
 }
 
+body.is-playing .hero {
+  display: none;
+}
+
 .hero-copy {
   max-width: 920px;
 }
@@ -214,8 +238,7 @@ h3 {
 }
 
 .hero-link:hover,
-.primary-button:hover,
-.choice-button:hover {
+.primary-button:hover {
   background: var(--blue-dark);
   box-shadow: 0 14px 30px rgba(0, 113, 227, 0.26);
   transform: translateY(-1px);
@@ -292,6 +315,16 @@ h3 {
 
 .app-shell {
   padding: clamp(24px, 4vw, 54px) 0 62px;
+  outline: 0;
+  scroll-margin-top: 76px;
+}
+
+.app-shell:focus {
+  outline: 0;
+}
+
+body.is-playing .app-shell {
+  padding-top: 18px;
 }
 
 .app-shell > section[aria-labelledby="libraryHeading"] {
@@ -380,6 +413,10 @@ h3 {
   border-radius: var(--radius);
 }
 
+body.is-playing .scene-image {
+  display: none;
+}
+
 .card-meta,
 .scene-meta {
   color: var(--soft);
@@ -426,13 +463,29 @@ h3 {
   padding-bottom: 8px;
 }
 
-.primary-button,
-.choice-button {
+.primary-button {
   border: 0;
   background: var(--blue);
   color: #ffffff;
   font-weight: 760;
   padding: 0.82rem 1.06rem;
+}
+
+.choice-button {
+  border: 1px solid rgba(22, 22, 23, 0.1);
+  background: rgba(255, 255, 255, 0.82);
+  color: var(--ink);
+  font-weight: 760;
+  padding: 0.98rem 1.05rem;
+}
+
+.choice-button:hover,
+.choice-button:focus-visible {
+  border-color: rgba(0, 113, 227, 0.34);
+  background: #ffffff;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  color: #064f9e;
+  transform: translateY(-1px);
 }
 
 .secondary-button,
@@ -573,14 +626,6 @@ h3 {
   width: 100%;
   min-height: 58px;
   text-align: left;
-}
-
-.choice-hint {
-  display: block;
-  font-size: 0.94rem;
-  font-weight: 500;
-  margin-top: 7px;
-  opacity: 0.9;
 }
 
 .classroom-box,
