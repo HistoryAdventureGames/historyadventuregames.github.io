@@ -74,7 +74,7 @@ code {
 .hero,
 .app-shell,
 .site-footer {
-  width: min(1180px, calc(100% - 36px));
+  width: min(1680px, calc(100% - 44px));
   margin: 0 auto;
 }
 
@@ -147,14 +147,14 @@ code {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.8fr);
+  grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.92fr);
   align-items: center;
   gap: clamp(28px, 7vw, 90px);
   padding: clamp(42px, 7vw, 90px) 0 0;
 }
 
 .hero-copy {
-  max-width: 760px;
+  max-width: 920px;
 }
 
 .eyebrow {
@@ -172,7 +172,7 @@ h3 {
 }
 
 h1 {
-  max-width: 780px;
+  max-width: 980px;
   margin-bottom: 18px;
   font-size: clamp(3.4rem, 9vw, 7.6rem);
   font-weight: 800;
@@ -194,7 +194,7 @@ h3 {
 }
 
 .subtitle {
-  max-width: 760px;
+  max-width: 860px;
   margin: 0;
   color: var(--muted);
   font-size: clamp(1.1rem, 2.1vw, 1.55rem);
@@ -228,7 +228,7 @@ h3 {
 }
 
 .device-shell {
-  width: min(100%, 430px);
+  width: min(100%, 520px);
   aspect-ratio: 0.74;
   border: 1px solid rgba(255, 255, 255, 0.7);
   border-radius: 46px;
@@ -299,7 +299,7 @@ h3 {
 }
 
 .app-shell > section[aria-labelledby="libraryHeading"] > .subtitle {
-  max-width: 830px;
+  max-width: 980px;
   margin-bottom: 6px;
 }
 
@@ -312,9 +312,9 @@ h3 {
 
 .library-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  gap: 18px;
-  margin-top: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr));
+  gap: clamp(18px, 1.6vw, 28px);
+  margin-top: 34px;
 }
 
 .adventure-card,
@@ -335,7 +335,7 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 14px;
-  min-height: 520px;
+  min-height: 560px;
   overflow: hidden;
   border-radius: var(--radius);
   padding: 14px;
@@ -362,8 +362,16 @@ h3 {
 }
 
 .card-image {
-  aspect-ratio: 16 / 11;
+  aspect-ratio: 16 / 10;
   border-radius: var(--radius);
+}
+
+.adventure-card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 14px;
+  padding: 0 8px 8px;
 }
 
 .scene-image {
@@ -377,15 +385,6 @@ h3 {
   color: var(--soft);
   font-size: 0.88rem;
   font-weight: 800;
-}
-
-.adventure-card h3,
-.adventure-card p,
-.adventure-card .tag-list,
-.adventure-card .card-actions,
-.adventure-card .card-meta {
-  margin-left: 8px;
-  margin-right: 8px;
 }
 
 .card-description {
@@ -504,8 +503,34 @@ h3 {
 
 .game-panel {
   display: grid;
-  gap: 26px;
+  gap: 28px;
   background: rgba(255, 255, 255, 0.9);
+}
+
+.game-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.46fr);
+  gap: clamp(22px, 3vw, 46px);
+  align-items: start;
+}
+
+.scene-content {
+  display: grid;
+  gap: 24px;
+  min-width: 0;
+}
+
+.decision-panel {
+  position: sticky;
+  top: 82px;
+  display: grid;
+  gap: 18px;
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(245, 245, 247, 0.82);
+  box-shadow: var(--shadow-sm);
+  padding: clamp(18px, 2vw, 26px);
 }
 
 .scene-title-row {
@@ -516,7 +541,7 @@ h3 {
 }
 
 .scene-text {
-  max-width: 78ch;
+  max-width: 92ch;
   margin: 0;
   color: #2b2d33;
   font-size: clamp(1.05rem, 1.5vw, 1.22rem);
@@ -595,8 +620,52 @@ h3 {
 
 .game-actions {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 10px;
+}
+
+.vocab-term {
+  position: relative;
+  display: inline;
+  border-bottom: 2px solid rgba(0, 113, 227, 0.38);
+  color: #064f9e;
+  cursor: help;
+  font-weight: 720;
+  text-decoration: none;
+}
+
+.vocab-term:focus-visible {
+  border-radius: 4px;
+  outline: 3px solid rgba(0, 113, 227, 0.28);
+  outline-offset: 2px;
+}
+
+.vocab-popover {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 10px);
+  z-index: 20;
+  width: min(280px, 80vw);
+  padding: 12px 14px;
+  border: 1px solid rgba(22, 22, 23, 0.16);
+  border-radius: var(--radius);
+  background: rgba(22, 22, 23, 0.96);
+  box-shadow: var(--shadow-md);
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 520;
+  line-height: 1.35;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, 8px);
+  transition: opacity 140ms ease, transform 140ms ease;
+}
+
+.vocab-term:hover .vocab-popover,
+.vocab-term:focus .vocab-popover,
+.vocab-term:focus-within .vocab-popover {
+  opacity: 1;
+  transform: translate(-50%, 0);
 }
 
 @keyframes spin {
@@ -644,7 +713,7 @@ h3 {
   .hero,
   .app-shell,
   .site-footer {
-    width: min(100% - 28px, 1180px);
+    width: min(100% - 28px, 1680px);
   }
 
   .brand-mark span:last-child {
@@ -662,6 +731,14 @@ h3 {
   .scene-title-row,
   .card-actions {
     flex-direction: column;
+  }
+
+  .game-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .decision-panel {
+    position: static;
   }
 
   .primary-button,
