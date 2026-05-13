@@ -105,6 +105,9 @@ body.is-playing .site-header {
 }
 
 body.is-playing .nav-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
   width: 100%;
   padding: 10px max(22px, calc((100vw - 1680px) / 2));
   border-bottom: 1px solid var(--line);
@@ -324,7 +327,7 @@ h3 {
 }
 
 body.is-playing .app-shell {
-  padding-top: 18px;
+  padding-top: 86px;
 }
 
 .app-shell > section[aria-labelledby="libraryHeading"] {
