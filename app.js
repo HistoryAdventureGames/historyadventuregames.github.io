@@ -65,6 +65,8 @@ const glossaryDefinitions = {
 const state = {
   manifest: [],
   adventures: new Map(),
+  backgroundImages: [],
+  homeBackgroundImage: "",
   loadErrors: [],
   loadWarnings: [],
   currentAdventureId: null,
@@ -143,6 +145,7 @@ async function loadAdventuresFromManifest(manifest) {
 
     if (result.status === "fulfilled") {
       state.adventures.set(result.value.adventure.id, result.value.adventure);
+      state.backgroundImages.push(...getAdventureImageSources(result.value.adventure));
       return;
     }
 
@@ -239,7 +242,8 @@ function renderLibrary() {
   state.currentSceneId = null;
   libraryButton.classList.add("hidden");
   document.body.classList.remove("is-playing");
-  document.body.style.removeProperty("--adventure-bg-image");
+  document.body.classList.add("is-home");
+  setRandomHomeBackground();
 
   const loadedCards = Array.from(state.adventures.values()).map(renderAdventureCard).join("");
   const failedCards = state.loadErrors.map(renderFailedCard).join("");
@@ -335,12 +339,6 @@ function renderNoGamesMessage() {
 function renderGame(adventure, sceneId) {
   const scene = adventure.scenes[sceneId];
 
-  state.currentAdventureId = adventure.id;
-  state.currentSceneId = sceneId;
-  libraryButton.classList.remove("hidden");
-  document.body.classList.add("is-playing");
-  setAdventureBackground(scene.image || adventure.coverImage);
-
   if (!scene) {
     renderFatalError(
       "This scene could not be found.",
@@ -351,6 +349,13 @@ function renderGame(adventure, sceneId) {
     );
     return;
   }
+
+  state.currentAdventureId = adventure.id;
+  state.currentSceneId = sceneId;
+  libraryButton.classList.remove("hidden");
+  document.body.classList.remove("is-home");
+  document.body.classList.add("is-playing");
+  setAdventureBackground(scene.image || adventure.coverImage);
 
   saveProgress(adventure.id, sceneId);
   updateHash(adventure.id, sceneId);
@@ -725,11 +730,47 @@ function scrollToAppStart() {
 }
 
 function setAdventureBackground(image) {
-  if (!image || !image.src) return;
+  const src = getImageSrc(image);
+  if (!src) return;
+
   document.body.style.setProperty(
     "--adventure-bg-image",
-    `url("${normalizeAssetPath(image.src)}")`,
+    `url("${normalizeAssetPath(src)}")`,
   );
+}
+
+function setRandomHomeBackground() {
+  if (!state.homeBackgroundImage) {
+    const supportedImages = Array.from(new Set(state.backgroundImages.filter(isSupportedImageFile)));
+    state.homeBackgroundImage = supportedImages[Math.floor(Math.random() * supportedImages.length)] || "";
+  }
+
+  if (state.homeBackgroundImage) {
+    document.body.style.setProperty(
+      "--adventure-bg-image",
+      `url("${normalizeAssetPath(state.homeBackgroundImage)}")`,
+    );
+  }
+}
+
+function getAdventureImageSources(adventure) {
+  const sources = [getImageSrc(adventure.coverImage)];
+
+  Object.values(adventure.scenes || {}).forEach((scene) => {
+    sources.push(getImageSrc(scene.image));
+  });
+
+  return sources.filter(isSupportedImageFile);
+}
+
+function getImageSrc(image) {
+  if (typeof image === "string") return image;
+  return image && typeof image === "object" ? image.src : "";
+}
+
+function isSupportedImageFile(src) {
+  const path = normalizeAssetPath(src || "").split("?")[0].toLowerCase();
+  return /\.(svg|png|jpe?g)$/.test(path);
 }
 
 function updateHash(adventureId, sceneId) {
