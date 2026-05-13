@@ -3,42 +3,61 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Global History Adventure Library</title>
+    <title>History Adventure Games</title>
     <meta
       name="description"
-      content="A student-facing library of Global History branching adventure games."
+      content="Interactive Global History adventure games for students. Choose a scenario, make decisions, and see history unfold."
     >
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="site-header">
-      <div class="header-inner">
-        <div>
-          <p class="eyebrow">Student Adventure Library</p>
-          <h1>Global History Adventure Library</h1>
-          <p class="subtitle">
-            Choose a historical scenario, make decisions, and see how choices shape outcomes.
-          </p>
-        </div>
-        <button class="secondary-button hidden" id="libraryButton" type="button">
-          Return to library
+      <nav class="nav-bar" aria-label="Primary">
+        <a class="brand-mark" href="/" aria-label="History Adventure Games home">
+          <span class="brand-icon" aria-hidden="true">H</span>
+          <span>History Adventure Games</span>
+        </a>
+        <button class="nav-action hidden" id="libraryButton" type="button">
+          Library
         </button>
-      </div>
+      </nav>
+
+      <section class="hero" aria-labelledby="heroTitle">
+        <div class="hero-copy">
+          <p class="eyebrow">Interactive classroom journeys</p>
+          <h1 id="heroTitle">History becomes a choice.</h1>
+          <p class="subtitle">
+            Explore cinematic branching adventures built for Global History students. Read the moment, choose your path, and watch consequences unfold.
+          </p>
+          <a class="hero-link" href="#libraryHeading">Explore adventures</a>
+        </div>
+        <div class="hero-stage" aria-hidden="true">
+          <div class="device-shell">
+            <div class="device-screen">
+              <span class="screen-kicker">Now playing</span>
+              <strong>The Bell Behind You</strong>
+              <p>A village decision changes everything.</p>
+              <div class="screen-options">
+                <span>Stay</span>
+                <span>Flee</span>
+                <span>Help</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
 
     <main id="app" class="app-shell" tabindex="-1">
       <section class="status-panel">
+        <div class="loader" aria-hidden="true"></div>
         <h2>Loading adventures...</h2>
         <p>Getting the classroom library ready.</p>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>
-        Teachers can add games by placing JSON files in
-        <code>/public/content/adventures/</code> and updating
-        <code>/public/content/adventure-manifest.json</code>.
-      </p>
+      <p>Built for fast classroom play on GitHub Pages.</p>
     </footer>
 
     <script src="app.js" defer></script>
