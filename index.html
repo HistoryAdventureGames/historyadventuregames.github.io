@@ -8,8 +8,68 @@
       name="description"
       content="Interactive Global History adventure games for students. Choose a scenario, make decisions, and see history unfold."
     >
-    <link rel="stylesheet" href="styles.css?v=20260513-discord-inspired">
+    <link rel="stylesheet" href="styles.css?v=20260513-discord-inspired-2">
     <style>
+      body.is-home {
+        background:
+          radial-gradient(circle at 8% 18%, rgba(254, 231, 92, 0.28), transparent 14rem),
+          radial-gradient(circle at 92% 20%, rgba(235, 69, 158, 0.2), transparent 16rem),
+          linear-gradient(180deg, rgba(88, 101, 242, 0.9), rgba(64, 78, 237, 0.96) 25rem, #313338 25rem),
+          var(--adventure-bg-image) center top / cover fixed no-repeat,
+          #404eed !important;
+      }
+
+      .brand-icon {
+        border-radius: 50% !important;
+        background: #ffffff !important;
+        color: #404eed !important;
+      }
+
+      h1 {
+        color: #ffffff !important;
+        font-weight: 950 !important;
+        line-height: 0.92 !important;
+        text-transform: uppercase;
+      }
+
+      .eyebrow {
+        color: #fee75c !important;
+      }
+
+      .hero-link,
+      .nav-action {
+        border: 0 !important;
+        border-radius: 999px !important;
+        background: #ffffff !important;
+        color: #23272a !important;
+        font-weight: 900 !important;
+      }
+
+      .adventure-card,
+      .game-panel,
+      .decision-panel {
+        border-radius: 18px !important;
+        background: #2b2d31 !important;
+        border-color: rgba(255, 255, 255, 0.08) !important;
+      }
+
+      .card-actions .primary-button {
+        background: #5865f2 !important;
+        color: #ffffff !important;
+      }
+
+      .card-actions .secondary-button,
+      .choice-button,
+      .secondary-button {
+        background: #404249 !important;
+        color: #ffffff !important;
+      }
+
+      .card-meta,
+      .scene-meta {
+        color: #b5bac1 !important;
+      }
+
       @media (min-width: 721px) {
         .hero {
           grid-template-columns: minmax(0, 1fr) minmax(280px, 0.42fr);
