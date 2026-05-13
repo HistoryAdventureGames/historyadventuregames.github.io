@@ -238,6 +238,8 @@ function renderLibrary() {
   state.currentAdventureId = null;
   state.currentSceneId = null;
   libraryButton.classList.add("hidden");
+  document.body.classList.remove("is-playing");
+  document.body.style.removeProperty("--adventure-bg-image");
 
   const loadedCards = Array.from(state.adventures.values()).map(renderAdventureCard).join("");
   const failedCards = state.loadErrors.map(renderFailedCard).join("");
@@ -256,8 +258,6 @@ function renderLibrary() {
       ${state.adventures.size === 0 ? renderNoGamesMessage() : ""}
     </section>
   `;
-
-  app.focus();
 }
 
 function renderAdventureCard(adventure) {
@@ -338,6 +338,8 @@ function renderGame(adventure, sceneId) {
   state.currentAdventureId = adventure.id;
   state.currentSceneId = sceneId;
   libraryButton.classList.remove("hidden");
+  document.body.classList.add("is-playing");
+  setAdventureBackground(scene.image || adventure.coverImage);
 
   if (!scene) {
     renderFatalError(
@@ -399,14 +401,13 @@ function renderGame(adventure, sceneId) {
     </article>
   `;
 
-  app.focus();
+  scrollToAppStart();
 }
 
 function renderChoices(adventure, scene, sceneId) {
   const buttons = scene.choices.map((choice, index) => {
     const target = getChoiceTarget(choice);
     const targetExists = Boolean(adventure.scenes[target]);
-    const hint = choice.hint ? `<span class="choice-hint">${escapeHtml(choice.hint)}</span>` : "";
 
     return `
       <button
@@ -417,7 +418,6 @@ function renderChoices(adventure, scene, sceneId) {
         ${targetExists ? "" : "disabled"}
       >
         ${escapeHtml(choice.text || `Choice ${index + 1}`)}
-        ${hint}
         ${targetExists ? "" : " This choice is missing its next scene."}
       </button>
     `;
@@ -717,6 +717,19 @@ app.addEventListener("click", (event) => {
 function showLibrary() {
   history.pushState("", document.title, window.location.pathname);
   renderLibrary();
+  scrollToAppStart();
+}
+
+function scrollToAppStart() {
+  app.scrollIntoView({ block: "start" });
+}
+
+function setAdventureBackground(image) {
+  if (!image || !image.src) return;
+  document.body.style.setProperty(
+    "--adventure-bg-image",
+    `url("${normalizeAssetPath(image.src)}")`,
+  );
 }
 
 function updateHash(adventureId, sceneId) {
