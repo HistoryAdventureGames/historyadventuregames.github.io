@@ -391,7 +391,8 @@ body.is-playing .app-shell {
 }
 
 .card-image,
-.scene-image {
+.scene-image,
+.scene-side-image {
   display: block;
   width: 100%;
   object-fit: cover;
@@ -421,8 +422,17 @@ body.is-playing .app-shell {
   border-radius: var(--radius);
 }
 
+.scene-side-image {
+  width: 100%;
+  max-height: 420px;
+  aspect-ratio: 4 / 3;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+
 body.is-playing .scene-image {
-  display: none;
+  display: block;
 }
 
 .card-meta,
@@ -510,6 +520,9 @@ body.is-playing .scene-image {
   border-color: var(--line);
   background: #ffffff;
   color: var(--ink);
+  font-family: "Atkinson Hyperlegible", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  font-size: clamp(1rem, 1.1vw, 1.12rem);
+  line-height: 1.45;
   text-align: left;
 }
 
@@ -583,27 +596,46 @@ body.is-playing {
 
 .game-panel {
   display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.34fr);
   gap: 28px;
   background: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(12px);
 }
 
-.game-layout {
+.game-layout,
+.scene-main,
+.scene-content {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.42fr);
-  gap: clamp(22px, 3vw, 46px);
+  min-width: 0;
+}
+
+.game-layout {
+  display: contents;
+}
+
+.scene-main {
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.36fr);
+  gap: clamp(22px, 3vw, 42px);
   align-items: start;
 }
 
 .scene-content {
-  display: grid;
+  grid-column: 1;
+  grid-row: 1;
   gap: 22px;
-  min-width: 0;
+}
+
+.game-panel > .scene-image {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: start;
+  aspect-ratio: 4 / 3;
+  max-height: 420px;
 }
 
 .decision-panel {
-  position: sticky;
-  top: 96px;
+  grid-column: 1 / -1;
+  grid-row: 2;
   display: grid;
   gap: 16px;
   min-width: 0;
@@ -754,12 +786,38 @@ body.is-playing {
     display: none;
   }
 
-  .game-layout {
+  .game-panel {
     grid-template-columns: 1fr;
   }
 
+  .game-layout {
+    display: contents;
+  }
+
+  .scene-content {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .game-panel > .scene-image {
+    grid-column: 1;
+    grid-row: 2;
+    max-height: 320px;
+    aspect-ratio: 16 / 9;
+  }
+
   .decision-panel {
-    position: static;
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .scene-main {
+    grid-template-columns: 1fr;
+  }
+
+  .scene-side-image {
+    max-height: 320px;
+    aspect-ratio: 16 / 9;
   }
 }
 
