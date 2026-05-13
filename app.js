@@ -2,6 +2,66 @@ const manifestPath = "content/adventure-manifest.json";
 const app = document.querySelector("#app");
 const libraryButton = document.querySelector("#libraryButton");
 
+const glossaryDefinitions = {
+  agriculture: "Growing crops and raising animals for food, which allowed communities to settle in one place.",
+  "anti-Semitism": "Hostility, prejudice, or discrimination against Jewish people.",
+  artisan: "A skilled craftworker who makes goods by hand.",
+  "Black Death": "The devastating plague pandemic that spread through Afro-Eurasia in the 1300s.",
+  "bubonic plague": "A deadly form of plague often spread by fleas carried by rodents.",
+  bushido: "The warrior code associated with samurai values such as loyalty, honor, and discipline.",
+  "castle town": "A town that grew around a castle and served as a center of military, political, and economic life.",
+  Christendom: "The community of Christian kingdoms and peoples in medieval Europe.",
+  civilization: "A complex society with cities, government, specialized jobs, social classes, and shared culture.",
+  "cross-cultural contact": "Interaction between different societies that can spread goods, ideas, beliefs, and disease.",
+  Crusades: "Medieval military campaigns promoted by the Church, especially to control holy sites in the eastern Mediterranean.",
+  daimyo: "A powerful Japanese landholding lord who controlled warriors and territory.",
+  domestication: "The process of adapting plants or animals for human use.",
+  "Edo period": "The era of Tokugawa rule in Japan from 1603 to 1868.",
+  feudalism: "A political and social system based on land, loyalty, protection, and service.",
+  fief: "Land granted by a lord to a vassal in exchange for loyalty and service.",
+  flagellants: "Religious groups who whipped themselves publicly during crises such as the Black Death.",
+  hierarchy: "A ranked social order where some people have more power or status than others.",
+  "Holy Land": "The region around Jerusalem considered sacred by Jews, Christians, and Muslims.",
+  homage: "A formal act of loyalty given by a vassal to a lord.",
+  irrigation: "Moving water to fields to help crops grow.",
+  Islam: "A monotheistic religion founded in Arabia and based on the teachings of the Prophet Muhammad.",
+  isolation: "Separating people or places to reduce contact and slow the spread of disease.",
+  "job specialization": "When people focus on different kinds of work instead of everyone doing the same tasks.",
+  knight: "A mounted warrior in medieval Europe who often served a lord.",
+  "labor shortage": "A lack of available workers, often causing wages or bargaining power to rise.",
+  lord: "A person with power over land and people in a feudal system.",
+  manorialism: "The economic system of medieval manors, where peasants worked land controlled by a lord.",
+  merchant: "A person who buys and sells goods.",
+  monastery: "A religious community where monks live, work, pray, and preserve learning.",
+  "Neo-Confucianism": "A revived form of Confucian thought that shaped social order and government in East Asia.",
+  "Neolithic Revolution": "The major shift from hunting and gathering to farming and settled life.",
+  nomad: "A person or group that moves from place to place rather than living permanently in one location.",
+  Paleolithic: "The Old Stone Age, when humans lived mostly by hunting, gathering, and foraging.",
+  pandemic: "An outbreak of disease that spreads across many regions or continents.",
+  pilgrimage: "A journey to a sacred or important religious place.",
+  pope: "The leader of the Roman Catholic Church.",
+  "population decline": "A decrease in the number of people living in a place.",
+  "public health": "Actions communities take to protect people from disease and improve well-being.",
+  quarantine: "Keeping people, animals, or goods apart for a period of time to prevent disease from spreading.",
+  "rice economy": "An economy where rice production is central to wealth, taxes, and social power.",
+  "river valley": "Land around a river that often supports farming, trade, and early settlement.",
+  sakoku: "Japan's Tokugawa-era policy of tightly limiting foreign contact and trade.",
+  samurai: "A warrior class in feudal Japan expected to serve a lord.",
+  scapegoating: "Blaming a person or group unfairly for a problem.",
+  "self-sufficient": "Able to provide most needed goods or food without outside help.",
+  serf: "A peasant legally tied to a lord's land in medieval Europe.",
+  shogun: "The military ruler of Japan who held real political power under the emperor.",
+  "Silk Roads": "Trade routes connecting East Asia, Central Asia, the Middle East, and Europe.",
+  "social hierarchy": "A ranked structure of social classes or groups.",
+  "social mobility": "The ability to move up or down in social status.",
+  surplus: "Extra production beyond what is immediately needed.",
+  tithe: "A payment, often one-tenth of income or produce, given to the Church.",
+  "Tokugawa shogunate": "The military government that ruled Japan during the Edo period.",
+  "trade network": "Connected routes and relationships used to exchange goods, ideas, and information.",
+  urbanization: "The growth of towns and cities.",
+  vassal: "A person who receives land or protection from a lord in exchange for loyalty and service.",
+};
+
 const state = {
   manifest: [],
   adventures: new Map(),
@@ -207,21 +267,22 @@ function renderAdventureCard(adventure) {
   return `
     <article class="adventure-card">
       ${renderAdventureImage(adventure.coverImage, adventure.title)}
-      <div class="card-meta">${escapeHtml(adventure.topic || "Global History")}</div>
-      <h3>${escapeHtml(adventure.title)}</h3>
-      <p class="card-description">${escapeHtml(adventure.description || "A branching historical adventure.")}</p>
-      ${adventure.topicQuestion ? `<p class="topic-question">${escapeHtml(formatTopicQuestion(adventure.topicQuestion))}</p>` : ""}
-      ${renderTagList(adventure.curriculumTags)}
-      <p class="card-meta">${escapeHtml(adventure.estimatedTime || "Class period")}</p>
-      <div class="card-actions">
-        <button class="primary-button" type="button" data-start="${escapeAttribute(adventure.id)}">
-          ${actionText}
-        </button>
-        ${savedScene ? `
-          <button class="secondary-button" type="button" data-reset="${escapeAttribute(adventure.id)}">
-            Reset progress
+      <div class="adventure-card-body">
+        <div class="card-meta">${escapeHtml(adventure.topic || "Global History")}</div>
+        <h3>${escapeHtml(adventure.title)}</h3>
+        <p class="card-description">${escapeHtml(adventure.description || "A branching historical adventure.")}</p>
+        ${adventure.topicQuestion ? `<p class="topic-question">${escapeHtml(formatTopicQuestion(adventure.topicQuestion))}</p>` : ""}
+        ${renderTagList(adventure.curriculumTags)}
+        <div class="card-actions">
+          <button class="primary-button" type="button" data-start="${escapeAttribute(adventure.id)}">
+            ${actionText}
           </button>
-        ` : ""}
+          ${savedScene ? `
+            <button class="secondary-button" type="button" data-reset="${escapeAttribute(adventure.id)}">
+              Reset progress
+            </button>
+          ` : ""}
+        </div>
       </div>
     </article>
   `;
@@ -298,36 +359,42 @@ function renderGame(adventure, sceneId) {
   app.innerHTML = `
     <article class="game-panel" aria-labelledby="sceneTitle">
       ${renderAdventureImage(scene.image || adventure.coverImage, scene.title || adventure.title, "scene-image")}
-      <div class="scene-title-row">
-        <div>
-          <p class="scene-meta">${escapeHtml(adventure.title)}${scene.step ? ` | Step ${escapeHtml(scene.step)}` : ""}</p>
-          <h2 id="sceneTitle">${escapeHtml(scene.title || "Untitled Scene")}</h2>
+      <div class="game-layout">
+        <div class="scene-content">
+          <div class="scene-title-row">
+            <div>
+              <p class="scene-meta">${escapeHtml(adventure.title)}${scene.step ? ` | Step ${escapeHtml(scene.step)}` : ""}</p>
+              <h2 id="sceneTitle">${escapeHtml(scene.title || "Untitled Scene")}</h2>
+            </div>
+            ${getEndingType(scene) ? renderEndingBadge(getEndingType(scene)) : ""}
+          </div>
+
+          ${scene.pathFocus ? `<section class="path-focus">${renderVocabularyText(scene.pathFocus, adventure)}</section>` : ""}
+          <p class="scene-text">${renderVocabularyText(getSceneText(scene), adventure)}</p>
+
+          ${getClassroomPrompt(scene) ? `
+            <section class="classroom-box" aria-labelledby="classroomHeading">
+              <h3 id="classroomHeading">Classroom Discussion</h3>
+              <p>${renderVocabularyText(getClassroomPrompt(scene), adventure)}</p>
+            </section>
+          ` : ""}
+
+          ${isEnding ? renderEndingDetails(scene, adventure) : ""}
         </div>
-        ${getEndingType(scene) ? renderEndingBadge(getEndingType(scene)) : ""}
-      </div>
-
-      ${scene.pathFocus ? `<section class="path-focus">${escapeHtml(scene.pathFocus)}</section>` : ""}
-      <p class="scene-text">${escapeHtml(getSceneText(scene))}</p>
-
-      ${getClassroomPrompt(scene) ? `
-        <section class="classroom-box" aria-labelledby="classroomHeading">
-          <h3 id="classroomHeading">Classroom Discussion</h3>
-          <p>${escapeHtml(getClassroomPrompt(scene))}</p>
-        </section>
-      ` : ""}
-
-      ${isEnding ? renderEndingDetails(scene) : renderChoices(adventure, scene, sceneId)}
-
-      <div class="game-actions">
-        <button class="secondary-button" type="button" data-restart="${escapeAttribute(adventure.id)}">
-          Restart adventure
-        </button>
-        <button class="secondary-button" type="button" data-reset="${escapeAttribute(adventure.id)}">
-          Reset progress
-        </button>
-        <button class="secondary-button" type="button" data-library>
-          Return to library
-        </button>
+        <aside class="decision-panel" aria-label="${isEnding ? "Adventure actions" : "Choices"}">
+          ${isEnding ? `<h3>Ready for another path?</h3>` : renderChoices(adventure, scene, sceneId)}
+          <div class="game-actions">
+            <button class="secondary-button" type="button" data-restart="${escapeAttribute(adventure.id)}">
+              Restart adventure
+            </button>
+            <button class="secondary-button" type="button" data-reset="${escapeAttribute(adventure.id)}">
+              Reset progress
+            </button>
+            <button class="secondary-button" type="button" data-library>
+              Return to library
+            </button>
+          </div>
+        </aside>
       </div>
     </article>
   `;
@@ -345,7 +412,7 @@ function renderChoices(adventure, scene, sceneId) {
       <button
         class="choice-button"
         type="button"
-        data-choice-target="${escapeAttribute(target || "")}"
+        data-choice-target="${escapeAttribute(target || "") }"
         data-choice-index="${index}"
         ${targetExists ? "" : "disabled"}
       >
@@ -382,7 +449,7 @@ function renderEndingBadge(endingType) {
   return `<span class="ending-badge ${badgeClass}">${escapeHtml(toTitleCase(endingType))} Ending</span>`;
 }
 
-function renderEndingDetails(scene) {
+function renderEndingDetails(scene, adventure) {
   const reflectionQuestions = Array.isArray(scene.reflectionQuestions) ? scene.reflectionQuestions : [];
   const keyTerms = Array.isArray(scene.keyTerms)
     ? scene.keyTerms
@@ -396,22 +463,50 @@ function renderEndingDetails(scene) {
     <section class="ending-details" aria-labelledby="endingHeading">
       <h3 id="endingHeading">End of Adventure</h3>
       ${teachingSummary ? `
-        <p><strong>What did this teach me?</strong> ${escapeHtml(teachingSummary)}</p>
+        <p><strong>What did this teach me?</strong> ${renderVocabularyText(teachingSummary, adventure)}</p>
       ` : ""}
       ${reflectionQuestions.length > 0 ? `
         <h3>Reflection Questions</h3>
-        <ol>${reflectionQuestions.map((question) => `<li>${escapeHtml(question)}</li>`).join("")}</ol>
+        <ol>${reflectionQuestions.map((question) => `<li>${renderVocabularyText(question, adventure)}</li>`).join("")}</ol>
       ` : ""}
       ${keyTermReview ? `
         <h3>Key Terms</h3>
-        <p>${escapeHtml(keyTermReview)}</p>
+        <p>${renderVocabularyText(keyTermReview, adventure)}</p>
       ` : ""}
       ${keyTerms.length > 0 ? `
         <h3>Key Terms</h3>
-        <ul>${keyTerms.map((term) => `<li>${escapeHtml(term)}</li>`).join("")}</ul>
+        <ul>${keyTerms.map((term) => `<li>${renderVocabularyText(term, adventure)}</li>`).join("")}</ul>
       ` : ""}
     </section>
   `;
+}
+
+function renderVocabularyText(value, adventure) {
+  const text = String(value || "");
+  const terms = getVocabularyTerms(adventure);
+
+  if (terms.length === 0) return escapeHtml(text);
+
+  const pattern = new RegExp(`\\b(${terms.map(escapeRegExp).join("|")})\\b`, "gi");
+
+  return escapeHtml(text).replace(pattern, (match) => {
+    const definition = getDefinitionForTerm(match);
+    if (!definition) return match;
+
+    return `<span class="vocab-term" tabindex="0" role="button" aria-label="${escapeAttribute(`${match}: ${definition}`)}">${match}<span class="vocab-popover" role="tooltip">${escapeHtml(definition)}</span></span>`;
+  });
+}
+
+function getVocabularyTerms(adventure) {
+  return (Array.isArray(adventure.keyTerms) ? adventure.keyTerms : [])
+    .filter((term) => getDefinitionForTerm(term))
+    .sort((a, b) => b.length - a.length);
+}
+
+function getDefinitionForTerm(term) {
+  const normalized = String(term).toLowerCase();
+  const glossaryKey = Object.keys(glossaryDefinitions).find((key) => key.toLowerCase() === normalized);
+  return glossaryKey ? glossaryDefinitions[glossaryKey] : "";
 }
 
 function getStartingSceneId(adventure) {
@@ -655,6 +750,10 @@ function escapeHtml(value) {
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#039;");
+}
+
+function escapeRegExp(value) {
+  return String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
 function escapeAttribute(value) {
