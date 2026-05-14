@@ -1,0 +1,2265 @@
+{
+  "id": "ancient-rome-caesar-general-government-deep-tree",
+  "title": "After Caesar: Build the Future of Rome",
+  "description": "Play as a top general in Julius Caesar's army after his assassination and decide whether Rome becomes a restored Republic, a stable Empire, or a state torn apart by civil war.",
+  "coverImage": {
+    "src": "public/images/AncientRome.jpg",
+    "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+  },
+  "startingSceneId": "start",
+  "branchingPathCount": 212,
+  "keyTerms": [
+    "Roman Republic",
+    "Roman Empire",
+    "Senate",
+    "consul",
+    "dictator",
+    "triumvirate",
+    "patrician",
+    "plebeian",
+    "tribune",
+    "legion",
+    "general",
+    "civil war",
+    "Pax Romana",
+    "province",
+    "citizenship",
+    "law",
+    "aqueduct",
+    "bread and circuses",
+    "imperial cult",
+    "assassination",
+    "reform",
+    "Augustus"
+  ],
+  "termDefinitions": {
+    "Roman Republic": "The period of Roman history when elected officials, assemblies, and the Senate shared power before Rome became an empire.",
+    "Roman Empire": "The period of Roman history when emperors held supreme power over Rome and its provinces.",
+    "Senate": "A powerful council of wealthy Roman elites that advised leaders and shaped policy in the Republic and Empire.",
+    "consul": "One of two chief elected officials in the Roman Republic who led the government and army for one year.",
+    "dictator": "A Roman leader given emergency powers, originally for a limited time, but later associated with one-person rule.",
+    "triumvirate": "A political alliance of three powerful leaders who share control.",
+    "patrician": "A member of Rome's wealthy upper class.",
+    "plebeian": "A common Roman citizen, often a farmer, worker, artisan, or soldier.",
+    "tribune": "An official elected to protect the rights and interests of plebeians.",
+    "legion": "A large, organized Roman military unit made up of trained soldiers.",
+    "general": "A military commander responsible for leading armies.",
+    "civil war": "A war between groups from the same country or state.",
+    "Pax Romana": "A long period of relative peace and stability across the Roman Empire.",
+    "province": "A territory outside Italy controlled by Rome.",
+    "citizenship": "Legal membership in Rome that could include rights, protections, and duties.",
+    "law": "A system of rules used to govern society and settle disputes.",
+    "aqueduct": "A Roman structure used to carry water into cities.",
+    "bread and circuses": "A phrase describing government efforts to gain public support through food distribution and entertainment.",
+    "imperial cult": "The practice of honoring emperors as divine or semi-divine figures in parts of the Roman Empire.",
+    "assassination": "The murder of an important political leader.",
+    "reform": "A change made to improve a political, economic, or social system.",
+    "Augustus": "The title meaning 'revered one' given to Octavian, Rome's first emperor."
+  },
+  "curriculumTags": [
+    "NYS Global 9",
+    "Ancient Rome",
+    "Roman Republic",
+    "Roman Empire",
+    "Julius Caesar",
+    "Augustus",
+    "Government",
+    "Classical Civilizations"
+  ],
+  "teacherNotes": "This deep-tree adventure places students in the role of a Roman general after Julius Caesar's assassination. Students evaluate how Rome might combine republican ideas like the Senate, consuls, tribunes, law, and citizenship with imperial ideas like centralized authority, provincial government, public works, professional armies, and the Pax Romana. Vocabulary is embedded throughout the narrative and also provided through keyTerms and termDefinitions.",
+  "reviewFocus": "how Rome transitioned from Republic to Empire and how Roman government balanced law, military power, reform, citizenship, and imperial stability",
+  "topicQuestion": "how did Rome change from a Republic into an Empire?",
+  "scenes": {
+    "start": {
+      "title": "Blood on the Senate Floor",
+      "step": 1,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You are Marcus Valerius, one of the most respected generals in Julius Caesar's army.",
+        "For years, your legion followed Caesar across Gaul, through civil war, and back into Rome. Some called him a reformer. Others called him a dictator who threatened the Roman Republic.",
+        "Now Caesar lies dead after an assassination in the Senate. Senators whisper of liberty. Soldiers whisper of revenge. Plebeians crowd the streets, afraid that Rome will collapse into civil war.",
+        "Because the legions trust you, the Senate asks you to help lead Rome through the crisis. You must decide what Rome will become."
+      ],
+      "choices": [
+        {
+          "text": "Defend the Roman Republic and restore power to the Senate and elected officials.",
+          "nextSceneId": "republic-path"
+        },
+        {
+          "text": "Use the army to create a stronger central government and prevent civil war.",
+          "nextSceneId": "empire-path"
+        },
+        {
+          "text": "Form a temporary triumvirate with Senate leaders and military allies.",
+          "nextSceneId": "triumvirate-path"
+        },
+        {
+          "text": "Go directly to the people and promise reforms in Caesar's name.",
+          "nextSceneId": "popular-reform-path"
+        }
+      ]
+    },
+    "republic-path": {
+      "title": "The Republic Restored?",
+      "step": 2,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You stand before the Senate and declare that no Roman should hold unlimited power.",
+        "The patrician senators applaud, but the plebeians outside the Forum are less certain. They remember that Caesar gave land to veterans and promised relief to the poor.",
+        "The Roman Republic has laws, offices, consuls, and traditions, but those traditions have already been strained by wealth, conquest, and civil war."
+      ],
+      "choices": [
+        {
+          "text": "Restore two consuls and limit your own command.",
+          "nextSceneId": "restore-consuls"
+        },
+        {
+          "text": "Keep emergency command until order returns.",
+          "nextSceneId": "limited-dictator"
+        },
+        {
+          "text": "Give tribunes stronger power to protect plebeians.",
+          "nextSceneId": "tribune-reform"
+        },
+        {
+          "text": "Let the Senate control the transition without military pressure.",
+          "nextSceneId": "senate-control"
+        }
+      ]
+    },
+    "empire-path": {
+      "title": "The General's Mandate",
+      "step": 2,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You tell the soldiers that Rome has suffered because too many ambitious men hide behind old offices while chasing power.",
+        "You do not call yourself king. Romans hate that word. Instead, you claim temporary supreme command to protect law, grain, roads, and the provinces.",
+        "The legions cheer. The Senate grows silent. A government protected by soldiers can bring order, but it can also become the Roman Empire in all but name."
+      ],
+      "choices": [
+        {
+          "text": "Accept broad emergency powers but promise legal limits.",
+          "nextSceneId": "legal-princeps"
+        },
+        {
+          "text": "Rule openly through the army and silence opposition.",
+          "nextSceneId": "military-rule"
+        },
+        {
+          "text": "Create imperial reforms while keeping republican titles.",
+          "nextSceneId": "augustan-balance"
+        },
+        {
+          "text": "Reward the legions first to secure loyalty.",
+          "nextSceneId": "army-loyalty"
+        }
+      ]
+    },
+    "triumvirate-path": {
+      "title": "Three Names on One Decree",
+      "step": 2,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You propose a triumvirate: three leaders sharing power until Rome becomes stable.",
+        "One senator represents the old Republic. One general represents the army. You stand between them, trusted by soldiers and respected by many citizens.",
+        "A triumvirate can prevent one-person rule, but Rome remembers that alliances of powerful men often become stepping stones to civil war."
+      ],
+      "choices": [
+        {
+          "text": "Write clear limits for the triumvirate's power.",
+          "nextSceneId": "written-triumvirate"
+        },
+        {
+          "text": "Divide Rome's provinces among the three leaders.",
+          "nextSceneId": "province-division"
+        },
+        {
+          "text": "Use the triumvirate to punish Caesar's assassins.",
+          "nextSceneId": "revenge-proscriptions"
+        },
+        {
+          "text": "Set a date for returning power to elected offices.",
+          "nextSceneId": "return-date"
+        }
+      ]
+    },
+    "popular-reform-path": {
+      "title": "The Forum of the People",
+      "step": 2,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You step into the Forum where plebeians, veterans, merchants, and freedmen crowd around Caesar's funeral platform.",
+        "You promise land for veterans, grain for the poor, fair courts, and citizenship for loyal provincials.",
+        "The people roar your name. The Senate hears it from behind marble columns and begins to fear you."
+      ],
+      "choices": [
+        {
+          "text": "Work with tribunes to pass reforms legally.",
+          "nextSceneId": "tribune-reform"
+        },
+        {
+          "text": "Use public anger to pressure the Senate.",
+          "nextSceneId": "mob-pressure"
+        },
+        {
+          "text": "Give veterans land from conquered provinces.",
+          "nextSceneId": "veteran-land"
+        },
+        {
+          "text": "Promise bread and circuses to calm the city.",
+          "nextSceneId": "bread-circuses"
+        }
+      ]
+    },
+    "restore-consuls": {
+      "title": "Two Consuls Again",
+      "step": 3,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You restore the consulship, the Republic's tradition of two chief officials sharing power for one year.",
+        "Supporters say this prevents dictatorship. Critics say annual offices are too weak for an empire stretching across the Mediterranean.",
+        "Rome is no longer just one city. It rules provinces, armies, tax systems, roads, and millions of people who are not all Roman citizens."
+      ],
+      "choices": [
+        {
+          "text": "Keep the consuls but create stronger provincial oversight.",
+          "nextSceneId": "provincial-governance"
+        },
+        {
+          "text": "Let consuls command armies as before.",
+          "nextSceneId": "rival-generals"
+        },
+        {
+          "text": "Require Senate approval for major military decisions.",
+          "nextSceneId": "senate-army-check"
+        },
+        {
+          "text": "Create emergency rules for crisis without permanent dictatorship.",
+          "nextSceneId": "emergency-law"
+        }
+      ]
+    },
+    "limited-dictator": {
+      "title": "The Word Dictator",
+      "step": 3,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You accept emergency powers as dictator for one year.",
+        "You remind Rome that the office once existed to protect the Republic during crisis. But Caesar also held the title, and Caesar is dead.",
+        "Every senator watches the calendar. Every soldier watches your face."
+      ],
+      "choices": [
+        {
+          "text": "Publish a clear date when your dictatorship will end.",
+          "nextSceneId": "return-date"
+        },
+        {
+          "text": "Use the year to reform courts, taxes, and provinces.",
+          "nextSceneId": "reform-year"
+        },
+        {
+          "text": "Extend the dictatorship when unrest continues.",
+          "nextSceneId": "permanent-dictator"
+        },
+        {
+          "text": "Share emergency power with tribunes and consuls.",
+          "nextSceneId": "mixed-republic"
+        }
+      ]
+    },
+    "tribune-reform": {
+      "title": "The Tribune's Veto",
+      "step": 3,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You strengthen the tribunes, officials elected to defend plebeians against abuses by powerful elites.",
+        "Plebeians cheer because someone in government speaks for them. Patricians complain that tribunes will block every Senate decision.",
+        "A Republic must decide whether liberty means protecting the powerful from one ruler or protecting the poor from the powerful."
+      ],
+      "choices": [
+        {
+          "text": "Let tribunes veto unfair laws and taxes.",
+          "nextSceneId": "plebeian-protection"
+        },
+        {
+          "text": "Use tribunes to pass land and debt reform.",
+          "nextSceneId": "land-debt-reform"
+        },
+        {
+          "text": "Limit tribunes so the Senate can still govern.",
+          "nextSceneId": "mixed-republic"
+        },
+        {
+          "text": "Encourage tribunes to attack your enemies.",
+          "nextSceneId": "mob-pressure"
+        }
+      ]
+    },
+    "senate-control": {
+      "title": "The Senate Alone",
+      "step": 3,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You remove soldiers from the Forum and let the Senate lead.",
+        "Patrician families praise your restraint. Veterans worry their land promises will vanish. Plebeians wonder whether the old elites will listen this time.",
+        "The Senate has experience, but experience is not the same as trust."
+      ],
+      "choices": [
+        {
+          "text": "Ask the Senate to include tribunes and plebeian leaders.",
+          "nextSceneId": "mixed-republic"
+        },
+        {
+          "text": "Let the Senate reverse Caesar's reforms.",
+          "nextSceneId": "patrician-reaction"
+        },
+        {
+          "text": "Protect veterans by law before stepping back.",
+          "nextSceneId": "veteran-land"
+        },
+        {
+          "text": "Leave Rome to command your legion in the provinces.",
+          "nextSceneId": "rival-generals"
+        }
+      ]
+    },
+    "legal-princeps": {
+      "title": "First Citizen, Not King",
+      "step": 3,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You reject the title king and call yourself princeps, first citizen.",
+        "You keep the Senate, consuls, courts, and assemblies, but everyone knows your command of the legions gives you unmatched power.",
+        "This is the delicate language of empire: republican forms wrapped around one ruler's authority."
+      ],
+      "choices": [
+        {
+          "text": "Let the Senate keep dignity while you control the army.",
+          "nextSceneId": "augustan-balance"
+        },
+        {
+          "text": "Create a professional civil service for provinces.",
+          "nextSceneId": "provincial-governance"
+        },
+        {
+          "text": "Build public works to show the benefits of order.",
+          "nextSceneId": "public-works"
+        },
+        {
+          "text": "Encourage honors that make you seem divine.",
+          "nextSceneId": "imperial-cult-path"
+        }
+      ]
+    },
+    "military-rule": {
+      "title": "The Eagles in the Forum",
+      "step": 3,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You march loyal troops into Rome to stop unrest.",
+        "The streets become quiet. Senators vote quickly. No one insults your name in public.",
+        "Order arrives, but so does fear. Rome begins to wonder whether the Republic was saved or buried."
+      ],
+      "choices": [
+        {
+          "text": "Use military order to begin real reforms.",
+          "nextSceneId": "reform-year"
+        },
+        {
+          "text": "Purge political enemies.",
+          "nextSceneId": "revenge-proscriptions"
+        },
+        {
+          "text": "Keep legions permanently near Rome.",
+          "nextSceneId": "praetorian-danger"
+        },
+        {
+          "text": "Reduce the military presence once calm returns.",
+          "nextSceneId": "legal-princeps"
+        }
+      ]
+    },
+    "augustan-balance": {
+      "title": "Republican Names, Imperial Power",
+      "step": 3,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You keep republican titles while quietly centralizing power.",
+        "Consuls still serve. The Senate still debates. Magistrates still wear official robes. Yet the army, treasury, and provinces increasingly answer to you.",
+        "This balance may become the foundation of a Roman Empire stable enough to create a Pax Romana."
+      ],
+      "choices": [
+        {
+          "text": "Reform provincial government to reduce corruption.",
+          "nextSceneId": "provincial-governance"
+        },
+        {
+          "text": "Use public works to bind the people to your rule.",
+          "nextSceneId": "public-works"
+        },
+        {
+          "text": "Protect Senate prestige while limiting its real power.",
+          "nextSceneId": "senate-prestige"
+        },
+        {
+          "text": "Create a clear succession plan.",
+          "nextSceneId": "succession-plan"
+        }
+      ]
+    },
+    "army-loyalty": {
+      "title": "The Soldiers' Price",
+      "step": 3,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You promise land, coin, and honors to the legions.",
+        "The soldiers cheer because they have bled for Rome. The treasury groans because loyalty is expensive.",
+        "If the army serves Rome, Rome is strong. If the army serves only its general, Rome is trapped."
+      ],
+      "choices": [
+        {
+          "text": "Settle veterans on land without stealing from citizens.",
+          "nextSceneId": "veteran-land"
+        },
+        {
+          "text": "Pay soldiers with emergency taxes.",
+          "nextSceneId": "tax-burden"
+        },
+        {
+          "text": "Let soldiers seize land from political enemies.",
+          "nextSceneId": "revenge-proscriptions"
+        },
+        {
+          "text": "Create a state-controlled army loyal to Rome, not generals.",
+          "nextSceneId": "professional-army"
+        }
+      ]
+    },
+    "written-triumvirate": {
+      "title": "Power Written Down",
+      "step": 3,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You write the triumvirate's powers into law: three leaders, fixed duties, public records, and a clear end date.",
+        "The people are relieved to see limits. The generals are less pleased.",
+        "Ambitious men rarely enjoy being measured by ink."
+      ],
+      "choices": [
+        {
+          "text": "Assign one leader to armies, one to finances, one to law.",
+          "nextSceneId": "balanced-triumvirate"
+        },
+        {
+          "text": "Add tribunes to review triumvirate decisions.",
+          "nextSceneId": "mixed-republic"
+        },
+        {
+          "text": "Let each triumvir control separate provinces.",
+          "nextSceneId": "province-division"
+        },
+        {
+          "text": "Ignore the limits when crisis returns.",
+          "nextSceneId": "triumvirate-breakdown"
+        }
+      ]
+    },
+    "province-division": {
+      "title": "Three Maps of Rome",
+      "step": 3,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "The triumvirs divide responsibility for provinces.",
+        "One controls Spain, one controls the East, and you remain near Italy with veteran legions.",
+        "The arrangement looks practical, but divided provinces can become divided power bases."
+      ],
+      "choices": [
+        {
+          "text": "Create shared tax and military rules for all provinces.",
+          "nextSceneId": "provincial-governance"
+        },
+        {
+          "text": "Allow each leader to govern independently.",
+          "nextSceneId": "triumvirate-breakdown"
+        },
+        {
+          "text": "Use your Italian position to dominate the others.",
+          "nextSceneId": "civil-war-path"
+        },
+        {
+          "text": "Plan to reunify command after stability returns.",
+          "nextSceneId": "return-date"
+        }
+      ]
+    },
+    "revenge-proscriptions": {
+      "title": "Lists of Enemies",
+      "step": 3,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "Your allies demand punishment for Caesar's assassins and enemies of order.",
+        "Names appear on public lists. Property is seized. Some guilty men flee. Some innocent families are ruined.",
+        "Revenge can fund government and satisfy soldiers, but it poisons the law."
+      ],
+      "choices": [
+        {
+          "text": "Limit punishment to proven conspirators.",
+          "nextSceneId": "rule-of-law-rome"
+        },
+        {
+          "text": "Use proscriptions to seize wealth for the army.",
+          "nextSceneId": "bad-terror-state"
+        },
+        {
+          "text": "Stop the lists after public fear grows.",
+          "nextSceneId": "reconciliation"
+        },
+        {
+          "text": "Let allies expand the lists for personal gain.",
+          "nextSceneId": "civil-war-path"
+        }
+      ]
+    },
+    "return-date": {
+      "title": "The Date Carved in Wax",
+      "step": 3,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You announce a fixed date when emergency power will end.",
+        "Citizens praise the promise. Senators wonder whether you mean it. Soldiers wonder what happens to their rewards afterward.",
+        "A date can limit power only if powerful people obey it."
+      ],
+      "choices": [
+        {
+          "text": "Keep the promise and restore elected offices.",
+          "nextSceneId": "mixed-republic"
+        },
+        {
+          "text": "Delay the date because enemies remain.",
+          "nextSceneId": "permanent-dictator"
+        },
+        {
+          "text": "Use the deadline to force reforms quickly.",
+          "nextSceneId": "reform-year"
+        },
+        {
+          "text": "Let the people vote on your future role.",
+          "nextSceneId": "popular-mandate"
+        }
+      ]
+    },
+    "mob-pressure": {
+      "title": "The Roar of the Forum",
+      "step": 3,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You use public anger to pressure the Senate.",
+        "Plebeians chant for reform. Veterans demand land. Senators leave the Forum surrounded by guards.",
+        "Popular support is powerful, but a crowd is not the same as stable government."
+      ],
+      "choices": [
+        {
+          "text": "Turn public pressure into legal reform.",
+          "nextSceneId": "land-debt-reform"
+        },
+        {
+          "text": "Let crowds threaten senators directly.",
+          "nextSceneId": "bad-mob-rule"
+        },
+        {
+          "text": "Create citizen assemblies with rules and records.",
+          "nextSceneId": "mixed-republic"
+        },
+        {
+          "text": "Use the crowd to justify one-man rule.",
+          "nextSceneId": "permanent-dictator"
+        }
+      ]
+    },
+    "veteran-land": {
+      "title": "Land for the Legions",
+      "step": 3,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You seek land for Caesar's veterans.",
+        "They fought in Rome's wars and expect reward. Yet taking land from Italian families could create new enemies.",
+        "Every promise made to soldiers becomes a problem for civilians if it is not handled carefully."
+      ],
+      "choices": [
+        {
+          "text": "Settle veterans in underused provincial lands.",
+          "nextSceneId": "provincial-citizenship"
+        },
+        {
+          "text": "Seize land from Caesar's enemies.",
+          "nextSceneId": "revenge-proscriptions"
+        },
+        {
+          "text": "Pay veterans gradually from tax reforms.",
+          "nextSceneId": "tax-reform"
+        },
+        {
+          "text": "Break the promise and risk mutiny.",
+          "nextSceneId": "army-mutiny"
+        }
+      ]
+    },
+    "bread-circuses": {
+      "title": "Bread and Circuses",
+      "step": 3,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You distribute grain and sponsor games to calm Rome.",
+        "The people welcome bread and circuses because hunger and fear are immediate problems.",
+        "But entertainment cannot replace law, employment, citizenship, or trust."
+      ],
+      "choices": [
+        {
+          "text": "Use grain relief while building long-term reforms.",
+          "nextSceneId": "public-works"
+        },
+        {
+          "text": "Rely on games to distract from political problems.",
+          "nextSceneId": "bad-empty-spectacle"
+        },
+        {
+          "text": "Reform grain supply from provinces.",
+          "nextSceneId": "provincial-governance"
+        },
+        {
+          "text": "Let wealthy patrons fund games in exchange for influence.",
+          "nextSceneId": "patronage-corruption"
+        }
+      ]
+    },
+    "provincial-governance": {
+      "title": "The Provinces Speak",
+      "step": 4,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "Reports arrive from Gaul, Hispania, Greece, Egypt, and Syria.",
+        "Roman governors collect taxes, command soldiers, and judge disputes. Some govern fairly. Others treat provinces like private treasure chests.",
+        "Rome cannot become stable if its provinces experience Roman law only as corruption."
+      ],
+      "choices": [
+        {
+          "text": "Create audits to prevent governors from abusing provinces.",
+          "nextSceneId": "provincial-audits"
+        },
+        {
+          "text": "Expand citizenship to loyal provincial elites.",
+          "nextSceneId": "provincial-citizenship"
+        },
+        {
+          "text": "Use provinces mainly to enrich Rome and the army.",
+          "nextSceneId": "province-exploitation"
+        },
+        {
+          "text": "Build roads and aqueducts to connect the empire.",
+          "nextSceneId": "infrastructure-program"
+        }
+      ]
+    },
+    "senate-army-check": {
+      "title": "Who Commands the Eagles?",
+      "step": 4,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You require Senate approval for major military campaigns.",
+        "Republicans cheer because the army should serve the state, not one general. Soldiers grumble because senators did not bleed beside them.",
+        "The question remains: can civilian government control legions that love their commanders?"
+      ],
+      "choices": [
+        {
+          "text": "Create laws requiring oaths to Rome instead of generals.",
+          "nextSceneId": "professional-army"
+        },
+        {
+          "text": "Let popular generals keep personal armies.",
+          "nextSceneId": "rival-generals"
+        },
+        {
+          "text": "Share military oversight between Senate and consuls.",
+          "nextSceneId": "mixed-republic"
+        },
+        {
+          "text": "Use the army to intimidate the Senate when needed.",
+          "nextSceneId": "military-rule"
+        }
+      ]
+    },
+    "emergency-law": {
+      "title": "Emergency Without Kingship",
+      "step": 4,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You write emergency laws allowing temporary command during invasion or civil crisis.",
+        "The law includes time limits, Senate review, and tribune protections.",
+        "Rome needs strength during danger, but a Republic survives only if emergency power can end."
+      ],
+      "choices": [
+        {
+          "text": "Test the law during a provincial revolt.",
+          "nextSceneId": "revolt-test"
+        },
+        {
+          "text": "Use the law as a model for a balanced Republic.",
+          "nextSceneId": "mixed-republic"
+        },
+        {
+          "text": "Remove the time limits quietly.",
+          "nextSceneId": "permanent-dictator"
+        },
+        {
+          "text": "Let tribunes block emergency abuses.",
+          "nextSceneId": "plebeian-protection"
+        }
+      ]
+    },
+    "mixed-republic": {
+      "title": "A Republic Repaired",
+      "step": 4,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You combine old and new: consuls, Senate debate, tribune vetoes, citizen assemblies, and stronger provincial oversight.",
+        "Republicans praise the return of shared power. Reformers ask whether the old system can truly manage an empire.",
+        "A repaired Republic must be more than nostalgia. It must solve the problems that broke the first one."
+      ],
+      "choices": [
+        {
+          "text": "Strengthen courts, voting, and provincial reform.",
+          "nextSceneId": "rule-of-law-rome"
+        },
+        {
+          "text": "Give plebeians and veterans real economic support.",
+          "nextSceneId": "land-debt-reform"
+        },
+        {
+          "text": "Fail to control ambitious generals.",
+          "nextSceneId": "rival-generals"
+        },
+        {
+          "text": "Ask the people to approve the new constitution.",
+          "nextSceneId": "popular-mandate"
+        }
+      ]
+    },
+    "plebeian-protection": {
+      "title": "The Plebeians Protected",
+      "step": 4,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "Tribunes gain real power to block unfair taxes, defend debtors, and challenge corrupt officials.",
+        "Plebeians celebrate in the Forum. Patricians warn that too much popular power will paralyze the state.",
+        "Rome's greatness depends on common soldiers and workers, not only noble families."
+      ],
+      "choices": [
+        {
+          "text": "Balance tribune power with written law.",
+          "nextSceneId": "rule-of-law-rome"
+        },
+        {
+          "text": "Pass land and debt reforms.",
+          "nextSceneId": "land-debt-reform"
+        },
+        {
+          "text": "Let tribunes attack Senate enemies without restraint.",
+          "nextSceneId": "bad-mob-rule"
+        },
+        {
+          "text": "Use plebeian support to claim permanent leadership.",
+          "nextSceneId": "popular-mandate"
+        }
+      ]
+    },
+    "land-debt-reform": {
+      "title": "Fields, Debts, and Promises",
+      "step": 4,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You propose debt relief, land redistribution, and protections for small farmers.",
+        "Plebeians and veterans cheer. Wealthy patricians accuse you of attacking property.",
+        "Reform can save a Republic from desperation, but it can also frighten those who benefit from the old order."
+      ],
+      "choices": [
+        {
+          "text": "Compensate landowners while helping veterans and poor citizens.",
+          "nextSceneId": "balanced-reform"
+        },
+        {
+          "text": "Seize land quickly to satisfy supporters.",
+          "nextSceneId": "bad-class-conflict"
+        },
+        {
+          "text": "Delay reform until elites agree.",
+          "nextSceneId": "patrician-reaction"
+        },
+        {
+          "text": "Connect reform to provincial settlement.",
+          "nextSceneId": "provincial-citizenship"
+        }
+      ]
+    },
+    "patrician-reaction": {
+      "title": "The Marble Houses Close Their Doors",
+      "step": 4,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "Patrician families meet privately in marble houses.",
+        "They say Caesar's death should restore their dignity, property, and control of the Senate.",
+        "If reform dies, the poor may lose faith in the Republic. If elites feel threatened, they may invite another civil war."
+      ],
+      "choices": [
+        {
+          "text": "Negotiate gradual reform with patrician support.",
+          "nextSceneId": "balanced-reform"
+        },
+        {
+          "text": "Let patricians reverse Caesar's reforms.",
+          "nextSceneId": "bad-elite-republic"
+        },
+        {
+          "text": "Appeal directly to plebeians against elite resistance.",
+          "nextSceneId": "mob-pressure"
+        },
+        {
+          "text": "Use soldiers to force elite cooperation.",
+          "nextSceneId": "military-rule"
+        }
+      ]
+    },
+    "reform-year": {
+      "title": "One Year to Save Rome",
+      "step": 4,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You use emergency power to reform courts, taxes, provincial administration, veteran settlements, and grain supply.",
+        "Every day brings petitions. Every reform creates enemies. Every delay makes soldiers impatient.",
+        "Rome does not lack problems. It lacks trust."
+      ],
+      "choices": [
+        {
+          "text": "Publish reforms and step down when the year ends.",
+          "nextSceneId": "good-restored-republic"
+        },
+        {
+          "text": "Keep power until reforms are fully secure.",
+          "nextSceneId": "legal-princeps"
+        },
+        {
+          "text": "Rush reforms without consultation.",
+          "nextSceneId": "bad-class-conflict"
+        },
+        {
+          "text": "Let the people vote on extending your role.",
+          "nextSceneId": "popular-mandate"
+        }
+      ]
+    },
+    "permanent-dictator": {
+      "title": "No End to Emergency",
+      "step": 4,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You delay the end of emergency rule.",
+        "You claim enemies remain, provinces are unstable, and the people need protection.",
+        "Every reason may be partly true. That is why emergency power is so dangerous."
+      ],
+      "choices": [
+        {
+          "text": "Transform your rule into a legal principate.",
+          "nextSceneId": "legal-princeps"
+        },
+        {
+          "text": "Rule openly as dictator for life.",
+          "nextSceneId": "bad-dictatorship"
+        },
+        {
+          "text": "Give the Senate honors while keeping real power.",
+          "nextSceneId": "senate-prestige"
+        },
+        {
+          "text": "Create a succession plan to prevent civil war.",
+          "nextSceneId": "succession-plan"
+        }
+      ]
+    },
+    "popular-mandate": {
+      "title": "The Vote of the People",
+      "step": 4,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You ask citizens to approve your future role.",
+        "The vote is public, emotional, and overwhelming. Many support you because they want order and reform. Others fear the people are voting away the Republic.",
+        "Consent can legitimize power, but it does not automatically limit it."
+      ],
+      "choices": [
+        {
+          "text": "Accept a limited role with elections preserved.",
+          "nextSceneId": "mixed-republic"
+        },
+        {
+          "text": "Accept lifelong leadership as first citizen.",
+          "nextSceneId": "legal-princeps"
+        },
+        {
+          "text": "Use popularity to punish opponents.",
+          "nextSceneId": "bad-mob-rule"
+        },
+        {
+          "text": "Create written protections for future elections.",
+          "nextSceneId": "rule-of-law-rome"
+        }
+      ]
+    },
+    "professional-army": {
+      "title": "The Army of Rome",
+      "step": 4,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You reorganize the army so soldiers swear loyalty to Rome and its laws rather than only to individual generals.",
+        "Pay, retirement, and land grants become state responsibilities.",
+        "This reform could prevent civil war, but it also makes whoever controls the state more powerful than ever."
+      ],
+      "choices": [
+        {
+          "text": "Place army finances under public law.",
+          "nextSceneId": "rule-of-law-rome"
+        },
+        {
+          "text": "Keep final military authority in your hands.",
+          "nextSceneId": "legal-princeps"
+        },
+        {
+          "text": "Let commanders continue building personal loyalty.",
+          "nextSceneId": "rival-generals"
+        },
+        {
+          "text": "Use the army for roads, colonies, and defense.",
+          "nextSceneId": "infrastructure-program"
+        }
+      ]
+    },
+    "praetorian-danger": {
+      "title": "Guards Near the Palace",
+      "step": 4,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You keep elite troops close to Rome to protect your government.",
+        "They prevent assassination and riots, but they also learn that they can decide politics by standing in the right doorway.",
+        "A ruler protected by guards must always wonder who guards him from the guards."
+      ],
+      "choices": [
+        {
+          "text": "Limit the guards and keep them away from politics.",
+          "nextSceneId": "professional-army"
+        },
+        {
+          "text": "Use them to intimidate senators.",
+          "nextSceneId": "bad-terror-state"
+        },
+        {
+          "text": "Reward them with special privileges.",
+          "nextSceneId": "bad-guard-rule"
+        },
+        {
+          "text": "Balance guards with Senate and legal authority.",
+          "nextSceneId": "legal-princeps"
+        }
+      ]
+    },
+    "senate-prestige": {
+      "title": "Marble Dignity",
+      "step": 4,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You preserve the Senate's ceremonies, titles, and public dignity.",
+        "Senators debate laws and advise policy, but real power over armies and provinces increasingly rests with you.",
+        "This may prevent rebellion if senators feel respected. It may also turn the Republic into a mask."
+      ],
+      "choices": [
+        {
+          "text": "Let the Senate control local law and honors.",
+          "nextSceneId": "augustan-balance"
+        },
+        {
+          "text": "Ignore Senate advice whenever it is inconvenient.",
+          "nextSceneId": "bad-empty-republic"
+        },
+        {
+          "text": "Use Senate prestige to support a Pax Romana.",
+          "nextSceneId": "pax-romana-path"
+        },
+        {
+          "text": "Share provincial oversight with Senate committees.",
+          "nextSceneId": "provincial-governance"
+        }
+      ]
+    },
+    "succession-plan": {
+      "title": "Who Comes After You?",
+      "step": 4,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "Caesar's death showed Rome the danger of unclear power.",
+        "If you die without a plan, generals may fight, senators may plot, and provinces may rebel.",
+        "Republics elect leaders. Empires need succession. Rome is becoming both and neither."
+      ],
+      "choices": [
+        {
+          "text": "Create legal elections for future leaders.",
+          "nextSceneId": "good-restored-republic"
+        },
+        {
+          "text": "Adopt an heir and train him publicly.",
+          "nextSceneId": "pax-romana-path"
+        },
+        {
+          "text": "Let the army choose the strongest successor.",
+          "nextSceneId": "bad-army-emperors"
+        },
+        {
+          "text": "Let the Senate choose after your death.",
+          "nextSceneId": "senate-prestige"
+        }
+      ]
+    },
+    "provincial-audits": {
+      "title": "The Governor's Accounts",
+      "step": 5,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "Auditors inspect provincial taxes, court records, and military expenses.",
+        "Some governors are honest. Others have stolen from farmers, merchants, and local elites under the name of Rome.",
+        "Roman law means little if provincial people experience it as robbery."
+      ],
+      "choices": [
+        {
+          "text": "Punish corrupt governors publicly.",
+          "nextSceneId": "rule-of-law-rome"
+        },
+        {
+          "text": "Use recovered wealth for roads and aqueducts.",
+          "nextSceneId": "infrastructure-program"
+        },
+        {
+          "text": "Hide corruption to protect Roman elites.",
+          "nextSceneId": "bad-province-revolt"
+        },
+        {
+          "text": "Expand citizenship for loyal provincial leaders.",
+          "nextSceneId": "provincial-citizenship"
+        }
+      ]
+    },
+    "provincial-citizenship": {
+      "title": "Who Can Become Roman?",
+      "step": 5,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You consider granting citizenship to loyal provincial elites, veterans, and communities that support Roman law.",
+        "Traditional senators complain that Roman identity will be weakened. Provincial leaders argue that loyalty deserves rights.",
+        "An empire held only by force may crack. An empire that offers belonging may last longer."
+      ],
+      "choices": [
+        {
+          "text": "Expand citizenship gradually and legally.",
+          "nextSceneId": "good-inclusive-rome"
+        },
+        {
+          "text": "Limit citizenship to Italy.",
+          "nextSceneId": "bad-province-revolt"
+        },
+        {
+          "text": "Use citizenship as a reward for military service.",
+          "nextSceneId": "professional-army"
+        },
+        {
+          "text": "Tie citizenship to taxes and loyalty oaths.",
+          "nextSceneId": "pax-romana-path"
+        }
+      ]
+    },
+    "province-exploitation": {
+      "title": "The Provinces as Purse",
+      "step": 5,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You squeeze the provinces for taxes to fund soldiers, grain, games, and public monuments in Rome.",
+        "The city shines brighter, but provincial resentment grows.",
+        "An empire can look wealthy at the center while bleeding at the edges."
+      ],
+      "choices": [
+        {
+          "text": "Reverse course and regulate taxation.",
+          "nextSceneId": "provincial-audits"
+        },
+        {
+          "text": "Continue extraction to fund Rome.",
+          "nextSceneId": "bad-province-revolt"
+        },
+        {
+          "text": "Use some wealth for provincial infrastructure.",
+          "nextSceneId": "infrastructure-program"
+        },
+        {
+          "text": "Distract Romans with games and grain.",
+          "nextSceneId": "bread-circuses"
+        }
+      ]
+    },
+    "infrastructure-program": {
+      "title": "Roads, Aqueducts, and Stone",
+      "step": 5,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You fund roads, bridges, aqueducts, forums, and ports.",
+        "Aqueducts bring clean water into cities. Roads allow legions, merchants, officials, and news to move quickly.",
+        "Public works make Roman rule visible in stone."
+      ],
+      "choices": [
+        {
+          "text": "Build infrastructure in both Rome and the provinces.",
+          "nextSceneId": "pax-romana-path"
+        },
+        {
+          "text": "Focus only on the city of Rome.",
+          "nextSceneId": "bad-province-revolt"
+        },
+        {
+          "text": "Use public works to employ poor citizens.",
+          "nextSceneId": "balanced-reform"
+        },
+        {
+          "text": "Name every project after yourself.",
+          "nextSceneId": "imperial-cult-path"
+        }
+      ]
+    },
+    "tax-reform": {
+      "title": "A Fairer Tax",
+      "step": 5,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You reform tax collection so public officials, not private profiteers, oversee revenue.",
+        "Plebeians and provincial communities benefit from clearer rules. Wealthy contractors lose influence.",
+        "Taxes are never loved, but they can be less hated when they are predictable."
+      ],
+      "choices": [
+        {
+          "text": "Use tax reform to fund veteran land fairly.",
+          "nextSceneId": "balanced-reform"
+        },
+        {
+          "text": "Use revenue for aqueducts and roads.",
+          "nextSceneId": "infrastructure-program"
+        },
+        {
+          "text": "Let tax collectors buy exemptions from you.",
+          "nextSceneId": "patronage-corruption"
+        },
+        {
+          "text": "Reduce taxes too much and weaken the treasury.",
+          "nextSceneId": "bad-empty-spectacle"
+        }
+      ]
+    },
+    "tax-burden": {
+      "title": "The Weight of Coin",
+      "step": 5,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "Emergency taxes pay soldiers and keep them loyal.",
+        "Plebeians grumble, merchants raise prices, and provincial officials demand more from local communities.",
+        "Military loyalty purchased through taxation can become another road to unrest."
+      ],
+      "choices": [
+        {
+          "text": "Create a fair tax reform instead.",
+          "nextSceneId": "tax-reform"
+        },
+        {
+          "text": "Keep taxes high for army loyalty.",
+          "nextSceneId": "bad-army-state"
+        },
+        {
+          "text": "Balance taxes with public works.",
+          "nextSceneId": "infrastructure-program"
+        },
+        {
+          "text": "Use games to calm anger.",
+          "nextSceneId": "bread-circuses"
+        }
+      ]
+    },
+    "patronage-corruption": {
+      "title": "Favors in the Shadows",
+      "step": 5,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "Powerful families fund games, lend money, and support your policies in exchange for influence.",
+        "This patronage helps you govern, but citizens begin asking whether Rome is ruled by law or favors.",
+        "Corruption rarely announces itself. It arrives dressed as friendship."
+      ],
+      "choices": [
+        {
+          "text": "Create anti-corruption courts.",
+          "nextSceneId": "rule-of-law-rome"
+        },
+        {
+          "text": "Accept patronage as the cost of rule.",
+          "nextSceneId": "bad-corruption-rome"
+        },
+        {
+          "text": "Expose corrupt allies even if it hurts you.",
+          "nextSceneId": "good-restored-republic"
+        },
+        {
+          "text": "Use patronage to build monuments quickly.",
+          "nextSceneId": "public-works"
+        }
+      ]
+    },
+    "rule-of-law-rome": {
+      "title": "Law Above Men",
+      "step": 5,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You strengthen courts, publish laws, punish corruption, and limit emergency powers.",
+        "Romans begin saying that law, not fear, will decide disputes.",
+        "Yet law survives only if armies, senators, and crowds accept being restrained by it."
+      ],
+      "choices": [
+        {
+          "text": "Use law to rebuild a stronger Republic.",
+          "nextSceneId": "good-restored-republic"
+        },
+        {
+          "text": "Use law to legitimize a first citizen.",
+          "nextSceneId": "pax-romana-path"
+        },
+        {
+          "text": "Let powerful friends escape punishment.",
+          "nextSceneId": "bad-corruption-rome"
+        },
+        {
+          "text": "Create protections for citizens and provincials.",
+          "nextSceneId": "good-inclusive-rome"
+        }
+      ]
+    },
+    "balanced-reform": {
+      "title": "Reform Without Fire",
+      "step": 5,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You compensate landowners, settle veterans, reduce debt pressure, and protect small farmers.",
+        "No group is fully satisfied, but Rome does not explode.",
+        "Reform works best when it changes real conditions without making every opponent desperate."
+      ],
+      "choices": [
+        {
+          "text": "Link reform to republican elections.",
+          "nextSceneId": "good-restored-republic"
+        },
+        {
+          "text": "Link reform to your permanent leadership.",
+          "nextSceneId": "pax-romana-path"
+        },
+        {
+          "text": "Expand reforms to provinces and citizenship.",
+          "nextSceneId": "good-inclusive-rome"
+        },
+        {
+          "text": "Slow reforms until they lose meaning.",
+          "nextSceneId": "bad-elite-republic"
+        }
+      ]
+    },
+    "rival-generals": {
+      "title": "Men With Armies",
+      "step": 5,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "Other generals watch your decisions closely.",
+        "If Rome returns to weak offices, they may seek their own commands. If you grow too strong, they may claim they are defending liberty.",
+        "Civil war begins when armies answer ambition before law."
+      ],
+      "choices": [
+        {
+          "text": "Create a state army loyal to Rome.",
+          "nextSceneId": "professional-army"
+        },
+        {
+          "text": "Negotiate commands through Senate law.",
+          "nextSceneId": "senate-army-check"
+        },
+        {
+          "text": "Strike first against rival generals.",
+          "nextSceneId": "civil-war-path"
+        },
+        {
+          "text": "Ignore the threat.",
+          "nextSceneId": "bad-civil-war"
+        }
+      ]
+    },
+    "triumvirate-breakdown": {
+      "title": "Three Men, Three Ambitions",
+      "step": 5,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "The triumvirate begins to crack.",
+        "Each leader claims to defend Rome while building personal loyalty in his province. Soldiers listen to commanders more than laws.",
+        "Shared power without trust becomes a waiting room for civil war."
+      ],
+      "choices": [
+        {
+          "text": "Call a public conference to restore limits.",
+          "nextSceneId": "written-triumvirate"
+        },
+        {
+          "text": "Defeat the other triumvirs before they defeat you.",
+          "nextSceneId": "civil-war-path"
+        },
+        {
+          "text": "Let the Senate mediate.",
+          "nextSceneId": "senate-prestige"
+        },
+        {
+          "text": "Divide the empire permanently.",
+          "nextSceneId": "bad-fractured-rome"
+        }
+      ]
+    },
+    "civil-war-path": {
+      "title": "Romans Against Romans",
+      "step": 5,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "Legions march under Roman eagles against other Roman legions.",
+        "Every commander claims justice. Every village pays the price.",
+        "Civil war may create one victor, but it teaches Rome that law has failed."
+      ],
+      "choices": [
+        {
+          "text": "Seek negotiation before battle.",
+          "nextSceneId": "reconciliation"
+        },
+        {
+          "text": "Fight decisively and then offer mercy.",
+          "nextSceneId": "pax-romana-path"
+        },
+        {
+          "text": "Crush enemies and seize their wealth.",
+          "nextSceneId": "bad-terror-state"
+        },
+        {
+          "text": "Let the war drag across provinces.",
+          "nextSceneId": "bad-civil-war"
+        }
+      ]
+    },
+    "reconciliation": {
+      "title": "After the Knives",
+      "step": 5,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You call for reconciliation after Caesar's assassination.",
+        "Some accuse you of weakness. Others are relieved that Rome may not drown in revenge.",
+        "Forgiveness is not forgetting. It is choosing whether the future must be ruled by the murder of the past."
+      ],
+      "choices": [
+        {
+          "text": "Protect law while allowing trials for proven crimes.",
+          "nextSceneId": "rule-of-law-rome"
+        },
+        {
+          "text": "Invite former enemies into a new constitution.",
+          "nextSceneId": "mixed-republic"
+        },
+        {
+          "text": "Let assassins escape all accountability.",
+          "nextSceneId": "bad-empty-republic"
+        },
+        {
+          "text": "Use mercy to support a Pax Romana.",
+          "nextSceneId": "pax-romana-path"
+        }
+      ]
+    },
+    "pax-romana-path": {
+      "title": "The Promise of Peace",
+      "step": 6,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "Rome grows tired of civil war.",
+        "You offer stability: secure roads, disciplined legions, fairer taxes, provincial order, grain supply, aqueducts, and Senate dignity.",
+        "This may become the beginning of a Pax Romana, but peace under one ruler raises a question: is peace still liberty?"
+      ],
+      "choices": [
+        {
+          "text": "Rule as first citizen with laws, Senate dignity, and reform.",
+          "nextSceneId": "good-augustan-settlement"
+        },
+        {
+          "text": "Rule as emperor with open military authority.",
+          "nextSceneId": "neutral-stable-empire"
+        },
+        {
+          "text": "Encourage worship of your power through the imperial cult.",
+          "nextSceneId": "imperial-cult-path"
+        },
+        {
+          "text": "Forget limits once peace arrives.",
+          "nextSceneId": "bad-dictatorship"
+        }
+      ]
+    },
+    "imperial-cult-path": {
+      "title": "Honors Too High",
+      "step": 6,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "Cities offer statues, temples, and sacred honors in your name.",
+        "Some see the imperial cult as loyalty to Rome. Others fear that honoring rulers like gods makes criticism impossible.",
+        "A ruler who becomes more than human may stop hearing human truth."
+      ],
+      "choices": [
+        {
+          "text": "Accept honors only as symbols of unity, not personal divinity.",
+          "nextSceneId": "good-augustan-settlement"
+        },
+        {
+          "text": "Encourage divine honors to strengthen loyalty.",
+          "nextSceneId": "neutral-stable-empire"
+        },
+        {
+          "text": "Punish those who refuse to honor you.",
+          "nextSceneId": "bad-dictatorship"
+        },
+        {
+          "text": "Redirect honors toward Rome itself and public service.",
+          "nextSceneId": "good-inclusive-rome"
+        }
+      ]
+    },
+    "good-restored-republic": {
+      "title": "A Republic Repaired",
+      "step": 7,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You step down from emergency power and leave behind stronger courts, clearer military laws, fairer elections, tribune protections, and better provincial oversight.",
+        "The Senate has power again, but not unchecked power. Plebeians have voice again, but not mob rule. Generals command armies, but the army swears to Rome.",
+        "The Republic survives, changed by Caesar's death and strengthened by the reforms that followed."
+      ],
+      "ending": "good",
+      "teachingSummary": "This ending shows how Rome might have preserved the Roman Republic by strengthening law, shared power, tribunes, elections, and civilian control over the military.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Roman Republic and Roman Empire. Students encounter the Senate, consuls, tribunes, patricians, plebeians, legions, civil war, dictatorship, provinces, citizenship, Roman law, aqueducts, bread and circuses, imperial power, and the transition toward the Pax Romana in context.",
+      "reflectionQuestions": [
+        "Which choice most shaped the future government of Rome?",
+        "How did your government combine ideas from the Roman Republic and Roman Empire?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "Why was Julius Caesar's assassination such a turning point for Rome?",
+        "How did the Senate, army, and people each influence Roman politics?",
+        "Was Rome more stable under shared republican power or one strong ruler? Explain.",
+        "What tradeoff did your Rome face between liberty, order, reform, and imperial control?"
+      ]
+    },
+    "good-augustan-settlement": {
+      "title": "The First Citizen's Peace",
+      "step": 7,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You never call yourself king. You preserve the Senate, consuls, courts, and republican ceremonies.",
+        "Yet you control the army, guide the provinces, fund public works, and create a stable succession plan. Romans call you princeps, first citizen.",
+        "The Republic becomes something new: an empire wearing republican clothing, stable enough to begin a Pax Romana."
+      ],
+      "ending": "good",
+      "teachingSummary": "This ending shows how Rome's imperial system could blend republican traditions with one-person authority. Like Augustus, a ruler could preserve old titles while creating the Roman Empire.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Roman Republic and Roman Empire. Students encounter the Senate, consuls, tribunes, patricians, plebeians, legions, civil war, dictatorship, provinces, citizenship, Roman law, aqueducts, bread and circuses, imperial power, and the transition toward the Pax Romana in context.",
+      "reflectionQuestions": [
+        "Which choice most shaped the future government of Rome?",
+        "How did your government combine ideas from the Roman Republic and Roman Empire?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "Why was Julius Caesar's assassination such a turning point for Rome?",
+        "How did the Senate, army, and people each influence Roman politics?",
+        "Was Rome more stable under shared republican power or one strong ruler? Explain.",
+        "What tradeoff did your Rome face between liberty, order, reform, and imperial control?"
+      ]
+    },
+    "good-inclusive-rome": {
+      "title": "A Wider Rome",
+      "step": 7,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You expand citizenship gradually, protect provincial communities, punish corrupt governors, and build roads, courts, and aqueducts beyond Italy.",
+        "Provincials begin to see Roman law not only as conquest, but as belonging and opportunity.",
+        "Rome becomes stronger because it learns to include more of the people it rules."
+      ],
+      "ending": "good",
+      "teachingSummary": "This ending shows how citizenship, law, infrastructure, and provincial reform helped Rome hold a large empire together.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Roman Republic and Roman Empire. Students encounter the Senate, consuls, tribunes, patricians, plebeians, legions, civil war, dictatorship, provinces, citizenship, Roman law, aqueducts, bread and circuses, imperial power, and the transition toward the Pax Romana in context.",
+      "reflectionQuestions": [
+        "Which choice most shaped the future government of Rome?",
+        "How did your government combine ideas from the Roman Republic and Roman Empire?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "Why was Julius Caesar's assassination such a turning point for Rome?",
+        "How did the Senate, army, and people each influence Roman politics?",
+        "Was Rome more stable under shared republican power or one strong ruler? Explain.",
+        "What tradeoff did your Rome face between liberty, order, reform, and imperial control?"
+      ]
+    },
+    "neutral-stable-empire": {
+      "title": "Order Without Liberty",
+      "step": 7,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "Rome becomes stable under your command.",
+        "The roads are safe, the legions are paid, the grain arrives, and the Senate still meets. But few people doubt where real power rests.",
+        "The people have peace, but the Republic's old liberty has faded."
+      ],
+      "ending": "neutral",
+      "teachingSummary": "This ending shows the tradeoff between republican liberty and imperial stability. The Roman Empire could bring order while concentrating power in one ruler.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Roman Republic and Roman Empire. Students encounter the Senate, consuls, tribunes, patricians, plebeians, legions, civil war, dictatorship, provinces, citizenship, Roman law, aqueducts, bread and circuses, imperial power, and the transition toward the Pax Romana in context.",
+      "reflectionQuestions": [
+        "Which choice most shaped the future government of Rome?",
+        "How did your government combine ideas from the Roman Republic and Roman Empire?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "Why was Julius Caesar's assassination such a turning point for Rome?",
+        "How did the Senate, army, and people each influence Roman politics?",
+        "Was Rome more stable under shared republican power or one strong ruler? Explain.",
+        "What tradeoff did your Rome face between liberty, order, reform, and imperial control?"
+      ]
+    },
+    "neutral-strong-senate": {
+      "title": "A Senate With Old Habits",
+      "step": 7,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "The Senate regains prestige and Rome avoids immediate dictatorship.",
+        "Yet elite families still dominate politics, plebeian reforms remain limited, and ambitious generals wait for weakness.",
+        "The Republic breathes again, but its old illness remains."
+      ],
+      "ending": "neutral",
+      "teachingSummary": "This ending shows that restoring the Senate alone would not solve the deep problems that weakened the Roman Republic.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Roman Republic and Roman Empire. Students encounter the Senate, consuls, tribunes, patricians, plebeians, legions, civil war, dictatorship, provinces, citizenship, Roman law, aqueducts, bread and circuses, imperial power, and the transition toward the Pax Romana in context.",
+      "reflectionQuestions": [
+        "Which choice most shaped the future government of Rome?",
+        "How did your government combine ideas from the Roman Republic and Roman Empire?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "Why was Julius Caesar's assassination such a turning point for Rome?",
+        "How did the Senate, army, and people each influence Roman politics?",
+        "Was Rome more stable under shared republican power or one strong ruler? Explain.",
+        "What tradeoff did your Rome face between liberty, order, reform, and imperial control?"
+      ]
+    },
+    "bad-civil-war": {
+      "title": "The Republic Burns Again",
+      "step": 7,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "Civil war spreads across Italy and the provinces.",
+        "Roman legions fight Roman legions while citizens hide from armies that claim to protect them.",
+        "Caesar's assassination was supposed to save Rome from tyranny. Instead, Rome drowns in the ambitions of men with armies."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows how personal armies, rival generals, and weak political institutions helped push Rome toward repeated civil wars.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Roman Republic and Roman Empire. Students encounter the Senate, consuls, tribunes, patricians, plebeians, legions, civil war, dictatorship, provinces, citizenship, Roman law, aqueducts, bread and circuses, imperial power, and the transition toward the Pax Romana in context.",
+      "reflectionQuestions": [
+        "Which choice most shaped the future government of Rome?",
+        "How did your government combine ideas from the Roman Republic and Roman Empire?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "Why was Julius Caesar's assassination such a turning point for Rome?",
+        "How did the Senate, army, and people each influence Roman politics?",
+        "Was Rome more stable under shared republican power or one strong ruler? Explain.",
+        "What tradeoff did your Rome face between liberty, order, reform, and imperial control?"
+      ]
+    },
+    "bad-dictatorship": {
+      "title": "A Crown Without the Name",
+      "step": 7,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You keep power without limits.",
+        "The Senate becomes decoration. Tribunes become quiet. The people receive bread and circuses, but not real power.",
+        "Romans do not call you king, but they know what you have become."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows why many Romans feared dictatorship. One-person rule could bring order while destroying republican government.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Roman Republic and Roman Empire. Students encounter the Senate, consuls, tribunes, patricians, plebeians, legions, civil war, dictatorship, provinces, citizenship, Roman law, aqueducts, bread and circuses, imperial power, and the transition toward the Pax Romana in context.",
+      "reflectionQuestions": [
+        "Which choice most shaped the future government of Rome?",
+        "How did your government combine ideas from the Roman Republic and Roman Empire?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "Why was Julius Caesar's assassination such a turning point for Rome?",
+        "How did the Senate, army, and people each influence Roman politics?",
+        "Was Rome more stable under shared republican power or one strong ruler? Explain.",
+        "What tradeoff did your Rome face between liberty, order, reform, and imperial control?"
+      ]
+    },
+    "bad-terror-state": {
+      "title": "The Lists Never End",
+      "step": 7,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "Proscriptions, seizures, guards, and accusations spread through Rome.",
+        "Enemies vanish, but so does trust. Wealth funds the army, but law becomes a weapon.",
+        "Fear can build obedience quickly. It cannot build a healthy state."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows how political violence and proscriptions could destroy trust in law and government.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Roman Republic and Roman Empire. Students encounter the Senate, consuls, tribunes, patricians, plebeians, legions, civil war, dictatorship, provinces, citizenship, Roman law, aqueducts, bread and circuses, imperial power, and the transition toward the Pax Romana in context.",
+      "reflectionQuestions": [
+        "Which choice most shaped the future government of Rome?",
+        "How did your government combine ideas from the Roman Republic and Roman Empire?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "Why was Julius Caesar's assassination such a turning point for Rome?",
+        "How did the Senate, army, and people each influence Roman politics?",
+        "Was Rome more stable under shared republican power or one strong ruler? Explain.",
+        "What tradeoff did your Rome face between liberty, order, reform, and imperial control?"
+      ]
+    },
+    "bad-province-revolt": {
+      "title": "The Edges Break",
+      "step": 7,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "The provinces rise against corrupt governors, unfair taxes, and citizenship denied.",
+        "Legions march to restore order, but every victory costs money, soldiers, and loyalty.",
+        "An empire cannot survive if its edges experience Rome only as extraction."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows that Rome's provinces were essential to imperial stability. Exploitation and corruption could create resistance.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Roman Republic and Roman Empire. Students encounter the Senate, consuls, tribunes, patricians, plebeians, legions, civil war, dictatorship, provinces, citizenship, Roman law, aqueducts, bread and circuses, imperial power, and the transition toward the Pax Romana in context.",
+      "reflectionQuestions": [
+        "Which choice most shaped the future government of Rome?",
+        "How did your government combine ideas from the Roman Republic and Roman Empire?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "Why was Julius Caesar's assassination such a turning point for Rome?",
+        "How did the Senate, army, and people each influence Roman politics?",
+        "Was Rome more stable under shared republican power or one strong ruler? Explain.",
+        "What tradeoff did your Rome face between liberty, order, reform, and imperial control?"
+      ]
+    },
+    "bad-mob-rule": {
+      "title": "The Crowd Rules the Forum",
+      "step": 7,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "Public anger becomes the real government.",
+        "Senators fear the streets. Tribunes compete to shout louder. Laws are passed for revenge instead of justice.",
+        "The people deserved a voice, but a Republic cannot survive if law is replaced by fury."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows the danger of political instability when public anger is used without legal structure or responsible leadership.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Roman Republic and Roman Empire. Students encounter the Senate, consuls, tribunes, patricians, plebeians, legions, civil war, dictatorship, provinces, citizenship, Roman law, aqueducts, bread and circuses, imperial power, and the transition toward the Pax Romana in context.",
+      "reflectionQuestions": [
+        "Which choice most shaped the future government of Rome?",
+        "How did your government combine ideas from the Roman Republic and Roman Empire?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "Why was Julius Caesar's assassination such a turning point for Rome?",
+        "How did the Senate, army, and people each influence Roman politics?",
+        "Was Rome more stable under shared republican power or one strong ruler? Explain.",
+        "What tradeoff did your Rome face between liberty, order, reform, and imperial control?"
+      ]
+    },
+    "bad-class-conflict": {
+      "title": "Rome Divided by Wealth",
+      "step": 7,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "Land seizures, debt fights, and elite resistance split Rome into hostile camps.",
+        "Patricians accuse you of theft. Plebeians accuse the wealthy of greed. Veterans threaten mutiny.",
+        "Reform without balance becomes another road to civil war."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows how conflict between patricians, plebeians, veterans, and elites weakened the late Republic.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Roman Republic and Roman Empire. Students encounter the Senate, consuls, tribunes, patricians, plebeians, legions, civil war, dictatorship, provinces, citizenship, Roman law, aqueducts, bread and circuses, imperial power, and the transition toward the Pax Romana in context.",
+      "reflectionQuestions": [
+        "Which choice most shaped the future government of Rome?",
+        "How did your government combine ideas from the Roman Republic and Roman Empire?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "Why was Julius Caesar's assassination such a turning point for Rome?",
+        "How did the Senate, army, and people each influence Roman politics?",
+        "Was Rome more stable under shared republican power or one strong ruler? Explain.",
+        "What tradeoff did your Rome face between liberty, order, reform, and imperial control?"
+      ]
+    },
+    "bad-elite-republic": {
+      "title": "The Republic of the Few",
+      "step": 7,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "The Senate restores its dignity but ignores the needs of plebeians, veterans, and provinces.",
+        "The word Republic survives, but many Romans feel it belongs only to wealthy families.",
+        "Soon another ambitious general promises to speak for everyone the Senate forgot."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows that the Republic could not survive by protecting only elite power. Ignoring plebeians, soldiers, and provinces helped create instability.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Roman Republic and Roman Empire. Students encounter the Senate, consuls, tribunes, patricians, plebeians, legions, civil war, dictatorship, provinces, citizenship, Roman law, aqueducts, bread and circuses, imperial power, and the transition toward the Pax Romana in context.",
+      "reflectionQuestions": [
+        "Which choice most shaped the future government of Rome?",
+        "How did your government combine ideas from the Roman Republic and Roman Empire?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "Why was Julius Caesar's assassination such a turning point for Rome?",
+        "How did the Senate, army, and people each influence Roman politics?",
+        "Was Rome more stable under shared republican power or one strong ruler? Explain.",
+        "What tradeoff did your Rome face between liberty, order, reform, and imperial control?"
+      ]
+    },
+    "bad-empty-republic": {
+      "title": "A Mask Called Republic",
+      "step": 7,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "Rome keeps the names of old offices, but not their meaning.",
+        "Consuls obey stronger men. Senators avoid hard questions. Laws bend when powerful people demand it.",
+        "The Republic survives as a word, not as a working government."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows that political systems need real power-sharing and enforcement, not just traditional names and ceremonies.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Roman Republic and Roman Empire. Students encounter the Senate, consuls, tribunes, patricians, plebeians, legions, civil war, dictatorship, provinces, citizenship, Roman law, aqueducts, bread and circuses, imperial power, and the transition toward the Pax Romana in context.",
+      "reflectionQuestions": [
+        "Which choice most shaped the future government of Rome?",
+        "How did your government combine ideas from the Roman Republic and Roman Empire?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "Why was Julius Caesar's assassination such a turning point for Rome?",
+        "How did the Senate, army, and people each influence Roman politics?",
+        "Was Rome more stable under shared republican power or one strong ruler? Explain.",
+        "What tradeoff did your Rome face between liberty, order, reform, and imperial control?"
+      ]
+    },
+    "bad-corruption-rome": {
+      "title": "Rome for Sale",
+      "step": 7,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "Courts, tax contracts, public works, and military rewards become tools of private gain.",
+        "Citizens joke that everything in Rome has a price, including justice.",
+        "A corrupt state can look powerful while its foundations rot."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows how corruption weakened both republican and imperial systems in Rome.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Roman Republic and Roman Empire. Students encounter the Senate, consuls, tribunes, patricians, plebeians, legions, civil war, dictatorship, provinces, citizenship, Roman law, aqueducts, bread and circuses, imperial power, and the transition toward the Pax Romana in context.",
+      "reflectionQuestions": [
+        "Which choice most shaped the future government of Rome?",
+        "How did your government combine ideas from the Roman Republic and Roman Empire?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "Why was Julius Caesar's assassination such a turning point for Rome?",
+        "How did the Senate, army, and people each influence Roman politics?",
+        "Was Rome more stable under shared republican power or one strong ruler? Explain.",
+        "What tradeoff did your Rome face between liberty, order, reform, and imperial control?"
+      ]
+    },
+    "bad-army-state": {
+      "title": "The State Serves the Soldiers",
+      "step": 7,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "The army receives pay, land, and privileges before everyone else.",
+        "Citizens obey because soldiers enforce order. Senators obey because soldiers stand nearby. Provinces pay because soldiers demand it.",
+        "Rome no longer has an army. The army has Rome."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows the danger of military dominance in Roman politics, especially when soldiers became loyal to commanders or rewards more than the state.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Roman Republic and Roman Empire. Students encounter the Senate, consuls, tribunes, patricians, plebeians, legions, civil war, dictatorship, provinces, citizenship, Roman law, aqueducts, bread and circuses, imperial power, and the transition toward the Pax Romana in context.",
+      "reflectionQuestions": [
+        "Which choice most shaped the future government of Rome?",
+        "How did your government combine ideas from the Roman Republic and Roman Empire?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "Why was Julius Caesar's assassination such a turning point for Rome?",
+        "How did the Senate, army, and people each influence Roman politics?",
+        "Was Rome more stable under shared republican power or one strong ruler? Explain.",
+        "What tradeoff did your Rome face between liberty, order, reform, and imperial control?"
+      ]
+    },
+    "bad-army-emperors": {
+      "title": "The Strongest Man Wins",
+      "step": 7,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You leave succession to the army.",
+        "After your death, legions debate with swords. Each commander claims the purple. Provinces choose sides.",
+        "A system without clear succession turns stability into a prize for soldiers to award."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows why succession was a major weakness of imperial Rome. Without clear rules, armies could make and unmake rulers.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Roman Republic and Roman Empire. Students encounter the Senate, consuls, tribunes, patricians, plebeians, legions, civil war, dictatorship, provinces, citizenship, Roman law, aqueducts, bread and circuses, imperial power, and the transition toward the Pax Romana in context.",
+      "reflectionQuestions": [
+        "Which choice most shaped the future government of Rome?",
+        "How did your government combine ideas from the Roman Republic and Roman Empire?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "Why was Julius Caesar's assassination such a turning point for Rome?",
+        "How did the Senate, army, and people each influence Roman politics?",
+        "Was Rome more stable under shared republican power or one strong ruler? Explain.",
+        "What tradeoff did your Rome face between liberty, order, reform, and imperial control?"
+      ]
+    },
+    "bad-guard-rule": {
+      "title": "The Guards at the Door",
+      "step": 7,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "The elite guards learn their power.",
+        "They protect rulers, threaten senators, and demand rewards. Soon every leader must ask what the guards will allow.",
+        "The men meant to protect the government become another government inside it."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows the risk of relying too heavily on elite military guards in politics.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Roman Republic and Roman Empire. Students encounter the Senate, consuls, tribunes, patricians, plebeians, legions, civil war, dictatorship, provinces, citizenship, Roman law, aqueducts, bread and circuses, imperial power, and the transition toward the Pax Romana in context.",
+      "reflectionQuestions": [
+        "Which choice most shaped the future government of Rome?",
+        "How did your government combine ideas from the Roman Republic and Roman Empire?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "Why was Julius Caesar's assassination such a turning point for Rome?",
+        "How did the Senate, army, and people each influence Roman politics?",
+        "Was Rome more stable under shared republican power or one strong ruler? Explain.",
+        "What tradeoff did your Rome face between liberty, order, reform, and imperial control?"
+      ]
+    },
+    "bad-empty-spectacle": {
+      "title": "Bread, Games, and Nothing Beneath",
+      "step": 7,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "The grain lines are long and the games are loud.",
+        "For a while, people cheer. Then the debts return, the soldiers demand pay, and the provinces complain.",
+        "Bread and circuses can calm a city. They cannot govern an empire."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows that public entertainment and grain relief could build support, but they could not replace long-term reform.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Roman Republic and Roman Empire. Students encounter the Senate, consuls, tribunes, patricians, plebeians, legions, civil war, dictatorship, provinces, citizenship, Roman law, aqueducts, bread and circuses, imperial power, and the transition toward the Pax Romana in context.",
+      "reflectionQuestions": [
+        "Which choice most shaped the future government of Rome?",
+        "How did your government combine ideas from the Roman Republic and Roman Empire?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "Why was Julius Caesar's assassination such a turning point for Rome?",
+        "How did the Senate, army, and people each influence Roman politics?",
+        "Was Rome more stable under shared republican power or one strong ruler? Explain.",
+        "What tradeoff did your Rome face between liberty, order, reform, and imperial control?"
+      ]
+    },
+    "public-works": {
+      "title": "Public Works for Rome",
+      "step": 5,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "You fund roads, temples, forums, baths, and aqueducts across Rome.",
+        "The people see order made visible in stone and flowing water. Aqueducts bring cleaner water, roads carry soldiers and merchants, and public buildings remind everyone that the government can improve daily life.",
+        "Public works can create loyalty, but they also cost money and may become monuments to personal power."
+      ],
+      "choices": [
+        {
+          "text": "Use public works to employ the poor and support reform.",
+          "nextSceneId": "balanced-reform"
+        },
+        {
+          "text": "Build roads and aqueducts in the provinces too.",
+          "nextSceneId": "infrastructure-program"
+        },
+        {
+          "text": "Name every project after yourself.",
+          "nextSceneId": "imperial-cult-path"
+        },
+        {
+          "text": "Fund monuments while ignoring debt and corruption.",
+          "nextSceneId": "bad-empty-spectacle"
+        }
+      ]
+    },
+    "balanced-triumvirate": {
+      "title": "A Triumvirate With Boundaries",
+      "step": 4,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "The three leaders divide duties carefully.",
+        "One oversees armies, one manages finances, and one protects courts and laws. Records are public, and each triumvir must answer questions before the Senate.",
+        "For now, ambition is trapped inside procedure."
+      ],
+      "choices": [
+        {
+          "text": "Keep the boundaries and return power gradually.",
+          "nextSceneId": "return-date"
+        },
+        {
+          "text": "Use the structure to create a mixed Republic.",
+          "nextSceneId": "mixed-republic"
+        },
+        {
+          "text": "Let one leader gain too much military influence.",
+          "nextSceneId": "triumvirate-breakdown"
+        },
+        {
+          "text": "Use the stability to reform provinces.",
+          "nextSceneId": "provincial-governance"
+        }
+      ]
+    },
+    "army-mutiny": {
+      "title": "The Legions Refuse",
+      "step": 4,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "When veterans realize their promised land may not come, anger spreads through the camps.",
+        "Soldiers who once followed you out of loyalty now ask whether Rome honors sacrifice only when it is convenient.",
+        "A general who cannot keep promises may lose the army faster than he gained it."
+      ],
+      "choices": [
+        {
+          "text": "Negotiate a fairer veteran settlement.",
+          "nextSceneId": "veteran-land"
+        },
+        {
+          "text": "Create state funding for veteran rewards.",
+          "nextSceneId": "professional-army"
+        },
+        {
+          "text": "Use force against your own veterans.",
+          "nextSceneId": "bad-army-state"
+        },
+        {
+          "text": "Blame the Senate for the broken promises.",
+          "nextSceneId": "mob-pressure"
+        }
+      ]
+    },
+    "revolt-test": {
+      "title": "The Provincial Revolt",
+      "step": 5,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "A province erupts after years of unfair taxes and corrupt governors.",
+        "Your emergency law is tested. Rome must act quickly, but if emergency command becomes permanent, the Republic will learn the wrong lesson.",
+        "The revolt asks whether Rome can be both strong and lawful."
+      ],
+      "choices": [
+        {
+          "text": "Use temporary command and submit to review afterward.",
+          "nextSceneId": "rule-of-law-rome"
+        },
+        {
+          "text": "Use the revolt to expand permanent emergency power.",
+          "nextSceneId": "permanent-dictator"
+        },
+        {
+          "text": "Fix the corruption that caused the revolt.",
+          "nextSceneId": "provincial-audits"
+        },
+        {
+          "text": "Crush the revolt and ignore its causes.",
+          "nextSceneId": "bad-province-revolt"
+        }
+      ]
+    },
+    "bad-fractured-rome": {
+      "title": "Rome Divided Into Pieces",
+      "step": 7,
+      "image": {
+        "src": "public/images/ancient-rome-caesar.svg",
+        "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+      },
+      "pathFocus": "Key terms for this route: Roman Republic, Roman Empire, Senate, consul, dictator, triumvirate, patrician, plebeian, tribune, legion, general, civil war, Pax Romana, province, citizenship, law, aqueduct, bread and circuses, imperial cult, assassination, reform, and Augustus.",
+      "body": [
+        "The provinces stop feeling like parts of one Roman world.",
+        "Each powerful leader builds his own tax system, army, and court. Merchants face different rules. Soldiers obey regional commanders.",
+        "Rome does not fall in one dramatic moment. It separates into competing ambitions."
+      ],
+      "ending": "bad",
+      "teachingSummary": "This ending shows how dividing power among rival leaders and provinces could weaken Roman unity and lead toward civil war or fragmentation.",
+      "keyTermReview": "Vocabulary review: This adventure connects the Roman Republic and Roman Empire. Students encounter the Senate, consuls, tribunes, patricians, plebeians, legions, civil war, dictatorship, provinces, citizenship, Roman law, aqueducts, bread and circuses, imperial power, and the transition toward the Pax Romana in context.",
+      "reflectionQuestions": [
+        "Which choice most shaped the future government of Rome?",
+        "How did your government combine ideas from the Roman Republic and Roman Empire?",
+        "Which key term best explains your ending? Use evidence from the adventure.",
+        "Why was Julius Caesar's assassination such a turning point for Rome?",
+        "How did the Senate, army, and people each influence Roman politics?",
+        "Was Rome more stable under shared republican power or one strong ruler? Explain.",
+        "What tradeoff did your Rome face between liberty, order, reform, and imperial control?"
+      ]
+    }
+  }
+}
