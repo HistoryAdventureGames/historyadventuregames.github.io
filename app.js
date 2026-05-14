@@ -390,17 +390,13 @@ function renderGame(adventure, sceneId) {
         </div>
         <aside class="decision-panel" aria-label="${isEnding ? "Adventure actions" : "Choices"}">
           ${isEnding ? `<h3>Ready for another path?</h3>` : renderChoices(adventure, scene, sceneId)}
-          <div class="game-actions">
-            <button class="secondary-button" type="button" data-restart="${escapeAttribute(adventure.id)}">
-              Restart adventure
-            </button>
-            <button class="secondary-button" type="button" data-reset="${escapeAttribute(adventure.id)}">
-              Reset progress
-            </button>
-            <button class="secondary-button" type="button" data-library>
-              Return to library
-            </button>
-          </div>
+          ${isEnding ? `
+            <div class="game-actions ending-actions">
+              <button class="secondary-button restart-button" type="button" data-restart="${escapeAttribute(adventure.id)}">
+                Restart adventure
+              </button>
+            </div>
+          ` : ""}
         </aside>
       </div>
     </article>
