@@ -3,7 +3,7 @@
   "title": "Seeds of Change: A Paleolithic Adventure",
   "description": "Play as Kara, a young gatherer deciding whether her people should continue the old nomadic ways or risk the first steps toward agriculture.",
   "coverImage": {
-    "src": "public/images/foragers-to-farmers.svg",
+    "src": "public/images/Paleolithic.jpg",
     "alt": "Seeds, stone tools, and a river valley representing the shift from hunting and gathering to farming"
   },
   "startingSceneId": "start",
