@@ -75,6 +75,27 @@
           inset 0 2px 8px rgba(0, 0, 0, 0.2),
           0 8px 18px rgba(15, 23, 42, 0.18);
       }
+
+      .game-panel .ending-actions {
+        display: grid;
+        margin-top: 4px;
+      }
+
+      .restart-button {
+        min-height: 56px;
+        border-color: rgba(36, 86, 214, 0.32);
+        border-radius: 14px;
+        background: #2456d6;
+        color: #ffffff;
+        box-shadow: 0 12px 24px rgba(36, 86, 214, 0.22);
+        font-weight: 850;
+      }
+
+      .restart-button:hover,
+      .restart-button:focus-visible {
+        background: #1740a6;
+        color: #ffffff;
+      }
     </style>
   </head>
   <body>
@@ -128,6 +149,6 @@
       <p>Built for fast classroom play on GitHub Pages.</p>
     </footer>
 
-    <script src="app.js?v=20260513-cover-image" defer></script>
+    <script src="app.js?v=20260513-ending-restart" defer></script>
   </body>
 </html>
