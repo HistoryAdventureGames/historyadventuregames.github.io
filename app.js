@@ -355,7 +355,7 @@ function renderGame(adventure, sceneId) {
   libraryButton.classList.remove("hidden");
   document.body.classList.remove("is-home");
   document.body.classList.add("is-playing");
-  setAdventureBackground(scene.image || adventure.coverImage);
+  setAdventureBackground(adventure.coverImage);
 
   saveProgress(adventure.id, sceneId);
   updateHash(adventure.id, sceneId);
@@ -365,7 +365,7 @@ function renderGame(adventure, sceneId) {
 
   app.innerHTML = `
     <article class="game-panel" aria-labelledby="sceneTitle">
-      ${renderAdventureImage(scene.image || adventure.coverImage, scene.title || adventure.title, "scene-image")}
+      ${renderAdventureImage(adventure.coverImage, adventure.title, "scene-image")}
       <div class="game-layout">
         <div class="scene-content">
           <div class="scene-title-row">
