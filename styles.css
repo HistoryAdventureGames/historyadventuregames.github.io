@@ -720,6 +720,10 @@ body.is-playing {
   gap: 10px;
 }
 
+.game-panel .game-actions {
+  display: none;
+}
+
 .vocab-term {
   position: relative;
   display: inline;
