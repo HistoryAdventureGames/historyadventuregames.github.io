@@ -104,6 +104,126 @@
       .vocab-term-plain::after {
         content: "";
       }
+
+      .text-reader {
+        display: grid;
+        gap: 14px;
+        border: 1px solid #c7d7ef;
+        border-radius: 12px;
+        background: #f6f9ff;
+        box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+        margin-bottom: 4px;
+        padding: 16px;
+      }
+
+      .reader-heading-row,
+      .reader-actions,
+      .reader-settings {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+      }
+
+      .reader-heading-row {
+        justify-content: space-between;
+      }
+
+      .reader-kicker {
+        margin: 0 0 4px;
+        color: #0f766e;
+        font-size: 0.74rem;
+        font-weight: 900;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .text-reader h3 {
+        margin-bottom: 0;
+      }
+
+      .reader-actions {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+
+      .reader-control {
+        min-height: 40px;
+        padding: 0.58rem 0.84rem;
+      }
+
+      .reader-settings {
+        display: grid;
+        grid-template-columns: minmax(180px, 1.1fr) minmax(160px, 0.7fr) minmax(220px, 1.4fr);
+      }
+
+      .reader-settings label {
+        display: grid;
+        gap: 6px;
+        color: #263244;
+        font-size: 0.86rem;
+        font-weight: 850;
+      }
+
+      .reader-settings select,
+      .reader-settings input[type="range"] {
+        width: 100%;
+      }
+
+      .reader-settings select {
+        min-height: 42px;
+        border: 1px solid #d8e0ea;
+        border-radius: 9px;
+        background: #ffffff;
+        color: #111827;
+        font: inherit;
+        font-size: 0.94rem;
+        padding: 0.48rem 0.62rem;
+      }
+
+      .reader-status {
+        margin: 0;
+        color: #4b5565;
+        font-size: 0.92rem;
+      }
+
+      .reader-segment {
+        border-radius: 6px;
+        cursor: pointer;
+        outline-offset: 3px;
+        padding: 0.08rem 0.16rem;
+        transition: background 140ms ease, box-shadow 140ms ease, color 140ms ease;
+      }
+
+      .reader-segment:hover,
+      .reader-segment:focus-visible,
+      .reader-segment.is-reader-start {
+        background: #e7f0ff;
+        box-shadow: 0 0 0 2px rgba(36, 86, 214, 0.18);
+      }
+
+      .reader-segment.is-reading {
+        background: #fff2bf;
+        box-shadow: 0 0 0 2px rgba(180, 83, 9, 0.32);
+        color: #5b3306;
+      }
+
+      @media (max-width: 980px) {
+        .reader-heading-row,
+        .reader-actions,
+        .reader-settings {
+          align-items: stretch;
+        }
+
+        .reader-heading-row,
+        .reader-settings {
+          grid-template-columns: 1fr;
+        }
+
+        .reader-heading-row,
+        .reader-actions {
+          display: grid;
+        }
+      }
     </style>
   </head>
   <body>
@@ -238,6 +358,359 @@
             return `<span class="vocab-term" tabindex="0" role="button" aria-label="${escapeAttribute(`${match}: ${definition}`)}">${match}<span class="vocab-popover" role="tooltip">${escapeHtml(definition)}</span></span>`;
           });
         };
+      })();
+    </script>
+
+    <script>
+      (() => {
+        const readerState = {
+          voices: [],
+          selectedVoiceURI: "",
+          volume: 1,
+          startIndex: 0,
+          activeIndex: -1,
+          segments: [],
+          utterance: null,
+          isPaused: false,
+          isReading: false,
+          suppressEnd: false,
+        };
+
+        const baseRenderGame = window.renderGame;
+        const baseRenderLibrary = window.renderLibrary;
+        const baseShowLibrary = window.showLibrary;
+
+        window.renderGame = function renderGameWithReader(adventure, sceneId) {
+          stopReader();
+          baseRenderGame(adventure, sceneId);
+          installReader();
+        };
+
+        window.renderLibrary = function renderLibraryWithReader() {
+          stopReader();
+          baseRenderLibrary();
+        };
+
+        window.showLibrary = function showLibraryWithReader() {
+          stopReader();
+          baseShowLibrary();
+        };
+
+        if (isSpeechSupported()) {
+          const loadVoices = () => {
+            readerState.voices = window.speechSynthesis.getVoices();
+            if (!readerState.selectedVoiceURI && readerState.voices.length) {
+              const preferredVoice = readerState.voices.find((voice) => voice.default) || readerState.voices[0];
+              readerState.selectedVoiceURI = preferredVoice.voiceURI;
+            }
+            renderVoiceOptions();
+          };
+
+          loadVoices();
+          window.speechSynthesis.addEventListener("voiceschanged", loadVoices);
+        }
+
+        function installReader() {
+          const sceneText = document.querySelector(".scene-text");
+          if (!sceneText) return;
+
+          readerState.segments = getSegments(sceneText.textContent);
+          readerState.startIndex = 0;
+          readerState.activeIndex = -1;
+          readerState.isPaused = false;
+          readerState.isReading = false;
+
+          if (!readerState.segments.length) return;
+
+          sceneText.innerHTML = readerState.segments
+            .map((segment, index) => `
+              <span class="reader-segment" data-reader-segment="${index}" tabindex="0" role="button" aria-label="Start reader here: ${escapeAttribute(segment)}">
+                ${escapeHtml(segment)}
+              </span>
+            `)
+            .join(" ");
+
+          sceneText.insertAdjacentHTML("beforebegin", readerTemplate());
+          renderVoiceOptions();
+          renderReaderState();
+        }
+
+        function readerTemplate() {
+          const hasSpeech = isSpeechSupported();
+          return `
+            <section class="text-reader" aria-labelledby="readerHeading">
+              <div class="reader-heading-row">
+                <div>
+                  <p class="reader-kicker">Text-to-speech</p>
+                  <h3 id="readerHeading">Story reader</h3>
+                </div>
+                <div class="reader-actions" aria-label="Reader controls">
+                  <button class="secondary-button reader-control" type="button" data-reader-play ${hasSpeech ? "" : "disabled"}>Play</button>
+                  <button class="secondary-button reader-control" type="button" data-reader-pause ${hasSpeech ? "" : "disabled"}>Pause</button>
+                  <button class="secondary-button reader-control" type="button" data-reader-stop ${hasSpeech ? "" : "disabled"}>Stop</button>
+                </div>
+              </div>
+              ${hasSpeech ? "" : `<p class="reader-status">Text-to-speech is not supported in this browser.</p>`}
+              <div class="reader-settings">
+                <label>
+                  <span>Voice type</span>
+                  <select data-reader-voice ${hasSpeech ? "" : "disabled"}></select>
+                </label>
+                <label>
+                  <span>Volume <strong data-reader-volume-value>100%</strong></span>
+                  <input type="range" min="0" max="1" step="0.05" value="1" data-reader-volume ${hasSpeech ? "" : "disabled"}>
+                </label>
+                <label>
+                  <span>Start reading at</span>
+                  <select data-reader-start ${hasSpeech ? "" : "disabled"}>
+                    ${readerState.segments.map((segment, index) => `
+                      <option value="${index}">${escapeHtml(startLabel(segment, index))}</option>
+                    `).join("")}
+                  </select>
+                </label>
+              </div>
+              <p class="reader-status" data-reader-status>Select a sentence or click any line in the story text to choose where the reader begins.</p>
+            </section>
+          `;
+        }
+
+        document.addEventListener("click", (event) => {
+          const segment = event.target.closest("[data-reader-segment]");
+          if (segment) {
+            setStart(Number(segment.dataset.readerSegment), readerState.isReading || readerState.isPaused);
+            return;
+          }
+
+          if (event.target.closest("[data-reader-play]")) {
+            playReader();
+            return;
+          }
+
+          if (event.target.closest("[data-reader-pause]")) {
+            togglePause();
+            return;
+          }
+
+          if (event.target.closest("[data-reader-stop]")) {
+            stopReader();
+            renderReaderState();
+          }
+        });
+
+        document.addEventListener("change", (event) => {
+          const voiceSelect = event.target.closest("[data-reader-voice]");
+          if (voiceSelect) {
+            readerState.selectedVoiceURI = voiceSelect.value;
+            if (readerState.isReading || readerState.isPaused) {
+              speakFrom(readerState.activeIndex >= 0 ? readerState.activeIndex : readerState.startIndex);
+            }
+            return;
+          }
+
+          const startSelect = event.target.closest("[data-reader-start]");
+          if (startSelect) {
+            setStart(Number(startSelect.value), readerState.isReading || readerState.isPaused);
+          }
+        });
+
+        document.addEventListener("input", (event) => {
+          const volume = event.target.closest("[data-reader-volume]");
+          if (!volume) return;
+
+          readerState.volume = Number(volume.value);
+          const value = document.querySelector("[data-reader-volume-value]");
+          if (value) value.textContent = `${Math.round(readerState.volume * 100)}%`;
+          if (readerState.utterance) readerState.utterance.volume = readerState.volume;
+        });
+
+        function playReader() {
+          if (!isSpeechSupported() || !readerState.segments.length) return;
+
+          if (readerState.isPaused && readerState.utterance) {
+            window.speechSynthesis.resume();
+            readerState.isPaused = false;
+            readerState.isReading = true;
+            renderReaderState();
+            return;
+          }
+
+          speakFrom(readerState.activeIndex >= 0 ? readerState.activeIndex : readerState.startIndex);
+        }
+
+        function togglePause() {
+          if (!isSpeechSupported() || !readerState.utterance) return;
+
+          if (readerState.isPaused) {
+            window.speechSynthesis.resume();
+            readerState.isPaused = false;
+            readerState.isReading = true;
+          } else {
+            window.speechSynthesis.pause();
+            readerState.isPaused = true;
+            readerState.isReading = false;
+          }
+
+          renderReaderState();
+        }
+
+        function setStart(index, autoplay) {
+          const nextIndex = clampIndex(index);
+          readerState.startIndex = nextIndex;
+          readerState.activeIndex = nextIndex;
+          updateStartSelect(nextIndex);
+
+          if (autoplay) {
+            speakFrom(nextIndex);
+          } else {
+            renderReaderState();
+          }
+        }
+
+        function speakFrom(index) {
+          const nextIndex = clampIndex(index);
+          const text = readerState.segments[nextIndex];
+          if (!text) return;
+
+          readerState.suppressEnd = true;
+          window.speechSynthesis.cancel();
+          readerState.suppressEnd = false;
+
+          const utterance = new SpeechSynthesisUtterance(text);
+          const voice = readerState.voices.find((item) => item.voiceURI === readerState.selectedVoiceURI);
+          if (voice) utterance.voice = voice;
+          utterance.volume = readerState.volume;
+          utterance.rate = 0.94;
+
+          utterance.onstart = () => {
+            readerState.activeIndex = nextIndex;
+            readerState.startIndex = nextIndex;
+            readerState.isPaused = false;
+            readerState.isReading = true;
+            renderReaderState();
+          };
+
+          utterance.onend = () => {
+            if (readerState.suppressEnd) return;
+            const followingIndex = nextIndex + 1;
+            if (followingIndex < readerState.segments.length) {
+              speakFrom(followingIndex);
+              return;
+            }
+            readerState.utterance = null;
+            readerState.isPaused = false;
+            readerState.isReading = false;
+            renderReaderState("Reader finished.");
+          };
+
+          utterance.onerror = () => {
+            readerState.utterance = null;
+            readerState.isPaused = false;
+            readerState.isReading = false;
+            renderReaderState("The reader stopped. Try another voice if speech does not start.");
+          };
+
+          readerState.utterance = utterance;
+          window.speechSynthesis.speak(utterance);
+        }
+
+        function stopReader() {
+          if (isSpeechSupported()) {
+            readerState.suppressEnd = true;
+            window.speechSynthesis.cancel();
+            readerState.suppressEnd = false;
+          }
+          readerState.utterance = null;
+          readerState.isPaused = false;
+          readerState.isReading = false;
+          readerState.activeIndex = -1;
+        }
+
+        function renderReaderState(statusText = "") {
+          document.querySelectorAll("[data-reader-segment]").forEach((segment) => {
+            const index = Number(segment.dataset.readerSegment);
+            segment.classList.toggle("is-reader-start", index === readerState.startIndex);
+            segment.classList.toggle("is-reading", index === readerState.activeIndex && (readerState.isReading || readerState.isPaused));
+          });
+
+          updateStartSelect(readerState.startIndex);
+          const pauseButton = document.querySelector("[data-reader-pause]");
+          if (pauseButton) pauseButton.textContent = readerState.isPaused ? "Resume" : "Pause";
+
+          const status = document.querySelector("[data-reader-status]");
+          if (!status) return;
+          if (statusText) {
+            status.textContent = statusText;
+          } else if (readerState.isPaused) {
+            status.textContent = "Reader paused. Select any sentence to restart from there, or press Resume.";
+          } else if (readerState.isReading && readerState.activeIndex >= 0) {
+            status.textContent = `Reading sentence ${readerState.activeIndex + 1} of ${readerState.segments.length}.`;
+          } else {
+            status.textContent = "Select a sentence or click any line in the story text to choose where the reader begins.";
+          }
+        }
+
+        function renderVoiceOptions() {
+          const select = document.querySelector("[data-reader-voice]");
+          if (!select) return;
+
+          if (!readerState.voices.length) {
+            select.innerHTML = `<option value="">Default browser voice</option>`;
+            return;
+          }
+
+          select.innerHTML = readerState.voices.map((voice) => {
+            const selected = voice.voiceURI === readerState.selectedVoiceURI ? "selected" : "";
+            return `<option value="${escapeAttribute(voice.voiceURI)}" ${selected}>${escapeHtml(`${voiceType(voice)} - ${voice.name}`)}</option>`;
+          }).join("");
+        }
+
+        function getSegments(text) {
+          const source = String(text || "").replace(/\r\n/g, "\n").trim();
+          if (!source) return [];
+          const matches = source.match(/[^.!?]+[.!?]+(?:["')\]]+)?|[^.!?]+$/g) || [source];
+          return matches.map((segment) => segment.replace(/\s+/g, " ").trim()).filter(Boolean);
+        }
+
+        function startLabel(text, index) {
+          const preview = text.length > 76 ? `${text.slice(0, 73)}...` : text;
+          return `${index + 1}. ${preview}`;
+        }
+
+        function voiceType(voice) {
+          const description = `${voice.name} ${voice.lang}`.toLowerCase();
+          if (description.includes("female") || description.includes("samantha") || description.includes("victoria")) return "Warm voice";
+          if (description.includes("male") || description.includes("alex") || description.includes("daniel")) return "Deep voice";
+          if (description.includes("child") || description.includes("junior")) return "Youth voice";
+          if (description.includes("en-")) return "English voice";
+          return voice.lang || "Browser voice";
+        }
+
+        function updateStartSelect(index) {
+          const select = document.querySelector("[data-reader-start]");
+          if (select) select.value = String(clampIndex(index));
+        }
+
+        function clampIndex(index) {
+          const max = Math.max(readerState.segments.length - 1, 0);
+          return Math.max(0, Math.min(max, Number.isFinite(index) ? index : 0));
+        }
+
+        function isSpeechSupported() {
+          return "speechSynthesis" in window && "SpeechSynthesisUtterance" in window;
+        }
+
+        function escapeHtml(value) {
+          return String(value)
+            .replaceAll("&", "&amp;")
+            .replaceAll("<", "&lt;")
+            .replaceAll(">", "&gt;")
+            .replaceAll('"', "&quot;")
+            .replaceAll("'", "&#039;");
+        }
+
+        function escapeAttribute(value) {
+          return escapeHtml(value);
+        }
       })();
     </script>
   </body>
