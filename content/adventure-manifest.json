@@ -35,10 +35,10 @@
     "file": "content/adventures/Forge-The-Polis-Ancient-Greece.json"
   },
   {
-   "id": "ancient-rome-caesar-general-government-deep-tree",
-   "title": "After Caesar: Build the Future of Rome",
-   "topic": "Ancient Rome"
-   "description": "Play as a top general in Julius Caesar's army after his assassination and decide whether Rome becomes a restored Republic, a stable Empire, or a state torn apart by civil war.",
-   "file": "content/adventures/after-caesar-build-the-future-of-rome.json"
+    "id": "ancient-rome-caesar-general-government-deep-tree",
+    "title": "After Caesar: Build the Future of Rome",
+    "topic": "Ancient Rome",
+    "description": "Play as a top general in Julius Caesar's army after his assassination and decide whether Rome becomes a restored Republic, a stable Empire, or a state torn apart by civil war.",
+    "file": "content/adventures/after-caesar-build-the-future-of-rome.json"
   }
 ]
