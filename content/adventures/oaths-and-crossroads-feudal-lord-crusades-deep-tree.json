@@ -3,7 +3,7 @@
   "title": "Oaths and Crossroads: A Feudal Lord in the High Middle Ages",
   "description": "Play as a feudal lord managing vassals, knights, serfs, taxes, Church authority, manor obligations, and the pope's call for knights during the Crusades.",
   "coverImage": {
-    "src": "public/images/high-middle-ages-feudal-lord.svg",
+    "src": "public/images/Feudal-Lord.jpg",
     "alt": "A medieval manor, castle, fields, knights, and a distant church during the High Middle Ages"
   },
   "startingSceneId": "start",
