@@ -96,6 +96,14 @@
         background: #1740a6;
         color: #ffffff;
       }
+
+      .vocab-term-plain {
+        cursor: default;
+      }
+
+      .vocab-term-plain::after {
+        content: "";
+      }
     </style>
   </head>
   <body>
@@ -149,6 +157,88 @@
       <p>Built for fast classroom play on GitHub Pages.</p>
     </footer>
 
-    <script src="app.js?v=20260513-ending-restart" defer></script>
+    <script src="app.js?v=20260513-ending-restart"></script>
+    <script>
+      (() => {
+        const baseNormalizeAdventure = window.normalizeAdventure;
+        const baseGetDefinitionForTerm = window.getDefinitionForTerm;
+
+        function normalizeTermDefinitions(termDefinitions) {
+          if (!termDefinitions || typeof termDefinitions !== "object" || Array.isArray(termDefinitions)) {
+            return {};
+          }
+
+          return Object.entries(termDefinitions).reduce((definitions, [term, definition]) => {
+            const normalizedTerm = String(term).trim();
+            if (!normalizedTerm) return definitions;
+
+            definitions[normalizedTerm] = typeof definition === "string" ? definition.trim() : "";
+            return definitions;
+          }, {});
+        }
+
+        function getTermDefinitions(adventure) {
+          return adventure && typeof adventure.termDefinitions === "object" && !Array.isArray(adventure.termDefinitions)
+            ? adventure.termDefinitions
+            : {};
+        }
+
+        window.normalizeAdventure = function normalizeAdventureWithTermDefinitions(adventure) {
+          const normalizedAdventure = baseNormalizeAdventure(adventure);
+          return {
+            ...normalizedAdventure,
+            termDefinitions: normalizeTermDefinitions(adventure && adventure.termDefinitions),
+          };
+        };
+
+        window.getVocabularyTerms = function getVocabularyTerms(adventure) {
+          const keyTerms = Array.isArray(adventure && adventure.keyTerms) ? adventure.keyTerms : [];
+          const definitionTerms = Object.keys(getTermDefinitions(adventure));
+          const termsByName = new Map();
+
+          [...keyTerms, ...definitionTerms]
+            .filter((term) => typeof term === "string" && term.trim().length > 0)
+            .forEach((term) => {
+              const trimmed = term.trim();
+              const normalized = trimmed.toLowerCase();
+              if (!termsByName.has(normalized)) {
+                termsByName.set(normalized, trimmed);
+              }
+            });
+
+          return Array.from(termsByName.values()).sort((a, b) => b.length - a.length);
+        };
+
+        window.getDefinitionForTerm = function getDefinitionForTerm(term, adventure) {
+          const normalized = String(term).toLowerCase();
+          const authoredDefinition = Object.entries(getTermDefinitions(adventure))
+            .find(([key]) => key.toLowerCase() === normalized);
+
+          if (authoredDefinition && authoredDefinition[1]) {
+            return authoredDefinition[1];
+          }
+
+          return baseGetDefinitionForTerm(term);
+        };
+
+        window.renderVocabularyText = function renderVocabularyText(value, adventure) {
+          const text = String(value || "");
+          const terms = window.getVocabularyTerms(adventure);
+
+          if (terms.length === 0) return escapeHtml(text);
+
+          const pattern = new RegExp(`\\b(${terms.map(escapeRegExp).join("|")})\\b`, "gi");
+
+          return escapeHtml(text).replace(pattern, (match) => {
+            const definition = window.getDefinitionForTerm(match, adventure);
+            if (!definition) {
+              return `<span class="vocab-term vocab-term-plain">${match}</span>`;
+            }
+
+            return `<span class="vocab-term" tabindex="0" role="button" aria-label="${escapeAttribute(`${match}: ${definition}`)}">${match}<span class="vocab-popover" role="tooltip">${escapeHtml(definition)}</span></span>`;
+          });
+        };
+      })();
+    </script>
   </body>
 </html>
