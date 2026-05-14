@@ -3,7 +3,7 @@
   "title": "Paths of Power: Life in Edo Japan",
   "description": "Choose life as a samurai, shogun, or artisan during the Edo period and navigate honor, hierarchy, isolation, economic change, and political stability under the Tokugawa shogunate.",
   "coverImage": {
-    "src": "public/images/edo-japan.svg",
+    "src": "public/images/Feudal-Japan.jpg",
     "alt": "A Japanese castle town with a samurai, shogun officials, and artisan workshops during the Edo period"
   },
   "startingSceneId": "start",
