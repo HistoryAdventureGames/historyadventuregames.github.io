@@ -3,7 +3,7 @@
   "title": "The Bell Behind You: A Peasant During the Black Death",
   "description": "Play as Tomas, a medieval peasant trying to survive the Black Death. Most paths lead to plague. The only survival route requires leaving immediately and avoiding population centers.",
   "coverImage": {
-    "src": "public/images/black-death-medieval-europe.svg",
+    "src": "public/images/PlagueDoctor.jpg",
     "alt": "A medieval European village, crowded road, rats, carts, and a distant walled town during the Black Death"
   },
   "startingSceneId": "start",
