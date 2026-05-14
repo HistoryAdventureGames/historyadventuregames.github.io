@@ -130,6 +130,10 @@ body.is-playing .nav-bar {
   backdrop-filter: blur(18px);
 }
 
+body.is-playing #libraryButton {
+  display: none;
+}
+
 .brand-mark {
   display: inline-flex;
   align-items: center;
