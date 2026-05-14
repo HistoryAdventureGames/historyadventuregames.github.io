@@ -37,9 +37,8 @@
   {
   "id": "ancient-rome-caesar-general-government-deep-tree",
   "title": "After Caesar: Build the Future of Rome",
+  "topic": "Ancient Rome"
   "description": "Play as a top general in Julius Caesar's army after his assassination and decide whether Rome becomes a restored Republic, a stable Empire, or a state torn apart by civil war.",
-  "coverImage": {
-    "src": "public/images/AncientRome.jpg",
-    "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
+   "file": "content/adventures/after-caesar-build-the-future-of-rome.json"
   }
 ]
