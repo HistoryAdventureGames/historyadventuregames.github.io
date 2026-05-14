@@ -33,5 +33,13 @@
     "topic": "Ancient Greece",
     "description": "Build your perfect city-state to rival the strength of Athens and Sparta.",
     "file": "content/adventures/Forge-The-Polis-Ancient-Greece.json"
+  },
+  {
+  "id": "ancient-rome-caesar-general-government-deep-tree",
+  "title": "After Caesar: Build the Future of Rome",
+  "description": "Play as a top general in Julius Caesar's army after his assassination and decide whether Rome becomes a restored Republic, a stable Empire, or a state torn apart by civil war.",
+  "coverImage": {
+    "src": "public/images/AncientRome.jpg",
+    "alt": "Ancient Rome with the Senate, Roman legions, standards, and the city after Julius Caesar's assassination"
   }
 ]
