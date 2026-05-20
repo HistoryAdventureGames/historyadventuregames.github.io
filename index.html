@@ -104,6 +104,134 @@
       .vocab-term-plain::after {
         content: "";
       }
+
+
+      .glossary-float-button {
+        position: fixed;
+        left: 18px;
+        bottom: 18px;
+        z-index: 40;
+        min-height: 48px;
+        border: 1px solid rgba(255, 255, 255, 0.7);
+        border-radius: 999px;
+        background: #12233f;
+        box-shadow: 0 24px 64px rgba(15, 23, 42, 0.16);
+        color: #ffffff;
+        cursor: pointer;
+        font-weight: 900;
+        padding: 0.72rem 1rem;
+      }
+
+      .glossary-float-button:hover,
+      .glossary-float-button:focus-visible {
+        background: #1740a6;
+        transform: translateY(-1px);
+      }
+
+      .glossary-window {
+        position: fixed;
+        left: 18px;
+        bottom: 78px;
+        z-index: 45;
+        width: min(420px, calc(100vw - 36px));
+        height: min(560px, calc(100svh - 112px));
+        min-width: 300px;
+        min-height: 240px;
+        overflow: auto;
+        resize: both;
+        border: 1px solid #b8c4d6;
+        border-radius: 12px;
+        background: #ffffff;
+        box-shadow: 0 24px 64px rgba(15, 23, 42, 0.16);
+      }
+
+      .glossary-window[hidden] {
+        display: none;
+      }
+
+      .glossary-window-header {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        border-bottom: 1px solid #d8e0ea;
+        background: #12233f;
+        color: #ffffff;
+        cursor: move;
+        padding: 12px 14px;
+        user-select: none;
+      }
+
+      .glossary-window-header h3 {
+        margin: 0;
+        color: #ffffff;
+      }
+
+      .glossary-close-button {
+        min-height: 34px;
+        border: 1px solid rgba(255, 255, 255, 0.45);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.12);
+        color: #ffffff;
+        cursor: pointer;
+        font-weight: 850;
+        padding: 0.34rem 0.62rem;
+      }
+
+      .glossary-window-body {
+        padding: 14px;
+      }
+
+      .glossary-list {
+        display: grid;
+        gap: 12px;
+      }
+
+      .glossary-list h3 {
+        margin-bottom: 0;
+      }
+
+      .glossary-list dl {
+        display: grid;
+        gap: 10px;
+        margin: 0;
+      }
+
+      .glossary-list dl > div {
+        border: 1px solid #d8e0ea;
+        border-radius: 10px;
+        background: #ffffff;
+        padding: 10px 12px;
+      }
+
+      .glossary-list dt {
+        color: #1740a6;
+        font-weight: 900;
+      }
+
+      .glossary-list dd {
+        margin: 3px 0 0;
+        color: #263244;
+      }
+
+      .glossary-list-completion {
+        margin-top: 18px;
+      }
+
+      .glossary-list-completion dl {
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+      }
+
+      @media (max-width: 720px) {
+        .glossary-window {
+          left: 14px;
+          bottom: 74px;
+          min-width: min(280px, calc(100vw - 28px));
+        }
+      }
     </style>
   </head>
   <body>
@@ -260,6 +388,195 @@
             return `<span class="vocab-term" tabindex="0" role="button" aria-label="${escapeAttribute(`${match}: ${definition}`)}">${match}<span class="vocab-popover" role="tooltip">${escapeHtml(definition)}</span></span>`;
           });
         };
+      })();
+    </script>
+
+    <script>
+      (() => {
+        let activeGlossaryDrag = null;
+
+        const baseRenderGame = window.renderGame;
+        const baseRenderLibrary = window.renderLibrary;
+        const baseShowLibrary = window.showLibrary;
+
+        window.renderGame = function renderGameWithFloatingGlossary(adventure, sceneId) {
+          removeGlossaryUi();
+          baseRenderGame(adventure, sceneId);
+          installGlossaryUi(adventure, sceneId);
+        };
+
+        window.renderLibrary = function renderLibraryWithoutGlossary() {
+          removeGlossaryUi();
+          baseRenderLibrary();
+        };
+
+        window.showLibrary = function showLibraryWithoutGlossary() {
+          removeGlossaryUi();
+          baseShowLibrary();
+        };
+
+        document.addEventListener("click", (event) => {
+          if (event.target.closest("[data-glossary-open]")) {
+            openGlossaryWindow();
+            return;
+          }
+
+          if (event.target.closest("[data-glossary-close]")) {
+            hideGlossaryWindow();
+          }
+        });
+
+        document.addEventListener("keydown", (event) => {
+          if (event.key === "Escape") hideGlossaryWindow();
+        });
+
+        document.addEventListener("pointerdown", (event) => {
+          const handle = event.target.closest("[data-glossary-drag-handle]");
+          if (!handle) return;
+
+          const glossaryWindow = handle.closest(".glossary-window");
+          if (!glossaryWindow) return;
+
+          const rect = glossaryWindow.getBoundingClientRect();
+          activeGlossaryDrag = {
+            window: glossaryWindow,
+            offsetX: event.clientX - rect.left,
+            offsetY: event.clientY - rect.top,
+          };
+
+          glossaryWindow.style.right = "auto";
+          glossaryWindow.style.bottom = "auto";
+          glossaryWindow.style.left = `${rect.left}px`;
+          glossaryWindow.style.top = `${rect.top}px`;
+          event.preventDefault();
+        });
+
+        document.addEventListener("pointermove", (event) => {
+          if (!activeGlossaryDrag) return;
+
+          const glossaryWindow = activeGlossaryDrag.window;
+          const nextLeft = Math.max(8, Math.min(window.innerWidth - glossaryWindow.offsetWidth - 8, event.clientX - activeGlossaryDrag.offsetX));
+          const nextTop = Math.max(8, Math.min(window.innerHeight - glossaryWindow.offsetHeight - 8, event.clientY - activeGlossaryDrag.offsetY));
+          glossaryWindow.style.left = `${nextLeft}px`;
+          glossaryWindow.style.top = `${nextTop}px`;
+        });
+
+        document.addEventListener("pointerup", () => {
+          activeGlossaryDrag = null;
+        });
+
+        document.addEventListener("pointercancel", () => {
+          activeGlossaryDrag = null;
+        });
+
+        function installGlossaryUi(adventure, sceneId) {
+          const entries = getGlossaryEntries(adventure);
+          if (!entries.length) return;
+
+          removeExistingKeyTermSections();
+
+          const scene = adventure.scenes && adventure.scenes[sceneId];
+          const isEnding = !Array.isArray(scene?.choices) || scene.choices.length === 0;
+          const endingDetails = document.querySelector(".ending-details");
+          if (isEnding && endingDetails) {
+            endingDetails.insertAdjacentHTML("beforeend", renderGlossaryList(entries, "completion"));
+          }
+
+          document.body.insertAdjacentHTML("beforeend", renderGlossaryButton());
+          document.body.insertAdjacentHTML("beforeend", renderGlossaryWindow(entries));
+        }
+
+        function removeExistingKeyTermSections() {
+          document.querySelectorAll(".ending-details h3").forEach((heading) => {
+            if (heading.textContent.trim().toLowerCase() !== "key terms") return;
+
+            const detail = heading.nextElementSibling;
+            heading.remove();
+            if (detail && ["P", "UL", "OL"].includes(detail.tagName)) {
+              detail.remove();
+            }
+          });
+        }
+
+        function renderGlossaryButton() {
+          return `
+            <button class="glossary-float-button" type="button" data-glossary-open aria-controls="gameGlossaryWindow" aria-expanded="false">
+              Glossary
+            </button>
+          `;
+        }
+
+        function renderGlossaryWindow(entries) {
+          return `
+            <aside class="glossary-window" id="gameGlossaryWindow" aria-labelledby="gameGlossaryTitle" hidden>
+              <div class="glossary-window-header" data-glossary-drag-handle>
+                <h3 id="gameGlossaryTitle">Glossary</h3>
+                <button class="glossary-close-button" type="button" data-glossary-close aria-label="Close glossary">Close</button>
+              </div>
+              <div class="glossary-window-body">
+                ${renderGlossaryList(entries, "popup")}
+              </div>
+            </aside>
+          `;
+        }
+
+        function renderGlossaryList(entries, context) {
+          return `
+            <section class="glossary-list glossary-list-${escapeAttribute(context)}" aria-labelledby="${context === "completion" ? "completionGlossaryTitle" : "popupGlossaryListTitle"}">
+              <h3 id="${context === "completion" ? "completionGlossaryTitle" : "popupGlossaryListTitle"}">Vocabulary Glossary</h3>
+              <dl>
+                ${entries.map(({ term, definition }) => `
+                  <div>
+                    <dt>${escapeHtml(term)}</dt>
+                    <dd>${escapeHtml(definition || "Definition not available yet.")}</dd>
+                  </div>
+                `).join("")}
+              </dl>
+            </section>
+          `;
+        }
+
+        function openGlossaryWindow() {
+          const glossaryWindow = document.querySelector(".glossary-window");
+          const button = document.querySelector("[data-glossary-open]");
+          if (!glossaryWindow) return;
+
+          glossaryWindow.hidden = false;
+          button?.setAttribute("aria-expanded", "true");
+        }
+
+        function hideGlossaryWindow() {
+          const glossaryWindow = document.querySelector(".glossary-window");
+          const button = document.querySelector("[data-glossary-open]");
+          if (!glossaryWindow) return;
+
+          glossaryWindow.hidden = true;
+          button?.setAttribute("aria-expanded", "false");
+        }
+
+        function removeGlossaryUi() {
+          activeGlossaryDrag = null;
+          document.querySelectorAll(".glossary-window, .glossary-float-button").forEach((element) => element.remove());
+        }
+
+        function getGlossaryEntries(adventure) {
+          return window.getVocabularyTerms(adventure)
+            .map((term) => ({ term, definition: window.getDefinitionForTerm(term, adventure) }))
+            .filter(({ term }) => typeof term === "string" && term.trim().length > 0);
+        }
+
+        function escapeHtml(value) {
+          return String(value)
+            .replaceAll("&", "&amp;")
+            .replaceAll("<", "&lt;")
+            .replaceAll(">", "&gt;")
+            .replaceAll('"', "&quot;")
+            .replaceAll("'", "&#039;");
+        }
+
+        function escapeAttribute(value) {
+          return escapeHtml(value);
+        }
       })();
     </script>
   </body>
