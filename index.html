@@ -160,6 +160,28 @@
     <script src="app.js?v=20260513-ending-restart"></script>
     <script>
       (() => {
+        const homeScreenBackgroundImages = [
+          "images/AncientRome.jpg",
+          "images/Feudal-Japan.jpg",
+          "images/Feudal-Lord.jpg",
+          "images/GreecePolis.jpg",
+          "images/Paleolithic.jpg",
+          "images/PlagueDoctor.jpg",
+        ];
+
+        window.setRandomHomeBackground = function setRandomHomeBackgroundFromExistingImages() {
+          const image = homeScreenBackgroundImages[Math.floor(Math.random() * homeScreenBackgroundImages.length)] || "";
+          if (!image) return;
+
+          document.body.style.setProperty(
+            "--adventure-bg-image",
+            `url("${window.normalizeAssetPath ? window.normalizeAssetPath(image) : image}")`,
+          );
+        };
+      })();
+    </script>
+    <script>
+      (() => {
         const baseNormalizeAdventure = window.normalizeAdventure;
         const baseGetDefinitionForTerm = window.getDefinitionForTerm;
 
