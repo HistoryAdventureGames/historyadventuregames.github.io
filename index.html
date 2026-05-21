@@ -22,10 +22,11 @@
       }
 
       body.is-playing .nav-bar {
-        top: 0;
+        position: static;
+        width: var(--content);
         border-bottom: 0;
-        background: rgba(18, 35, 63, 0.96);
-        backdrop-filter: blur(18px);
+        background: transparent;
+        backdrop-filter: none;
         pointer-events: auto;
       }
 
@@ -110,14 +111,10 @@
         display: none !important;
       }
 
-      body.is-playing .app-shell {
-        padding-top: 112px;
-      }
-
       .glossary-float-button {
         position: static;
         z-index: 40;
-        width: 100%;
+        width: auto;
         min-height: 48px;
         border: 1px solid rgba(255, 255, 255, 0.7);
         border-radius: 12px;
@@ -135,14 +132,10 @@
         transform: translateY(-1px);
       }
 
-      .game-panel > .glossary-float-button {
-        grid-column: 2;
-        grid-row: 2;
-        align-self: start;
-      }
-
-      .game-panel .decision-panel {
-        grid-row: 3;
+      .scene-title-row .glossary-float-button {
+        flex: 0 0 auto;
+        align-self: flex-start;
+        box-shadow: 0 12px 28px rgba(15, 23, 42, 0.14);
       }
 
       .glossary-window {
@@ -243,28 +236,13 @@
       }
 
       @media (max-width: 720px) {
-        body.is-playing .nav-bar {
-          position: static;
-          width: var(--content);
-          min-height: 62px;
-          padding: 12px 0;
-          pointer-events: auto;
-        }
-
         body.is-playing .app-shell {
           padding-top: 24px;
         }
 
-        .game-panel .glossary-float-button {
-          position: static;
-          grid-column: 1;
-          grid-row: 3;
+        .scene-title-row .glossary-float-button {
           width: 100%;
           margin-top: 0;
-        }
-
-        .game-panel .decision-panel {
-          grid-row: 4;
         }
 
         .glossary-window {
@@ -516,8 +494,8 @@
           const entries = getGlossaryEntries(adventure);
           if (!entries.length) return;
 
-          const gamePanel = document.querySelector(".game-panel");
-          (gamePanel || document.body).insertAdjacentHTML("beforeend", renderGlossaryButton());
+          const titleRow = document.querySelector(".scene-title-row");
+          (titleRow || document.body).insertAdjacentHTML("beforeend", renderGlossaryButton());
           document.body.insertAdjacentHTML("beforeend", renderGlossaryWindow(entries));
         }
 
