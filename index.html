@@ -22,10 +22,11 @@
       }
 
       body.is-playing .nav-bar {
+        top: 0;
         border-bottom: 0;
-        background: transparent;
-        backdrop-filter: none;
-        pointer-events: none;
+        background: rgba(18, 35, 63, 0.96);
+        backdrop-filter: blur(18px);
+        pointer-events: auto;
       }
 
       body.is-playing .brand-mark {
@@ -109,15 +110,17 @@
         display: none !important;
       }
 
+      body.is-playing .app-shell {
+        padding-top: 112px;
+      }
 
       .glossary-float-button {
-        position: fixed;
-        left: 18px;
-        bottom: 18px;
+        position: static;
         z-index: 40;
+        width: 100%;
         min-height: 48px;
         border: 1px solid rgba(255, 255, 255, 0.7);
-        border-radius: 999px;
+        border-radius: 12px;
         background: #12233f;
         box-shadow: 0 24px 64px rgba(15, 23, 42, 0.16);
         color: #ffffff;
@@ -130,6 +133,16 @@
       .glossary-float-button:focus-visible {
         background: #1740a6;
         transform: translateY(-1px);
+      }
+
+      .game-panel > .glossary-float-button {
+        grid-column: 2;
+        grid-row: 2;
+        align-self: start;
+      }
+
+      .game-panel .decision-panel {
+        grid-row: 3;
       }
 
       .glossary-window {
@@ -244,8 +257,14 @@
 
         .game-panel .glossary-float-button {
           position: static;
+          grid-column: 1;
+          grid-row: 3;
           width: 100%;
-          margin-top: 16px;
+          margin-top: 0;
+        }
+
+        .game-panel .decision-panel {
+          grid-row: 4;
         }
 
         .glossary-window {
