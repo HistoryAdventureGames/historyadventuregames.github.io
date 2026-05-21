@@ -470,23 +470,26 @@
         });
 
         function installGlossaryUi(adventure, sceneId) {
+          removeExistingKeyTermSections();
+
           const entries = getGlossaryEntries(adventure);
           if (!entries.length) return;
-
-          removeExistingKeyTermSections();
 
           document.body.insertAdjacentHTML("beforeend", renderGlossaryButton());
           document.body.insertAdjacentHTML("beforeend", renderGlossaryWindow(entries));
         }
 
         function removeExistingKeyTermSections() {
-          document.querySelectorAll(".ending-details h3").forEach((heading) => {
+          document.querySelectorAll("#app h2, #app h3, #app h4").forEach((heading) => {
             if (heading.textContent.trim().toLowerCase() !== "key terms") return;
 
-            const detail = heading.nextElementSibling;
+            let detail = heading.nextElementSibling;
             heading.remove();
-            if (detail && ["P", "UL", "OL"].includes(detail.tagName)) {
+
+            while (detail && !/^H[2-4]$/.test(detail.tagName)) {
+              const nextDetail = detail.nextElementSibling;
               detail.remove();
+              detail = nextDetail;
             }
           });
         }
