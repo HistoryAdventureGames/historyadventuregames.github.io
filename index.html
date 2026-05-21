@@ -285,7 +285,7 @@
       <p>Built for fast classroom play on GitHub Pages.</p>
     </footer>
 
-    <script src="app.js?v=20260513-ending-restart"></script>
+    <script src="app.js?v=20260521-glossary-only"></script>
     <script>
       (() => {
         const homeScreenBackgroundImages = [
@@ -474,13 +474,6 @@
           if (!entries.length) return;
 
           removeExistingKeyTermSections();
-
-          const scene = adventure.scenes && adventure.scenes[sceneId];
-          const isEnding = !Array.isArray(scene?.choices) || scene.choices.length === 0;
-          const endingDetails = document.querySelector(".ending-details");
-          if (isEnding && endingDetails) {
-            endingDetails.insertAdjacentHTML("beforeend", renderGlossaryList(entries, "completion"));
-          }
 
           document.body.insertAdjacentHTML("beforeend", renderGlossaryButton());
           document.body.insertAdjacentHTML("beforeend", renderGlossaryWindow(entries));
