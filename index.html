@@ -230,6 +230,24 @@
       }
 
       @media (max-width: 720px) {
+        body.is-playing .nav-bar {
+          position: static;
+          width: var(--content);
+          min-height: 62px;
+          padding: 12px 0;
+          pointer-events: auto;
+        }
+
+        body.is-playing .app-shell {
+          padding-top: 24px;
+        }
+
+        .game-panel .glossary-float-button {
+          position: static;
+          width: 100%;
+          margin-top: 16px;
+        }
+
         .glossary-window {
           left: 14px;
           bottom: 74px;
@@ -479,7 +497,8 @@
           const entries = getGlossaryEntries(adventure);
           if (!entries.length) return;
 
-          document.body.insertAdjacentHTML("beforeend", renderGlossaryButton());
+          const gamePanel = document.querySelector(".game-panel");
+          (gamePanel || document.body).insertAdjacentHTML("beforeend", renderGlossaryButton());
           document.body.insertAdjacentHTML("beforeend", renderGlossaryWindow(entries));
         }
 
