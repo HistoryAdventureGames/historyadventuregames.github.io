@@ -8,7 +8,7 @@
 - `styles.css` is the site design.
 - `content/adventure-manifest.json` lists the available adventures.
 - `content/adventures/` stores the adventure JSON files.
-- `images/` stores the SVG images used by the adventures.
+- `images/` stores the images used by the adventures.
 - `.nojekyll` tells GitHub Pages to serve the static files directly.
 
 ## Add a New Adventure
