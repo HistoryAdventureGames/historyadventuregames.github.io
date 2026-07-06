@@ -1,0 +1,34 @@
+{
+  "id": "puzzle-0001",
+  "title": "American Foundations",
+  "groups": [
+    {
+      "relationship": "same-century",
+      "label": "19th-Century American Milestones",
+      "explanation": "The Erie Canal, the Trail of Tears, the California Gold Rush, and the Transcontinental Railroad all happened in the 1800s.",
+      "tier": 1,
+      "items": ["Erie Canal", "Trail of Tears", "California Gold Rush", "Transcontinental Railroad"]
+    },
+    {
+      "relationship": "same-war",
+      "label": "Civil War Battles",
+      "explanation": "Antietam, Shiloh, Vicksburg, and Appomattox were all major sites of the American Civil War.",
+      "tier": 2,
+      "items": ["Antietam", "Shiloh", "Vicksburg", "Appomattox"]
+    },
+    {
+      "relationship": "same-amendment",
+      "label": "Freedoms Protected by the First Amendment",
+      "explanation": "Speech, religion, the press, and assembly are all freedoms protected by the First Amendment.",
+      "tier": 3,
+      "items": ["Speech", "Religion", "The Press", "Assembly"]
+    },
+    {
+      "relationship": "same-document",
+      "label": "Parts of the U.S. Constitution",
+      "explanation": "The Preamble, the Bill of Rights, the amendment process, and the three branches of government are all parts of the U.S. Constitution.",
+      "tier": 4,
+      "items": ["Preamble", "Bill of Rights", "Amendment Process", "Three Branches"]
+    }
+  ]
+}

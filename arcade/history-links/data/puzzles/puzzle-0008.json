@@ -1,0 +1,34 @@
+{
+  "id": "puzzle-0008",
+  "title": "Shared First Names",
+  "groups": [
+    {
+      "relationship": "same-first-name",
+      "label": "Famous Georges",
+      "explanation": "George Washington, George Marshall, George Patton, and George Orwell all share the first name George.",
+      "tier": 1,
+      "items": ["Washington", "Marshall", "Patton", "Orwell"]
+    },
+    {
+      "relationship": "same-first-name",
+      "label": "Famous Johns",
+      "explanation": "John Adams, John F. Kennedy, John Quincy Adams, and John Brown all share the first name John.",
+      "tier": 2,
+      "items": ["Adams", "F. Kennedy", "Quincy Adams", "Brown"]
+    },
+    {
+      "relationship": "same-first-name",
+      "label": "Famous Elizabeths",
+      "explanation": "The 'Tudor Queen' (Elizabeth I), Elizabeth Cady Stanton, Elizabeth Blackwell, and the 'Windsor Queen' (Elizabeth II) all share the first name Elizabeth.",
+      "tier": 3,
+      "items": ["Tudor Queen", "Cady Stanton", "Blackwell", "Windsor Queen"]
+    },
+    {
+      "relationship": "same-first-name",
+      "label": "Famous Alexanders",
+      "explanation": "Alexander the Great, Alexander Hamilton, Alexander Graham Bell, and Alexander II of Russia all share the first name Alexander.",
+      "tier": 4,
+      "items": ["The Great", "Hamilton", "Graham Bell", "II of Russia"]
+    }
+  ]
+}

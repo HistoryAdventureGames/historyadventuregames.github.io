@@ -1,0 +1,34 @@
+{
+  "id": "puzzle-0010",
+  "title": "Empires of the Ancient World",
+  "groups": [
+    {
+      "relationship": "same-empire",
+      "label": "The Persian Empire",
+      "explanation": "Cyrus the Great, Darius, Persepolis, and Zoroastrianism were all part of the Persian Empire.",
+      "tier": 1,
+      "items": ["Cyrus the Great", "Darius", "Persepolis", "Zoroastrianism"]
+    },
+    {
+      "relationship": "same-empire",
+      "label": "The Byzantine Empire",
+      "explanation": "Constantinople, Justinian, the Hagia Sophia, and Orthodox Christianity were all part of the Byzantine Empire.",
+      "tier": 2,
+      "items": ["Constantinople", "Justinian", "Hagia Sophia", "Orthodox Christianity"]
+    },
+    {
+      "relationship": "same-civilization",
+      "label": "The Maya Civilization",
+      "explanation": "Chichen Itza, an advanced calendar system, the pyramids of Tikal, and hieroglyphic glyphs were all part of Maya civilization.",
+      "tier": 3,
+      "items": ["Chichen Itza", "Calendar System", "Pyramids of Tikal", "Glyphs"]
+    },
+    {
+      "relationship": "same-civilization",
+      "label": "The Aztec Civilization",
+      "explanation": "Tenochtitlan, Montezuma, chinampas (floating gardens), and the Sun Stone were all part of Aztec civilization.",
+      "tier": 4,
+      "items": ["Tenochtitlan", "Montezuma", "Chinampas", "Sun Stone"]
+    }
+  ]
+}

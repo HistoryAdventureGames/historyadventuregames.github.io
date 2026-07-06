@@ -1,0 +1,34 @@
+{
+  "id": "puzzle-0009",
+  "title": "Documents, Rights, and Invention",
+  "groups": [
+    {
+      "relationship": "same-document",
+      "label": "Parts of the Declaration of Independence",
+      "explanation": "The Preamble, the list of grievances, the natural rights section, and the signatures are all parts of the Declaration of Independence.",
+      "tier": 1,
+      "items": ["Preamble", "List of Grievances", "Natural Rights", "Signatures"]
+    },
+    {
+      "relationship": "same-amendment",
+      "label": "Amendments That Expanded Voting Rights",
+      "explanation": "The 15th, 19th, 24th, and 26th Amendments each expanded who could vote in the United States.",
+      "tier": 2,
+      "items": ["15th Amendment", "19th Amendment", "24th Amendment", "26th Amendment"]
+    },
+    {
+      "relationship": "same-empire",
+      "label": "Former British Colonies",
+      "explanation": "India, Australia, Canada, and Hong Kong were all once colonies or territories of the British Empire.",
+      "tier": 3,
+      "items": ["India", "Australia", "Canada", "Hong Kong"]
+    },
+    {
+      "relationship": "same-century",
+      "label": "20th-Century Inventions",
+      "explanation": "The airplane, television, the internet, and penicillin were all invented in the 20th century.",
+      "tier": 4,
+      "items": ["Airplane", "Television", "Internet", "Penicillin"]
+    }
+  ]
+}

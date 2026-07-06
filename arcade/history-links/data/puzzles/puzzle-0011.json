@@ -1,0 +1,34 @@
+{
+  "id": "puzzle-0011",
+  "title": "The Cold War Era",
+  "groups": [
+    {
+      "relationship": "same-era",
+      "label": "Cold War Terms",
+      "explanation": "The Iron Curtain, the Berlin Wall, the Space Race, and the Arms Race were all defining features of the Cold War era.",
+      "tier": 1,
+      "items": ["Iron Curtain", "Berlin Wall", "Space Race", "Arms Race"]
+    },
+    {
+      "relationship": "cold-war-hotspot",
+      "label": "Cold War Flashpoints",
+      "explanation": "Korea, Vietnam, Cuba, and Berlin were all flashpoints of Cold War conflict.",
+      "tier": 2,
+      "items": ["Korea", "Vietnam", "Cuba", "Berlin"]
+    },
+    {
+      "relationship": "same-president",
+      "label": "Associated with John F. Kennedy",
+      "explanation": "The Cuban Missile Crisis, the Bay of Pigs, the Peace Corps, and the 'We choose to go to the Moon' speech are all associated with John F. Kennedy.",
+      "tier": 3,
+      "items": ["Cuban Missile Crisis", "Bay of Pigs", "Peace Corps", "Moon Speech"]
+    },
+    {
+      "relationship": "same-document",
+      "label": "Cold War Arms Control Treaties",
+      "explanation": "SALT I, the Nuclear Test Ban Treaty, the ABM Treaty, and the INF Treaty were all Cold War arms control agreements.",
+      "tier": 4,
+      "items": ["SALT I", "Nuclear Test Ban Treaty", "ABM Treaty", "INF Treaty"]
+    }
+  ]
+}

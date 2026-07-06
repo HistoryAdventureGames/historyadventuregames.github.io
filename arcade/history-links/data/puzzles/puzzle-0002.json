@@ -1,0 +1,34 @@
+{
+  "id": "puzzle-0002",
+  "title": "Hallmarks of Ancient Civilizations",
+  "groups": [
+    {
+      "relationship": "same-civilization",
+      "label": "Ancient Egypt",
+      "explanation": "Pyramids, pharaohs, the Nile River, and hieroglyphics are all hallmarks of ancient Egypt.",
+      "tier": 1,
+      "items": ["Pyramids", "Pharaoh", "Nile River", "Hieroglyphics"]
+    },
+    {
+      "relationship": "same-civilization",
+      "label": "Ancient Greece",
+      "explanation": "The Parthenon, democracy, the Olympics, and the Acropolis all trace back to ancient Greece.",
+      "tier": 2,
+      "items": ["Parthenon", "Democracy", "Olympics", "Acropolis"]
+    },
+    {
+      "relationship": "same-civilization",
+      "label": "Ancient Rome",
+      "explanation": "The Colosseum, the Senate, aqueducts, and the legion were all part of ancient Rome.",
+      "tier": 3,
+      "items": ["Colosseum", "Senate", "Aqueducts", "Legion"]
+    },
+    {
+      "relationship": "same-civilization",
+      "label": "Ancient Mesopotamia",
+      "explanation": "Ziggurats, cuneiform writing, Hammurabi, and the Sumerians all belong to ancient Mesopotamia.",
+      "tier": 4,
+      "items": ["Ziggurat", "Cuneiform", "Hammurabi", "Sumerians"]
+    }
+  ]
+}

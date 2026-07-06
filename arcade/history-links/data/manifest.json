@@ -1,0 +1,14 @@
+[
+  { "id": "puzzle-0001", "file": "puzzles/puzzle-0001.json", "title": "American Foundations" },
+  { "id": "puzzle-0002", "file": "puzzles/puzzle-0002.json", "title": "Hallmarks of Ancient Civilizations" },
+  { "id": "puzzle-0003", "file": "puzzles/puzzle-0003.json", "title": "Explorers and Empires" },
+  { "id": "puzzle-0004", "file": "puzzles/puzzle-0004.json", "title": "Presidents and Their Legacies" },
+  { "id": "puzzle-0005", "file": "puzzles/puzzle-0005.json", "title": "The World at War" },
+  { "id": "puzzle-0006", "file": "puzzles/puzzle-0006.json", "title": "Reformers and Movements" },
+  { "id": "puzzle-0007", "file": "puzzles/puzzle-0007.json", "title": "Countries and Regions" },
+  { "id": "puzzle-0008", "file": "puzzles/puzzle-0008.json", "title": "Shared First Names" },
+  { "id": "puzzle-0009", "file": "puzzles/puzzle-0009.json", "title": "Documents, Rights, and Invention" },
+  { "id": "puzzle-0010", "file": "puzzles/puzzle-0010.json", "title": "Empires of the Ancient World" },
+  { "id": "puzzle-0011", "file": "puzzles/puzzle-0011.json", "title": "The Cold War Era" },
+  { "id": "puzzle-0012", "file": "puzzles/puzzle-0012.json", "title": "Colonial America" }
+]

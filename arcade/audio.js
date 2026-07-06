@@ -1,8 +1,10 @@
 // Original, procedurally-synthesized sound effects and ambient music via
 // WebAudio — no external audio files, so nothing to license or fetch.
+// Shared by every arcade game; each game plays the same click/correct/
+// incorrect/victory vocabulary regardless of what the sounds mean to it.
 //
 // To swap in real recorded audio later: change an entry in SOUND_MAP from a
-// synth function to a string URL (e.g. "correct": "/arcade/timeline-builder/assets/audio/correct.mp3").
+// synth function to a string URL (e.g. "correct": "/arcade/your-game/assets/audio/correct.mp3").
 // AudioEngine.play() plays a URL through an <audio> element automatically,
 // no other code needs to change.
 const SOUND_MAP = {

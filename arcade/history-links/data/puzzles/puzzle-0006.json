@@ -1,0 +1,34 @@
+{
+  "id": "puzzle-0006",
+  "title": "Reformers and Movements",
+  "groups": [
+    {
+      "relationship": "same-movement",
+      "label": "Civil Rights Movement Leaders",
+      "explanation": "Martin Luther King Jr., Rosa Parks, Malcolm X, and John Lewis were all leaders of the Civil Rights Movement.",
+      "tier": 1,
+      "items": ["Martin Luther King Jr.", "Rosa Parks", "Malcolm X", "John Lewis"]
+    },
+    {
+      "relationship": "same-movement",
+      "label": "Abolitionist Movement Leaders",
+      "explanation": "Frederick Douglass, Harriet Tubman, William Lloyd Garrison, and Sojourner Truth were all leaders of the abolitionist movement.",
+      "tier": 2,
+      "items": ["Frederick Douglass", "Harriet Tubman", "William Lloyd Garrison", "Sojourner Truth"]
+    },
+    {
+      "relationship": "same-movement",
+      "label": "Women's Suffrage Leaders",
+      "explanation": "Susan B. Anthony, Elizabeth Cady Stanton, Alice Paul, and Lucretia Mott were all leaders of the women's suffrage movement.",
+      "tier": 3,
+      "items": ["Susan B. Anthony", "Elizabeth Cady Stanton", "Alice Paul", "Lucretia Mott"]
+    },
+    {
+      "relationship": "same-era",
+      "label": "Progressive Era Figures",
+      "explanation": "Theodore Roosevelt, Woodrow Wilson, Upton Sinclair, and Jane Addams were all prominent figures of the Progressive Era.",
+      "tier": 4,
+      "items": ["Theodore Roosevelt", "Woodrow Wilson", "Upton Sinclair", "Jane Addams"]
+    }
+  ]
+}

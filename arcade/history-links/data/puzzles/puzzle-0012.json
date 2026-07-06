@@ -1,0 +1,34 @@
+{
+  "id": "puzzle-0012",
+  "title": "Colonial America",
+  "groups": [
+    {
+      "relationship": "same-civilization",
+      "label": "Native American Nations",
+      "explanation": "The Iroquois, Cherokee, Sioux, and Navajo are all Native American nations.",
+      "tier": 1,
+      "items": ["Iroquois", "Cherokee", "Sioux", "Navajo"]
+    },
+    {
+      "relationship": "same-region",
+      "label": "New England Colonies",
+      "explanation": "Massachusetts, Connecticut, Rhode Island, and New Hampshire were all New England colonies.",
+      "tier": 2,
+      "items": ["Massachusetts", "Connecticut", "Rhode Island", "New Hampshire"]
+    },
+    {
+      "relationship": "same-explorer",
+      "label": "The Lewis and Clark Expedition",
+      "explanation": "Sacagawea, Fort Clatsop, the Louisiana Territory, and York were all part of the Lewis and Clark Expedition.",
+      "tier": 3,
+      "items": ["Sacagawea", "Fort Clatsop", "Louisiana Territory", "York"]
+    },
+    {
+      "relationship": "same-century",
+      "label": "18th-Century American Events",
+      "explanation": "The French and Indian War, the Boston Tea Party, the Treaty of Paris, and the Constitutional Convention all happened in the 1700s.",
+      "tier": 4,
+      "items": ["French and Indian War", "Boston Tea Party", "Treaty of Paris", "Constitutional Convention"]
+    }
+  ]
+}

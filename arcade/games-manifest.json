@@ -9,6 +9,15 @@
     "tag": "12 eras &middot; 4 modes"
   },
   {
+    "id": "history-links",
+    "title": "History Links",
+    "description": "Find the four groups of four related historical items before you run out of guesses.",
+    "status": "available",
+    "url": "/arcade/history-links/",
+    "icon": "pi-grid",
+    "tag": "Daily Challenge &middot; 3 more modes"
+  },
+  {
     "id": "historical-map-challenge",
     "title": "Historical Map Challenge",
     "description": "Place empires, battles, and borders in the right spot on the map.",

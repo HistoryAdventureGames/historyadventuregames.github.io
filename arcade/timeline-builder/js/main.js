@@ -3,8 +3,8 @@ import { loadManifest, loadCategory, loadAllCategories, drawRandomEvents, shuffl
 import { isPlacementCorrect, computePoints, computeAccuracy, isRoundWon } from "./engine.js";
 import { DragController } from "./dragdrop.js";
 import { renderMenu, renderPlaying, renderPauseOverlay, renderEndScreen } from "./render.js";
-import { burstConfetti } from "./confetti.js";
-import { AudioEngine } from "./audio.js";
+import { burstConfetti } from "/arcade/confetti.js";
+import { AudioEngine } from "/arcade/audio.js";
 import { getHighScore, setHighScoreIfBetter, getSettings, saveSettings } from "./storage.js";
 
 const root = document.querySelector("#gameRoot");

@@ -1,0 +1,466 @@
+/* History Links: same dark "arcade cabinet" base as the hub and Timeline
+   Builder (arcade.css), with parchment-toned menu panels and a bright
+   pixel-frame tile grid. Tokens from styles.css, primitives from pixel-ui.css.
+   Tier colors (teal/gold/blue/plum) are original to this site, not modeled
+   on any specific existing grouping game's color scheme. */
+
+.hl-header {
+  --adventure-bg-image: none;
+}
+
+.hl-shell {
+  width: var(--content);
+  margin: 0 auto;
+  padding: clamp(20px, 4vw, 40px) 0 clamp(56px, 8vw, 96px);
+}
+
+.hl-shell .status-panel,
+.hl-shell .error-panel {
+  border-color: rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+}
+
+.hl-howto-button {
+  margin-top: 18px;
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+}
+
+.hl-howto-button:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+/* ---------- Menu ---------- */
+
+.hl-menu {
+  display: grid;
+  gap: 20px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.hl-panel {
+  --notch: 12px;
+  border: 1px solid #e3c98a;
+  background: linear-gradient(165deg, #fff8e8, #ffffff 120%);
+  color: var(--ink);
+  padding: clamp(18px, 2.4vw, 26px);
+}
+
+.hl-panel-label {
+  margin: 0 0 14px;
+  color: var(--gold);
+  font-size: 0.72rem;
+}
+
+.hl-mode-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hl-mode-button {
+  background: #eef2f7;
+  color: var(--ink);
+  padding: 0.7rem 1.2rem;
+}
+
+.hl-mode-button.is-selected {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+.hl-mode-detail {
+  margin: 14px 0 0;
+  color: var(--muted);
+}
+
+.hl-streak {
+  margin: 8px 0 0;
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.hl-puzzle-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.hl-puzzle-card {
+  --notch: 8px;
+  border: 1px solid var(--line);
+  background: #ffffff;
+  color: var(--ink);
+  font-weight: 800;
+  text-align: left;
+  padding: 14px;
+  transition: border-color 140ms ease, box-shadow 140ms ease;
+}
+
+.hl-puzzle-card.is-selected {
+  border-color: var(--primary);
+  background: #eef4ff;
+  box-shadow: 0 0 0 2px var(--primary) inset;
+}
+
+.hl-puzzle-card:hover {
+  border-color: var(--primary);
+}
+
+.hl-teacher-panel {
+  background: linear-gradient(165deg, #eef4ff, #ffffff 120%);
+  border-color: var(--line-strong);
+}
+
+.hl-teacher-toggle {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.hl-teacher-toggle input {
+  width: 22px;
+  height: 22px;
+  margin-top: 2px;
+  accent-color: var(--primary);
+}
+
+.hl-teacher-toggle strong {
+  display: block;
+  color: var(--ink);
+}
+
+.hl-teacher-detail {
+  display: block;
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.hl-start-row {
+  text-align: center;
+}
+
+.hl-start-button {
+  min-width: 220px;
+  font-size: 1.05rem;
+}
+
+.hl-start-hint {
+  margin: 10px 0 0;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 0.85rem;
+}
+
+/* ---------- HUD ---------- */
+
+.hl-hud {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: clamp(14px, 2.5vw, 28px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+  padding: 14px 18px;
+  margin-bottom: 20px;
+}
+
+.hl-hud-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hl-hud-label {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.hl-hud-value {
+  color: #ffd166;
+  font-size: 1.15rem;
+  font-weight: 900;
+}
+
+#hlTimer {
+  font-family: "Press Start 2P", ui-monospace, monospace;
+  font-size: 0.9rem;
+}
+
+.hl-mistake-pips {
+  display: flex;
+  gap: 6px;
+}
+
+.hl-mistake-pip {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.hl-mistake-pip.is-active {
+  background: #b42318;
+}
+
+.hl-hud-actions {
+  margin-left: auto;
+}
+
+/* ---------- Solved banners ---------- */
+
+.hl-solved-groups {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.hl-solved-banner {
+  --notch: 10px;
+  padding: 14px 16px;
+  color: #ffffff;
+  animation: pixel-pop-in 220ms ease;
+}
+
+.hl-solved-label {
+  margin: 0;
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+.hl-solved-tier {
+  margin-left: 8px;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.hl-solved-items {
+  margin: 4px 0 0;
+  font-weight: 700;
+  opacity: 0.92;
+}
+
+.hl-solved-explanation {
+  margin: 6px 0 0;
+  font-size: 0.92rem;
+  opacity: 0.9;
+}
+
+.hl-tier-1 { background: linear-gradient(135deg, #0f766e, #0b5851); }
+.hl-tier-2 { background: linear-gradient(135deg, #b45309, #8a3f07); }
+.hl-tier-3 { background: linear-gradient(135deg, #2456d6, #1740a6); }
+.hl-tier-4 { background: linear-gradient(135deg, #6d28d9, #501da3); }
+
+/* ---------- Tile grid ---------- */
+
+.hl-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.hl-tile {
+  --notch: 6px;
+  min-height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(160deg, #16294a, #0f1e38);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 0.92rem;
+  line-height: 1.25;
+  padding: 10px;
+  transition: transform 120ms ease, border-color 120ms ease, background 120ms ease;
+}
+
+.hl-tile:hover {
+  border-color: #ffd166;
+  transform: translateY(-2px);
+}
+
+.hl-tile.is-selected {
+  background: linear-gradient(160deg, #ffd166, #e8ac2e);
+  border-color: #ffd166;
+  color: #101c34;
+}
+
+.flash-incorrect {
+  animation: hl-shake 420ms ease;
+}
+
+@keyframes hl-shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-8px); }
+  40% { transform: translateX(8px); }
+  60% { transform: translateX(-6px); }
+  80% { transform: translateX(6px); }
+}
+
+/* ---------- Feedback & actions ---------- */
+
+.hl-feedback {
+  min-height: 28px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.hl-feedback-message {
+  display: inline-block;
+  margin: 0;
+  border-radius: 999px;
+  padding: 0.4rem 1rem;
+  font-weight: 800;
+}
+
+.hl-feedback-correct {
+  background: rgba(19, 122, 75, 0.24);
+  color: #5fd8a4;
+}
+
+.hl-feedback-one-away {
+  background: rgba(255, 209, 102, 0.2);
+  color: #ffd166;
+}
+
+.hl-feedback-incorrect {
+  background: rgba(180, 35, 24, 0.24);
+  color: #ff9c8f;
+}
+
+.hl-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* ---------- Settings overlay ---------- */
+
+.hl-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 150;
+  display: grid;
+  place-items: center;
+  background: rgba(6, 12, 24, 0.74);
+  backdrop-filter: blur(3px);
+}
+
+.hl-overlay-panel {
+  --notch: 14px;
+  max-width: 360px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: #101c34;
+  color: #ffffff;
+  text-align: center;
+  padding: clamp(26px, 4vw, 36px);
+}
+
+.hl-overlay-panel h2 {
+  color: #ffffff;
+}
+
+.hl-overlay-actions {
+  display: grid;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+/* ---------- End screen ---------- */
+
+.hl-end {
+  --notch: 18px;
+  max-width: 640px;
+  margin: 0 auto;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: linear-gradient(160deg, #16294a, #0f1e38);
+  color: #ffffff;
+  text-align: center;
+  padding: clamp(28px, 4vw, 46px);
+}
+
+.hl-end .eyebrow {
+  color: #ffd166;
+}
+
+.hl-end h2 {
+  color: #ffffff;
+}
+
+.hl-new-high-score {
+  margin: -6px 0 0;
+  color: #ffd166;
+  font-weight: 900;
+}
+
+.hl-reveal {
+  margin: 22px 0;
+  text-align: left;
+}
+
+.hl-reveal-label {
+  margin: 0 0 10px;
+  color: rgba(255, 255, 255, 0.78);
+  font-weight: 800;
+}
+
+.hl-reveal .hl-solved-groups {
+  margin-bottom: 0;
+}
+
+.hl-end-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 14px;
+  margin: 26px 0;
+}
+
+.hl-end-stats > div {
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.07);
+  padding: 14px;
+}
+
+.hl-end-stats strong {
+  display: block;
+  margin-top: 6px;
+  color: #ffd166;
+  font-size: 1.35rem;
+}
+
+.hl-end-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+@media (max-width: 640px) {
+  .hl-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hl-hud {
+    justify-content: space-between;
+  }
+
+  .hl-hud-actions {
+    margin-left: 0;
+  }
+}

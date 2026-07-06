@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>History Links — History Arcade</title>
+    <meta
+      name="description"
+      content="Find the four groups of four related historical items before you run out of guesses. Daily Challenge, Random Puzzle, Practice, and Teacher Mode."
+    >
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=20260706-arcade-launch">
+    <link rel="stylesheet" href="/pixel-ui.css?v=20260706-arcade-launch">
+    <link rel="stylesheet" href="/arcade/arcade.css?v=20260706-arcade-launch">
+    <link rel="stylesheet" href="css/game.css?v=20260706-arcade-launch">
+  </head>
+  <body class="arcade-body hl-body">
+    <a class="skip-link" href="#gameRoot">Skip to game</a>
+
+    <header class="site-header arcade-header hl-header">
+      <nav class="nav-bar" aria-label="Primary">
+        <a class="brand-mark" href="/" aria-label="History Adventure Games home">
+          <span class="brand-icon" aria-hidden="true">H</span>
+          <span>History Adventure Games</span>
+        </a>
+        <div class="nav-links" aria-label="Site sections">
+          <a class="nav-action" href="/arcade/">Arcade</a>
+          <button class="pixel-button arcade-icon-button" type="button" data-instructions-open aria-label="How to play">
+            <svg class="pixel-icon" viewBox="0 0 24 24"><use href="#pi-help"></use></svg>
+          </button>
+          <button class="pixel-button arcade-icon-button" type="button" id="soundToggle" aria-pressed="true" aria-label="Toggle sound effects">
+            <svg class="pixel-icon" viewBox="0 0 24 24"><use href="#pi-speaker"></use></svg>
+          </button>
+          <button class="pixel-button arcade-icon-button" type="button" id="musicToggle" aria-pressed="true" aria-label="Toggle music">
+            <svg class="pixel-icon" viewBox="0 0 24 24"><use href="#pi-note"></use></svg>
+          </button>
+        </div>
+      </nav>
+
+      <section class="arcade-marquee hl-marquee">
+        <p class="eyebrow">History Arcade</p>
+        <h1 class="pixel-heading">History Links</h1>
+        <p class="section-subtitle arcade-marquee-subtitle">
+          Find the four groups of four related historical items.
+        </p>
+        <button class="secondary-button pixel-button hl-howto-button" type="button" data-instructions-open>
+          How to Play &amp; Scoring
+        </button>
+      </section>
+    </header>
+
+    <main id="gameRoot" class="app-shell hl-shell" tabindex="-1">
+      <div class="status-panel">
+        <div class="loader" aria-hidden="true"></div>
+        <h2>Loading History Links...</h2>
+      </div>
+    </main>
+
+    <footer class="site-footer arcade-footer">
+      <p>New eras and arcade games are added regularly. Check the <a href="/arcade/">Arcade</a> for more.</p>
+    </footer>
+
+    <script src="/scripts/load-icon-sprite.js"></script>
+    <script src="/arcade/instructions-modal.js?v=20260706-arcade-launch"></script>
+    <script>
+      ArcadeInstructions.init({
+        gameId: "history-links",
+        title: "How to Play History Links",
+        sections: [
+          {
+            heading: "Goal",
+            body: "16 historical items are hiding four groups of four. Select four cards you think belong together and submit your guess.",
+          },
+          {
+            heading: "Controls",
+            body: "Tap or click a card to select it, and tap it again to deselect. Once you have exactly four selected, press Submit. Use Shuffle to rearrange the grid, or Deselect All to start over.",
+          },
+          {
+            heading: "Scoring",
+            body: "Each correct group is worth points; each wrong guess costs points and one of your four mistakes. Get all four groups before your mistakes run out. In timed modes, time left when you finish adds a bonus.",
+          },
+          {
+            heading: "Modes",
+            body: "<strong>Daily Challenge:</strong> one shared puzzle a day, timed, and tracked as a streak. <strong>Random Puzzle:</strong> a new timed puzzle every time. <strong>Practice:</strong> pick any puzzle and take your time, untimed. <strong>Teacher Mode:</strong> a toggle that turns off the timer and skips saving a score, for playing together as a class.",
+          },
+        ],
+      });
+    </script>
+    <script type="module" src="js/main.js?v=20260706-arcade-launch"></script>
+  </body>
+</html>

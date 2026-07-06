@@ -1,0 +1,34 @@
+{
+  "id": "puzzle-0007",
+  "title": "Countries and Regions",
+  "groups": [
+    {
+      "relationship": "same-country",
+      "label": "France: Revolution to Empire",
+      "explanation": "Napoleon, the Bastille, Louis XVI, and Marie Antoinette are all tied to France's revolutionary and imperial history.",
+      "tier": 1,
+      "items": ["Napoleon", "Bastille", "Louis XVI", "Marie Antoinette"]
+    },
+    {
+      "relationship": "same-country",
+      "label": "Imperial Russia and Its Fall",
+      "explanation": "Peter the Great, the Romanovs, the Bolsheviks, and Rasputin are all tied to the history of Imperial Russia.",
+      "tier": 2,
+      "items": ["Peter the Great", "Romanov", "Bolsheviks", "Rasputin"]
+    },
+    {
+      "relationship": "same-region",
+      "label": "Southeast Asian Nations",
+      "explanation": "Vietnam, Thailand, Cambodia, and Laos are all nations of Southeast Asia.",
+      "tier": 3,
+      "items": ["Vietnam", "Thailand", "Cambodia", "Laos"]
+    },
+    {
+      "relationship": "same-region",
+      "label": "Nordic Countries",
+      "explanation": "Sweden, Norway, Denmark, and Finland are all Nordic countries.",
+      "tier": 4,
+      "items": ["Sweden", "Norway", "Denmark", "Finland"]
+    }
+  ]
+}

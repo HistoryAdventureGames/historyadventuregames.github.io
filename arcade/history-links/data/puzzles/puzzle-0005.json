@@ -1,0 +1,34 @@
+{
+  "id": "puzzle-0005",
+  "title": "The World at War",
+  "groups": [
+    {
+      "relationship": "same-war",
+      "label": "World War I Battles",
+      "explanation": "Verdun, the Somme, Gallipoli, and the Marne were all major battles of World War I.",
+      "tier": 1,
+      "items": ["Verdun", "Somme", "Gallipoli", "Marne"]
+    },
+    {
+      "relationship": "same-war",
+      "label": "World War II Battles",
+      "explanation": "Normandy, Midway, Stalingrad, and Iwo Jima were all major battles of World War II.",
+      "tier": 2,
+      "items": ["Normandy", "Midway", "Stalingrad", "Iwo Jima"]
+    },
+    {
+      "relationship": "same-movement",
+      "label": "Progressive Era Reforms",
+      "explanation": "Women's suffrage, prohibition, trust-busting, and labor reform were all goals of the Progressive Era reform movement.",
+      "tier": 3,
+      "items": ["Women's Suffrage", "Prohibition", "Trust-Busting", "Labor Reform"]
+    },
+    {
+      "relationship": "same-region",
+      "label": "Balkan Peninsula Nations",
+      "explanation": "Serbia, Bulgaria, Romania, and Greece are all nations of the Balkan Peninsula.",
+      "tier": 4,
+      "items": ["Serbia", "Bulgaria", "Romania", "Greece"]
+    }
+  ]
+}

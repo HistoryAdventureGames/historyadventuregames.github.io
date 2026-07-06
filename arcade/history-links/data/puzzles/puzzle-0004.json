@@ -1,0 +1,34 @@
+{
+  "id": "puzzle-0004",
+  "title": "Presidents and Their Legacies",
+  "groups": [
+    {
+      "relationship": "same-president",
+      "label": "Associated with Abraham Lincoln",
+      "explanation": "The Emancipation Proclamation, the Gettysburg Address, Ford's Theatre, and the House Divided speech are all associated with Abraham Lincoln.",
+      "tier": 1,
+      "items": ["Emancipation Proclamation", "Gettysburg Address", "Ford's Theatre", "House Divided Speech"]
+    },
+    {
+      "relationship": "same-president",
+      "label": "Associated with Franklin D. Roosevelt",
+      "explanation": "The New Deal, Fireside Chats, the Four Freedoms, and the Pearl Harbor address are all associated with Franklin D. Roosevelt.",
+      "tier": 2,
+      "items": ["New Deal", "Fireside Chats", "Four Freedoms", "Pearl Harbor Address"]
+    },
+    {
+      "relationship": "same-president",
+      "label": "Associated with Thomas Jefferson",
+      "explanation": "The Louisiana Purchase, the Declaration of Independence, Monticello, and the Lewis and Clark Expedition are all associated with Thomas Jefferson.",
+      "tier": 3,
+      "items": ["Louisiana Purchase", "Declaration of Independence", "Monticello", "Lewis and Clark Expedition"]
+    },
+    {
+      "relationship": "same-president",
+      "label": "Associated with Theodore Roosevelt",
+      "explanation": "The Rough Riders, the Panama Canal, the Square Deal, and the National Parks system are all associated with Theodore Roosevelt.",
+      "tier": 4,
+      "items": ["Rough Riders", "Panama Canal", "Square Deal", "National Parks"]
+    }
+  ]
+}
