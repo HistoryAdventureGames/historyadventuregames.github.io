@@ -166,6 +166,9 @@
   width: 44px;
   height: 44px;
   padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: rgba(255, 255, 255, 0.1);
   color: #ffffff;
 }
@@ -173,6 +176,7 @@
 .arcade-icon-button svg {
   width: 20px;
   height: 20px;
+  display: block;
 }
 
 .instructions-overlay {
