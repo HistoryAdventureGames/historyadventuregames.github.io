@@ -118,6 +118,23 @@ body.is-playing .site-header {
   gap: clamp(10px, 3vw, 16px);
   min-height: 72px;
   padding: 12px 0;
+}
+
+/* Full-bleed backdrop behind the sticky nav bar: .nav-bar itself is only
+   var(--content) wide (matching the rest of the page's centered content), so
+   its solid background needs this edge-to-edge pseudo-element rather than
+   living directly on .nav-bar, or it renders as a pill that stops short of
+   the viewport edges once the page scrolls. */
+.nav-bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  z-index: -1;
   background: rgba(18, 35, 63, 0.94);
   backdrop-filter: blur(18px);
 }
