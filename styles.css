@@ -117,6 +117,8 @@ body.is-playing .site-header {
   gap: 16px;
   min-height: 72px;
   padding: 12px 0;
+  background: rgba(18, 35, 63, 0.94);
+  backdrop-filter: blur(18px);
 }
 
 .nav-links {
@@ -132,8 +134,6 @@ body.is-playing .nav-bar {
   width: 100%;
   padding: 12px max(16px, calc((100vw - 1760px) / 2));
   border-bottom: 1px solid rgba(255, 255, 255, 0.14);
-  background: rgba(18, 35, 63, 0.94);
-  backdrop-filter: blur(18px);
 }
 
 body.is-playing #libraryButton {
