@@ -1,0 +1,30 @@
+{
+  "category": "Ancient Rome",
+  "events": [
+    { "year": -753, "title": "Rome is traditionally founded" },
+    { "year": -509, "title": "The Roman Republic is established" },
+    { "year": -450, "title": "The Twelve Tables of Roman law are written" },
+    { "year": -390, "title": "Gauls sack Rome" },
+    { "year": -264, "title": "The First Punic War begins" },
+    { "year": -218, "title": "Hannibal crosses the Alps in the Second Punic War" },
+    { "year": -202, "title": "The Battle of Zama ends the Second Punic War" },
+    { "year": -146, "title": "Rome destroys Carthage in the Third Punic War" },
+    { "year": -73, "title": "Spartacus leads a slave revolt" },
+    { "year": -60, "title": "Caesar, Pompey, and Crassus form the First Triumvirate" },
+    { "year": -49, "title": "Julius Caesar crosses the Rubicon" },
+    { "year": -44, "title": "Julius Caesar is assassinated" },
+    { "year": -31, "title": "The Battle of Actium" },
+    { "year": -27, "title": "Augustus becomes Rome's first emperor" },
+    { "year": 64, "title": "The Great Fire of Rome under Nero" },
+    { "year": 79, "title": "Mount Vesuvius destroys Pompeii" },
+    { "year": 80, "title": "The Colosseum is completed" },
+    { "year": 117, "title": "The Roman Empire reaches its greatest extent under Trajan" },
+    { "year": 212, "title": "Caracalla extends citizenship to all free men in the empire" },
+    { "year": 284, "title": "Diocletian reorganizes the empire" },
+    { "year": 313, "title": "The Edict of Milan legalizes Christianity" },
+    { "year": 330, "title": "Constantinople becomes the new capital" },
+    { "year": 380, "title": "Christianity becomes the empire's official religion" },
+    { "year": 410, "title": "Visigoths sack Rome" },
+    { "year": 476, "title": "The Western Roman Empire falls" }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "category": "Presidents",
+  "events": [
+    { "year": 1789, "title": "George Washington is inaugurated as the 1st president" },
+    { "year": 1797, "title": "John Adams becomes the 2nd president" },
+    { "year": 1801, "title": "Thomas Jefferson becomes the 3rd president" },
+    { "year": 1809, "title": "James Madison becomes the 4th president" },
+    { "year": 1817, "title": "James Monroe becomes the 5th president" },
+    { "year": 1825, "title": "John Quincy Adams becomes the 6th president" },
+    { "year": 1829, "title": "Andrew Jackson becomes the 7th president" },
+    { "year": 1841, "title": "William Henry Harrison dies after 31 days in office" },
+    { "year": 1845, "title": "James K. Polk becomes the 11th president" },
+    { "year": 1861, "title": "Abraham Lincoln becomes the 16th president" },
+    { "year": 1865, "title": "Andrew Johnson becomes president after Lincoln's death" },
+    { "year": 1881, "title": "James Garfield is assassinated in his first year" },
+    { "year": 1901, "title": "Theodore Roosevelt becomes president after McKinley's assassination" },
+    { "year": 1913, "title": "Woodrow Wilson becomes the 28th president" },
+    { "year": 1933, "title": "Franklin D. Roosevelt becomes the 32nd president" },
+    { "year": 1945, "title": "Harry Truman becomes president after FDR's death" },
+    { "year": 1953, "title": "Dwight D. Eisenhower becomes the 34th president" },
+    { "year": 1961, "title": "John F. Kennedy becomes the 35th president" },
+    { "year": 1963, "title": "Lyndon B. Johnson becomes president after JFK's assassination" },
+    { "year": 1974, "title": "Gerald Ford becomes president after Nixon resigns" },
+    { "year": 1977, "title": "Jimmy Carter becomes the 39th president" },
+    { "year": 1981, "title": "Ronald Reagan becomes the 40th president" },
+    { "year": 1993, "title": "Bill Clinton becomes the 42nd president" },
+    { "year": 2001, "title": "George W. Bush becomes the 43rd president" },
+    { "year": 2009, "title": "Barack Obama becomes the 44th president" },
+    { "year": 2017, "title": "Donald Trump becomes the 45th president" },
+    { "year": 2021, "title": "Joe Biden becomes the 46th president" }
+  ]
+}

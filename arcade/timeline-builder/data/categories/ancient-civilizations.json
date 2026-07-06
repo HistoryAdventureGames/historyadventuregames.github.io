@@ -1,0 +1,29 @@
+{
+  "category": "Ancient Civilizations",
+  "events": [
+    { "year": -3500, "title": "Sumerians build the first cities in Mesopotamia" },
+    { "year": -3200, "title": "Cuneiform writing is invented" },
+    { "year": -3100, "title": "Narmer unifies Upper and Lower Egypt" },
+    { "year": -3000, "title": "The Bronze Age begins in the Near East" },
+    { "year": -2686, "title": "Egypt's Old Kingdom begins" },
+    { "year": -2560, "title": "The Great Pyramid of Giza is completed" },
+    { "year": -2500, "title": "The Indus Valley Civilization flourishes at Mohenjo-daro" },
+    { "year": -2334, "title": "Sargon of Akkad founds the Akkadian Empire" },
+    { "year": -2070, "title": "The Xia Dynasty is traditionally founded in China" },
+    { "year": -1900, "title": "Babylon rises as a Mesopotamian power" },
+    { "year": -1792, "title": "Hammurabi becomes king of Babylon" },
+    { "year": -1754, "title": "The Code of Hammurabi is inscribed" },
+    { "year": -1600, "title": "The Shang Dynasty begins in China" },
+    { "year": -1500, "title": "Aryan peoples migrate into the Indian subcontinent" },
+    { "year": -1200, "title": "The Bronze Age Collapse begins in the eastern Mediterranean" },
+    { "year": -1046, "title": "The Zhou Dynasty replaces the Shang in China" },
+    { "year": -1000, "title": "The Phoenician alphabet spreads across the Mediterranean" },
+    { "year": -814, "title": "Carthage is traditionally founded" },
+    { "year": -776, "title": "The first recorded Olympic Games are held in Greece" },
+    { "year": -753, "title": "Rome is traditionally founded" },
+    { "year": -563, "title": "Siddhartha Gautama, the future Buddha, is born" },
+    { "year": -551, "title": "Confucius is born in China" },
+    { "year": -539, "title": "Cyrus the Great conquers Babylon and founds the Persian Empire" },
+    { "year": -221, "title": "Qin Shi Huang unifies China under one empire" }
+  ]
+}

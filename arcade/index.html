@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>History Arcade — History Adventure Games</title>
+    <meta
+      name="description"
+      content="Fast-paced educational mini-games that reinforce historical concepts through play. Start with Timeline Builder."
+    >
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=20260706-arcade-launch">
+    <link rel="stylesheet" href="/pixel-ui.css?v=20260706-arcade-launch">
+    <link rel="stylesheet" href="/arcade/arcade.css?v=20260706-arcade-launch">
+  </head>
+  <body class="arcade-body">
+    <a class="skip-link" href="#main">Skip to game list</a>
+
+    <header class="site-header arcade-header">
+      <nav class="nav-bar" aria-label="Primary">
+        <a class="brand-mark" href="/" aria-label="History Adventure Games home">
+          <span class="brand-icon" aria-hidden="true">H</span>
+          <span>History Adventure Games</span>
+        </a>
+        <div class="nav-links" aria-label="Site sections">
+          <a class="nav-action" href="/">Home</a>
+          <a class="nav-action" href="/adventures/">Adventures</a>
+        </div>
+      </nav>
+
+      <section class="arcade-marquee">
+        <p class="eyebrow">Select a game</p>
+        <h1 class="pixel-heading">History Arcade</h1>
+        <p class="section-subtitle arcade-marquee-subtitle">
+          Fast-paced educational games that reinforce historical concepts through fun gameplay.
+        </p>
+      </section>
+    </header>
+
+    <main id="main" class="app-shell arcade-shell" tabindex="-1">
+      <div id="arcadeGrid" class="game-grid" aria-live="polite">
+        <div class="status-panel arcade-loading">
+          <div class="loader" aria-hidden="true"></div>
+          <h2>Loading the arcade...</h2>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer arcade-footer">
+      <p>More games are on the way. Check back for new additions to the arcade.</p>
+    </footer>
+
+    <script src="/scripts/load-icon-sprite.js"></script>
+    <script src="/arcade/arcade.js?v=20260706-arcade-launch"></script>
+  </body>
+</html>

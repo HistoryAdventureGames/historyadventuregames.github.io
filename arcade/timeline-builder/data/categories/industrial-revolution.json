@@ -1,0 +1,29 @@
+{
+  "category": "Industrial Revolution",
+  "events": [
+    { "year": 1712, "title": "Thomas Newcomen builds a practical steam engine" },
+    { "year": 1733, "title": "John Kay invents the flying shuttle" },
+    { "year": 1764, "title": "James Hargreaves invents the spinning jenny" },
+    { "year": 1769, "title": "James Watt patents his improved steam engine" },
+    { "year": 1776, "title": "Adam Smith publishes The Wealth of Nations" },
+    { "year": 1785, "title": "Edmund Cartwright invents the power loom" },
+    { "year": 1793, "title": "Eli Whitney invents the cotton gin" },
+    { "year": 1807, "title": "Robert Fulton's steamboat begins regular service" },
+    { "year": 1811, "title": "Luddites begin smashing textile machinery" },
+    { "year": 1825, "title": "The first public steam railway opens in England" },
+    { "year": 1831, "title": "Michael Faraday demonstrates electromagnetic induction" },
+    { "year": 1837, "title": "Samuel Morse develops the telegraph" },
+    { "year": 1844, "title": "The first long-distance telegraph line opens" },
+    { "year": 1851, "title": "The Great Exhibition opens in London" },
+    { "year": 1859, "title": "Edwin Drake drills the first commercial oil well" },
+    { "year": 1866, "title": "The first successful transatlantic telegraph cable" },
+    { "year": 1869, "title": "The transcontinental railroad is completed" },
+    { "year": 1876, "title": "Alexander Graham Bell patents the telephone" },
+    { "year": 1879, "title": "Thomas Edison develops a practical light bulb" },
+    { "year": 1885, "title": "Karl Benz builds the first practical automobile" },
+    { "year": 1901, "title": "Marconi sends the first transatlantic radio signal" },
+    { "year": 1903, "title": "The Wright brothers achieve powered flight" },
+    { "year": 1908, "title": "Henry Ford introduces the Model T" },
+    { "year": 1913, "title": "Ford installs the first moving assembly line" }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "category": "Civil War",
+  "events": [
+    { "year": 1850, "title": "The Compromise of 1850 is passed" },
+    { "year": 1852, "title": "Uncle Tom's Cabin is published" },
+    { "year": 1854, "title": "The Kansas-Nebraska Act reopens the slavery debate" },
+    { "year": 1857, "title": "The Dred Scott decision" },
+    { "year": 1859, "title": "John Brown's raid on Harpers Ferry" },
+    { "year": 1860, "title": "Abraham Lincoln is elected president" },
+    { "year": 1860, "title": "South Carolina secedes from the Union" },
+    { "year": 1861, "title": "The Confederate States of America is formed" },
+    { "year": 1861, "title": "The Battle of Fort Sumter begins the war" },
+    { "year": 1861, "title": "The First Battle of Bull Run" },
+    { "year": 1862, "title": "The Battle of Antietam, the war's bloodiest day" },
+    { "year": 1863, "title": "The Emancipation Proclamation takes effect" },
+    { "year": 1863, "title": "The Battle of Gettysburg" },
+    { "year": 1863, "title": "The Siege of Vicksburg ends" },
+    { "year": 1864, "title": "Sherman's March to the Sea" },
+    { "year": 1865, "title": "Lee surrenders at Appomattox Court House" },
+    { "year": 1865, "title": "Abraham Lincoln is assassinated" },
+    { "year": 1865, "title": "The Thirteenth Amendment abolishes slavery" },
+    { "year": 1866, "title": "The Civil Rights Act of 1866 is passed" },
+    { "year": 1868, "title": "The Fourteenth Amendment grants citizenship" },
+    { "year": 1870, "title": "The Fifteenth Amendment grants Black men the right to vote" },
+    { "year": 1877, "title": "Reconstruction ends" }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "category": "Cold War",
+  "events": [
+    { "year": 1945, "title": "The United Nations is founded amid rising US-Soviet tension" },
+    { "year": 1946, "title": "Churchill delivers his 'Iron Curtain' speech" },
+    { "year": 1947, "title": "The Truman Doctrine is announced" },
+    { "year": 1948, "title": "The Marshall Plan begins rebuilding Europe" },
+    { "year": 1948, "title": "The Berlin Blockade begins" },
+    { "year": 1949, "title": "NATO is founded" },
+    { "year": 1949, "title": "The Soviet Union tests its first atomic bomb" },
+    { "year": 1949, "title": "Communists win the Chinese Civil War" },
+    { "year": 1950, "title": "The Korean War begins" },
+    { "year": 1953, "title": "An armistice ends the fighting in Korea" },
+    { "year": 1955, "title": "The Warsaw Pact is formed" },
+    { "year": 1957, "title": "The Soviet Union launches Sputnik" },
+    { "year": 1959, "title": "The Cuban Revolution brings Castro to power" },
+    { "year": 1961, "title": "Construction begins on the Berlin Wall" },
+    { "year": 1962, "title": "The Cuban Missile Crisis" },
+    { "year": 1965, "title": "The United States sends combat troops to Vietnam" },
+    { "year": 1969, "title": "Apollo 11 lands astronauts on the Moon" },
+    { "year": 1972, "title": "Nixon visits China" },
+    { "year": 1973, "title": "The United States withdraws from Vietnam" },
+    { "year": 1979, "title": "The Soviet Union invades Afghanistan" },
+    { "year": 1985, "title": "Gorbachev becomes Soviet leader and launches reforms" },
+    { "year": 1989, "title": "The Berlin Wall falls" },
+    { "year": 1991, "title": "The Soviet Union dissolves" }
+  ]
+}

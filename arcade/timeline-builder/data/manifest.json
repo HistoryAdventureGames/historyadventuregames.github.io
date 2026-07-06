@@ -1,0 +1,14 @@
+[
+  { "id": "ancient-civilizations", "label": "Ancient Civilizations", "file": "categories/ancient-civilizations.json" },
+  { "id": "american-revolution", "label": "American Revolution", "file": "categories/american-revolution.json" },
+  { "id": "civil-war", "label": "Civil War", "file": "categories/civil-war.json" },
+  { "id": "presidents", "label": "Presidents", "file": "categories/presidents.json" },
+  { "id": "world-war-1", "label": "World War I", "file": "categories/world-war-1.json" },
+  { "id": "world-war-2", "label": "World War II", "file": "categories/world-war-2.json" },
+  { "id": "cold-war", "label": "Cold War", "file": "categories/cold-war.json" },
+  { "id": "ancient-egypt", "label": "Ancient Egypt", "file": "categories/ancient-egypt.json" },
+  { "id": "ancient-greece", "label": "Ancient Greece", "file": "categories/ancient-greece.json" },
+  { "id": "ancient-rome", "label": "Ancient Rome", "file": "categories/ancient-rome.json" },
+  { "id": "medieval-europe", "label": "Medieval Europe", "file": "categories/medieval-europe.json" },
+  { "id": "industrial-revolution", "label": "Industrial Revolution", "file": "categories/industrial-revolution.json" }
+]

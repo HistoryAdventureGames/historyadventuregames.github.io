@@ -1,0 +1,27 @@
+{
+  "category": "World War I",
+  "events": [
+    { "year": 1914, "title": "Archduke Franz Ferdinand is assassinated in Sarajevo" },
+    { "year": 1914, "title": "Austria-Hungary declares war on Serbia" },
+    { "year": 1914, "title": "Germany invades Belgium and Britain declares war" },
+    { "year": 1914, "title": "The First Battle of the Marne" },
+    { "year": 1914, "title": "The Battle of Tannenberg" },
+    { "year": 1915, "title": "The Sinking of the Lusitania" },
+    { "year": 1915, "title": "The Second Battle of Ypres introduces poison gas" },
+    { "year": 1915, "title": "The Gallipoli Campaign begins" },
+    { "year": 1916, "title": "The Battle of Verdun begins" },
+    { "year": 1916, "title": "The Battle of Jutland, the war's largest naval battle" },
+    { "year": 1916, "title": "The Battle of the Somme begins" },
+    { "year": 1917, "title": "Germany resumes unrestricted submarine warfare" },
+    { "year": 1917, "title": "The Zimmermann Telegram is intercepted" },
+    { "year": 1917, "title": "The United States declares war on Germany" },
+    { "year": 1917, "title": "The Russian Revolution topples the tsar" },
+    { "year": 1917, "title": "Russia exits the war after the Bolshevik Revolution" },
+    { "year": 1918, "title": "Germany launches the Spring Offensive" },
+    { "year": 1918, "title": "The Battle of Belleau Wood" },
+    { "year": 1918, "title": "The Second Battle of the Marne" },
+    { "year": 1918, "title": "An armistice ends the fighting on the Western Front" },
+    { "year": 1919, "title": "The Treaty of Versailles is signed" },
+    { "year": 1919, "title": "The League of Nations is established" }
+  ]
+}

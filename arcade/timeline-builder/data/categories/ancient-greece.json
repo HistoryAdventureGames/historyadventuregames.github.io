@@ -1,0 +1,30 @@
+{
+  "category": "Ancient Greece",
+  "events": [
+    { "year": -2000, "title": "The Minoan civilization flourishes on Crete" },
+    { "year": -1600, "title": "The Mycenaean civilization rises on the Greek mainland" },
+    { "year": -1200, "title": "The traditional date for the Trojan War" },
+    { "year": -1100, "title": "Bronze Age collapse begins the Greek Dark Ages" },
+    { "year": -800, "title": "Greek city-states, or poleis, begin to emerge" },
+    { "year": -776, "title": "The first Olympic Games are held at Olympia" },
+    { "year": -750, "title": "The Greek alphabet develops from Phoenician script" },
+    { "year": -621, "title": "Draco writes a harsh new law code for Athens" },
+    { "year": -594, "title": "Solon reforms Athenian law" },
+    { "year": -560, "title": "Peisistratus becomes tyrant of Athens" },
+    { "year": -508, "title": "Cleisthenes establishes democracy in Athens" },
+    { "year": -490, "title": "The Battle of Marathon" },
+    { "year": -480, "title": "The Battles of Thermopylae and Salamis" },
+    { "year": -479, "title": "The Battle of Plataea ends the Persian invasion" },
+    { "year": -461, "title": "The Age of Pericles begins in Athens" },
+    { "year": -447, "title": "Construction begins on the Parthenon" },
+    { "year": -431, "title": "The Peloponnesian War begins" },
+    { "year": -404, "title": "Sparta defeats Athens, ending the Peloponnesian War" },
+    { "year": -399, "title": "Socrates is tried and executed" },
+    { "year": -387, "title": "Plato founds the Academy in Athens" },
+    { "year": -359, "title": "Philip II becomes king of Macedon" },
+    { "year": -338, "title": "Macedon defeats the Greek city-states at Chaeronea" },
+    { "year": -336, "title": "Alexander the Great becomes king" },
+    { "year": -323, "title": "Alexander the Great dies" },
+    { "year": -146, "title": "Rome conquers Greece" }
+  ]
+}

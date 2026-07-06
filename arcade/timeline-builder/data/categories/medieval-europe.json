@@ -1,0 +1,30 @@
+{
+  "category": "Medieval Europe",
+  "events": [
+    { "year": 476, "title": "The Western Roman Empire falls" },
+    { "year": 496, "title": "Clovis converts to Christianity, unifying the Franks" },
+    { "year": 597, "title": "St. Augustine brings Christianity to England" },
+    { "year": 732, "title": "The Battle of Tours halts Muslim expansion into Europe" },
+    { "year": 800, "title": "Charlemagne is crowned Holy Roman Emperor" },
+    { "year": 843, "title": "The Treaty of Verdun divides Charlemagne's empire" },
+    { "year": 871, "title": "Alfred the Great becomes king of Wessex" },
+    { "year": 1054, "title": "The Great Schism splits Christianity" },
+    { "year": 1066, "title": "The Norman Conquest of England" },
+    { "year": 1095, "title": "Pope Urban II calls the First Crusade" },
+    { "year": 1099, "title": "Crusaders capture Jerusalem" },
+    { "year": 1170, "title": "Thomas Becket is murdered" },
+    { "year": 1187, "title": "Saladin recaptures Jerusalem" },
+    { "year": 1215, "title": "King John signs the Magna Carta" },
+    { "year": 1271, "title": "Marco Polo begins his journey to Asia" },
+    { "year": 1291, "title": "The fall of Acre ends the Crusader states" },
+    { "year": 1315, "title": "The Great Famine strikes Europe" },
+    { "year": 1337, "title": "The Hundred Years' War begins" },
+    { "year": 1347, "title": "The Black Death arrives in Europe" },
+    { "year": 1381, "title": "The Peasants' Revolt in England" },
+    { "year": 1415, "title": "The Battle of Agincourt" },
+    { "year": 1429, "title": "Joan of Arc leads France at the Siege of Orleans" },
+    { "year": 1453, "title": "Constantinople falls to the Ottomans" },
+    { "year": 1453, "title": "The Hundred Years' War ends" },
+    { "year": 1492, "title": "The Reconquista ends with the fall of Granada" }
+  ]
+}

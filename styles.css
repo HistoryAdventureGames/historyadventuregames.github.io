@@ -119,6 +119,12 @@ body.is-playing .site-header {
   padding: 12px 0;
 }
 
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 body.is-playing .nav-bar {
   position: fixed;
   left: 0;
@@ -552,6 +558,18 @@ body.is-playing .scene-image {
 
 .hidden {
   display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+  padding: 0;
 }
 
 .status-panel,

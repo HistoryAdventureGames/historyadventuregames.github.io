@@ -1,0 +1,46 @@
+[
+  {
+    "id": "timeline-builder",
+    "title": "Timeline Builder",
+    "description": "Drag historical events into the correct chronological order before time runs out.",
+    "status": "available",
+    "url": "/arcade/timeline-builder/",
+    "icon": "pi-clock",
+    "tag": "12 eras &middot; 4 modes"
+  },
+  {
+    "id": "historical-map-challenge",
+    "title": "Historical Map Challenge",
+    "description": "Place empires, battles, and borders in the right spot on the map.",
+    "status": "coming-soon",
+    "icon": "pi-map"
+  },
+  {
+    "id": "artifact-match",
+    "title": "Artifact Match",
+    "description": "Match artifacts, tools, and art to the civilizations that made them.",
+    "status": "coming-soon",
+    "icon": "pi-magnifier"
+  },
+  {
+    "id": "government-builder",
+    "title": "Government Builder",
+    "description": "Design a government's branches and powers, then see how it holds up.",
+    "status": "coming-soon",
+    "icon": "pi-column"
+  },
+  {
+    "id": "cause-and-effect",
+    "title": "Cause & Effect",
+    "description": "Chain historical causes to their effects before the clock runs out.",
+    "status": "coming-soon",
+    "icon": "pi-cycle"
+  },
+  {
+    "id": "spot-the-anachronism",
+    "title": "Spot the Anachronism",
+    "description": "Find the object, idea, or phrase that doesn't belong in the scene.",
+    "status": "coming-soon",
+    "icon": "pi-mask"
+  }
+]

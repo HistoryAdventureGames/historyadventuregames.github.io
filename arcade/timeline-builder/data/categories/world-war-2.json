@@ -1,0 +1,29 @@
+{
+  "category": "World War II",
+  "events": [
+    { "year": 1939, "title": "Germany invades Poland, starting the war" },
+    { "year": 1939, "title": "Britain and France declare war on Germany" },
+    { "year": 1940, "title": "Germany invades France and the Low Countries" },
+    { "year": 1940, "title": "The evacuation at Dunkirk" },
+    { "year": 1940, "title": "The Battle of Britain" },
+    { "year": 1940, "title": "Germany, Italy, and Japan sign the Tripartite Pact" },
+    { "year": 1941, "title": "Germany invades the Soviet Union in Operation Barbarossa" },
+    { "year": 1941, "title": "Japan attacks Pearl Harbor" },
+    { "year": 1941, "title": "The United States enters the war" },
+    { "year": 1942, "title": "The Battle of Midway" },
+    { "year": 1942, "title": "The Battle of El Alamein" },
+    { "year": 1942, "title": "The Battle of Stalingrad begins" },
+    { "year": 1943, "title": "The Battle of Stalingrad ends in Soviet victory" },
+    { "year": 1943, "title": "The Warsaw Ghetto Uprising" },
+    { "year": 1943, "title": "The Allies invade Sicily and Italy" },
+    { "year": 1944, "title": "D-Day: the Allied landings at Normandy" },
+    { "year": 1944, "title": "The Battle of the Bulge" },
+    { "year": 1945, "title": "The Yalta Conference" },
+    { "year": 1945, "title": "The Battle of Iwo Jima" },
+    { "year": 1945, "title": "The Battle of Okinawa" },
+    { "year": 1945, "title": "Germany surrenders on V-E Day" },
+    { "year": 1945, "title": "Atomic bombs are dropped on Hiroshima and Nagasaki" },
+    { "year": 1945, "title": "Japan surrenders on V-J Day" },
+    { "year": 1945, "title": "The United Nations is founded" }
+  ]
+}

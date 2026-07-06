@@ -1,0 +1,29 @@
+{
+  "category": "Ancient Egypt",
+  "events": [
+    { "year": -3100, "title": "Narmer unifies Upper and Lower Egypt" },
+    { "year": -2686, "title": "The Old Kingdom begins" },
+    { "year": -2630, "title": "The Step Pyramid of Djoser is built at Saqqara" },
+    { "year": -2560, "title": "The Great Pyramid of Giza is completed" },
+    { "year": -2181, "title": "The Old Kingdom collapses into the First Intermediate Period" },
+    { "year": -2055, "title": "The Middle Kingdom begins under Mentuhotep II" },
+    { "year": -1800, "title": "Egypt controls trade routes into Nubia" },
+    { "year": -1650, "title": "The Hyksos rule northern Egypt" },
+    { "year": -1550, "title": "The New Kingdom begins" },
+    { "year": -1479, "title": "Thutmose III expands Egypt's empire" },
+    { "year": -1353, "title": "Akhenaten introduces worship of the Aten" },
+    { "year": -1332, "title": "Tutankhamun becomes pharaoh" },
+    { "year": -1279, "title": "Ramesses II begins his reign" },
+    { "year": -1274, "title": "The Battle of Kadesh" },
+    { "year": -1200, "title": "The Sea Peoples invade Egypt" },
+    { "year": -1069, "title": "The New Kingdom ends" },
+    { "year": -747, "title": "Kushite pharaohs rule Egypt" },
+    { "year": -671, "title": "Assyrians invade Egypt" },
+    { "year": -525, "title": "Persia conquers Egypt" },
+    { "year": -332, "title": "Alexander the Great conquers Egypt" },
+    { "year": -305, "title": "Ptolemy I founds the Ptolemaic Dynasty" },
+    { "year": -196, "title": "The Rosetta Stone is carved" },
+    { "year": -51, "title": "Cleopatra VII becomes queen" },
+    { "year": -30, "title": "Egypt becomes a Roman province after Cleopatra's death" }
+  ]
+}

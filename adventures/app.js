@@ -1,4 +1,4 @@
-const manifestPath = "content/adventure-manifest.json";
+const manifestPath = "/content/adventure-manifest.json";
 const app = document.querySelector("#app");
 const libraryButton = document.querySelector("#libraryButton");
 
@@ -615,11 +615,17 @@ function renderAdventureImage(image, fallbackTitle, className = "card-image") {
 }
 
 function normalizeAssetPath(src) {
-  return String(src).replace(/^public\//, "").replace(/^\//, "");
+  return toRootAbsolutePath(src);
 }
 
 function normalizeContentPath(src) {
-  return String(src).replace(/^\//, "");
+  return toRootAbsolutePath(src);
+}
+
+function toRootAbsolutePath(src) {
+  const cleaned = String(src).replace(/^public\//, "");
+  if (/^([a-z][a-z0-9+.-]*:)?\/\//i.test(cleaned)) return cleaned;
+  return cleaned.startsWith("/") ? cleaned : `/${cleaned}`;
 }
 
 function renderTagList(tags) {

@@ -1,0 +1,28 @@
+{
+  "category": "American Revolution",
+  "events": [
+    { "year": 1763, "title": "The French and Indian War ends with the Treaty of Paris" },
+    { "year": 1764, "title": "Parliament passes the Sugar Act" },
+    { "year": 1765, "title": "The Stamp Act taxes printed materials in the colonies" },
+    { "year": 1766, "title": "Parliament repeals the Stamp Act" },
+    { "year": 1767, "title": "The Townshend Acts place duties on imported goods" },
+    { "year": 1770, "title": "The Boston Massacre" },
+    { "year": 1773, "title": "The Boston Tea Party" },
+    { "year": 1774, "title": "The First Continental Congress convenes" },
+    { "year": 1775, "title": "The Battles of Lexington and Concord" },
+    { "year": 1775, "title": "The Second Continental Congress names Washington commander" },
+    { "year": 1775, "title": "The Battle of Bunker Hill" },
+    { "year": 1776, "title": "Thomas Paine publishes Common Sense" },
+    { "year": 1776, "title": "The Declaration of Independence is adopted" },
+    { "year": 1776, "title": "Washington crosses the Delaware River" },
+    { "year": 1777, "title": "The American victory at the Battle of Saratoga" },
+    { "year": 1777, "title": "The Continental Congress adopts the Articles of Confederation" },
+    { "year": 1778, "title": "France allies with the United States" },
+    { "year": 1780, "title": "Benedict Arnold's plot to betray West Point is discovered" },
+    { "year": 1781, "title": "The Battle of Yorktown ends major fighting" },
+    { "year": 1783, "title": "The Treaty of Paris ends the Revolutionary War" },
+    { "year": 1787, "title": "The Constitutional Convention drafts the U.S. Constitution" },
+    { "year": 1788, "title": "The Constitution is ratified" },
+    { "year": 1789, "title": "George Washington becomes the first President" }
+  ]
+}

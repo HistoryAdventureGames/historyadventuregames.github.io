@@ -1,0 +1,158 @@
+/* Arcade hub: a retro "game select screen" — dark cabinet background, pixel
+   grid, marquee header. Tokens from styles.css, primitives from pixel-ui.css. */
+
+.arcade-body {
+  background: #0b1526;
+}
+
+.arcade-header {
+  --adventure-bg-image: none;
+  background:
+    linear-gradient(180deg, rgba(11, 21, 42, 0.2), rgba(11, 21, 42, 0.94)),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.035) 0 2px, transparent 2px 26px),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.035) 0 2px, transparent 2px 26px),
+    linear-gradient(160deg, #0b1526, #16294a 60%, #0b1526);
+}
+
+.arcade-marquee {
+  width: var(--content);
+  margin: 0 auto;
+  padding: clamp(28px, 6vw, 64px) 0 clamp(40px, 6vw, 76px);
+  text-align: center;
+}
+
+.arcade-marquee .eyebrow {
+  color: #ffd166;
+}
+
+.arcade-marquee h1 {
+  color: #ffffff;
+  font-size: clamp(1.6rem, 4.4vw, 3rem);
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.45), 0 0 28px rgba(255, 209, 102, 0.35);
+}
+
+.arcade-marquee-subtitle {
+  max-width: 640px;
+  margin: 14px auto 0;
+  color: rgba(255, 255, 255, 0.78) !important;
+}
+
+.arcade-shell {
+  width: var(--content);
+  margin: 0 auto;
+  padding: clamp(24px, 4vw, 48px) 0 clamp(56px, 8vw, 96px);
+}
+
+.arcade-footer {
+  border-top-color: rgba(255, 255, 255, 0.12);
+  background: #0b1526;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: clamp(18px, 2vw, 28px);
+}
+
+.arcade-loading {
+  grid-column: 1 / -1;
+  border-color: rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.04);
+  color: #ffffff;
+}
+
+.game-card {
+  --notch: 14px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 240px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: linear-gradient(165deg, #16294a, #0f1e38 120%);
+  color: #ffffff;
+  padding: clamp(20px, 2.4vw, 28px);
+  text-decoration: none;
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+.game-card p {
+  color: rgba(255, 255, 255, 0.78);
+  margin: 0;
+}
+
+.game-card-available:hover,
+.game-card-available:focus-visible {
+  border-color: #ffd166;
+  box-shadow: 0 0 0 1px rgba(255, 209, 102, 0.5), 0 20px 40px rgba(0, 0, 0, 0.4);
+  transform: translateY(-5px) scale(1.015);
+}
+
+.game-card-locked {
+  border-style: dashed;
+  background: linear-gradient(165deg, #1a2237, #12182a 120%);
+  color: rgba(255, 255, 255, 0.55);
+  filter: grayscale(0.35);
+}
+
+.game-card-locked p {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.game-card-icon {
+  display: inline-grid;
+  width: 56px;
+  height: 56px;
+  place-items: center;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffd166;
+}
+
+.game-card-locked .game-card-icon {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.game-card h3 {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.game-card-ribbon {
+  position: absolute;
+  top: 14px;
+  right: -30px;
+  transform: rotate(28deg);
+  background: #4b5565;
+  color: #ffffff;
+  font-size: 0.58rem;
+  letter-spacing: 0.02em;
+  padding: 0.34rem 2.2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+}
+
+.game-card-ribbon-live {
+  background: var(--green);
+}
+
+.game-card-tag {
+  margin-top: auto;
+  color: #ffd166 !important;
+  font-size: 0.82rem;
+  font-weight: 850;
+}
+
+.arcade-error {
+  grid-column: 1 / -1;
+  border-color: #f0b8b2;
+  background: rgba(255, 241, 240, 0.94);
+  color: var(--ink);
+  padding: 24px;
+}
+
+@media (max-width: 720px) {
+  .game-card-ribbon {
+    right: -34px;
+  }
+}
