@@ -2,7 +2,7 @@
 // and injects it once so <svg class="pixel-icon"><use href="#pi-name"/></svg> works.
 (async () => {
   try {
-    const response = await fetch("/icon-sprite.html", { cache: "force-cache" });
+    const response = await fetch("/icon-sprite.html?v=20260706-arcade-launch", { cache: "force-cache" });
     if (!response.ok) return;
     const markup = await response.text();
     document.body.insertAdjacentHTML("afterbegin", markup);
