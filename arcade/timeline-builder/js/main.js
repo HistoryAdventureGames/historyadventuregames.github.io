@@ -375,7 +375,7 @@ function applySettingsToToggles() {
   soundToggle?.setAttribute("aria-pressed", String(gameState.settings.soundEnabled));
   musicToggle?.setAttribute("aria-pressed", String(gameState.settings.musicEnabled));
   updateToggleIcon(soundToggle, gameState.settings.soundEnabled, "pi-speaker", "pi-speaker-off");
-  updateToggleIcon(musicToggle, gameState.settings.musicEnabled, "pi-note", "pi-speaker-off");
+  updateToggleIcon(musicToggle, gameState.settings.musicEnabled, "pi-music", "pi-music-off");
 }
 
 function updateToggleIcon(button, enabled, onIcon, offIcon) {
