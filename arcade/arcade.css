@@ -157,9 +157,10 @@
   }
 }
 
-/* ---------- Shared game-nav icon button ----------
-   Used for sound/music toggles and the instructions ("i") button in every
-   arcade game's nav bar, so new games match by linking this stylesheet. */
+/* ==========================================================================
+   Shared across every arcade game (not just the hub): a small dark icon
+   button, and the "How to Play" instructions modal (see instructions-modal.js).
+   ========================================================================== */
 
 .arcade-icon-button {
   width: 44px;
@@ -169,67 +170,89 @@
   color: #ffffff;
 }
 
-.arcade-icon-button[aria-pressed="false"] {
-  color: rgba(255, 255, 255, 0.45);
-}
-
 .arcade-icon-button svg {
   width: 20px;
   height: 20px;
 }
 
-/* ---------- Shared game modal ----------
-   The dialog shell for per-game instructions (and any future in-game
-   popups). Open it with an .arcade-icon-button using the pi-info icon;
-   close it with an .arcade-icon-button using the pi-close icon. */
-
-.arcade-modal {
+.instructions-overlay {
   position: fixed;
   inset: 0;
-  z-index: 150;
+  z-index: 500;
   display: grid;
   place-items: center;
-  padding: 20px;
   background: rgba(6, 12, 24, 0.74);
   backdrop-filter: blur(3px);
+  padding: max(16px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) max(16px, env(safe-area-inset-bottom))
+    max(16px, env(safe-area-inset-left));
 }
 
-.arcade-modal[hidden] {
+.instructions-overlay[hidden] {
   display: none;
 }
 
-.arcade-modal-panel {
+.instructions-panel {
   --notch: 14px;
-  position: relative;
-  max-width: 480px;
-  max-height: min(80vh, 640px);
-  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  width: min(560px, 100%);
+  max-height: min(82svh, 640px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: #101c34;
   color: #ffffff;
-  padding: clamp(26px, 4vw, 36px);
 }
 
-.arcade-modal-panel h2,
-.arcade-modal-panel h3 {
-  color: #ffffff;
+.instructions-panel:focus {
+  outline: none;
 }
 
-.arcade-modal-close {
-  position: absolute;
-  top: 14px;
-  right: 14px;
+.instructions-header {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 16px 18px;
 }
 
-.arcade-modal-body p,
-.arcade-modal-body li {
-  color: rgba(255, 255, 255, 0.85);
-  line-height: 1.5;
-}
-
-.arcade-modal-body ul {
+.instructions-header h2 {
   margin: 0;
-  padding-left: 1.2em;
+  color: #ffffff;
+  font-size: clamp(0.92rem, 3.2vw, 1.15rem);
+}
+
+.instructions-body {
+  flex: 1 1 auto;
   display: grid;
-  gap: 8px;
+  gap: 18px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 18px;
+}
+
+.instructions-body h3 {
+  margin: 0 0 6px;
+  color: #ffd166;
+  font-size: 0.78rem;
+  font-weight: 850;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.instructions-body p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 0.96rem;
+  line-height: 1.55;
+}
+
+.instructions-footer {
+  flex: 0 0 auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 14px 18px max(14px, env(safe-area-inset-bottom));
+}
+
+.instructions-footer .primary-button {
+  width: 100%;
 }

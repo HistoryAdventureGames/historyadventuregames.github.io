@@ -10,9 +10,6 @@ import { getHighScore, setHighScoreIfBetter, getSettings, saveSettings } from ".
 const root = document.querySelector("#gameRoot");
 const soundToggle = document.querySelector("#soundToggle");
 const musicToggle = document.querySelector("#musicToggle");
-const instructionsButton = document.querySelector("#instructionsButton");
-const instructionsCloseButton = document.querySelector("#instructionsCloseButton");
-const instructionsModal = document.querySelector("#tbInstructions");
 
 const gameState = createInitialGameState();
 gameState.settings = getSettings();
@@ -366,30 +363,6 @@ function resumeGame() {
   hidePauseOverlay();
 }
 
-// ---------- Instructions ----------
-
-function openInstructions() {
-  if (!instructionsModal) return;
-  // Reading the rules shouldn't burn round time; pausing here just stops the
-  // timer, since the modal itself already covers the screen.
-  if (gameState.screen === "playing") gameState.isPaused = true;
-  instructionsModal.hidden = false;
-  instructionsCloseButton?.focus();
-}
-
-function closeInstructions() {
-  if (!instructionsModal || instructionsModal.hidden) return;
-  instructionsModal.hidden = true;
-  if (gameState.screen === "playing") gameState.isPaused = false;
-  instructionsButton?.focus();
-}
-
-instructionsButton?.addEventListener("click", openInstructions);
-instructionsCloseButton?.addEventListener("click", closeInstructions);
-instructionsModal?.addEventListener("click", (event) => {
-  if (event.target === instructionsModal) closeInstructions();
-});
-
 // ---------- High scores ----------
 
 function highScoreCategoryKey(round) {
@@ -471,13 +444,7 @@ root.addEventListener("click", (event) => {
 });
 
 document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape") {
-    if (instructionsModal && !instructionsModal.hidden) {
-      closeInstructions();
-      return;
-    }
-    cancelPickup();
-  }
+  if (event.key === "Escape") cancelPickup();
 
   if ((event.key === "ArrowRight" || event.key === "ArrowLeft") && event.target.matches(".timeline-gap")) {
     const gaps = Array.from(root.querySelectorAll("[data-gap-index]"));

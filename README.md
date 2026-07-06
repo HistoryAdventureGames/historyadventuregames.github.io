@@ -19,6 +19,7 @@ A static, no-build-step site (GitHub Pages) with three sections:
 - `images/` stores the images used by the adventures.
 - `arcade/index.html`, `arcade/arcade.css`, `arcade/arcade.js` — the Arcade hub.
 - `arcade/games-manifest.json` — the registry of arcade games shown on the hub (see "Add a New Arcade Game" below).
+- `arcade/instructions-modal.js` — the shared "How to Play" modal every arcade game should use (see below).
 - `arcade/timeline-builder/` — the Timeline Builder game (see its own data format below).
 - `.nojekyll` tells GitHub Pages to serve the static files directly.
 
@@ -70,6 +71,27 @@ The Arcade hub is manifest-driven, the same pattern as the adventure library:
 ```
 
 Until the game is ready, set `"status": "coming-soon"` and omit `url` — it renders as a disabled placeholder card. `icon` refers to a `<symbol>` id from `icon-sprite.html`.
+
+### Every game needs a "How to Play" modal
+
+Load `/arcade/arcade.css` and `/arcade/instructions-modal.js` on the game page, add a trigger button anywhere with `data-instructions-open`, and register the copy once:
+
+```html
+<script src="/arcade/instructions-modal.js"></script>
+<script>
+  ArcadeInstructions.init({
+    gameId: "your-game",
+    title: "How to Play Your Game",
+    sections: [
+      { heading: "Goal", body: "..." },
+      { heading: "Controls", body: "..." },
+      { heading: "Scoring", body: "..." },
+    ],
+  });
+</script>
+```
+
+It opens itself once automatically on a player's first visit to that game (tracked per `gameId` in `localStorage`), is dismissible via the close button, backdrop click, or Escape, and is mobile-friendly (scrolls internally, respects safe-area insets, locks background scroll while open).
 
 ### Timeline Builder's data format
 

@@ -19,6 +19,34 @@
   color: #ffffff;
 }
 
+.tb-howto-button {
+  margin-top: 18px;
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+}
+
+.tb-howto-button:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.tb-icon-button {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.tb-icon-button[aria-pressed="false"] {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.tb-icon-button svg {
+  width: 20px;
+  height: 20px;
+}
+
 /* ---------- Menu ---------- */
 
 .tb-menu {
