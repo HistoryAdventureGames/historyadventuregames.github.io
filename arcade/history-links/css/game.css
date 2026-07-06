@@ -83,33 +83,6 @@
   font-weight: 700;
 }
 
-.hl-puzzle-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 10px;
-}
-
-.hl-puzzle-card {
-  --notch: 8px;
-  border: 1px solid var(--line);
-  background: #ffffff;
-  color: var(--ink);
-  font-weight: 800;
-  text-align: left;
-  padding: 14px;
-  transition: border-color 140ms ease, box-shadow 140ms ease;
-}
-
-.hl-puzzle-card.is-selected {
-  border-color: var(--primary);
-  background: #eef4ff;
-  box-shadow: 0 0 0 2px var(--primary) inset;
-}
-
-.hl-puzzle-card:hover {
-  border-color: var(--primary);
-}
-
 .hl-teacher-panel {
   background: linear-gradient(165deg, #eef4ff, #ffffff 120%);
   border-color: var(--line-strong);

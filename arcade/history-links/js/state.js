@@ -3,7 +3,6 @@
 export const MODES = {
   daily: { id: "daily", label: "Daily Challenge", timed: true, savesProgress: true },
   random: { id: "random", label: "Random Puzzle", timed: true, savesProgress: true },
-  practice: { id: "practice", label: "Practice", timed: false, savesProgress: false },
 };
 
 export const SCORING = {
@@ -19,7 +18,6 @@ export function createInitialGameState() {
     screen: "menu",
     modeId: "daily",
     teacherMode: false,
-    selectedPracticePuzzleId: null,
     round: null,
     settings: {
       soundEnabled: true,

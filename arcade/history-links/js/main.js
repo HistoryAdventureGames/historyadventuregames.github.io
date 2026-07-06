@@ -61,10 +61,8 @@ async function init() {
 function render() {
   if (gameState.screen === "menu") {
     root.innerHTML = renderMenu({
-      manifest,
       modeId: gameState.modeId,
       teacherMode: gameState.teacherMode,
-      practicePuzzleId: gameState.selectedPracticePuzzleId,
       dailyStreak: getDailyStreak(),
       hasPlayedToday: hasPlayedDailyToday(todayDateKey()),
       getHighScore,
@@ -101,11 +99,6 @@ function selectMode(modeId) {
   render();
 }
 
-function selectPracticePuzzle(puzzleId) {
-  gameState.selectedPracticePuzzleId = puzzleId;
-  render();
-}
-
 function toggleTeacherMode(enabled) {
   gameState.teacherMode = enabled;
   render();
@@ -118,12 +111,9 @@ async function startRound() {
   let entry;
   if (modeId === "daily") {
     entry = getDailyPuzzleEntry(manifest, new Date());
-  } else if (modeId === "random") {
+  } else {
     entry = getRandomPuzzleEntry(manifest, gameState.lastRandomPuzzleId);
     gameState.lastRandomPuzzleId = entry.id;
-  } else {
-    entry = manifest.find((item) => item.id === gameState.selectedPracticePuzzleId);
-    if (!entry) return;
   }
 
   root.innerHTML = `
@@ -389,9 +379,6 @@ root.addEventListener("click", (event) => {
   switch (action) {
     case "select-mode":
       selectMode(target.dataset.modeId);
-      break;
-    case "select-practice-puzzle":
-      selectPracticePuzzle(target.dataset.puzzleId);
       break;
     case "start-round":
       startRound();

@@ -3,7 +3,7 @@ import { MODES } from "./state.js";
 
 const TIER_LABELS = { 1: "Foundational", 2: "Intermediate", 3: "Advanced", 4: "Expert" };
 
-export function renderMenu({ manifest, modeId, teacherMode, practicePuzzleId, dailyStreak, hasPlayedToday, getHighScore }) {
+export function renderMenu({ modeId, teacherMode, dailyStreak, hasPlayedToday, getHighScore }) {
   return `
     <section class="hl-menu" aria-labelledby="hlMenuHeading">
       <h2 id="hlMenuHeading" class="visually-hidden">Choose a mode</h2>
@@ -15,8 +15,6 @@ export function renderMenu({ manifest, modeId, teacherMode, practicePuzzleId, da
         </div>
         ${renderModeDetail({ modeId, dailyStreak, hasPlayedToday, getHighScore })}
       </div>
-
-      ${modeId === "practice" ? renderPuzzlePicker(manifest, practicePuzzleId) : ""}
 
       <div class="hl-panel pixel-frame hl-teacher-panel">
         <label class="hl-teacher-toggle">
@@ -33,12 +31,10 @@ export function renderMenu({ manifest, modeId, teacherMode, practicePuzzleId, da
           class="primary-button pixel-button hl-start-button"
           type="button"
           data-action="start-round"
-          ${modeId === "practice" && !practicePuzzleId ? "disabled" : ""}
           ${modeId === "daily" && hasPlayedToday && !teacherMode ? "disabled" : ""}
         >
           ${modeId === "daily" && hasPlayedToday && !teacherMode ? "Come back tomorrow" : "Start"}
         </button>
-        ${modeId === "practice" && !practicePuzzleId ? `<p class="hl-start-hint">Pick a puzzle above to begin.</p>` : ""}
         ${modeId === "daily" && hasPlayedToday && !teacherMode ? `<p class="hl-start-hint">You already solved today's puzzle. Try Teacher Mode to replay it untimed.</p>` : ""}
       </div>
     </section>
@@ -71,35 +67,10 @@ function renderModeDetail({ modeId, dailyStreak, hasPlayedToday, getHighScore })
     `;
   }
 
-  if (modeId === "random") {
-    const best = getHighScore("random");
-    return `
-      <p class="hl-mode-detail">A fresh puzzle pulled at random every time. Play as many rounds as you like.</p>
-      ${best ? `<p class="hl-streak">Best score: <strong>${best.score}</strong></p>` : ""}
-    `;
-  }
-
-  return `<p class="hl-mode-detail">Pick any puzzle below and take your time &mdash; untimed, and mistakes just help you learn.</p>`;
-}
-
-function renderPuzzlePicker(manifest, selectedId) {
+  const best = getHighScore("random");
   return `
-    <div class="hl-panel pixel-frame">
-      <p class="hl-panel-label pixel-font">2. Choose a puzzle</p>
-      <div class="hl-puzzle-list">
-        ${manifest.map((entry) => `
-          <button
-            class="hl-puzzle-card pixel-frame--sm pixel-frame ${entry.id === selectedId ? "is-selected" : ""}"
-            type="button"
-            data-action="select-practice-puzzle"
-            data-puzzle-id="${escapeAttribute(entry.id)}"
-            aria-pressed="${entry.id === selectedId}"
-          >
-            ${escapeHtml(entry.title)}
-          </button>
-        `).join("")}
-      </div>
-    </div>
+    <p class="hl-mode-detail">A fresh puzzle pulled at random every time. Play as many rounds as you like.</p>
+    ${best ? `<p class="hl-streak">Best score: <strong>${best.score}</strong></p>` : ""}
   `;
 }
 
