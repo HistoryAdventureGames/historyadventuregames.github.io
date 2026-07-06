@@ -144,12 +144,13 @@
         left: 18px;
         bottom: 78px;
         z-index: 45;
+        display: flex;
+        flex-direction: column;
         width: min(420px, calc(100vw - 36px));
         height: min(560px, calc(100svh - 112px));
         min-width: 300px;
         min-height: 240px;
-        overflow: auto;
-        resize: both;
+        overflow: hidden;
         border: 1px solid #b8c4d6;
         border-radius: 12px;
         background: #ffffff;
@@ -161,9 +162,7 @@
       }
 
       .glossary-window-header {
-        position: sticky;
-        top: 0;
-        z-index: 1;
+        flex: 0 0 auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -193,7 +192,26 @@
       }
 
       .glossary-window-body {
+        flex: 1 1 auto;
+        min-height: 0;
+        overflow: auto;
         padding: 14px;
+      }
+
+      .glossary-resize-handle {
+        position: absolute;
+        right: 2px;
+        bottom: 2px;
+        width: 22px;
+        height: 22px;
+        cursor: nwse-resize;
+        touch-action: none;
+        opacity: 0.6;
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14'%3E%3Cg fill='none' stroke='%23667089' stroke-width='1.6' stroke-linecap='round'%3E%3Cpath d='M2 12L12 2'/%3E%3Cpath d='M6 12L12 6'/%3E%3Cpath d='M10 12L12 10'/%3E%3C/g%3E%3C/svg%3E") no-repeat center / 14px 14px;
+      }
+
+      .glossary-resize-handle:hover {
+        opacity: 1;
       }
 
       .glossary-list {
@@ -418,6 +436,7 @@
     <script>
       (() => {
         let activeGlossaryDrag = null;
+        let activeGlossaryResize = null;
 
         const baseRenderGame = window.renderGame;
         const baseRenderLibrary = window.renderLibrary;
@@ -475,7 +494,42 @@
           event.preventDefault();
         });
 
+        document.addEventListener("pointerdown", (event) => {
+          const resizeHandle = event.target.closest("[data-glossary-resize-handle]");
+          if (!resizeHandle) return;
+
+          const glossaryWindow = resizeHandle.closest(".glossary-window");
+          if (!glossaryWindow) return;
+
+          const rect = glossaryWindow.getBoundingClientRect();
+          activeGlossaryResize = {
+            window: glossaryWindow,
+            startX: event.clientX,
+            startY: event.clientY,
+            startWidth: rect.width,
+            startHeight: rect.height,
+          };
+
+          glossaryWindow.style.right = "auto";
+          glossaryWindow.style.bottom = "auto";
+          glossaryWindow.style.left = `${rect.left}px`;
+          glossaryWindow.style.top = `${rect.top}px`;
+          event.preventDefault();
+        });
+
         document.addEventListener("pointermove", (event) => {
+          if (activeGlossaryResize) {
+            const { window: glossaryWindow, startX, startY, startWidth, startHeight } = activeGlossaryResize;
+            const rect = glossaryWindow.getBoundingClientRect();
+            const maxWidth = window.innerWidth - rect.left - 8;
+            const maxHeight = window.innerHeight - rect.top - 8;
+            const nextWidth = Math.min(maxWidth, Math.max(300, startWidth + (event.clientX - startX)));
+            const nextHeight = Math.min(maxHeight, Math.max(240, startHeight + (event.clientY - startY)));
+            glossaryWindow.style.width = `${nextWidth}px`;
+            glossaryWindow.style.height = `${nextHeight}px`;
+            return;
+          }
+
           if (!activeGlossaryDrag) return;
 
           const glossaryWindow = activeGlossaryDrag.window;
@@ -487,10 +541,12 @@
 
         document.addEventListener("pointerup", () => {
           activeGlossaryDrag = null;
+          activeGlossaryResize = null;
         });
 
         document.addEventListener("pointercancel", () => {
           activeGlossaryDrag = null;
+          activeGlossaryResize = null;
         });
 
         function installGlossaryUi(adventure, sceneId) {
@@ -537,6 +593,7 @@
               <div class="glossary-window-body">
                 ${renderGlossaryList(entries, "popup")}
               </div>
+              <div class="glossary-resize-handle" data-glossary-resize-handle aria-hidden="true"></div>
             </aside>
           `;
         }
@@ -577,6 +634,7 @@
 
         function removeGlossaryUi() {
           activeGlossaryDrag = null;
+          activeGlossaryResize = null;
           document.querySelectorAll(".glossary-window, .glossary-float-button").forEach((element) => element.remove());
         }
 
