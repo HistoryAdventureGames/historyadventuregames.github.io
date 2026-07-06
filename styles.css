@@ -112,17 +112,24 @@ body.is-playing .site-header {
   top: 0;
   z-index: 10;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
+  gap: clamp(10px, 3vw, 16px);
   min-height: 72px;
   padding: 12px 0;
 }
 
 .nav-links {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 10px;
+  justify-content: flex-end;
+  gap: clamp(6px, 2vw, 10px);
+}
+
+.nav-links > * {
+  flex-shrink: 0;
 }
 
 body.is-playing .nav-bar {
@@ -888,7 +895,6 @@ body.is-playing {
   .primary-button,
   .secondary-button,
   .text-button,
-  .nav-action,
   .hero-link {
     width: 100%;
   }
