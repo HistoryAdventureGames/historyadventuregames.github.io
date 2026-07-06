@@ -28,6 +28,9 @@
         </a>
         <div class="nav-links" aria-label="Site sections">
           <a class="nav-action" href="/arcade/">Arcade</a>
+          <button class="pixel-button arcade-icon-button" type="button" data-instructions-open aria-label="How to play">
+            <svg class="pixel-icon" viewBox="0 0 24 24"><use href="#pi-help"></use></svg>
+          </button>
           <button class="pixel-button tb-icon-button" type="button" id="soundToggle" aria-pressed="true" aria-label="Toggle sound effects">
             <svg class="pixel-icon" viewBox="0 0 24 24"><use href="#pi-speaker"></use></svg>
           </button>
@@ -43,6 +46,9 @@
         <p class="section-subtitle arcade-marquee-subtitle">
           Drag each event onto the timeline in the correct chronological order.
         </p>
+        <button class="secondary-button pixel-button tb-howto-button" type="button" data-instructions-open>
+          How to Play &amp; Scoring
+        </button>
       </section>
     </header>
 
@@ -58,6 +64,31 @@
     </footer>
 
     <script src="/scripts/load-icon-sprite.js"></script>
+    <script src="/arcade/instructions-modal.js?v=20260706-arcade-launch"></script>
+    <script>
+      ArcadeInstructions.init({
+        gameId: "timeline-builder",
+        title: "How to Play Timeline Builder",
+        sections: [
+          {
+            heading: "Goal",
+            body: "Drag each event card onto the timeline in the correct chronological order &mdash; earliest on the left, latest on the right.",
+          },
+          {
+            heading: "Controls",
+            body: "<strong>Touch or mouse:</strong> press and drag a card onto the timeline. <strong>Keyboard:</strong> press Enter or Space on a card to pick it up, use Tab or the Left/Right arrow keys to choose a spot on the timeline, then press Enter to place it. Press Escape to cancel.",
+          },
+          {
+            heading: "Scoring",
+            body: "Each correct placement earns points and raises your combo multiplier &mdash; longer streaks are worth more. An incorrect placement resets your combo and costs you time. Accuracy is the percent of placements that were correct. Try to beat your saved high score for each era and mode.",
+          },
+          {
+            heading: "Modes",
+            body: "Easy, Medium, and Hard give you a fixed set of events from one era and a time limit. Endless mixes events from every era and keeps dealing more &mdash; correct answers add a little time back, mistakes cost more &mdash; until the clock runs out.",
+          },
+        ],
+      });
+    </script>
     <script type="module" src="js/main.js?v=20260706-arcade-launch"></script>
   </body>
 </html>
