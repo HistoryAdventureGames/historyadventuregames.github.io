@@ -1,7 +1,7 @@
-// Original, procedurally-synthesized sound effects and ambient music via
-// WebAudio — no external audio files, so nothing to license or fetch.
-// Shared by every arcade game; each game plays the same click/correct/
-// incorrect/victory vocabulary regardless of what the sounds mean to it.
+// Original, procedurally-synthesized sound effects via WebAudio — no
+// external audio files, so nothing to license or fetch. Shared by every
+// arcade game; each game plays the same click/correct/incorrect/victory
+// vocabulary regardless of what the sounds mean to it.
 //
 // To swap in real recorded audio later: change an entry in SOUND_MAP from a
 // synth function to a string URL (e.g. "correct": "/arcade/your-game/assets/audio/correct.mp3").
@@ -17,13 +17,19 @@ const SOUND_MAP = {
     playArpeggio(ctx, destination, [523.25, 659.25, 783.99, 1046.5], { type: "triangle", noteDuration: 0.16, gain: 0.09 }),
 };
 
+// Ambient background music: no track yet. Drop a URL here once one is
+// available (e.g. "/arcade/your-game/assets/audio/ambient.mp3") and
+// startMusic()/stopMusic() below will pick it up automatically — no other
+// code needs to change. Until then the music toggle stays wired up but silent.
+const MUSIC_TRACK_URL = null;
+
 export class AudioEngine {
   constructor() {
     this.ctx = null;
     this.masterGain = null;
     this.soundEnabled = true;
     this.musicEnabled = true;
-    this.musicNodes = null;
+    this.musicElement = null;
   }
 
   ensureContext() {
@@ -66,55 +72,18 @@ export class AudioEngine {
   }
 
   startMusic() {
-    if (!this.musicEnabled || this.musicNodes) return;
-    const ctx = this.ensureContext();
-    if (!ctx) return;
-    this.resume();
-
-    const musicGain = ctx.createGain();
-    musicGain.gain.value = 0;
-    musicGain.connect(this.masterGain);
-    musicGain.gain.linearRampToValueAtTime(0.05, ctx.currentTime + 1.2);
-
-    const filter = ctx.createBiquadFilter();
-    filter.type = "lowpass";
-    filter.frequency.value = 900;
-    filter.connect(musicGain);
-
-    const oscillators = [110, 165, 55].map((freq, index) => {
-      const osc = ctx.createOscillator();
-      osc.type = index === 2 ? "sine" : "triangle";
-      osc.frequency.value = freq;
-      osc.connect(filter);
-      osc.start();
-      return osc;
-    });
-
-    const lfo = ctx.createOscillator();
-    lfo.type = "sine";
-    lfo.frequency.value = 0.07;
-    const lfoGain = ctx.createGain();
-    lfoGain.gain.value = 260;
-    lfo.connect(lfoGain);
-    lfoGain.connect(filter.frequency);
-    lfo.start();
-
-    this.musicNodes = { musicGain, filter, oscillators, lfo, lfoGain };
+    if (!this.musicEnabled || !MUSIC_TRACK_URL || this.musicElement) return;
+    this.musicElement = new Audio(MUSIC_TRACK_URL);
+    this.musicElement.loop = true;
+    this.musicElement.volume = 0.3;
+    this.musicElement.play().catch(() => {});
   }
 
   stopMusic() {
-    if (!this.musicNodes) return;
-    const { musicGain, oscillators, lfo } = this.musicNodes;
-    const ctx = this.ctx;
-    const now = ctx.currentTime;
-    musicGain.gain.cancelScheduledValues(now);
-    musicGain.gain.setValueAtTime(musicGain.gain.value, now);
-    musicGain.gain.linearRampToValueAtTime(0, now + 0.4);
-    window.setTimeout(() => {
-      oscillators.forEach((osc) => osc.stop());
-      lfo.stop();
-    }, 450);
-    this.musicNodes = null;
+    if (!this.musicElement) return;
+    this.musicElement.pause();
+    this.musicElement.currentTime = 0;
+    this.musicElement = null;
   }
 }
 
