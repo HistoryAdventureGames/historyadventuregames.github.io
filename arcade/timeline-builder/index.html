@@ -28,14 +28,35 @@
         </a>
         <div class="nav-links" aria-label="Site sections">
           <a class="nav-action" href="/arcade/">Arcade</a>
-          <button class="pixel-button tb-icon-button" type="button" id="soundToggle" aria-pressed="true" aria-label="Toggle sound effects">
+          <button class="pixel-button arcade-icon-button" type="button" id="instructionsButton" aria-haspopup="dialog" aria-controls="tbInstructions" aria-label="How to play">
+            <svg class="pixel-icon" viewBox="0 0 24 24"><use href="#pi-info"></use></svg>
+          </button>
+          <button class="pixel-button arcade-icon-button" type="button" id="soundToggle" aria-pressed="true" aria-label="Toggle sound effects">
             <svg class="pixel-icon" viewBox="0 0 24 24"><use href="#pi-speaker"></use></svg>
           </button>
-          <button class="pixel-button tb-icon-button" type="button" id="musicToggle" aria-pressed="true" aria-label="Toggle music">
+          <button class="pixel-button arcade-icon-button" type="button" id="musicToggle" aria-pressed="true" aria-label="Toggle music">
             <svg class="pixel-icon" viewBox="0 0 24 24"><use href="#pi-note"></use></svg>
           </button>
         </div>
       </nav>
+
+      <div class="arcade-modal" id="tbInstructions" role="dialog" aria-modal="true" aria-labelledby="tbInstructionsHeading" hidden>
+        <div class="arcade-modal-panel pixel-frame">
+          <button class="pixel-button arcade-icon-button arcade-modal-close" type="button" id="instructionsCloseButton" aria-label="Close instructions">
+            <svg class="pixel-icon" viewBox="0 0 24 24"><use href="#pi-close"></use></svg>
+          </button>
+          <h2 id="tbInstructionsHeading" class="pixel-heading">How to Play</h2>
+          <div class="arcade-modal-body">
+            <p>Drag each event card from the tray onto the timeline, earliest on the left and latest on the right.</p>
+            <ul>
+              <li>Drop a card in the correct gap to score points and build your combo multiplier.</li>
+              <li>A wrong guess resets your combo and costs you time.</li>
+              <li>Complete the timeline before the clock runs out to win the round.</li>
+            </ul>
+            <p>Keyboard: press Enter or Space on a card to pick it up, use the arrow keys to choose a gap, then press Enter to drop it.</p>
+          </div>
+        </div>
+      </div>
 
       <section class="arcade-marquee tb-marquee">
         <p class="eyebrow">History Arcade</p>
