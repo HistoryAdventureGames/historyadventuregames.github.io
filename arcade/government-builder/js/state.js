@@ -4,7 +4,7 @@ export const MODES = {
   firstTerm: {
     id: "firstTerm",
     label: "First Term",
-    turnBudget: 8,
+    turnBudget: 16,
     crisisChance: 0.3,
     startingTreasury: 600,
     startingApproval: 65,
@@ -13,7 +13,7 @@ export const MODES = {
   secondTerm: {
     id: "secondTerm",
     label: "Second Term",
-    turnBudget: 12,
+    turnBudget: 24,
     crisisChance: 0.4,
     startingTreasury: 450,
     startingApproval: 60,
@@ -22,7 +22,7 @@ export const MODES = {
   legacy: {
     id: "legacy",
     label: "Legacy Run",
-    turnBudget: 18,
+    turnBudget: 32,
     crisisChance: 0.5,
     startingTreasury: 350,
     startingApproval: 55,
@@ -50,6 +50,15 @@ export const SCORING = {
   goldenAgeStabilityThreshold: 55,
   goldenAgeStreakToActivate: 3,
   goldenAgeMultiplier: 1.5,
+};
+
+// Thresholds that turn a final Approval/Stability reading into one of the
+// named endings in engine.js's determineEnding(). Kept separate from
+// SCORING since they drive narrative outcomes, not point totals.
+export const ENDING_THRESHOLDS = {
+  thriving: 75,
+  healthy: 50,
+  fragile: 35,
 };
 
 // Each policy is a dial with three stances. Switching stances changes what

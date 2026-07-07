@@ -233,15 +233,12 @@ export function renderSettingsOverlay() {
   `;
 }
 
-export function renderEndScreen({ round, isNewHighScore }) {
-  const won = round.status === "completed";
-  const heading = won ? "You Completed Your Term!" : "Your Government Has Collapsed";
-  const eyebrow = won ? "Term Complete" : "Game Over";
-
+export function renderEndScreen({ round, ending, isNewHighScore }) {
   return `
-    <section class="gb-end pixel-frame" aria-labelledby="gbEndHeading">
-      <p class="eyebrow">${eyebrow}</p>
-      <h2 id="gbEndHeading" class="pixel-heading">${heading}</h2>
+    <section class="gb-end gb-end-${ending.tone} pixel-frame" aria-labelledby="gbEndHeading">
+      <p class="eyebrow">${escapeHtml(ending.eyebrow)}</p>
+      <h2 id="gbEndHeading" class="pixel-heading">${escapeHtml(ending.heading)}</h2>
+      <p class="gb-end-description">${escapeHtml(ending.description)}</p>
       ${isNewHighScore ? `<p class="gb-new-high-score">New high score!</p>` : ""}
 
       <div class="gb-end-stats">

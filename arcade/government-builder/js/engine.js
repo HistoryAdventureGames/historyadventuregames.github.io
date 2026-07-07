@@ -1,7 +1,7 @@
 // Pure game-rule functions: turn resolution, crisis outcomes, upgrade
 // costs, and scoring. Kept free of DOM/state mutation (beyond the round
 // object passed in) so the numbers are easy to reason about on their own.
-import { POLICIES, UPGRADES, SCORING } from "./state.js";
+import { POLICIES, UPGRADES, SCORING, ENDING_THRESHOLDS } from "./state.js";
 
 export function computeGeneration(round) {
   const totals = { treasuryPerTurn: 0, approvalPerTurn: 0, stabilityPerTurn: 0 };
@@ -48,6 +48,94 @@ export function checkGameOver(round) {
   if (round.approval <= 0 || round.stability <= 0) return "collapsed";
   if (round.turnBudget != null && round.turn >= round.turnBudget) return "completed";
   return null;
+}
+
+// Turns a final Approval/Stability reading into one of several named
+// endings instead of a flat win/lose -- which resource failed (or which
+// one you leaned on to survive) says something different about how the
+// nation was actually run, so the ending reflects that trade-off directly.
+export function determineEnding(round) {
+  if (round.status === "collapsed") {
+    const approvalFailed = round.approval <= 0;
+    const stabilityFailed = round.stability <= 0;
+
+    if (approvalFailed && stabilityFailed) {
+      return {
+        id: "total-collapse",
+        tone: "negative",
+        eyebrow: "Government Has Fallen",
+        heading: "Total Collapse",
+        description: "Approval and order failed at once. Without public support or control, the government could no longer function.",
+      };
+    }
+    if (approvalFailed) {
+      return {
+        id: "lost-mandate",
+        tone: "negative",
+        eyebrow: "Lost Mandate",
+        heading: "Ousted by the People",
+        description: "Approval fell to nothing. Whatever order remained, the people no longer recognized this government's right to lead.",
+      };
+    }
+    return {
+      id: "civil-breakdown",
+      tone: "negative",
+      eyebrow: "Civil Breakdown",
+      heading: "Lost to Chaos",
+      description: "Stability collapsed. Even a popular government can't survive once it loses control of the nation itself.",
+    };
+  }
+
+  const { thriving, healthy, fragile } = ENDING_THRESHOLDS;
+  const { approval, stability } = round;
+
+  if (approval >= thriving && stability >= thriving) {
+    return {
+      id: "golden-legacy",
+      tone: "positive",
+      eyebrow: "Legendary Term",
+      heading: "A Golden Age Legacy",
+      description: "The nation thrived under your leadership, trusted and stable in equal measure. Historians will remember this term well.",
+    };
+  }
+
+  if (approval < fragile && stability >= healthy) {
+    return {
+      id: "iron-fisted-peace",
+      tone: "mixed",
+      eyebrow: "Order Without Consent",
+      heading: "An Iron-Fisted Peace",
+      description: "The nation held together, but through control rather than trust. Order survived; your popularity did not.",
+    };
+  }
+
+  if (stability < fragile && approval >= healthy) {
+    return {
+      id: "beloved-besieged",
+      tone: "mixed",
+      eyebrow: "Chaos at the Top",
+      heading: "Beloved but Besieged",
+      description: "The people stood behind you, but the machinery of government barely held together. Popularity alone couldn't keep the peace.",
+    };
+  }
+
+  if (approval >= healthy && stability >= healthy) {
+    return {
+      id: "respected-leader",
+      tone: "positive",
+      eyebrow: "Successful Term",
+      heading: "A Respected Leader",
+      description: "The nation stayed both stable and broadly supportive of your leadership -- a solid, unremarkable success.",
+    };
+  }
+
+  return {
+    id: "fragile-peace",
+    tone: "neutral",
+    eyebrow: "Term Survived",
+    heading: "A Fragile Peace",
+    description: "The government made it through the term, but only just. Neither trusted nor firmly in control, the nation limped to the finish.",
+  };
 }
 
 export function upgradeCost(upgrade, level) {

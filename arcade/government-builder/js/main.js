@@ -7,6 +7,7 @@ import {
   purchaseUpgrade,
   resolveCrisisOption,
   computeScore,
+  determineEnding,
 } from "./engine.js";
 import {
   renderMenu,
@@ -81,7 +82,7 @@ function render() {
 
   if (gameState.screen === "end") {
     const round = gameState.round;
-    root.innerHTML = renderEndScreen({ round, isNewHighScore: round.isNewHighScore });
+    root.innerHTML = renderEndScreen({ round, ending: round.ending, isNewHighScore: round.isNewHighScore });
   }
 }
 
@@ -219,6 +220,7 @@ function finishRound(outcome) {
   const round = gameState.round;
   round.status = outcome;
   round.score = computeScore(round);
+  round.ending = determineEnding(round);
 
   let isNewHighScore = false;
   if (!round.teacherMode) {
@@ -231,11 +233,13 @@ function finishRound(outcome) {
   hideSettingsOverlay();
   render();
 
-  if (outcome === "completed") {
+  if (round.ending.tone === "positive") {
     audio.play("victory");
     burstConfetti();
+  } else if (round.ending.tone === "negative") {
+    audio.play("incorrect");
   }
-  announce(outcome === "completed" ? "Term complete." : "Government collapsed.");
+  announce(`${round.ending.heading}. ${round.ending.description}`);
 }
 
 function restartRound() {

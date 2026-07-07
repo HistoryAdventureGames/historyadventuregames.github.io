@@ -434,6 +434,36 @@
   color: #ffffff;
 }
 
+.gb-end-description {
+  max-width: 520px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.5;
+}
+
+/* Tone accents: the border and eyebrow shift with how the term actually
+   ended, so a glance at the panel already hints at what kind of outcome
+   this was before reading a word. */
+.gb-end-positive {
+  border-color: rgba(95, 216, 164, 0.45);
+}
+
+.gb-end-positive .eyebrow {
+  color: #5fd8a4;
+}
+
+.gb-end-mixed {
+  border-color: rgba(255, 209, 102, 0.45);
+}
+
+.gb-end-negative {
+  border-color: rgba(255, 156, 143, 0.45);
+}
+
+.gb-end-negative .eyebrow {
+  color: #ff9c8f;
+}
+
 .gb-new-high-score {
   margin: -6px 0 0;
   color: #ffd166;
