@@ -1,0 +1,194 @@
+[
+  {
+    "id": "regional-famine",
+    "title": "Regional Famine",
+    "description": "A drought across the region has left neighboring communities without enough food, and pressure is mounting for your nation to respond.",
+    "options": [
+      {
+        "label": "Send emergency food aid",
+        "effects": { "treasury": -60, "approval": 12, "stability": 4 },
+        "favoredBy": { "policy": { "id": "publicPrograms", "stance": "high" } }
+      },
+      {
+        "label": "Protect your own reserves first",
+        "effects": { "treasury": 10, "approval": -10, "stability": 2 }
+      }
+    ]
+  },
+  {
+    "id": "currency-crisis",
+    "title": "Currency Crisis",
+    "description": "Markets are panicking over the value of your currency, and investors are pulling their money out fast.",
+    "options": [
+      {
+        "label": "Take an emergency loan from allies",
+        "effects": { "treasury": 80, "approval": -6, "stability": -4 }
+      },
+      {
+        "label": "Impose austerity measures",
+        "effects": { "treasury": 20, "approval": -14, "stability": 2 },
+        "favoredBy": { "policy": { "id": "taxation", "stance": "high" } }
+      }
+    ]
+  },
+  {
+    "id": "border-skirmish",
+    "title": "Border Skirmish",
+    "description": "Tensions have flared into open fighting along a contested border. Both sides are calling on you to act.",
+    "options": [
+      {
+        "label": "Open diplomatic talks",
+        "effects": { "approval": 6, "stability": 4 },
+        "favoredBy": { "upgrade": "diplomaticCorps" }
+      },
+      {
+        "label": "Respond with a show of force",
+        "effects": { "treasury": -50, "stability": 10, "approval": -8 },
+        "favoredBy": { "policy": { "id": "defense", "stance": "high" } }
+      }
+    ]
+  },
+  {
+    "id": "pandemic-outbreak",
+    "title": "Pandemic Outbreak",
+    "description": "A fast-moving illness is spreading through crowded cities, and hospitals are warning they'll be overwhelmed within weeks.",
+    "options": [
+      {
+        "label": "Fund emergency healthcare",
+        "effects": { "treasury": -70, "approval": 14, "stability": 6 },
+        "favoredBy": { "policy": { "id": "publicPrograms", "stance": "high" } }
+      },
+      {
+        "label": "Let local communities self-manage",
+        "effects": { "treasury": -10, "approval": -12, "stability": -8 }
+      }
+    ]
+  },
+  {
+    "id": "major-earthquake",
+    "title": "Major Earthquake",
+    "description": "A powerful earthquake has leveled buildings across a populated region, and the death toll is still climbing.",
+    "options": [
+      {
+        "label": "Launch a full relief effort",
+        "effects": { "treasury": -55, "approval": 16, "stability": 6 }
+      },
+      {
+        "label": "Respond with limited resources",
+        "effects": { "treasury": -15, "approval": -8, "stability": -6 }
+      }
+    ]
+  },
+  {
+    "id": "refugee-crisis",
+    "title": "Refugee Crisis",
+    "description": "Conflict beyond your borders has sent thousands fleeing toward your territory seeking safety.",
+    "options": [
+      {
+        "label": "Open a resettlement program",
+        "effects": { "treasury": -45, "approval": 10, "stability": -4 },
+        "favoredBy": { "policy": { "id": "civilLiberties", "stance": "high" } }
+      },
+      {
+        "label": "Turn refugees away at the border",
+        "effects": { "treasury": 5, "approval": -14, "stability": 6 },
+        "favoredBy": { "policy": { "id": "defense", "stance": "high" } }
+      }
+    ]
+  },
+  {
+    "id": "cyberattack",
+    "title": "Cyberattack on Infrastructure",
+    "description": "Hackers have crippled key utilities, knocking out power and water systems in several cities.",
+    "options": [
+      {
+        "label": "Invest in emergency cybersecurity",
+        "effects": { "treasury": -60, "stability": 8 },
+        "favoredBy": { "policy": { "id": "defense", "stance": "high" } }
+      },
+      {
+        "label": "Patch what you can and hope",
+        "effects": { "treasury": -10, "stability": -10, "approval": -6 }
+      }
+    ]
+  },
+  {
+    "id": "trade-embargo",
+    "title": "Trade Embargo",
+    "description": "A major trading partner has abruptly cut off trade over a political dispute, threatening key industries at home.",
+    "options": [
+      {
+        "label": "Negotiate new trade partnerships",
+        "effects": { "treasury": -30, "approval": 6, "stability": 2 },
+        "favoredBy": { "upgrade": "diplomaticCorps" }
+      },
+      {
+        "label": "Retaliate with tariffs of your own",
+        "effects": { "treasury": 15, "approval": -8, "stability": -4 }
+      }
+    ]
+  },
+  {
+    "id": "market-crash",
+    "title": "Stock Market Crash",
+    "description": "Markets have plunged overnight, wiping out savings and threatening the jobs of thousands of workers.",
+    "options": [
+      {
+        "label": "Bail out key industries",
+        "effects": { "treasury": -70, "approval": 8, "stability": 6 }
+      },
+      {
+        "label": "Let the market correct itself",
+        "effects": { "treasury": 0, "approval": -16, "stability": -6 }
+      }
+    ]
+  },
+  {
+    "id": "corruption-scandal",
+    "title": "Corruption Scandal",
+    "description": "Investigators have uncovered evidence of bribery reaching deep into your administration.",
+    "options": [
+      {
+        "label": "Launch a full public investigation",
+        "effects": { "treasury": -20, "approval": 14, "stability": -2 },
+        "favoredBy": { "policy": { "id": "civilLiberties", "stance": "high" } }
+      },
+      {
+        "label": "Handle it with a quiet reshuffle",
+        "effects": { "treasury": -5, "approval": -12, "stability": 2 }
+      }
+    ]
+  },
+  {
+    "id": "historic-drought",
+    "title": "Historic Drought",
+    "description": "An unprecedented dry spell is withering farmland across the country, threatening the food supply.",
+    "options": [
+      {
+        "label": "Fund irrigation and relief programs",
+        "effects": { "treasury": -50, "approval": 10, "stability": 4 },
+        "favoredBy": { "policy": { "id": "publicPrograms", "stance": "high" } }
+      },
+      {
+        "label": "Ration water supplies",
+        "effects": { "treasury": -10, "approval": -10, "stability": -4 }
+      }
+    ]
+  },
+  {
+    "id": "allied-support-request",
+    "title": "An Ally Requests Support",
+    "description": "A close ally is asking for military and financial backing in a regional conflict, and other nations are watching how you respond.",
+    "options": [
+      {
+        "label": "Send support",
+        "effects": { "treasury": -65, "stability": 6, "approval": 4 },
+        "favoredBy": { "policy": { "id": "defense", "stance": "high" } }
+      },
+      {
+        "label": "Remain neutral",
+        "effects": { "treasury": 10, "approval": -6, "stability": -2 }
+      }
+    ]
+  }
+]

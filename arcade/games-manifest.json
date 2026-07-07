@@ -34,9 +34,11 @@
   {
     "id": "government-builder",
     "title": "Government Builder",
-    "description": "Design a government's branches and powers, then see how it holds up.",
-    "status": "coming-soon",
-    "icon": "pi-column"
+    "description": "Set policy, spend your treasury on power-ups, and steer your nation through crises.",
+    "status": "available",
+    "url": "/arcade/government-builder/",
+    "icon": "pi-column",
+    "tag": "4 modes &middot; Power-Up Shop"
   },
   {
     "id": "cause-and-effect",

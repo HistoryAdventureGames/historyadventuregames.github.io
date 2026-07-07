@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Government Builder — History Arcade</title>
+    <meta
+      name="description"
+      content="Set policy, spend your treasury on power-ups, and steer your nation through international crises before your term runs out."
+    >
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=20260706-arcade-launch">
+    <link rel="stylesheet" href="/pixel-ui.css?v=20260706-arcade-launch">
+    <link rel="stylesheet" href="/arcade/arcade.css?v=20260706-arcade-launch">
+    <link rel="stylesheet" href="css/game.css?v=20260706-arcade-launch">
+  </head>
+  <body class="arcade-body gb-body">
+    <a class="skip-link" href="#gameRoot">Skip to game</a>
+
+    <header class="site-header arcade-header gb-header">
+      <nav class="nav-bar" aria-label="Primary">
+        <a class="brand-mark" href="/" aria-label="History Adventure Games home">
+          <span class="brand-icon" aria-hidden="true">H</span>
+          <span>History Adventure Games</span>
+        </a>
+        <div class="nav-links" aria-label="Site sections">
+          <a class="nav-action" href="/arcade/">Arcade</a>
+          <button class="pixel-button arcade-icon-button" type="button" data-instructions-open aria-label="How to play">
+            <svg class="pixel-icon" viewBox="0 0 24 24"><use href="#pi-info"></use></svg>
+          </button>
+          <button class="pixel-button arcade-icon-button" type="button" id="soundToggle" aria-pressed="true" aria-label="Toggle sound effects">
+            <svg class="pixel-icon" viewBox="0 0 24 24"><use href="#pi-speaker"></use></svg>
+          </button>
+          <button class="pixel-button arcade-icon-button" type="button" id="musicToggle" aria-pressed="true" aria-label="Toggle music">
+            <svg class="pixel-icon" viewBox="0 0 24 24"><use href="#pi-music"></use></svg>
+          </button>
+        </div>
+      </nav>
+
+      <section class="arcade-marquee gb-marquee">
+        <p class="eyebrow">History Arcade</p>
+        <h1 class="pixel-heading">Government Builder</h1>
+        <p class="section-subtitle arcade-marquee-subtitle">
+          Set policy, grow your treasury, and steer your nation through international crises.
+        </p>
+        <button class="secondary-button pixel-button gb-howto-button" type="button" data-instructions-open>
+          How to Play &amp; Scoring
+        </button>
+      </section>
+    </header>
+
+    <main id="gameRoot" class="app-shell gb-shell" tabindex="-1">
+      <div class="status-panel">
+        <div class="loader" aria-hidden="true"></div>
+        <h2>Loading Government Builder...</h2>
+      </div>
+    </main>
+
+    <footer class="site-footer arcade-footer">
+      <p>New eras and arcade games are added regularly. Check the <a href="/arcade/">Arcade</a> for more.</p>
+    </footer>
+
+    <script src="/scripts/load-icon-sprite.js?v=20260706-arcade-launch"></script>
+    <script src="/arcade/instructions-modal.js?v=20260706-arcade-launch"></script>
+    <script>
+      ArcadeInstructions.init({
+        gameId: "government-builder",
+        title: "How to Play Government Builder",
+        sections: [
+          {
+            heading: "Goal",
+            body: "Lead your nation one turn at a time. Keep Treasury, Approval, and Stability healthy long enough to complete your term &mdash; let Approval or Stability hit zero and your government collapses.",
+          },
+          {
+            heading: "Policies",
+            body: "Set each policy dial to Low, Balanced, or High. Every stance trades resources for others &mdash; for example, high taxes grow your Treasury but cost Approval. Changes take effect at the start of your next turn, so think a turn ahead.",
+          },
+          {
+            heading: "Power-Up Shop",
+            body: "Spend Treasury on permanent upgrades that boost what your nation generates each turn, soften the impact of crises, or bank a shield that cancels a crisis's losses once. Each upgrade costs more the more you own.",
+          },
+          {
+            heading: "Crises",
+            body: "Every so often an international crisis demands an immediate choice between two responses, each with its own trade-offs. How well you've invested in your policies and upgrades can turn the same crisis into a much smaller setback.",
+          },
+          {
+            heading: "Scoring",
+            body: "Keep Approval and Stability high at the same time for a few turns in a row to trigger a Golden Age, boosting Treasury generation. Your final score rewards turns survived, healthy end-of-term resources, crises weathered, and how long your Golden Ages ran.",
+          },
+          {
+            heading: "Modes",
+            body: "<strong>First Term, Second Term,</strong> and <strong>Legacy Run</strong> are fixed-length terms of increasing difficulty. <strong>Endless Presidency</strong> keeps going until your government collapses. <strong>Teacher Mode</strong> skips saving a score, for playing together as a class.",
+          },
+        ],
+      });
+    </script>
+    <script type="module" src="js/main.js?v=20260706-arcade-launch"></script>
+  </body>
+</html>
