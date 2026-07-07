@@ -11,10 +11,10 @@
     "attribution": "Map: d-maps.com"
   },
   "items": [
-    { "id": "marathon", "label": "Marathon", "x": 0.683, "y": 0.470, "hint": "490 BCE: Athens repelled the first Persian invasion of Greece here." },
-    { "id": "salamis", "label": "Salamis", "x": 0.659, "y": 0.491, "hint": "480 BCE: a Greek fleet crushed the Persian navy in this narrow strait." },
-    { "id": "cannae", "label": "Cannae", "x": 0.578, "y": 0.40, "hint": "216 BCE: Hannibal's masterpiece of encirclement against Rome, in southeastern Italy." },
+    { "id": "marathon", "label": "Marathon", "x": 0.665, "y": 0.505, "hint": "490 BCE: Athens repelled the first Persian invasion of Greece here." },
+    { "id": "salamis", "label": "Salamis", "x": 0.636, "y": 0.499, "hint": "480 BCE: a Greek fleet crushed the Persian navy in this narrow strait." },
+    { "id": "cannae", "label": "Cannae", "x": 0.51, "y": 0.432, "hint": "216 BCE: Hannibal's masterpiece of encirclement against Rome, in southeastern Italy." },
     { "id": "zama", "label": "Zama", "x": 0.413, "y": 0.645, "hint": "202 BCE: Scipio defeated Hannibal here, ending the Second Punic War." },
-    { "id": "actium", "label": "Actium", "x": 0.605, "y": 0.45, "hint": "31 BCE: Octavian's fleet defeated Antony and Cleopatra, deciding Rome's future." }
+    { "id": "actium", "label": "Actium", "x": 0.625, "y": 0.478, "hint": "31 BCE: Octavian's fleet defeated Antony and Cleopatra, deciding Rome's future." }
   ]
 }

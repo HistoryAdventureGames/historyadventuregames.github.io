@@ -11,12 +11,12 @@
     "attribution": "Map: d-maps.com"
   },
   "items": [
-    { "id": "united-kingdom", "label": "United Kingdom", "x": 0.13, "y": 0.42, "hint": "An island nation off the northwest coast of the continent." },
-    { "id": "france", "label": "France", "x": 0.32, "y": 0.62, "hint": "Western Europe's largest country by area." },
-    { "id": "spain", "label": "Spain", "x": 0.16, "y": 0.78, "hint": "Occupies most of the Iberian Peninsula." },
+    { "id": "united-kingdom", "label": "United Kingdom", "x": 0.146, "y": 0.40, "hint": "An island nation off the northwest coast of the continent." },
+    { "id": "france", "label": "France", "x": 0.30, "y": 0.60, "hint": "Western Europe's largest country by area." },
+    { "id": "spain", "label": "Spain", "x": 0.17, "y": 0.75, "hint": "Occupies most of the Iberian Peninsula." },
     { "id": "germany", "label": "Germany", "x": 0.45, "y": 0.53, "hint": "Central Europe's most populous country, reunified in 1990." },
-    { "id": "italy", "label": "Italy", "x": 0.47, "y": 0.72, "hint": "A boot-shaped peninsula extending into the Mediterranean." },
-    { "id": "poland", "label": "Poland", "x": 0.55, "y": 0.48, "hint": "A large North European Plain country between Germany and Belarus." },
-    { "id": "greece", "label": "Greece", "x": 0.57, "y": 0.88, "hint": "Cradle of democracy, at the southern tip of the Balkan Peninsula." }
+    { "id": "italy", "label": "Italy", "x": 0.434, "y": 0.825, "hint": "A boot-shaped peninsula extending into the Mediterranean." },
+    { "id": "poland", "label": "Poland", "x": 0.55, "y": 0.47, "hint": "A large North European Plain country between Germany and Belarus." },
+    { "id": "greece", "label": "Greece", "x": 0.565, "y": 0.85, "hint": "Cradle of democracy, at the southern tip of the Balkan Peninsula." }
   ]
 }
