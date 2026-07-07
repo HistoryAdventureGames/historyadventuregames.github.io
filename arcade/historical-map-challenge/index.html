@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Historical Map Challenge — History Arcade</title>
+    <meta
+      name="description"
+      content="Drag historical terms onto a blank map and score points for how close you land — battles, empires, countries, and more, from the ancient world to U.S. history."
+    >
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=20260706-arcade-launch">
+    <link rel="stylesheet" href="/pixel-ui.css?v=20260706-arcade-launch">
+    <link rel="stylesheet" href="/arcade/arcade.css?v=20260706-arcade-launch">
+    <link rel="stylesheet" href="css/game.css?v=20260706-arcade-launch">
+  </head>
+  <body class="arcade-body mc-body">
+    <a class="skip-link" href="#gameRoot">Skip to game</a>
+
+    <header class="site-header arcade-header mc-header">
+      <nav class="nav-bar" aria-label="Primary">
+        <a class="brand-mark" href="/" aria-label="History Adventure Games home">
+          <span class="brand-icon" aria-hidden="true">H</span>
+          <span>History Adventure Games</span>
+        </a>
+        <div class="nav-links" aria-label="Site sections">
+          <a class="nav-action" href="/arcade/">Arcade</a>
+          <button class="pixel-button arcade-icon-button" type="button" data-instructions-open aria-label="How to play">
+            <svg class="pixel-icon" viewBox="0 0 24 24"><use href="#pi-info"></use></svg>
+          </button>
+          <button class="pixel-button arcade-icon-button" type="button" id="soundToggle" aria-pressed="true" aria-label="Toggle sound effects">
+            <svg class="pixel-icon" viewBox="0 0 24 24"><use href="#pi-speaker"></use></svg>
+          </button>
+          <button class="pixel-button arcade-icon-button" type="button" id="musicToggle" aria-pressed="true" aria-label="Toggle music">
+            <svg class="pixel-icon" viewBox="0 0 24 24"><use href="#pi-music"></use></svg>
+          </button>
+        </div>
+      </nav>
+
+      <section class="arcade-marquee mc-marquee">
+        <p class="eyebrow">History Arcade</p>
+        <h1 class="pixel-heading">Historical Map Challenge</h1>
+        <p class="section-subtitle arcade-marquee-subtitle">
+          Drop each term where it belongs on the map — the closer you land, the more points you score.
+        </p>
+        <button class="secondary-button pixel-button mc-howto-button" type="button" data-instructions-open>
+          How to Play &amp; Scoring
+        </button>
+      </section>
+    </header>
+
+    <main id="gameRoot" class="app-shell mc-shell" tabindex="-1">
+      <div class="status-panel">
+        <div class="loader" aria-hidden="true"></div>
+        <h2>Loading Historical Map Challenge...</h2>
+      </div>
+    </main>
+
+    <footer class="site-footer arcade-footer">
+      <p>New maps and arcade games are added regularly. Check the <a href="/arcade/">Arcade</a> for more.</p>
+    </footer>
+
+    <script src="/scripts/load-icon-sprite.js?v=20260706-arcade-launch"></script>
+    <script src="/arcade/instructions-modal.js?v=20260706-arcade-launch"></script>
+    <script>
+      ArcadeInstructions.init({
+        gameId: "historical-map-challenge",
+        title: "How to Play Historical Map Challenge",
+        sections: [
+          {
+            heading: "Goal",
+            body: "You're given a blank map and a term to place — a battle, an empire, a country, and so on. Put your marker where you think it belongs. The closer you are to the true location, the more points you earn.",
+          },
+          {
+            heading: "Controls",
+            body: "<strong>Touch or mouse:</strong> drag the term onto the map, or just tap the spot you think is right. <strong>Keyboard:</strong> use the arrow keys to nudge your marker (hold Shift to move faster), then press Enter to lock it in. After the reveal, press Enter for the next term.",
+          },
+          {
+            heading: "Scoring",
+            body: "Each term is worth up to 1,000 points. Land right on it for a bullseye; points fall off the farther away you are, down to zero once you're way off. After each guess the true location is revealed with a line showing how far off you were.",
+          },
+          {
+            heading: "Modes",
+            body: "Pick a <strong>mode</strong> — Battles, Empires, Countries, and more — then choose a specific map or let the game surprise you. Maps range from the ancient world to U.S. history.",
+          },
+        ],
+      });
+    </script>
+    <script type="module" src="js/main.js?v=20260706-arcade-launch"></script>
+  </body>
+</html>

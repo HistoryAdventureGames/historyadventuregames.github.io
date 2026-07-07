@@ -1,0 +1,269 @@
+/* Standalone styling for the authoring tool. Deliberately plain — it's an
+   internal content tool, not a player-facing page. */
+
+.author-body {
+  background: #eef2f7;
+  color: #111827;
+}
+
+.author-header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px clamp(16px, 4vw, 32px) 8px;
+}
+
+.author-header h1 {
+  margin: 0 0 6px;
+  font-size: 1.5rem;
+}
+
+.author-header p {
+  margin: 0;
+  max-width: 70ch;
+  color: #4b5565;
+  font-size: 0.94rem;
+}
+
+.author-header code {
+  background: #dbe3ee;
+  border-radius: 4px;
+  padding: 0 4px;
+}
+
+.author-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px clamp(16px, 4vw, 32px) 48px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(320px, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .author-main {
+    grid-template-columns: 1fr;
+  }
+}
+
+.author-loader {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.author-loader label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #263244;
+}
+
+.author-loader input[type="text"] {
+  min-width: 260px;
+}
+
+.author-or {
+  padding-bottom: 8px;
+  color: #6b7686;
+}
+
+.author-hint {
+  margin: 0 0 10px;
+  color: #4b5565;
+  font-size: 0.9rem;
+}
+
+.author-stage {
+  position: relative;
+  border: 2px solid #b8c4d6;
+  border-radius: 8px;
+  background: #fbf8ef;
+  overflow: hidden;
+  cursor: crosshair;
+  touch-action: none;
+  user-select: none;
+}
+
+.author-stage img {
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-user-drag: none;
+}
+
+.author-marker {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  background: #2f6bff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  cursor: grab;
+  touch-action: none;
+}
+
+.author-marker.is-active {
+  background: #e0a400;
+}
+
+.author-marker-num {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 3px);
+  transform: translateX(-50%);
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: #12233f;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 3px;
+  padding: 0 3px;
+  pointer-events: none;
+}
+
+.author-dims {
+  margin: 6px 2px 0;
+  color: #6b7686;
+  font-size: 0.8rem;
+}
+
+.author-fields {
+  display: grid;
+  gap: 10px;
+}
+
+.author-fields label,
+.author-loader label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #263244;
+}
+
+.author-fields label {
+  display: grid;
+  gap: 4px;
+}
+
+input[type="text"],
+select,
+textarea {
+  font: inherit;
+  padding: 8px 10px;
+  border: 1px solid #b8c4d6;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #111827;
+}
+
+.author-subhead {
+  margin: 22px 0 8px;
+  font-size: 1rem;
+}
+
+.author-points {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.author-point {
+  display: grid;
+  grid-template-columns: 1.4rem 1fr auto;
+  gap: 8px;
+  align-items: center;
+  border: 1px solid #cfd8e6;
+  border-radius: 6px;
+  background: #ffffff;
+  padding: 8px;
+}
+
+.author-point-num {
+  font-weight: 800;
+  color: #6b7686;
+  text-align: center;
+}
+
+.author-point-inputs {
+  display: grid;
+  gap: 6px;
+}
+
+.author-point-coords {
+  font-size: 0.74rem;
+  color: #6b7686;
+}
+
+.author-point-remove {
+  border: 1px solid #e0b4b0;
+  background: #fff1f0;
+  color: #b42318;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.author-output {
+  width: 100%;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.82rem;
+  white-space: pre;
+  overflow-wrap: normal;
+  overflow-x: auto;
+}
+
+.author-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.author-btn {
+  border: 1px solid #b8c4d6;
+  background: #ffffff;
+  color: #111827;
+  border-radius: 8px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.author-btn:hover {
+  background: #f3f6fb;
+}
+
+.author-btn-primary {
+  background: #2456d6;
+  border-color: #1740a6;
+  color: #ffffff;
+}
+
+.author-btn-primary:hover {
+  background: #1740a6;
+}
+
+.author-btn-danger {
+  color: #b42318;
+  border-color: #e0b4b0;
+}
+
+.author-file {
+  flex-direction: column;
+}
+
+.author-status {
+  min-height: 1.2em;
+  margin: 8px 0 0;
+  color: #137a4b;
+  font-weight: 700;
+  font-size: 0.88rem;
+}

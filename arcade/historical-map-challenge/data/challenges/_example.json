@@ -1,0 +1,18 @@
+{
+  "id": "example-us-cities",
+  "title": "Cities of the Early United States",
+  "category": "cities",
+  "era": "us",
+  "map": {
+    "src": "united-states.png",
+    "width": 1920,
+    "height": 1920,
+    "alt": "Blank outline map of the United States",
+    "attribution": ""
+  },
+  "items": [
+    { "id": "boston", "label": "Boston", "x": 0.9, "y": 0.32, "hint": "New England's largest port." },
+    { "id": "philadelphia", "label": "Philadelphia", "x": 0.86, "y": 0.37, "hint": "The nation's first capital." },
+    { "id": "washington-dc", "label": "Washington, D.C.", "x": 0.85, "y": 0.4, "hint": "Founded on the Potomac in 1790." }
+  ]
+}

@@ -1,0 +1,635 @@
+/* Historical Map Challenge: same dark "arcade cabinet" base as the hub and the
+   other games (arcade.css), with parchment menu panels and a light map stage.
+   Tokens from styles.css, primitives from pixel-ui.css. */
+
+.mc-header {
+  --adventure-bg-image: none;
+}
+
+.mc-shell {
+  width: var(--content);
+  margin: 0 auto;
+  padding: clamp(20px, 4vw, 40px) 0 clamp(56px, 8vw, 96px);
+}
+
+.mc-shell .status-panel,
+.mc-shell .error-panel {
+  border-color: rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+}
+
+.mc-shell .error-panel code {
+  color: #ffe6a3;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.mc-howto-button {
+  margin-top: 18px;
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+}
+
+.mc-howto-button:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+/* ---------- Menu ---------- */
+
+.mc-menu {
+  display: grid;
+  gap: 20px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.mc-panel {
+  --notch: 12px;
+  border: 1px solid #e3c98a;
+  background: linear-gradient(165deg, #fff8e8, #ffffff 120%);
+  color: var(--ink);
+  padding: clamp(18px, 2.4vw, 26px);
+}
+
+.mc-panel-label {
+  margin: 0 0 14px;
+  color: var(--gold);
+  font-size: 0.72rem;
+}
+
+.mc-mode-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.mc-mode-button {
+  background: #eef2f7;
+  color: var(--ink);
+  padding: 0.7rem 1.2rem;
+}
+
+.mc-mode-button.is-selected {
+  background: var(--hero);
+  color: #ffffff;
+  border-color: var(--hero);
+}
+
+.mc-mode-detail {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 0.96rem;
+}
+
+.mc-challenge-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr));
+  gap: 12px;
+}
+
+.mc-challenge-card {
+  --notch: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border: 1px solid var(--line-strong);
+  background: #ffffff;
+  color: var(--ink);
+  padding: 14px 16px;
+  text-align: left;
+  cursor: pointer;
+  transition: transform 140ms ease, border-color 140ms ease, box-shadow 140ms ease;
+}
+
+.mc-challenge-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.mc-challenge-card.is-selected {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(36, 86, 214, 0.35);
+}
+
+.mc-challenge-tag {
+  align-self: flex-start;
+  border-radius: 999px;
+  background: #eef2f7;
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-weight: 850;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 0.15rem 0.55rem;
+}
+
+.mc-challenge-title {
+  font-weight: 850;
+  line-height: 1.15;
+}
+
+.mc-challenge-meta {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.mc-surprise-card {
+  justify-content: center;
+  border-style: dashed;
+  background: #fbfdff;
+}
+
+.mc-start-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.mc-start-button {
+  min-width: 220px;
+}
+
+.mc-start-hint {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.86rem;
+}
+
+.mc-empty {
+  --notch: 14px;
+  max-width: 640px;
+  margin: 0 auto;
+  border-color: rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  padding: clamp(22px, 4vw, 36px);
+  text-align: center;
+}
+
+.mc-empty code {
+  color: #ffe6a3;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.mc-empty-hint {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.mc-empty a {
+  color: #ffd166;
+}
+
+/* ---------- Play layout ---------- */
+
+.mc-play {
+  display: grid;
+  gap: 16px;
+}
+
+.mc-play-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 320px);
+  gap: 16px;
+  align-items: start;
+}
+
+@media (max-width: 820px) {
+  .mc-play-body {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- HUD ---------- */
+
+.mc-hud {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  padding: 12px 16px;
+  border-radius: var(--radius);
+}
+
+.mc-hud-stat {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.mc-hud-label {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.68rem;
+  font-weight: 850;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.mc-hud-value {
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+.mc-hud-of {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.mc-hud-progress {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-left: auto;
+}
+
+.mc-pip {
+  width: 12px;
+  height: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: transparent;
+}
+
+.mc-pip.is-done {
+  background: var(--green);
+  border-color: var(--green);
+}
+
+.mc-pip.is-current {
+  border-color: #ffd166;
+  box-shadow: 0 0 0 2px rgba(255, 209, 102, 0.4);
+}
+
+.mc-hud-actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* ---------- Map stage ---------- */
+
+.mc-map-wrap {
+  min-width: 0;
+}
+
+.mc-map {
+  position: relative;
+  border: 2px solid rgba(255, 255, 255, 0.22);
+  border-radius: var(--radius);
+  background: #fbf8ef;
+  overflow: hidden;
+  touch-action: none; /* let the placer own drags without the page panning */
+}
+
+.mc-map-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.mc-map-lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.mc-map-lines line {
+  stroke: #1f3c70;
+  stroke-width: 2;
+  stroke-dasharray: 5 4;
+  vector-effect: non-scaling-stroke;
+  opacity: 0.85;
+}
+
+.mc-map-credit {
+  position: absolute;
+  right: 4px;
+  bottom: 3px;
+  color: rgba(31, 41, 55, 0.55);
+  background: rgba(255, 255, 255, 0.6);
+  font-size: 0.62rem;
+  padding: 0 4px;
+  border-radius: 3px;
+  pointer-events: none;
+}
+
+/* Markers. Both are centered on the exact point they represent. */
+.mc-pin {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.mc-pin-guess {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  background: #2f6bff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+}
+
+.mc-pin-guess.is-locked {
+  background: #64748b;
+}
+
+.mc-pin-live {
+  z-index: 3;
+}
+
+.mc-pin-target {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  background: #e0a400;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+  z-index: 4;
+}
+
+.mc-pin-flag {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 6px);
+  transform: translateX(-50%);
+  white-space: nowrap;
+  background: var(--hero);
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 850;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  box-shadow: var(--shadow-sm);
+}
+
+.mc-pin-flag::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: var(--hero);
+}
+
+/* ---------- Side panel: term / result ---------- */
+
+.mc-side {
+  display: grid;
+  gap: 12px;
+  align-content: start;
+}
+
+.mc-term-card,
+.mc-result-card {
+  --notch: 12px;
+  border: 1px solid #e3c98a;
+  background: linear-gradient(165deg, #fff8e8, #ffffff 120%);
+  color: var(--ink);
+  padding: clamp(16px, 2vw, 22px);
+  text-align: center;
+}
+
+.mc-term-kicker {
+  margin: 0 0 12px;
+  color: var(--gold);
+  font-size: 0.66rem;
+}
+
+.mc-term-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 100%;
+  border: 2px solid var(--primary-dark);
+  border-radius: 12px;
+  background: linear-gradient(180deg, #2f6bff, #1740a6);
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 850;
+  padding: 0.7rem 1.1rem;
+  cursor: grab;
+  touch-action: none;
+  box-shadow: var(--shadow-sm);
+}
+
+.mc-term-chip:active {
+  cursor: grabbing;
+}
+
+.mc-term-chip-dot {
+  width: 14px;
+  height: 14px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  background: #2f6bff;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+.mc-term-chip-label {
+  overflow-wrap: anywhere;
+}
+
+.mc-term-help {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.mc-hint-button {
+  margin-top: 10px;
+  color: var(--primary-dark);
+}
+
+.mc-term-hint {
+  margin: 12px 0 0;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+
+.mc-term-hint-label {
+  font-weight: 850;
+  color: var(--gold);
+}
+
+.mc-result-proximity {
+  margin: 0 0 4px;
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.mc-result-points {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--primary-dark);
+}
+
+.mc-result-name {
+  margin: 8px 0 0;
+  font-weight: 850;
+}
+
+.mc-result-hint {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.mc-actions {
+  display: grid;
+  gap: 10px;
+}
+
+.mc-actions .primary-button {
+  width: 100%;
+}
+
+/* Proximity color coding, shared by the result card and the end breakdown. */
+.mc-prox-3 .mc-result-proximity,
+.mc-prox-3.mc-breakdown-prox {
+  color: var(--green);
+}
+.mc-prox-2 .mc-result-proximity,
+.mc-prox-2.mc-breakdown-prox {
+  color: #b8860b;
+}
+.mc-prox-1 .mc-result-proximity,
+.mc-prox-1.mc-breakdown-prox {
+  color: #c2410c;
+}
+.mc-prox-0 .mc-result-proximity,
+.mc-prox-0.mc-breakdown-prox {
+  color: var(--red);
+}
+
+/* ---------- Settings overlay ---------- */
+
+.mc-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 500;
+  display: grid;
+  place-items: center;
+  background: rgba(6, 12, 24, 0.74);
+  backdrop-filter: blur(3px);
+  padding: 16px;
+}
+
+.mc-overlay-panel {
+  --notch: 14px;
+  width: min(420px, 100%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: #101c34;
+  color: #ffffff;
+  padding: clamp(20px, 3vw, 28px);
+  text-align: center;
+}
+
+.mc-overlay-actions {
+  display: grid;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+/* ---------- End screen ---------- */
+
+.mc-end {
+  --notch: 16px;
+  max-width: 640px;
+  margin: 0 auto;
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  padding: clamp(24px, 4vw, 40px);
+  text-align: center;
+}
+
+.mc-stars {
+  margin: 4px 0 0;
+  color: #ffd166;
+  font-size: 1.8rem;
+  letter-spacing: 4px;
+}
+
+.mc-new-high-score {
+  margin: 8px 0 0;
+  color: #7ee0a0;
+  font-weight: 850;
+}
+
+.mc-end-score {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.mc-end-score-value {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.mc-end-score-max {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.mc-end-best {
+  margin: 8px 0 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.mc-breakdown {
+  list-style: none;
+  margin: 20px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+  text-align: left;
+}
+
+.mc-breakdown-row {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 12px;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.mc-breakdown-name {
+  font-weight: 800;
+}
+
+.mc-breakdown-prox {
+  font-size: 0.82rem;
+  font-weight: 850;
+}
+
+.mc-breakdown-points {
+  font-weight: 900;
+  min-width: 3.5rem;
+  text-align: right;
+}
+
+.mc-end-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 24px;
+}

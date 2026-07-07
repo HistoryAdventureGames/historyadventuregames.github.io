@@ -145,4 +145,32 @@ Keep each group's `items` free of the word(s) that give the connection away (e.g
 
 The Daily Challenge picks `manifest[dayNumber % manifest.length]` (see `getDailyPuzzleEntry` in `arcade/history-links/js/data.js`), so it cycles through the pool rather than ever running out, and a streak is only extended by a **win** on a new day — a loss still consumes that day's attempt but resets the streak, and either way the day's puzzle can't be replayed for score until tomorrow (Teacher Mode bypasses this, since it never records a score).
 
+### Historical Map Challenge's data format
+
+A GeoGuessr-style game: the player is shown a blank map and one term at a time (a battle, empire, city…), drags it where they think it belongs, and scores up to 1,000 points based on how close they land (`arcade/historical-map-challenge/js/engine.js`).
+
+Two kinds of content:
+
+1. **Map images** live in `arcade/historical-map-challenge/maps/` (see that folder's `README.md`). A map is just a blank/outline image; one map can back many challenges.
+2. **Challenges** live in `arcade/historical-map-challenge/data/challenges/`, one per file, each listed in `data/manifest.json`:
+
+```json
+{
+  "id": "civil-war-battles",
+  "title": "Battles of the U.S. Civil War",
+  "category": "battles",
+  "era": "us",
+  "map": { "src": "united-states.png", "width": 1920, "height": 1920, "attribution": "" },
+  "items": [
+    { "id": "gettysburg", "label": "Gettysburg", "x": 0.845, "y": 0.372, "hint": "1863, Pennsylvania." }
+  ]
+}
+```
+
+`x`/`y` are the target location as **fractions (0–1) of the map image** (top-left origin), so they stay correct as the map scales responsively; `map.width`/`height` are the image's pixel size, used only to make proximity scoring aspect-correct. `category` is the "mode" the player picks on the menu — the menu builds its mode list from whatever categories the manifest contains, so **a new mode is just a new `category` value, never a code change** (`CATEGORY_META` in `js/state.js` only supplies a friendly label/blurb for the ones we expect). The manifest entry needs `id`, `title`, `category`, `era`, and `file`; everything else is read from the challenge file.
+
+**Authoring coordinates by hand is painful, so don't** — open `arcade/historical-map-challenge/author/` (an internal, un-linked tool), load a map, click each location to drop and name a point, and copy out the ready-to-paste challenge JSON and manifest entry. It fills in `width`/`height` for you from the loaded image.
+
+The game is registered in `arcade/games-manifest.json` as `"status": "coming-soon"`; flip it to `"available"` and add `"url": "/arcade/historical-map-challenge/"` once at least one map image and one challenge (in the manifest) exist.
+
 No backend, database, login system, or build step is required.

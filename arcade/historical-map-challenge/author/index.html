@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Map Challenge Authoring Tool</title>
+    <meta name="robots" content="noindex">
+    <meta
+      name="description"
+      content="Internal tool: click on a map to place terms and export Historical Map Challenge JSON."
+    >
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/styles.css?v=20260706-arcade-launch">
+    <link rel="stylesheet" href="author.css">
+  </head>
+  <body class="author-body">
+    <header class="author-header">
+      <h1>Map Challenge — Authoring Tool</h1>
+      <p>
+        Load a map, click each location to drop a point and name it, then copy the JSON into
+        <code>data/challenges/&lt;id&gt;.json</code> and add the manifest entry. Not linked from the
+        site — a content tool only.
+      </p>
+    </header>
+
+    <main class="author-main">
+      <section class="author-stage-col">
+        <div class="author-loader">
+          <label>
+            Map image URL
+            <input type="text" id="mapUrl" placeholder="/arcade/historical-map-challenge/maps/united-states.png">
+          </label>
+          <button type="button" id="loadUrlButton" class="author-btn">Load</button>
+          <span class="author-or">or</span>
+          <label class="author-file">
+            Preview a local file
+            <input type="file" id="mapFile" accept="image/*">
+          </label>
+        </div>
+
+        <p class="author-hint" id="stageHint">Load a map to begin. Then click on it to add a point; drag a point to move it.</p>
+
+        <div class="author-stage" id="stage" hidden>
+          <img id="mapImage" alt="Map being annotated" draggable="false">
+        </div>
+        <p class="author-dims" id="dims"></p>
+      </section>
+
+      <section class="author-form-col">
+        <div class="author-fields">
+          <label>Challenge id<input type="text" id="fId" placeholder="civil-war-battles"></label>
+          <label>Title<input type="text" id="fTitle" placeholder="Battles of the U.S. Civil War"></label>
+          <label>
+            Category (mode)
+            <input type="text" id="fCategory" list="categoryList" placeholder="battles">
+            <datalist id="categoryList">
+              <option value="battles"></option>
+              <option value="empires"></option>
+              <option value="countries"></option>
+              <option value="cities"></option>
+              <option value="landmarks"></option>
+              <option value="explorers"></option>
+            </datalist>
+          </label>
+          <label>
+            Era tag
+            <select id="fEra">
+              <option value="ancient">ancient</option>
+              <option value="world" selected>world</option>
+              <option value="us">U.S.</option>
+            </select>
+          </label>
+          <label>Map src (filename or path)<input type="text" id="fMapSrc" placeholder="united-states.png"></label>
+          <label>Attribution (optional)<input type="text" id="fAttribution" placeholder="e.g. Map: example.com"></label>
+        </div>
+
+        <h2 class="author-subhead">Points <span id="pointCount">(0)</span></h2>
+        <ol class="author-points" id="pointsList"></ol>
+
+        <h2 class="author-subhead">Challenge JSON</h2>
+        <textarea id="output" class="author-output" readonly rows="12" spellcheck="false"></textarea>
+        <div class="author-actions">
+          <button type="button" id="copyJson" class="author-btn author-btn-primary">Copy JSON</button>
+          <button type="button" id="copyManifest" class="author-btn">Copy manifest entry</button>
+          <button type="button" id="clearPoints" class="author-btn author-btn-danger">Clear points</button>
+        </div>
+        <p class="author-status" id="status" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <script src="author.js"></script>
+  </body>
+</html>
