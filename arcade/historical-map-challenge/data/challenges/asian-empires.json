@@ -1,0 +1,20 @@
+{
+  "id": "asian-empires",
+  "title": "Empires and Dynasties of Asia",
+  "category": "empires",
+  "era": "world",
+  "map": {
+    "src": "asia.png",
+    "width": 822,
+    "height": 713,
+    "alt": "Blank outline map of Asia",
+    "attribution": "Map: d-maps.com"
+  },
+  "items": [
+    { "id": "ottoman", "label": "Ottoman Empire", "x": 0.09, "y": 0.35, "hint": "Ruled from Istanbul, it bridged Europe and Asia for six centuries." },
+    { "id": "mughal", "label": "Mughal Empire", "x": 0.335, "y": 0.58, "hint": "Ruled from Delhi and Agra, it built the Taj Mahal." },
+    { "id": "qing", "label": "Qing Dynasty", "x": 0.665, "y": 0.36, "hint": "China's last imperial dynasty, ruled from Beijing." },
+    { "id": "khmer", "label": "Khmer Empire", "x": 0.585, "y": 0.685, "hint": "Centered on Angkor, in modern Cambodia." },
+    { "id": "japan", "label": "Imperial Japan", "x": 0.775, "y": 0.38, "hint": "An island nation with an imperial line stretching back over a thousand years." }
+  ]
+}

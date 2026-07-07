@@ -1,0 +1,19 @@
+{
+  "id": "precolumbian-empires",
+  "title": "Empires of the Americas Before Columbus",
+  "category": "empires",
+  "era": "ancient",
+  "map": {
+    "src": "americas.png",
+    "width": 705,
+    "height": 1009,
+    "alt": "Blank outline map of North and South America",
+    "attribution": "Map: d-maps.com"
+  },
+  "items": [
+    { "id": "cahokia", "label": "Mississippian Culture", "x": 0.24, "y": 0.245, "hint": "Centered on Cahokia, near modern St. Louis, its largest mound rivaled Egypt's pyramids in footprint." },
+    { "id": "aztec", "label": "Aztec Empire", "x": 0.27, "y": 0.395, "hint": "Ruled from Tenochtitlan, an island city built in a lake in the Valley of Mexico." },
+    { "id": "maya", "label": "Maya Civilization", "x": 0.34, "y": 0.40, "hint": "A network of city-states across the Yucatan Peninsula, known for astronomy and writing." },
+    { "id": "inca", "label": "Inca Empire", "x": 0.28, "y": 0.635, "hint": "The largest empire in pre-Columbian America, ruled from Cusco high in the Andes." }
+  ]
+}

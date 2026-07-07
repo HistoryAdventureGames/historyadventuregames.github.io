@@ -1,0 +1,11 @@
+[
+  { "id": "civil-war-battles", "title": "Battles of the U.S. Civil War", "category": "battles", "era": "us", "file": "challenges/civil-war-battles.json" },
+  { "id": "thirteen-colonies-cities", "title": "Cities of Colonial America", "category": "cities", "era": "us", "file": "challenges/thirteen-colonies-cities.json" },
+  { "id": "ancient-mediterranean-battles", "title": "Battles of the Ancient Mediterranean", "category": "battles", "era": "ancient", "file": "challenges/ancient-mediterranean-battles.json" },
+  { "id": "eurasian-empires", "title": "Empires of Eurasia", "category": "empires", "era": "world", "file": "challenges/eurasian-empires.json" },
+  { "id": "african-kingdoms", "title": "Kingdoms and Empires of Africa", "category": "empires", "era": "ancient", "file": "challenges/african-kingdoms.json" },
+  { "id": "precolumbian-empires", "title": "Empires of the Americas Before Columbus", "category": "empires", "era": "ancient", "file": "challenges/precolumbian-empires.json" },
+  { "id": "asian-empires", "title": "Empires and Dynasties of Asia", "category": "empires", "era": "world", "file": "challenges/asian-empires.json" },
+  { "id": "world-landmarks", "title": "Landmarks of the World", "category": "landmarks", "era": "world", "file": "challenges/world-landmarks.json" },
+  { "id": "european-countries", "title": "Countries of Europe", "category": "countries", "era": "world", "file": "challenges/european-countries.json" }
+]
