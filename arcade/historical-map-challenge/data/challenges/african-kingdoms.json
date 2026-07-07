@@ -1,0 +1,21 @@
+{
+  "id": "african-kingdoms",
+  "title": "Kingdoms and Empires of Africa",
+  "category": "empires",
+  "era": "ancient",
+  "map": {
+    "src": "africa.png",
+    "width": 729,
+    "height": 713,
+    "alt": "Blank outline map of Africa",
+    "attribution": "Map: d-maps.com"
+  },
+  "items": [
+    { "id": "carthage", "label": "Carthage", "x": 0.44, "y": 0.06, "hint": "A Phoenician trading city on the North African coast that rivaled Rome." },
+    { "id": "egypt", "label": "Ancient Egypt", "x": 0.55, "y": 0.135, "hint": "Civilization along the Nile, unified for millennia around the river's delta." },
+    { "id": "kush", "label": "Kingdom of Kush", "x": 0.55, "y": 0.27, "hint": "A Nubian kingdom south of Egypt that once ruled the Nile Valley as its 25th dynasty." },
+    { "id": "aksum", "label": "Kingdom of Aksum", "x": 0.62, "y": 0.28, "hint": "A powerful trading empire in the Horn of Africa, an early adopter of Christianity." },
+    { "id": "mali", "label": "Mali Empire", "x": 0.20, "y": 0.24, "hint": "Ruled from Timbuktu, made fabulously wealthy by gold and the salt trade." },
+    { "id": "great-zimbabwe", "label": "Great Zimbabwe", "x": 0.58, "y": 0.68, "hint": "A stone-walled city that gave modern Zimbabwe its name." }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "civil-war-battles",
+  "title": "Battles of the U.S. Civil War",
+  "category": "battles",
+  "era": "us",
+  "map": {
+    "src": "united-states.png",
+    "width": 1200,
+    "height": 750,
+    "alt": "Blank outline map of the United States with county lines",
+    "attribution": "Map: d-maps.com"
+  },
+  "items": [
+    { "id": "fort-sumter", "label": "Fort Sumter", "x": 0.835, "y": 0.595, "hint": "The opening shots of the war, April 1861, in a Charleston, SC harbor." },
+    { "id": "bull-run", "label": "Bull Run (Manassas)", "x": 0.825, "y": 0.415, "hint": "The first major land battle of the war, fought twice near a creek in northern Virginia." },
+    { "id": "antietam", "label": "Antietam", "x": 0.805, "y": 0.395, "hint": "The single bloodiest day in American military history, September 1862." },
+    { "id": "gettysburg", "label": "Gettysburg", "x": 0.815, "y": 0.375, "hint": "A three-day Pennsylvania battle often called the war's turning point." },
+    { "id": "vicksburg", "label": "Vicksburg", "x": 0.595, "y": 0.615, "hint": "A grueling siege on the Mississippi River that split the Confederacy in two." },
+    { "id": "chickamauga", "label": "Chickamauga", "x": 0.68, "y": 0.565, "hint": "A costly Confederate victory near Chattanooga, Tennessee." },
+    { "id": "atlanta", "label": "Atlanta", "x": 0.705, "y": 0.615, "hint": "Its fall in 1864 helped secure Lincoln's re-election and preceded Sherman's March to the Sea." },
+    { "id": "appomattox", "label": "Appomattox Court House", "x": 0.79, "y": 0.455, "hint": "Where Lee surrendered to Grant in April 1865, effectively ending the war." }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "world-landmarks",
+  "title": "Landmarks of the World",
+  "category": "landmarks",
+  "era": "world",
+  "map": {
+    "src": "world.png",
+    "width": 1200,
+    "height": 608,
+    "alt": "Blank outline map of the world",
+    "attribution": "Map: d-maps.com"
+  },
+  "items": [
+    { "id": "great-pyramid", "label": "Great Pyramid of Giza", "x": 0.585, "y": 0.285, "hint": "The last surviving Ancient Wonder of the World, near modern Cairo." },
+    { "id": "great-wall", "label": "Great Wall of China", "x": 0.755, "y": 0.27, "hint": "A fortification system stretching thousands of miles across northern China." },
+    { "id": "colosseum", "label": "Colosseum", "x": 0.535, "y": 0.205, "hint": "An enormous amphitheater at the heart of ancient Rome." },
+    { "id": "machu-picchu", "label": "Machu Picchu", "x": 0.30, "y": 0.545, "hint": "An Inca citadel perched high in the Peruvian Andes." },
+    { "id": "taj-mahal", "label": "Taj Mahal", "x": 0.685, "y": 0.335, "hint": "A marble mausoleum built by a Mughal emperor in Agra, India." },
+    { "id": "statue-of-liberty", "label": "Statue of Liberty", "x": 0.315, "y": 0.215, "hint": "A gift from France, standing in New York Harbor since 1886." }
+  ]
+}

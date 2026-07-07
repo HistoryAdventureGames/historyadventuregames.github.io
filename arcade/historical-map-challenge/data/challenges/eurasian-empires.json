@@ -1,0 +1,21 @@
+{
+  "id": "eurasian-empires",
+  "title": "Empires of Eurasia",
+  "category": "empires",
+  "era": "world",
+  "map": {
+    "src": "eurasia.png",
+    "width": 1040,
+    "height": 605,
+    "alt": "Blank outline map of Europe and Asia",
+    "attribution": "Map: d-maps.com"
+  },
+  "items": [
+    { "id": "rome", "label": "Roman Empire", "x": 0.195, "y": 0.755, "hint": "Centered on Rome, it ringed the entire Mediterranean at its height." },
+    { "id": "constantinople", "label": "Byzantine Empire", "x": 0.235, "y": 0.735, "hint": "Rome's eastern half outlived the west by a thousand years, ruled from Constantinople." },
+    { "id": "persepolis", "label": "Persian Empire", "x": 0.365, "y": 0.87, "hint": "The Achaemenid capital of Persepolis lay in modern-day Iran." },
+    { "id": "pataliputra", "label": "Maurya Empire", "x": 0.49, "y": 0.88, "hint": "Under Ashoka, this empire united most of the Indian subcontinent." },
+    { "id": "changan", "label": "Han Dynasty", "x": 0.58, "y": 0.76, "hint": "Ruled from Chang'an, contemporaneous with Rome at the other end of the Silk Road." },
+    { "id": "karakorum", "label": "Mongol Empire", "x": 0.58, "y": 0.685, "hint": "The largest contiguous land empire in history, ruled from Karakorum in Mongolia." }
+  ]
+}

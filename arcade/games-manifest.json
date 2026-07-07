@@ -21,8 +21,10 @@
     "id": "historical-map-challenge",
     "title": "Historical Map Challenge",
     "description": "Place empires, battles, and borders in the right spot on the map.",
-    "status": "coming-soon",
-    "icon": "pi-map"
+    "status": "available",
+    "url": "/arcade/historical-map-challenge/",
+    "icon": "pi-map",
+    "tag": "9 challenges &middot; 5 modes"
   },
   {
     "id": "artifact-match",

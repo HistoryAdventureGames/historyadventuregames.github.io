@@ -9,20 +9,29 @@ coordinates (see `../data/challenges/_example.json`), so **the same image can
 back many challenges** — a U.S. map can host Civil War battles, early cities,
 the thirteen colonies, and so on.
 
-## Recommended filenames
+## Current maps
 
-These match the uploaded base maps; use whatever names you like as long as the
-challenge files point at them:
+Filenames are just a convention — a challenge file's `map.src` is what actually
+wires it up — but keep new maps lowercase-with-hyphens to match these:
 
-| File                 | Coverage                          |
-| -------------------- | --------------------------------- |
-| `world.png`          | Whole world                       |
-| `eurasia.png`        | Europe + Asia                     |
-| `asia.png`           | Asia                              |
-| `europe-africa.png`  | Europe, Africa & the Middle East  |
-| `north-america.png`  | North America                     |
-| `americas.png`       | North + South America             |
-| `united-states.png`  | United States                     |
+| File                    | Coverage                                    | Size (px)  |
+| ----------------------- | -------------------------------------------- | ---------- |
+| `world.png`             | Whole world                                  | 1200 × 608 |
+| `eurasia.png`            | Europe + Asia (wide Mercator)                | 1040 × 605 |
+| `europe.png`             | Europe                                       | 857 × 713  |
+| `asia.png`               | Asia                                         | 822 × 713  |
+| `mediterranean.png`      | Western/Central Europe, N. Africa, Mideast   | 1040 × 713 |
+| `africa.png`             | Africa                                       | 729 × 713  |
+| `americas.png`           | North + South America                        | 705 × 1009 |
+| `united-states.png`      | United States (with county lines)            | 1200 × 750 |
+
+All eight are sourced from d-maps.com. Per the license terms confirmed by the
+site owner, d-maps.com permits commercial use of up to 10 of its maps — we're
+using 8, so there's headroom for a couple more before that needs revisiting.
+Each image carries a "© d-maps.com" credit baked into a corner of the graphic
+itself; **don't crop that out** when adding new maps from the same source, and
+don't add more from d-maps.com beyond the 10-map allowance without confirming
+the terms again.
 
 ## Tips
 
