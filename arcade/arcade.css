@@ -102,6 +102,7 @@
 
 .game-card-icon {
   display: inline-grid;
+  align-self: center;
   width: 56px;
   height: 56px;
   place-items: center;
@@ -117,6 +118,7 @@
 .game-card h3 {
   color: #ffffff;
   font-size: 1.2rem;
+  text-align: center;
 }
 
 .game-card-ribbon {

@@ -11,10 +11,10 @@
     "attribution": "Map: d-maps.com"
   },
   "items": [
-    { "id": "boston", "label": "Boston", "x": 0.90, "y": 0.27, "hint": "Massachusetts Bay's largest port, and a hotbed of revolutionary activity." },
-    { "id": "new-york", "label": "New York", "x": 0.87, "y": 0.335, "hint": "Founded as New Amsterdam by the Dutch before becoming an English colony." },
-    { "id": "philadelphia", "label": "Philadelphia", "x": 0.845, "y": 0.36, "hint": "William Penn's 'city of brotherly love,' and home to the Continental Congress." },
-    { "id": "jamestown", "label": "Jamestown", "x": 0.835, "y": 0.44, "hint": "The first permanent English settlement in North America, founded 1607." },
+    { "id": "boston", "label": "Boston", "x": 0.930, "y": 0.300, "hint": "Massachusetts Bay's largest port, and a hotbed of revolutionary activity." },
+    { "id": "new-york", "label": "New York", "x": 0.905, "y": 0.340, "hint": "Founded as New Amsterdam by the Dutch before becoming an English colony." },
+    { "id": "philadelphia", "label": "Philadelphia", "x": 0.878, "y": 0.365, "hint": "William Penn's 'city of brotherly love,' and home to the Continental Congress." },
+    { "id": "jamestown", "label": "Jamestown", "x": 0.860, "y": 0.445, "hint": "The first permanent English settlement in North America, founded 1607." },
     { "id": "charleston", "label": "Charleston", "x": 0.835, "y": 0.595, "hint": "A wealthy Southern port built on the rice and indigo trade." },
     { "id": "savannah", "label": "Savannah", "x": 0.815, "y": 0.615, "hint": "Founded by James Oglethorpe as the capital of Georgia, the last of the thirteen colonies." }
   ]
