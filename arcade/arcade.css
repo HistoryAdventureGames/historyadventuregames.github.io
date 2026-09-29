@@ -26,6 +26,8 @@
 }
 
 .arcade-marquee h1 {
+  margin-left: auto;
+  margin-right: auto;
   color: #ffffff;
   font-size: clamp(1.6rem, 4.4vw, 3rem);
   text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.45), 0 0 28px rgba(255, 209, 102, 0.35);
