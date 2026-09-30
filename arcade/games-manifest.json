@@ -21,10 +21,8 @@
     "id": "historical-map-challenge",
     "title": "Historical Map Challenge",
     "description": "Place empires, battles, and borders in the right spot on the map.",
-    "status": "available",
-    "url": "/arcade/historical-map-challenge/",
-    "icon": "pi-map",
-    "tag": "9 challenges &middot; 5 modes"
+    "status": "coming-soon",
+    "icon": "pi-map"
   },
   {
     "id": "artifact-match",
@@ -32,15 +30,6 @@
     "description": "Match artifacts, tools, and art to the civilizations that made them.",
     "status": "coming-soon",
     "icon": "pi-magnifier"
-  },
-  {
-    "id": "government-builder",
-    "title": "Government Builder",
-    "description": "Set policy, spend your treasury on power-ups, and steer your nation through crises.",
-    "status": "available",
-    "url": "/arcade/government-builder/",
-    "icon": "pi-column",
-    "tag": "4 modes &middot; Power-Up Shop"
   },
   {
     "id": "cause-and-effect",
