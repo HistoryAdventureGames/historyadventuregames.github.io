@@ -491,7 +491,7 @@ function renderVocabularyText(value, adventure) {
   const pattern = new RegExp(`\\b(${terms.map(escapeRegExp).join("|")})\\b`, "gi");
 
   return escapeHtml(text).replace(pattern, (match) => {
-    const definition = getDefinitionForTerm(match);
+    const definition = getDefinitionForTerm(match, adventure);
     if (!definition) return match;
 
     return `<span class="vocab-term" tabindex="0" role="button" aria-label="${escapeAttribute(`${match}: ${definition}`)}">${match}<span class="vocab-popover" role="tooltip">${escapeHtml(definition)}</span></span>`;
@@ -499,13 +499,39 @@ function renderVocabularyText(value, adventure) {
 }
 
 function getVocabularyTerms(adventure) {
-  return (Array.isArray(adventure.keyTerms) ? adventure.keyTerms : [])
-    .filter((term) => getDefinitionForTerm(term))
+  const keyTerms = Array.isArray(adventure.keyTerms) ? adventure.keyTerms : [];
+  const definedTerms = adventure.termDefinitions && typeof adventure.termDefinitions === "object"
+    ? Object.keys(adventure.termDefinitions)
+    : [];
+
+  const seen = new Set();
+  const uniqueTerms = [];
+  [...keyTerms, ...definedTerms].forEach((term) => {
+    if (!isNonEmptyString(term)) return;
+    const normalized = term.toLowerCase();
+    if (seen.has(normalized)) return;
+    seen.add(normalized);
+    uniqueTerms.push(term);
+  });
+
+  return uniqueTerms
+    .filter((term) => getDefinitionForTerm(term, adventure))
     .sort((a, b) => b.length - a.length);
 }
 
-function getDefinitionForTerm(term) {
+// Per-adventure termDefinitions win over the shared glossary, so each story can
+// carry its own grade-appropriate vocabulary; the global glossary is the fallback.
+function getDefinitionForTerm(term, adventure) {
   const normalized = String(term).toLowerCase();
+
+  const perAdventure = adventure && adventure.termDefinitions && typeof adventure.termDefinitions === "object"
+    ? adventure.termDefinitions
+    : null;
+  if (perAdventure) {
+    const localKey = Object.keys(perAdventure).find((key) => key.toLowerCase() === normalized);
+    if (localKey && isNonEmptyString(perAdventure[localKey])) return perAdventure[localKey];
+  }
+
   const glossaryKey = Object.keys(glossaryDefinitions).find((key) => key.toLowerCase() === normalized);
   return glossaryKey ? glossaryDefinitions[glossaryKey] : "";
 }
