@@ -143,7 +143,8 @@ popovers** (see the note at the very bottom).
 | `coverImage.src` / `.alt` | top level | **the only image shown** (card + every scene background) |
 | `startingSceneId` | top level | which scene opens first (use `"start"`) |
 | `curriculumTags` | top level | tag chips on the card |
-| `keyTerms` | top level | which words *can* get vocab popovers (see note below) |
+| `keyTerms` | top level | canonical vocabulary list for the story |
+| `termDefinitions` | top level | term → definition; powers the clickable vocab popovers (see note below) |
 | `scenes` | top level | the whole story; keys are scene ids |
 | `title`, `step` | scene | heading + "Step N" label |
 | `pathFocus` | scene | optional framing box above the narrative |
@@ -155,15 +156,16 @@ popovers** (see the note at the very bottom).
 | `reflectionQuestions` | ending scene | numbered reflection list |
 | `keyTermReview` | ending scene | vocabulary recap paragraph |
 
-### ⚠️ Important limitation: vocabulary popovers
-The clickable vocab-term popovers are driven by a **hardcoded global glossary**
-inside `adventures/app.js`, **not** by each story's `termDefinitions`. So for a
-**new topic**, the terms in `termDefinitions` will *not* become clickable popovers
-on their own — they'll just read as normal text. To get working popovers you must
-either (a) add each new term + definition to the `glossaryDefinitions` object in
-`adventures/app.js`, or (b) have the engine updated once to read each story's own
-`termDefinitions` (recommended — then every future story is self-contained). The
-template still has you include `termDefinitions` so the data is ready either way.
+### Vocabulary popovers
+Each story is **self-contained**: the clickable vocab-term popovers are powered by
+the story's own `termDefinitions`, so you can have the chatbot write
+**grade-appropriate definitions for any new topic** and they just work — no code
+edits needed. Any word that appears in `termDefinitions` (and/or `keyTerms`) is
+highlighted wherever it shows up in scene text, and clicking/tapping it shows that
+story's definition. A shared global glossary in `adventures/app.js` still acts as a
+fallback for older stories, and the story's own definition always wins if both
+define the same term. Matching is whole-word and case-insensitive, so list the base
+form of a term (e.g. `legion`) — it will highlight `legion` but not `legions`.
 
-Fields the engine currently ignores (safe to include, but they won't render):
-per-scene `image`, and top-level `termDefinitions` (until the engine change above).
+Fields the engine ignores (safe to include, but they won't render): per-scene
+`image` — only the top-level `coverImage` is displayed.
