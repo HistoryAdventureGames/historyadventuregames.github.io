@@ -28,7 +28,6 @@ audio.setSoundEnabled(gameState.settings.soundEnabled);
 audio.musicEnabled = gameState.settings.musicEnabled;
 
 let manifest = [];
-let timerHandle = null;
 
 init();
 
@@ -62,7 +61,6 @@ function render() {
   if (gameState.screen === "menu") {
     root.innerHTML = renderMenu({
       modeId: gameState.modeId,
-      teacherMode: gameState.teacherMode,
       dailyStreak: getDailyStreak(),
       hasPlayedToday: hasPlayedDailyToday(todayDateKey()),
       getHighScore,
@@ -78,7 +76,7 @@ function render() {
 
   if (gameState.screen === "end") {
     const round = gameState.round;
-    const streak = round.modeId === "daily" && !round.teacherMode ? getDailyStreak() : null;
+    const streak = round.modeId === "daily" ? getDailyStreak() : null;
     root.innerHTML = renderEndScreen({ round, isNewHighScore: round.isNewHighScore, streak });
   }
 }
@@ -99,14 +97,8 @@ function selectMode(modeId) {
   render();
 }
 
-function toggleTeacherMode(enabled) {
-  gameState.teacherMode = enabled;
-  render();
-}
-
 async function startRound() {
   const modeId = gameState.modeId;
-  const mode = MODES[modeId];
 
   let entry;
   if (modeId === "daily") {
@@ -131,46 +123,13 @@ async function startRound() {
     return;
   }
 
-  const round = createRoundState({ modeId, puzzle, timed: mode.timed, teacherMode: gameState.teacherMode });
+  const round = createRoundState({ modeId, puzzle });
   gameState.round = round;
   gameState.screen = "playing";
   gameState.isSettingsOpen = false;
   audio.resume();
-  if (round.timed) startTimer();
   render();
   announce("Puzzle loaded. Select four cards you think belong together, then submit.");
-}
-
-// ---------- Timer ----------
-
-function startTimer() {
-  stopTimer();
-  let lastTick = performance.now();
-  timerHandle = window.setInterval(() => {
-    if (gameState.isSettingsOpen || gameState.screen !== "playing" || !gameState.round.timed) return;
-    const now = performance.now();
-    const delta = (now - lastTick) / 1000;
-    lastTick = now;
-
-    gameState.round.timeRemaining -= delta;
-    updateHudTimer();
-
-    if (gameState.round.timeRemaining <= 0) {
-      gameState.round.timeRemaining = 0;
-      gameState.round.score = computeScore(gameState.round);
-      endRound("lost");
-    }
-  }, 200);
-}
-
-function stopTimer() {
-  if (timerHandle) window.clearInterval(timerHandle);
-  timerHandle = null;
-}
-
-function updateHudTimer() {
-  const timerEl = root.querySelector("#hlTimer");
-  if (timerEl) timerEl.textContent = `${Math.max(0, Math.ceil(gameState.round.timeRemaining))}s`;
 }
 
 // ---------- Tile selection & guessing ----------
@@ -282,18 +241,17 @@ function flashTiles(items) {
 // ---------- Round lifecycle ----------
 
 function endRound(reason) {
-  stopTimer();
   const round = gameState.round;
   round.status = reason;
 
   let isNewHighScore = false;
-  if (MODES[round.modeId].savesProgress && !round.teacherMode) {
+  if (MODES[round.modeId].savesProgress) {
     const result = setHighScoreIfBetter(round.modeId, { score: round.score });
     isNewHighScore = result.isNewHighScore && round.score > 0;
   }
   round.isNewHighScore = isNewHighScore;
 
-  if (round.modeId === "daily" && !round.teacherMode) {
+  if (round.modeId === "daily") {
     recordDailyAttempt(todayDateKey(), reason === "won");
   }
 
@@ -313,7 +271,6 @@ function restartRound() {
 }
 
 function quitToMenu() {
-  stopTimer();
   hideSettingsOverlay();
   gameState.screen = "menu";
   gameState.round = null;
@@ -406,12 +363,6 @@ root.addEventListener("click", (event) => {
       break;
     default:
       break;
-  }
-});
-
-root.addEventListener("change", (event) => {
-  if (event.target.id === "teacherModeToggle") {
-    toggleTeacherMode(event.target.checked);
   }
 });
 
