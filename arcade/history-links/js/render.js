@@ -3,7 +3,7 @@ import { MODES } from "./state.js";
 
 const TIER_LABELS = { 1: "Foundational", 2: "Intermediate", 3: "Advanced", 4: "Expert" };
 
-export function renderMenu({ modeId, teacherMode, dailyStreak, hasPlayedToday, getHighScore }) {
+export function renderMenu({ modeId, dailyStreak, hasPlayedToday, getHighScore }) {
   return `
     <section class="hl-menu" aria-labelledby="hlMenuHeading">
       <h2 id="hlMenuHeading" class="visually-hidden">Choose a mode</h2>
@@ -16,26 +16,16 @@ export function renderMenu({ modeId, teacherMode, dailyStreak, hasPlayedToday, g
         ${renderModeDetail({ modeId, dailyStreak, hasPlayedToday, getHighScore })}
       </div>
 
-      <div class="hl-panel pixel-frame hl-teacher-panel">
-        <label class="hl-teacher-toggle">
-          <input type="checkbox" id="teacherModeToggle" ${teacherMode ? "checked" : ""}>
-          <span>
-            <strong>Teacher Mode</strong>
-            <span class="hl-teacher-detail">Turns off the timer and skips saving a score &mdash; built for playing as a class.</span>
-          </span>
-        </label>
-      </div>
-
       <div class="hl-start-row">
         <button
           class="primary-button pixel-button hl-start-button"
           type="button"
           data-action="start-round"
-          ${modeId === "daily" && hasPlayedToday && !teacherMode ? "disabled" : ""}
+          ${modeId === "daily" && hasPlayedToday ? "disabled" : ""}
         >
-          ${modeId === "daily" && hasPlayedToday && !teacherMode ? "Come back tomorrow" : "Start"}
+          ${modeId === "daily" && hasPlayedToday ? "Come back tomorrow" : "Start"}
         </button>
-        ${modeId === "daily" && hasPlayedToday && !teacherMode ? `<p class="hl-start-hint">You already solved today's puzzle. Try Teacher Mode to replay it untimed.</p>` : ""}
+        ${modeId === "daily" && hasPlayedToday ? `<p class="hl-start-hint">You already played today's puzzle. Try Random Puzzle for more.</p>` : ""}
       </div>
     </section>
   `;
@@ -90,17 +80,6 @@ export function renderHud(round) {
         </span>
         <span class="visually-hidden">${mistakesRemaining} of 4 remaining</span>
       </div>
-      ${round.timed ? `
-        <div class="hl-hud-stat">
-          <span class="hl-hud-label">Time</span>
-          <span class="hl-hud-value" id="hlTimer">${Math.max(0, Math.ceil(round.timeRemaining))}s</span>
-        </div>
-      ` : `
-        <div class="hl-hud-stat">
-          <span class="hl-hud-label">Mode</span>
-          <span class="hl-hud-value">${round.teacherMode ? "Teacher" : "Untimed"}</span>
-        </div>
-      `}
       <div class="hl-hud-actions">
         <button class="pixel-button arcade-icon-button" type="button" data-action="open-settings" aria-label="Settings">
           <svg class="pixel-icon" viewBox="0 0 24 24"><use href="#pi-gear"></use></svg>
@@ -189,12 +168,10 @@ export function renderEndScreen({ round, isNewHighScore, streak }) {
       <h2 id="hlEndHeading" class="pixel-heading">${won ? "All Linked Up!" : "Better Luck Next Time"}</h2>
       ${isNewHighScore ? `<p class="hl-new-high-score">New high score!</p>` : ""}
 
-      ${!won ? `
-        <div class="hl-reveal">
-          <p class="hl-reveal-label">Here's how the rest connected:</p>
-          ${round.groups.filter((g) => !g.solved).map(renderSolvedBanner).join("")}
-        </div>
-      ` : ""}
+      <div class="hl-reveal">
+        <p class="hl-reveal-label">How they all connected:</p>
+        ${round.groups.map(renderSolvedBanner).join("")}
+      </div>
 
       <div class="hl-end-stats">
         <div><span class="hl-hud-label">Score</span><strong>${round.score}</strong></div>

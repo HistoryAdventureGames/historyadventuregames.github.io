@@ -1,23 +1,20 @@
 // Shared constants and state shapes for History Links.
 
 export const MODES = {
-  daily: { id: "daily", label: "Daily Challenge", timed: true, savesProgress: true },
-  random: { id: "random", label: "Random Puzzle", timed: true, savesProgress: true },
+  daily: { id: "daily", label: "Daily Challenge", savesProgress: true },
+  random: { id: "random", label: "Random Puzzle", savesProgress: true },
 };
 
 export const SCORING = {
   pointsPerGroup: 100,
   mistakePenalty: 25,
-  timeBonusPerSecond: 2,
   maxMistakes: 4,
-  timeBudgetSeconds: 150,
 };
 
 export function createInitialGameState() {
   return {
     screen: "menu",
     modeId: "daily",
-    teacherMode: false,
     round: null,
     settings: {
       soundEnabled: true,
@@ -29,7 +26,7 @@ export function createInitialGameState() {
 // A puzzle's groups gain `solved` as the round progresses; tiles are a flat,
 // shuffled list of { item, groupIndex } so the grid can reflow naturally as
 // groups lock in, without the engine needing to know about layout.
-export function createRoundState({ modeId, puzzle, timed, teacherMode }) {
+export function createRoundState({ modeId, puzzle }) {
   const groups = puzzle.groups.map((group, index) => ({ ...group, index, solved: false }));
   const tiles = shuffle(
     groups.flatMap((group) => group.items.map((item) => ({ item, groupIndex: group.index }))),
@@ -37,7 +34,6 @@ export function createRoundState({ modeId, puzzle, timed, teacherMode }) {
 
   return {
     modeId,
-    teacherMode,
     puzzleId: puzzle.id,
     puzzleTitle: puzzle.title,
     groups,
@@ -46,8 +42,6 @@ export function createRoundState({ modeId, puzzle, timed, teacherMode }) {
     mistakes: 0,
     solvedCount: 0,
     score: 0,
-    timed: timed && !teacherMode,
-    timeRemaining: timed && !teacherMode ? SCORING.timeBudgetSeconds : null,
     status: "playing",
     feedback: null,
   };

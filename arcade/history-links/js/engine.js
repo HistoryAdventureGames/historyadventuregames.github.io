@@ -20,11 +20,10 @@ export function evaluateSelection(selectedItems, groups) {
   return { result: "incorrect", groupIndex: -1 };
 }
 
-export function computeScore({ solvedCount, mistakes, timed, timeRemaining }) {
+export function computeScore({ solvedCount, mistakes }) {
   const base = solvedCount * SCORING.pointsPerGroup;
   const penalty = mistakes * SCORING.mistakePenalty;
-  const timeBonus = timed && timeRemaining ? Math.round(Math.max(0, timeRemaining)) * SCORING.timeBonusPerSecond : 0;
-  return Math.max(0, base - penalty + timeBonus);
+  return Math.max(0, base - penalty);
 }
 
 function isSameSet(a, b) {
