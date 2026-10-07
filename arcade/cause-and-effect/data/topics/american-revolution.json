@@ -1,0 +1,49 @@
+{
+  "id": "american-revolution",
+  "title": "The American Revolution",
+  "region": "us",
+  "pairs": [
+    {
+      "cause": "Britain taxed the colonies (Stamp Act, Townshend Acts, Tea Act) to pay off war debt.",
+      "effect": "Colonists protested 'no taxation without representation.'",
+      "type": "immediate",
+      "explanation": "Colonists objected to being taxed by a Parliament in which they had no elected voice."
+    },
+    {
+      "cause": "Colonists dumped British tea into the harbor at the Boston Tea Party.",
+      "effect": "Britain passed the Intolerable (Coercive) Acts to punish Massachusetts.",
+      "type": "immediate",
+      "explanation": "Britain cracked down hard to reassert control, which only angered the colonies more."
+    },
+    {
+      "cause": "Enlightenment ideas about natural rights and consent of the governed spread.",
+      "effect": "Colonists justified independence in the Declaration of Independence.",
+      "type": "long-term",
+      "explanation": "Thinkers like Locke gave colonists the language of rights and self-government."
+    },
+    {
+      "cause": "The Americans defeated the British at the Battle of Saratoga.",
+      "effect": "France decided to ally with the Americans and join the war.",
+      "type": "immediate",
+      "explanation": "Saratoga convinced France the Americans could win, bringing crucial foreign help."
+    },
+    {
+      "cause": "The Americans won the Revolutionary War.",
+      "effect": "The United States became an independent nation in the Treaty of Paris (1783).",
+      "type": "immediate",
+      "explanation": "Britain formally recognized American independence to end the war."
+    },
+    {
+      "cause": "The new nation needed a plan of government.",
+      "effect": "Americans wrote the Articles of Confederation, and later the Constitution.",
+      "type": "long-term",
+      "explanation": "Independence forced Americans to design a government from scratch."
+    },
+    {
+      "cause": "American colonists successfully overthrew a powerful monarchy.",
+      "effect": "Revolutions were inspired elsewhere, such as in France and Latin America.",
+      "type": "long-term",
+      "explanation": "The American example showed others that colonial and monarchical rule could be challenged."
+    }
+  ]
+}

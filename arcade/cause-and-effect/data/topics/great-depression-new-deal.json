@@ -1,0 +1,49 @@
+{
+  "id": "great-depression-new-deal",
+  "title": "The Great Depression & the New Deal",
+  "region": "us",
+  "pairs": [
+    {
+      "cause": "The stock market crashed in October 1929.",
+      "effect": "Banks and businesses failed and millions of people lost their savings and jobs.",
+      "type": "immediate",
+      "explanation": "The crash wiped out wealth and confidence, triggering a deep economic collapse."
+    },
+    {
+      "cause": "Banks failed and depositors panicked.",
+      "effect": "People rushed to pull out their money, causing even more banks to collapse.",
+      "type": "immediate",
+      "explanation": "Bank runs spread the crisis as healthy banks were drained of cash."
+    },
+    {
+      "cause": "Severe drought and poor farming practices hit the Great Plains.",
+      "effect": "The Dust Bowl forced farm families to abandon their land and migrate west.",
+      "type": "immediate",
+      "explanation": "Dust storms ruined farms, displacing hundreds of thousands of people."
+    },
+    {
+      "cause": "Unemployment climbed to about 25 percent.",
+      "effect": "Franklin D. Roosevelt launched the New Deal to provide relief, recovery, and reform.",
+      "type": "immediate",
+      "explanation": "Widespread suffering led voters and FDR to demand bold government action."
+    },
+    {
+      "cause": "New Deal programs put people to work on public projects.",
+      "effect": "The federal government took on a much larger role in the economy.",
+      "type": "long-term",
+      "explanation": "Washington began actively managing jobs, banking, and relief for the first time at this scale."
+    },
+    {
+      "cause": "Congress passed the Social Security Act.",
+      "effect": "The U.S. created a safety net of retirement and unemployment benefits.",
+      "type": "long-term",
+      "explanation": "It established lasting federal support for the elderly, unemployed, and disabled."
+    },
+    {
+      "cause": "The New Deal expanded federal power and spending.",
+      "effect": "Debates over how big a role government should play in the economy continue today.",
+      "type": "long-term",
+      "explanation": "The New Deal reshaped expectations of government in ways still argued over."
+    }
+  ]
+}

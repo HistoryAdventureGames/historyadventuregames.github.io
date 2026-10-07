@@ -1,0 +1,49 @@
+{
+  "id": "neolithic-revolution",
+  "title": "The Neolithic (Agricultural) Revolution",
+  "region": "global",
+  "pairs": [
+    {
+      "cause": "People learned to farm crops and domesticate animals.",
+      "effect": "Communities settled in permanent villages instead of migrating.",
+      "type": "immediate",
+      "explanation": "A reliable food supply meant groups no longer had to follow wild herds and plants, so they could stay in one place."
+    },
+    {
+      "cause": "Farming produced a surplus of food.",
+      "effect": "Some people could specialize in jobs besides finding food, like crafts, trade, and religion.",
+      "type": "long-term",
+      "explanation": "Extra food freed part of the population from farming, allowing job specialization — a foundation of civilization."
+    },
+    {
+      "cause": "Villages stored surplus food and goods.",
+      "effect": "Social classes and organized government developed.",
+      "type": "long-term",
+      "explanation": "Deciding who controlled stored wealth led to leaders, rules, and ranked social classes."
+    },
+    {
+      "cause": "Communities needed to track land, trade, and surplus.",
+      "effect": "Early writing and record-keeping systems were invented.",
+      "type": "long-term",
+      "explanation": "Managing a complex settled economy pushed people to record information, leading to the first writing."
+    },
+    {
+      "cause": "People lived close together with animals in denser settlements.",
+      "effect": "Communicable diseases spread more easily among humans.",
+      "type": "long-term",
+      "explanation": "Crowding and contact with domesticated animals created new paths for disease."
+    },
+    {
+      "cause": "A steadier food supply could support more children.",
+      "effect": "The human population grew significantly.",
+      "type": "long-term",
+      "explanation": "Farming supported far more people per acre than hunting and gathering."
+    },
+    {
+      "cause": "Settled farmers wanted to protect stored food and fields.",
+      "effect": "Communities built permanent walls and defenses.",
+      "type": "immediate",
+      "explanation": "Having wealth worth taking made raids a threat, so villages fortified themselves."
+    }
+  ]
+}

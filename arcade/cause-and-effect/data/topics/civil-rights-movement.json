@@ -1,0 +1,49 @@
+{
+  "id": "civil-rights-movement",
+  "title": "The Civil Rights Movement",
+  "region": "us",
+  "pairs": [
+    {
+      "cause": "The Supreme Court ruled in Brown v. Board of Education (1954).",
+      "effect": "Segregation in public schools was declared unconstitutional.",
+      "type": "immediate",
+      "explanation": "The Court overturned 'separate but equal' in public education."
+    },
+    {
+      "cause": "Rosa Parks was arrested for refusing to give up her bus seat.",
+      "effect": "Activists launched the Montgomery Bus Boycott.",
+      "type": "immediate",
+      "explanation": "Her arrest sparked a year-long boycott that launched the modern movement."
+    },
+    {
+      "cause": "Activists used nonviolent protests, marches, and sit-ins.",
+      "effect": "National attention and public sympathy for civil rights grew.",
+      "type": "long-term",
+      "explanation": "Peaceful protesters facing violence on TV shifted public opinion nationwide."
+    },
+    {
+      "cause": "The March on Washington and mounting pressure pushed Congress to act.",
+      "effect": "The Civil Rights Act of 1964 banned discrimination in public places and jobs.",
+      "type": "immediate",
+      "explanation": "Sustained activism led to landmark federal anti-discrimination law."
+    },
+    {
+      "cause": "Activists marched in Selma for voting rights.",
+      "effect": "Congress passed the Voting Rights Act of 1965.",
+      "type": "immediate",
+      "explanation": "Selma spurred a law banning tactics used to block Black citizens from voting."
+    },
+    {
+      "cause": "Civil rights laws protected voting and banned discrimination.",
+      "effect": "Political participation by African Americans rose over the following decades.",
+      "type": "long-term",
+      "explanation": "Legal protections gradually opened the ballot box and public life more fully."
+    },
+    {
+      "cause": "The movement showed that organized protest could change the law.",
+      "effect": "Other groups launched their own rights movements (women, Latinos, disabled people).",
+      "type": "long-term",
+      "explanation": "Its strategies became a model for later struggles for equality."
+    }
+  ]
+}

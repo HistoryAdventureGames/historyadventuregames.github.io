@@ -1,0 +1,49 @@
+{
+  "id": "civil-war-reconstruction",
+  "title": "The Civil War & Reconstruction",
+  "region": "us",
+  "pairs": [
+    {
+      "cause": "The North and South clashed over slavery and states' rights.",
+      "effect": "Sectional tensions deepened and pushed the nation toward war.",
+      "type": "long-term",
+      "explanation": "Decades of conflict over whether slavery would expand divided the country."
+    },
+    {
+      "cause": "Abraham Lincoln was elected president in 1860.",
+      "effect": "Southern states, fearing limits on slavery, seceded from the Union.",
+      "type": "immediate",
+      "explanation": "The South saw Lincoln's victory as a threat to slavery and left the Union."
+    },
+    {
+      "cause": "Lincoln issued the Emancipation Proclamation.",
+      "effect": "The war became a fight to end slavery, and Black soldiers joined the Union army.",
+      "type": "immediate",
+      "explanation": "It redefined the war's purpose and allowed African Americans to enlist for the Union."
+    },
+    {
+      "cause": "The Union won the Civil War.",
+      "effect": "Slavery was abolished nationwide by the 13th Amendment.",
+      "type": "immediate",
+      "explanation": "Union victory made permanent, nationwide emancipation possible."
+    },
+    {
+      "cause": "Reconstruction amendments were added to the Constitution.",
+      "effect": "The 14th and 15th Amendments granted citizenship and voting rights to formerly enslaved men.",
+      "type": "long-term",
+      "explanation": "These amendments tried to secure legal equality and the vote after slavery."
+    },
+    {
+      "cause": "Reconstruction ended and federal troops left the South.",
+      "effect": "Southern states passed Jim Crow laws enforcing racial segregation.",
+      "type": "long-term",
+      "explanation": "Without federal protection, Southern governments stripped away the rights of Black citizens."
+    },
+    {
+      "cause": "White Southerners sought to restore control after the war.",
+      "effect": "Black Codes and groups like the Ku Klux Klan limited African Americans' freedom.",
+      "type": "long-term",
+      "explanation": "Laws and violence were used to suppress the rights newly won by freedpeople."
+    }
+  ]
+}

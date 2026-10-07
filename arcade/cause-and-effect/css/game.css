@@ -1,0 +1,461 @@
+/* Cause & Effect: same dark "arcade cabinet" base as the hub and the other
+   arcade games (arcade.css), with parchment-toned menu panels and a two-column
+   matching board. Tokens from styles.css, primitives from pixel-ui.css. */
+
+.ce-header {
+  --adventure-bg-image: none;
+}
+
+.ce-shell {
+  width: var(--content);
+  margin: 0 auto;
+  padding: clamp(20px, 4vw, 40px) 0 clamp(56px, 8vw, 96px);
+}
+
+.ce-shell .status-panel,
+.ce-shell .error-panel {
+  border-color: rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+}
+
+.ce-howto-button {
+  margin-top: 18px;
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+}
+
+.ce-howto-button:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+/* ---------- Menu ---------- */
+
+.ce-menu {
+  display: grid;
+  gap: 20px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.ce-panel {
+  --notch: 12px;
+  border: 1px solid #e3c98a;
+  background: linear-gradient(165deg, #fff8e8, #ffffff 120%);
+  color: var(--ink);
+  padding: clamp(18px, 2.4vw, 26px);
+}
+
+.ce-panel-label {
+  margin: 0 0 14px;
+  color: var(--gold);
+  font-size: 0.72rem;
+}
+
+.ce-region-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.ce-region-button {
+  background: #eef2f7;
+  color: var(--ink);
+  padding: 0.7rem 1.2rem;
+}
+
+.ce-region-button.is-selected {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+.ce-region-detail {
+  margin: 14px 0 0;
+  color: var(--muted);
+}
+
+.ce-topic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  gap: 12px;
+}
+
+.ce-topic-card {
+  --notch: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: left;
+  border: 1px solid var(--line-strong);
+  background: #ffffff;
+  color: var(--ink);
+  padding: 14px 16px;
+  cursor: pointer;
+}
+
+.ce-topic-card:hover {
+  border-color: var(--primary);
+}
+
+.ce-topic-card.is-selected {
+  border-color: var(--primary);
+  background: linear-gradient(165deg, #eaf1ff, #ffffff 120%);
+  box-shadow: 0 0 0 2px rgba(42, 92, 170, 0.35);
+}
+
+.ce-topic-title {
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.ce-topic-sub {
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.ce-start-row {
+  text-align: center;
+}
+
+.ce-start-button {
+  min-width: 220px;
+  font-size: 1.05rem;
+}
+
+.ce-start-hint {
+  margin: 10px 0 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.9rem;
+}
+
+/* ---------- HUD ---------- */
+
+.ce-hud {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: clamp(14px, 2.5vw, 28px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+  padding: 14px 18px;
+  margin-bottom: 18px;
+}
+
+.ce-hud-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ce-hud-label {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.ce-hud-value {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.ce-hud-actions {
+  margin-left: auto;
+}
+
+/* ---------- Playing board ---------- */
+
+.ce-instruction {
+  margin: 0 0 16px;
+  color: rgba(255, 255, 255, 0.85);
+  text-align: center;
+}
+
+.ce-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(12px, 2.2vw, 24px);
+  align-items: start;
+}
+
+.ce-column-head {
+  margin: 0 0 10px;
+  color: #ffd166;
+  font-size: 0.8rem;
+  font-weight: 850;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.ce-card-list {
+  display: grid;
+  gap: 10px;
+}
+
+.ce-card {
+  --notch: 8px;
+  display: block;
+  width: 100%;
+  text-align: left;
+  border: 1px solid var(--line-strong);
+  background: linear-gradient(165deg, #fff8e8, #ffffff 120%);
+  color: var(--ink);
+  padding: 12px 14px;
+  font-size: 0.96rem;
+  line-height: 1.4;
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 120ms ease, border-color 120ms ease;
+}
+
+.ce-card:hover {
+  border-color: var(--primary);
+  transform: translateY(-1px);
+}
+
+.ce-card-cause {
+  border-left: 5px solid #c6792b;
+}
+
+.ce-card-effect {
+  border-left: 5px solid #2a5caa;
+}
+
+.ce-card.is-selected {
+  border-color: var(--primary);
+  background: linear-gradient(165deg, #eaf1ff, #ffffff 120%);
+  box-shadow: 0 0 0 3px rgba(42, 92, 170, 0.4);
+  transform: translateY(-1px);
+}
+
+.ce-card.flash-incorrect {
+  border-color: #c0392b;
+  background: linear-gradient(165deg, #ffe4e0, #fff 120%);
+  box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.45);
+  animation: ce-shake 0.42s ease;
+}
+
+@keyframes ce-shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-5px); }
+  40% { transform: translateX(5px); }
+  60% { transform: translateX(-4px); }
+  80% { transform: translateX(4px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ce-card,
+  .ce-card:hover,
+  .ce-card.flash-incorrect {
+    transition: none;
+    animation: none;
+    transform: none;
+  }
+}
+
+/* ---------- Feedback ---------- */
+
+.ce-feedback {
+  min-height: 1.6em;
+  margin: 16px 0 4px;
+  text-align: center;
+}
+
+.ce-feedback-message {
+  margin: 0;
+  font-weight: 700;
+}
+
+.ce-feedback-correct {
+  color: #7bdc9b;
+}
+
+.ce-feedback-incorrect {
+  color: #ff9a8a;
+}
+
+/* ---------- Matched banners ---------- */
+
+.ce-matched,
+.ce-reveal {
+  margin-top: 20px;
+}
+
+.ce-matched-head,
+.ce-reveal-label {
+  margin: 0 0 10px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.ce-matched-list {
+  display: grid;
+  gap: 10px;
+}
+
+.ce-matched-banner {
+  --notch: 10px;
+  border: 1px solid #bfe6cc;
+  background: linear-gradient(165deg, #eafaf0, #ffffff 120%);
+  color: var(--ink);
+  padding: 12px 14px;
+}
+
+.ce-matched-pair {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.ce-matched-cause,
+.ce-matched-effect {
+  font-weight: 700;
+}
+
+.ce-matched-arrow {
+  color: #2a7a4b;
+  font-weight: 900;
+}
+
+.ce-matched-explanation {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.ce-type-tag {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 2px 10px;
+  font-size: 0.68rem;
+  font-weight: 850;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.ce-type-immediate {
+  background: #fde8cf;
+  color: #9a5a12;
+}
+
+.ce-type-long-term {
+  background: #dfe8fb;
+  color: #274a86;
+}
+
+/* ---------- Actions ---------- */
+
+.ce-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+/* ---------- Settings overlay ---------- */
+
+.ce-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 400;
+  display: grid;
+  place-items: center;
+  background: rgba(6, 12, 24, 0.74);
+  backdrop-filter: blur(3px);
+  padding: 16px;
+}
+
+.ce-overlay-panel {
+  --notch: 14px;
+  width: min(420px, 100%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: #101c34;
+  color: #ffffff;
+  padding: clamp(20px, 3vw, 30px);
+  text-align: center;
+}
+
+.ce-overlay-panel .pixel-heading {
+  color: #ffffff;
+  margin-bottom: 18px;
+}
+
+.ce-overlay-actions {
+  display: grid;
+  gap: 10px;
+}
+
+/* ---------- End screen ---------- */
+
+.ce-end {
+  --notch: 16px;
+  max-width: 720px;
+  margin: 0 auto;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: #101c34;
+  color: #ffffff;
+  padding: clamp(24px, 4vw, 40px);
+  text-align: center;
+}
+
+.ce-end .eyebrow {
+  color: #ffd166;
+}
+
+.ce-end .pixel-heading {
+  color: #ffffff;
+}
+
+.ce-new-high-score {
+  color: #7bdc9b;
+  font-weight: 850;
+  margin: 6px 0 0;
+}
+
+.ce-end-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: clamp(18px, 4vw, 40px);
+  margin: 22px 0;
+}
+
+.ce-end-stats > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ce-end-stats strong {
+  font-size: 1.5rem;
+}
+
+.ce-end .ce-matched-list {
+  text-align: left;
+}
+
+.ce-end-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 620px) {
+  .ce-columns {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}

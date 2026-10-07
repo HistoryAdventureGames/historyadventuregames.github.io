@@ -34,9 +34,11 @@
   {
     "id": "cause-and-effect",
     "title": "Cause & Effect",
-    "description": "Chain historical causes to their effects before the clock runs out.",
-    "status": "coming-soon",
-    "icon": "pi-cycle"
+    "description": "Match each historical cause to the effect it led to.",
+    "status": "available",
+    "url": "/arcade/cause-and-effect/",
+    "icon": "pi-cycle",
+    "tag": "Global &amp; U.S. &middot; 8 topics"
   },
   {
     "id": "spot-the-anachronism",

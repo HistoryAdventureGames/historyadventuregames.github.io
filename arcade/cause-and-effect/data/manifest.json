@@ -1,0 +1,10 @@
+[
+  { "id": "neolithic-revolution", "title": "The Neolithic (Agricultural) Revolution", "region": "global", "file": "topics/neolithic-revolution.json" },
+  { "id": "black-death", "title": "The Black Death", "region": "global", "file": "topics/black-death.json" },
+  { "id": "age-of-exploration", "title": "The Age of Exploration & the Columbian Exchange", "region": "global", "file": "topics/age-of-exploration.json" },
+  { "id": "industrial-revolution", "title": "The Industrial Revolution", "region": "global", "file": "topics/industrial-revolution.json" },
+  { "id": "american-revolution", "title": "The American Revolution", "region": "us", "file": "topics/american-revolution.json" },
+  { "id": "civil-war-reconstruction", "title": "The Civil War & Reconstruction", "region": "us", "file": "topics/civil-war-reconstruction.json" },
+  { "id": "great-depression-new-deal", "title": "The Great Depression & the New Deal", "region": "us", "file": "topics/great-depression-new-deal.json" },
+  { "id": "civil-rights-movement", "title": "The Civil Rights Movement", "region": "us", "file": "topics/civil-rights-movement.json" }
+]
