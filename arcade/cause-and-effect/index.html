@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cause &amp; Effect — History Arcade</title>
+    <meta
+      name="description"
+      content="Match each historical cause to the effect it led to. Pick a topic from Global or U.S. History and link causes to their immediate consequences and long-term effects."
+    >
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=20260706-arcade-launch">
+    <link rel="stylesheet" href="/pixel-ui.css?v=20260706-arcade-launch">
+    <link rel="stylesheet" href="/arcade/arcade.css?v=20260706-arcade-launch">
+    <link rel="stylesheet" href="css/game.css?v=20260706-arcade-launch">
+  </head>
+  <body class="arcade-body ce-body">
+    <a class="skip-link" href="#gameRoot">Skip to game</a>
+
+    <header class="site-header arcade-header ce-header">
+      <nav class="nav-bar" aria-label="Primary">
+        <a class="brand-mark" href="/" aria-label="History Adventure Games home">
+          <span class="brand-icon" aria-hidden="true">H</span>
+          <span>History Adventure Games</span>
+        </a>
+        <div class="nav-links" aria-label="Site sections">
+          <a class="nav-action" href="/arcade/">Arcade</a>
+          <button class="pixel-button arcade-icon-button" type="button" data-instructions-open aria-label="How to play">
+            <svg class="pixel-icon" viewBox="0 0 24 24"><use href="#pi-info"></use></svg>
+          </button>
+          <button class="pixel-button arcade-icon-button" type="button" id="soundToggle" aria-pressed="true" aria-label="Toggle sound effects">
+            <svg class="pixel-icon" viewBox="0 0 24 24"><use href="#pi-speaker"></use></svg>
+          </button>
+          <button class="pixel-button arcade-icon-button" type="button" id="musicToggle" aria-pressed="true" aria-label="Toggle music">
+            <svg class="pixel-icon" viewBox="0 0 24 24"><use href="#pi-music"></use></svg>
+          </button>
+        </div>
+      </nav>
+
+      <section class="arcade-marquee ce-marquee">
+        <p class="eyebrow">History Arcade</p>
+        <h1 class="pixel-heading">Cause &amp; Effect</h1>
+        <p class="section-subtitle arcade-marquee-subtitle">
+          Match each historical cause to the effect it led to.
+        </p>
+        <button class="secondary-button pixel-button ce-howto-button" type="button" data-instructions-open>
+          How to Play &amp; Scoring
+        </button>
+      </section>
+    </header>
+
+    <main id="gameRoot" class="app-shell ce-shell" tabindex="-1">
+      <div class="status-panel">
+        <div class="loader" aria-hidden="true"></div>
+        <h2>Loading Cause &amp; Effect...</h2>
+      </div>
+    </main>
+
+    <footer class="site-footer arcade-footer">
+      <p>New topics and arcade games are added regularly. Check the <a href="/arcade/">Arcade</a> for more.</p>
+    </footer>
+
+    <script src="/scripts/load-icon-sprite.js?v=20260706-arcade-launch"></script>
+    <script src="/arcade/instructions-modal.js?v=20260706-arcade-launch"></script>
+    <script>
+      ArcadeInstructions.init({
+        gameId: "cause-and-effect",
+        title: "How to Play Cause & Effect",
+        sections: [
+          {
+            heading: "Goal",
+            body: "Each round shows a set of historical causes and, shuffled beside them, the effects they led to. Link every cause to the correct effect.",
+          },
+          {
+            heading: "Controls",
+            body: "Tap or click a <strong>cause</strong> on the left, then tap the <strong>effect</strong> on the right that it caused. A correct match locks the pair in; a wrong match just clears so you can try again. Use Clear selection to reset your current pick.",
+          },
+          {
+            heading: "Immediate vs. long-term",
+            body: "An effect can be an <strong>immediate</strong> consequence or a <strong>long-term</strong> historical trend. Matched pairs show which, so you build a feel for both kinds of consequence.",
+          },
+          {
+            heading: "Scoring",
+            body: "Every correct match earns points; each wrong match costs a few. Finish the round to see every cause and effect explained, and try to beat your best score for that region.",
+          },
+          {
+            heading: "Topics",
+            body: "Pick <strong>Global History</strong> or <strong>U.S. History</strong>, then choose a topic (or Surprise me). You'll only be matched cause-and-effect pairs from that topic.",
+          },
+        ],
+      });
+    </script>
+    <script type="module" src="js/main.js?v=20260706-arcade-launch"></script>
+  </body>
+</html>

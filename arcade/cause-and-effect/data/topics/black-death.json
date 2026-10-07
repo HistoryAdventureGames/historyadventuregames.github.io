@@ -1,0 +1,49 @@
+{
+  "id": "black-death",
+  "title": "The Black Death",
+  "region": "global",
+  "pairs": [
+    {
+      "cause": "Trade along the Silk Roads and sea routes connected Afro-Eurasia.",
+      "effect": "The plague spread rapidly from Asia into the Middle East and Europe.",
+      "type": "immediate",
+      "explanation": "Merchants, ships, and rats carried infected fleas along the same routes that carried goods."
+    },
+    {
+      "cause": "The plague killed roughly a third of Europe's population.",
+      "effect": "A severe labor shortage left lords without enough workers.",
+      "type": "immediate",
+      "explanation": "So many peasants died that there were not enough people to work the land."
+    },
+    {
+      "cause": "Workers became scarce and valuable.",
+      "effect": "Surviving peasants could demand higher wages and more freedom.",
+      "type": "long-term",
+      "explanation": "With labor in short supply, workers gained bargaining power they never had before."
+    },
+    {
+      "cause": "The labor shortage weakened the manor system.",
+      "effect": "Feudalism and serfdom declined in Western Europe.",
+      "type": "long-term",
+      "explanation": "As peasants won wages and mobility, the old bonds tying them to a lord's land broke down."
+    },
+    {
+      "cause": "People were terrified and could not explain the disease.",
+      "effect": "Minorities such as Jewish communities were scapegoated and attacked.",
+      "type": "immediate",
+      "explanation": "Fear and the search for someone to blame led to violence against innocent groups."
+    },
+    {
+      "cause": "Prayer and the Church could not stop the dying.",
+      "effect": "Some people began to question the authority of the Catholic Church.",
+      "type": "long-term",
+      "explanation": "The Church's inability to halt the plague weakened its unquestioned authority over time."
+    },
+    {
+      "cause": "Death was everywhere and sudden.",
+      "effect": "Art and writing of the era focused heavily on death and suffering.",
+      "type": "immediate",
+      "explanation": "The trauma of mass death shaped the culture, themes, and imagery of the period."
+    }
+  ]
+}

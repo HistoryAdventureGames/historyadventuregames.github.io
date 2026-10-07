@@ -1,0 +1,49 @@
+{
+  "id": "industrial-revolution",
+  "title": "The Industrial Revolution",
+  "region": "global",
+  "pairs": [
+    {
+      "cause": "Inventions like the steam engine powered machines and factories.",
+      "effect": "Goods were produced far faster and more cheaply in factories.",
+      "type": "immediate",
+      "explanation": "Machine production replaced slow handmade work, flooding markets with cheaper goods."
+    },
+    {
+      "cause": "Factory jobs were concentrated in cities.",
+      "effect": "People migrated from farms to cities in huge numbers (urbanization).",
+      "type": "immediate",
+      "explanation": "Work moved to the factories, so workers moved to the cities that held them."
+    },
+    {
+      "cause": "Early factories had long hours, low pay, and dangerous conditions.",
+      "effect": "Workers organized labor unions to demand reforms.",
+      "type": "long-term",
+      "explanation": "Harsh conditions pushed workers to unite and bargain for better treatment."
+    },
+    {
+      "cause": "Factories burned coal and dumped waste.",
+      "effect": "Air and water pollution increased sharply in industrial cities.",
+      "type": "long-term",
+      "explanation": "Rapid, unregulated industry damaged the environment and public health."
+    },
+    {
+      "cause": "Industry created constant demand for raw materials and new markets.",
+      "effect": "Industrial nations expanded imperial control over other lands.",
+      "type": "long-term",
+      "explanation": "The hunger for resources and buyers fueled a new wave of imperialism."
+    },
+    {
+      "cause": "New wealth created factory owners and a larger middle class.",
+      "effect": "Society shifted away from being dominated by land-owning nobles.",
+      "type": "long-term",
+      "explanation": "Industrial money created new powerful classes, reshaping the social order."
+    },
+    {
+      "cause": "Railroads and steamships moved goods and people quickly.",
+      "effect": "Trade and communication over long distances expanded.",
+      "type": "long-term",
+      "explanation": "Faster transport knit regions and economies more tightly together."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "age-of-exploration",
+  "title": "The Age of Exploration & the Columbian Exchange",
+  "region": "global",
+  "pairs": [
+    {
+      "cause": "Europeans wanted direct access to Asian spices and goods without paying middlemen.",
+      "effect": "Nations funded voyages to find new sea routes to Asia.",
+      "type": "immediate",
+      "explanation": "Cutting out Italian and Muslim traders promised huge profits, so monarchs paid for exploration."
+    },
+    {
+      "cause": "New tools like the astrolabe, magnetic compass, and caravel improved navigation.",
+      "effect": "Sailors could travel farther across open oceans.",
+      "type": "immediate",
+      "explanation": "Better technology made long voyages out of sight of land possible."
+    },
+    {
+      "cause": "Columbus's voyages linked the Americas with Europe, Africa, and Asia.",
+      "effect": "The Columbian Exchange moved plants, animals, people, and diseases between the continents.",
+      "type": "immediate",
+      "explanation": "Permanent contact between the hemispheres set off a massive transfer in both directions."
+    },
+    {
+      "cause": "Europeans carried diseases like smallpox to the Americas.",
+      "effect": "Millions of Indigenous people died from illnesses they had no immunity to.",
+      "type": "long-term",
+      "explanation": "Old World diseases devastated Native populations who had never been exposed to them."
+    },
+    {
+      "cause": "Colonizers needed labor after Native populations collapsed.",
+      "effect": "The transatlantic slave trade expanded enormously.",
+      "type": "long-term",
+      "explanation": "Europeans forced millions of enslaved Africans to the Americas to work plantations and mines."
+    },
+    {
+      "cause": "American crops like potatoes and maize spread to Europe, Africa, and Asia.",
+      "effect": "Populations grew around the world as diets improved.",
+      "type": "long-term",
+      "explanation": "Nutritious, high-yield American crops supported larger populations across the Old World."
+    },
+    {
+      "cause": "Colonies sent gold, silver, and cash crops back to Europe.",
+      "effect": "European nations grew wealthy and competed to build overseas empires.",
+      "type": "long-term",
+      "explanation": "The wealth of empire drove mercantilism and centuries of European colonial expansion."
+    }
+  ]
+}
