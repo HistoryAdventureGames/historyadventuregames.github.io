@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="A stone law stele beneath a sun of justice, with a pair of balance scales">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e9c983"/>
+      <stop offset="0.55" stop-color="#d7a85c"/>
+      <stop offset="1" stop-color="#a9793f"/>
+    </linearGradient>
+    <linearGradient id="stone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6d6049"/>
+      <stop offset="1" stop-color="#453c2c"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b98a4e"/>
+      <stop offset="1" stop-color="#7c5630"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff2c4"/>
+      <stop offset="0.6" stop-color="#f2cf6f"/>
+      <stop offset="1" stop-color="#e0a93f"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#sky)"/>
+
+  <!-- sun of justice -->
+  <g transform="translate(600 210)">
+    <circle r="120" fill="url(#sun)"/>
+    <g stroke="#f0cd74" stroke-width="9" stroke-linecap="round" opacity="0.85">
+      <line x1="0" y1="-150" x2="0" y2="-190"/>
+      <line x1="0" y1="150" x2="0" y2="190"/>
+      <line x1="-150" y1="0" x2="-190" y2="0"/>
+      <line x1="150" y1="0" x2="190" y2="0"/>
+      <line x1="-106" y1="-106" x2="-134" y2="-134"/>
+      <line x1="106" y1="-106" x2="134" y2="-134"/>
+      <line x1="-106" y1="106" x2="-134" y2="134"/>
+      <line x1="106" y1="106" x2="134" y2="134"/>
+    </g>
+  </g>
+
+  <!-- ground -->
+  <rect y="620" width="1200" height="180" fill="url(#ground)"/>
+
+  <!-- the stele (rounded-top law pillar) -->
+  <g transform="translate(600 0)">
+    <path d="M -150 640 L -150 340 A 150 150 0 0 1 150 340 L 150 640 Z" fill="url(#stone)" stroke="#2f291d" stroke-width="6"/>
+    <!-- carved inscription lines suggesting written laws -->
+    <g stroke="#cdbb92" stroke-width="7" stroke-linecap="round" opacity="0.5">
+      <line x1="-105" y1="360" x2="105" y2="360"/>
+      <line x1="-105" y1="392" x2="95" y2="392"/>
+      <line x1="-105" y1="424" x2="105" y2="424"/>
+      <line x1="-105" y1="456" x2="80" y2="456"/>
+      <line x1="-105" y1="488" x2="105" y2="488"/>
+      <line x1="-105" y1="520" x2="100" y2="520"/>
+      <line x1="-105" y1="552" x2="70" y2="552"/>
+      <line x1="-105" y1="584" x2="105" y2="584"/>
+    </g>
+  </g>
+
+  <!-- balance scales of justice, foreground -->
+  <g transform="translate(600 470)" stroke="#f5e4ad" stroke-width="10" stroke-linecap="round" fill="none">
+    <line x1="0" y1="-120" x2="0" y2="40"/>
+    <line x1="-140" y1="-120" x2="140" y2="-120"/>
+    <!-- left pan -->
+    <line x1="-140" y1="-120" x2="-180" y2="-40"/>
+    <line x1="-140" y1="-120" x2="-100" y2="-40"/>
+    <path d="M -186 -40 A 46 28 0 0 0 -94 -40" fill="#e9c983"/>
+    <!-- right pan -->
+    <line x1="140" y1="-120" x2="100" y2="-40"/>
+    <line x1="140" y1="-120" x2="180" y2="-40"/>
+    <path d="M 94 -40 A 46 28 0 0 0 186 -40" fill="#e9c983"/>
+    <!-- base -->
+    <line x1="-54" y1="40" x2="54" y2="40"/>
+  </g>
+</svg>
