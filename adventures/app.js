@@ -245,8 +245,17 @@ function renderLibrary() {
   document.body.classList.add("is-home");
   setRandomHomeBackground();
 
-  const loadedCards = Array.from(state.adventures.values()).map(renderAdventureCard).join("");
-  const failedCards = state.loadErrors.map(renderFailedCard).join("");
+  // The library always displays adventures A–Z by title, so a new story can be
+  // added to content/adventure-manifest.json in any position (or loaded in any
+  // order) and still lands in the right alphabetical spot automatically.
+  const loadedCards = Array.from(state.adventures.values())
+    .sort(compareByTitle)
+    .map(renderAdventureCard)
+    .join("");
+  const failedCards = [...state.loadErrors]
+    .sort((a, b) => compareByTitle(a.entry || {}, b.entry || {}))
+    .map(renderFailedCard)
+    .join("");
 
   app.innerHTML = `
     <section aria-labelledby="libraryHeading">
@@ -262,6 +271,15 @@ function renderLibrary() {
       ${state.adventures.size === 0 ? renderNoGamesMessage() : ""}
     </section>
   `;
+}
+
+// Case-insensitive, accent-insensitive A–Z sort by title, with natural number
+// ordering (so "Chapter 2" precedes "Chapter 10").
+function compareByTitle(a, b) {
+  return String(a.title || "").localeCompare(String(b.title || ""), "en", {
+    sensitivity: "base",
+    numeric: true,
+  });
 }
 
 function renderAdventureCard(adventure) {
