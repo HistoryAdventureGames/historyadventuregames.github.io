@@ -4,8 +4,8 @@
   "description": "Sit as a judge in Hammurabi's Babylon. Rule on real cases, then see how the Code actually punished them, and weigh how fair those laws truly were.",
   "topicQuestion": "was Hammurabi's Code a fair system of justice?",
   "coverImage": {
-    "src": "public/images/HammurabiBabylon.svg",
-    "alt": "A stone law stele beneath a sun of justice, with a pair of balance scales"
+    "src": "public/images/HammurabiBabylon.jpg",
+    "alt": "Close-up of the cuneiform laws carved into the stone stele of Hammurabi's Code"
   },
   "startingSceneId": "start",
   "branchingPathCount": 4096,
