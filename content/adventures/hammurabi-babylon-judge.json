@@ -1,0 +1,497 @@
+{
+  "id": "hammurabi-babylon-judge",
+  "title": "The Scales of Babylon: Judge Under Hammurabi's Code",
+  "description": "Sit as a judge in Hammurabi's Babylon. Rule on real cases, then see how the Code actually punished them, and weigh how fair those laws truly were.",
+  "topicQuestion": "was Hammurabi's Code a fair system of justice?",
+  "coverImage": {
+    "src": "public/images/HammurabiBabylon.svg",
+    "alt": "A stone law stele beneath a sun of justice, with a pair of balance scales"
+  },
+  "startingSceneId": "start",
+  "branchingPathCount": 4096,
+  "keyTerms": [
+    "Hammurabi's Code",
+    "Babylon",
+    "Mesopotamia",
+    "stele",
+    "codified law",
+    "rule of law",
+    "lex talionis",
+    "social hierarchy",
+    "awilum",
+    "mushkenum",
+    "restitution",
+    "debt-service",
+    "trial by ordeal",
+    "mina"
+  ],
+  "termDefinitions": {
+    "Hammurabi's Code": "A set of 282 written laws issued by King Hammurabi of Babylon around 1754 BCE, one of the earliest complete law codes.",
+    "Babylon": "A powerful city in Mesopotamia and the center of Hammurabi's kingdom.",
+    "Mesopotamia": "The region between the Tigris and Euphrates rivers where some of the world's first cities and civilizations developed.",
+    "stele": "A tall stone pillar with writing or carving on it; Hammurabi's laws were carved on one and set up in public.",
+    "codified law": "Law that is written down and organized so it is fixed and known in advance, rather than decided case by case.",
+    "rule of law": "The idea that everyone is governed by known, written laws rather than by the changing will of a ruler.",
+    "lex talionis": "The principle of 'an eye for an eye' — making the punishment match the harm the offender caused.",
+    "social hierarchy": "A ranking of people into classes with different rights, status, and treatment under the law.",
+    "awilum": "The upper class of free people (nobles) in Babylonian society, who had the most legal protection.",
+    "mushkenum": "A middle class of commoners or dependents in Babylon, with fewer legal protections than the awilum.",
+    "restitution": "Repaying or making up for harm done, often by returning property or paying its value.",
+    "debt-service": "Working to pay off a debt, sometimes by a family member laboring in the creditor's household.",
+    "trial by ordeal": "Deciding guilt or innocence by a dangerous test, such as plunging into a river, believed to reveal the gods' judgment.",
+    "mina": "A unit of weight used for silver money in Babylon; fines were often set in minas or shekels of silver."
+  },
+  "curriculumTags": [
+    "NYS Global 9",
+    "9.1 Early Civilizations",
+    "Mesopotamia",
+    "Rule of Law",
+    "Comparison"
+  ],
+  "teacherNotes": "Students act as a judge in Hammurabi's Babylon, ruling on six cases drawn from real laws in the Code (laws 1, 2, 6, 117, 196/198/199, and 229/230). After each ruling, the game reveals the actual law, its number, and whether the student's decision was harsher than, the same as, or more lenient than the Code, then prompts reflection. Cases are presented factually and without graphic detail. The adventure is built to support NYS Grade 9 Global History and Geography (9.1 First Civilizations — early codified law) and the Social Studies Practices of Comparison, Contextualization, and using evidence. Because the adventure engine does not keep a running score, the closing scene asks students to tally, across their six reveals, how many rulings matched, were harsher, or were more lenient — a good exit-ticket or discussion starter on the fairness of early law.",
+  "reviewFocus": "How Hammurabi's Code used written law, retributive justice ('an eye for an eye'), and a strict social hierarchy, and what that reveals about fairness and the rule of law in early civilizations.",
+  "scenes": {
+    "start": {
+      "title": "The Judge's Seat",
+      "step": 1,
+      "pathFocus": "How this works: read each case, choose the punishment you think is just, then compare your ruling to what Hammurabi's Code actually commanded.",
+      "body": [
+        "The year is about 1754 BCE. You are a judge in Babylon, the great city of Mesopotamia ruled by King Hammurabi.",
+        "Hammurabi has had 282 laws carved onto a tall stone stele and set up in public, so that, in his words, 'the strong might not oppress the weak' and everyone can see the law. This is one of the first times a kingdom has used codified law — laws written down and organized for all to know.",
+        "The people who come before you are not treated the same by the Code. There are awilum (free nobles), mushkenum (commoners), and enslaved people. The punishment for a crime can change depending on which group a person belongs to.",
+        "Your task today is to hear six cases. For each one, decide the punishment you believe is just. Then you will see what Hammurabi's Code actually demanded, and how your sense of justice compares."
+      ],
+      "classroomPrompt": "Before you begin: what should the main goal of punishment be — revenge, repairing harm, protecting society, or changing a person's behavior?",
+      "choices": [
+        { "text": "Call the first case.", "nextSceneId": "case1" }
+      ]
+    },
+
+    "case1": {
+      "title": "Case One: Theft from the Temple",
+      "step": 2,
+      "body": [
+        "A man is brought before you. He was caught after taking silver vessels from the city's temple, which also stores goods belonging to the palace.",
+        "He admits he took them because his family was hungry. The property belongs to the temple and the state.",
+        "How will you punish the theft of temple and palace property?"
+      ],
+      "choices": [
+        { "text": "Order him to repay many times the value of what he stole (restitution).", "nextSceneId": "r1a" },
+        { "text": "Sentence him to a period of hard labor.", "nextSceneId": "r1b" },
+        { "text": "Banish him from the city of Babylon.", "nextSceneId": "r1c" },
+        { "text": "Sentence him to death.", "nextSceneId": "r1d" }
+      ]
+    },
+    "r1a": {
+      "title": "The Code Speaks: Law 6",
+      "step": 2,
+      "body": [
+        "You chose restitution. Hammurabi's Code was far harsher.",
+        "Law 6 commanded that anyone who stole property belonging to the temple or the palace be put to death, and that anyone who knowingly received the stolen goods be put to death as well.",
+        "Ordinary theft between citizens could sometimes be repaid several times over (Law 8), but stealing from the gods or the state was treated as one of the gravest crimes of all."
+      ],
+      "classroomPrompt": "Should stealing property ever carry the same penalty as taking a life?",
+      "choices": [
+        { "text": "Hear the next case.", "nextSceneId": "case2" }
+      ]
+    },
+    "r1b": {
+      "title": "The Code Speaks: Law 6",
+      "step": 2,
+      "body": [
+        "You chose hard labor. Hammurabi's Code was harsher.",
+        "Law 6 commanded that anyone who stole property belonging to the temple or the palace be put to death, and that anyone who knowingly received the stolen goods be put to death as well.",
+        "Ordinary theft between citizens could sometimes be repaid several times over (Law 8), but stealing from the gods or the state was treated as one of the gravest crimes of all."
+      ],
+      "classroomPrompt": "Should stealing property ever carry the same penalty as taking a life?",
+      "choices": [
+        { "text": "Hear the next case.", "nextSceneId": "case2" }
+      ]
+    },
+    "r1c": {
+      "title": "The Code Speaks: Law 6",
+      "step": 2,
+      "body": [
+        "You chose banishment. Hammurabi's Code was harsher.",
+        "Law 6 commanded that anyone who stole property belonging to the temple or the palace be put to death, and that anyone who knowingly received the stolen goods be put to death as well.",
+        "Ordinary theft between citizens could sometimes be repaid several times over (Law 8), but stealing from the gods or the state was treated as one of the gravest crimes of all."
+      ],
+      "classroomPrompt": "Should stealing property ever carry the same penalty as taking a life?",
+      "choices": [
+        { "text": "Hear the next case.", "nextSceneId": "case2" }
+      ]
+    },
+    "r1d": {
+      "title": "The Code Speaks: Law 6",
+      "step": 2,
+      "body": [
+        "You chose death. Your ruling matched Hammurabi's Code.",
+        "Law 6 commanded that anyone who stole property belonging to the temple or the palace be put to death, and that anyone who knowingly received the stolen goods be put to death as well.",
+        "Ordinary theft between citizens could sometimes be repaid several times over (Law 8), but stealing from the gods or the state was treated as one of the gravest crimes of all."
+      ],
+      "classroomPrompt": "Should stealing property ever carry the same penalty as taking a life?",
+      "choices": [
+        { "text": "Hear the next case.", "nextSceneId": "case2" }
+      ]
+    },
+
+    "case2": {
+      "title": "Case Two: An Accusation Without Proof",
+      "step": 3,
+      "body": [
+        "A woman stands before you and accuses her neighbor of murdering a traveler on the road. It is a serious charge, and the punishment for murder is death.",
+        "But she brings no witnesses and no evidence. She simply insists that she is certain.",
+        "How will you handle an accusation of murder that cannot be proven?"
+      ],
+      "choices": [
+        { "text": "Dismiss the charge and let both people go.", "nextSceneId": "r2a" },
+        { "text": "Fine her for bringing a charge she cannot support.", "nextSceneId": "r2b" },
+        { "text": "Hold her in custody until she can find proof.", "nextSceneId": "r2c" },
+        { "text": "Put her to death — the same penalty the accused would have faced.", "nextSceneId": "r2d" }
+      ]
+    },
+    "r2a": {
+      "title": "The Code Speaks: Law 1",
+      "step": 3,
+      "body": [
+        "You chose to dismiss the case. Hammurabi's Code was far harsher.",
+        "Law 1 commanded that a person who accused another of murder but could not prove it be put to death.",
+        "In a court with little physical evidence, the Code placed the risk on the accuser. A false or careless accusation could cost the accuser their own life, which was meant to discourage people from making charges they could not back up."
+      ],
+      "classroomPrompt": "Does making false accusers face the same penalty make trials more fair, or more frightening?",
+      "choices": [
+        { "text": "Hear the next case.", "nextSceneId": "case3" }
+      ]
+    },
+    "r2b": {
+      "title": "The Code Speaks: Law 1",
+      "step": 3,
+      "body": [
+        "You chose a fine. Hammurabi's Code was far harsher.",
+        "Law 1 commanded that a person who accused another of murder but could not prove it be put to death.",
+        "In a court with little physical evidence, the Code placed the risk on the accuser. A false or careless accusation could cost the accuser their own life, which was meant to discourage people from making charges they could not back up."
+      ],
+      "classroomPrompt": "Does making false accusers face the same penalty make trials more fair, or more frightening?",
+      "choices": [
+        { "text": "Hear the next case.", "nextSceneId": "case3" }
+      ]
+    },
+    "r2c": {
+      "title": "The Code Speaks: Law 1",
+      "step": 3,
+      "body": [
+        "You chose to hold her until she finds proof. Hammurabi's Code was harsher and more final.",
+        "Law 1 commanded that a person who accused another of murder but could not prove it be put to death.",
+        "In a court with little physical evidence, the Code placed the risk on the accuser. A false or careless accusation could cost the accuser their own life, which was meant to discourage people from making charges they could not back up."
+      ],
+      "classroomPrompt": "Does making false accusers face the same penalty make trials more fair, or more frightening?",
+      "choices": [
+        { "text": "Hear the next case.", "nextSceneId": "case3" }
+      ]
+    },
+    "r2d": {
+      "title": "The Code Speaks: Law 1",
+      "step": 3,
+      "body": [
+        "You chose death for the unproven accusation. Your ruling matched Hammurabi's Code.",
+        "Law 1 commanded that a person who accused another of murder but could not prove it be put to death.",
+        "In a court with little physical evidence, the Code placed the risk on the accuser. A false or careless accusation could cost the accuser their own life, which was meant to discourage people from making charges they could not back up."
+      ],
+      "classroomPrompt": "Does making false accusers face the same penalty make trials more fair, or more frightening?",
+      "choices": [
+        { "text": "Hear the next case.", "nextSceneId": "case3" }
+      ]
+    },
+
+    "case3": {
+      "title": "Case Three: An Eye in a Quarrel",
+      "step": 4,
+      "body": [
+        "Two men came to blows in the market. In the struggle, one struck the other in the face and blinded him in one eye.",
+        "Both men are awilum — free nobles of the same class. The injured man demands justice.",
+        "How will you punish the man who blinded his equal?"
+      ],
+      "choices": [
+        { "text": "Order him to pay silver to the injured man.", "nextSceneId": "r3a" },
+        { "text": "Have him blinded in one eye — an eye for an eye.", "nextSceneId": "r3b" },
+        { "text": "Sentence him to hard labor.", "nextSceneId": "r3c" },
+        { "text": "Call it an accident of the fight and let it go.", "nextSceneId": "r3d" }
+      ]
+    },
+    "r3a": {
+      "title": "The Code Speaks: Laws 196–199",
+      "step": 4,
+      "body": [
+        "You chose a silver payment. For two nobles, Hammurabi's Code was harsher: it demanded an equal injury.",
+        "Law 196 commanded that if an awilum destroyed the eye of another awilum, his own eye be destroyed — the principle of lex talionis, 'an eye for an eye.'",
+        "But the same injury did not always bring the same punishment. If the victim had been a mushkenum (commoner), the penalty was a fine of one mina of silver (Law 198). If the victim had been an enslaved person, the offender paid only half that person's value to their owner (Law 199). The punishment depended on the victim's class."
+      ],
+      "classroomPrompt": "Is a law fair if the punishment for the very same injury depends on who the victim is?",
+      "choices": [
+        { "text": "Hear the next case.", "nextSceneId": "case4" }
+      ]
+    },
+    "r3b": {
+      "title": "The Code Speaks: Laws 196–199",
+      "step": 4,
+      "body": [
+        "You chose an eye for an eye. For two nobles, your ruling matched Hammurabi's Code.",
+        "Law 196 commanded that if an awilum destroyed the eye of another awilum, his own eye be destroyed — the principle of lex talionis, 'an eye for an eye.'",
+        "But the same injury did not always bring the same punishment. If the victim had been a mushkenum (commoner), the penalty was a fine of one mina of silver (Law 198). If the victim had been an enslaved person, the offender paid only half that person's value to their owner (Law 199). The punishment depended on the victim's class."
+      ],
+      "classroomPrompt": "Is a law fair if the punishment for the very same injury depends on who the victim is?",
+      "choices": [
+        { "text": "Hear the next case.", "nextSceneId": "case4" }
+      ]
+    },
+    "r3c": {
+      "title": "The Code Speaks: Laws 196–199",
+      "step": 4,
+      "body": [
+        "You chose hard labor. For two nobles, Hammurabi's Code demanded something different: an equal injury.",
+        "Law 196 commanded that if an awilum destroyed the eye of another awilum, his own eye be destroyed — the principle of lex talionis, 'an eye for an eye.'",
+        "But the same injury did not always bring the same punishment. If the victim had been a mushkenum (commoner), the penalty was a fine of one mina of silver (Law 198). If the victim had been an enslaved person, the offender paid only half that person's value to their owner (Law 199). The punishment depended on the victim's class."
+      ],
+      "classroomPrompt": "Is a law fair if the punishment for the very same injury depends on who the victim is?",
+      "choices": [
+        { "text": "Hear the next case.", "nextSceneId": "case4" }
+      ]
+    },
+    "r3d": {
+      "title": "The Code Speaks: Laws 196–199",
+      "step": 4,
+      "body": [
+        "You let it go. Hammurabi's Code was harsher: it demanded an equal injury for an equal.",
+        "Law 196 commanded that if an awilum destroyed the eye of another awilum, his own eye be destroyed — the principle of lex talionis, 'an eye for an eye.'",
+        "But the same injury did not always bring the same punishment. If the victim had been a mushkenum (commoner), the penalty was a fine of one mina of silver (Law 198). If the victim had been an enslaved person, the offender paid only half that person's value to their owner (Law 199). The punishment depended on the victim's class."
+      ],
+      "classroomPrompt": "Is a law fair if the punishment for the very same injury depends on who the victim is?",
+      "choices": [
+        { "text": "Hear the next case.", "nextSceneId": "case4" }
+      ]
+    },
+
+    "case4": {
+      "title": "Case Four: The House That Fell",
+      "step": 5,
+      "body": [
+        "A newly built house collapsed in the night, and the owner was killed when it fell.",
+        "Your inspectors find that the builder did careless work and did not make the house strong enough.",
+        "How will you hold the builder responsible?"
+      ],
+      "choices": [
+        { "text": "Make the builder rebuild the house and pay the family.", "nextSceneId": "r4a" },
+        { "text": "Sentence the builder to death.", "nextSceneId": "r4b" },
+        { "text": "Banish the builder from the city.", "nextSceneId": "r4c" },
+        { "text": "Rule it an accident with no one at fault.", "nextSceneId": "r4d" }
+      ]
+    },
+    "r4a": {
+      "title": "The Code Speaks: Laws 229–230",
+      "step": 5,
+      "body": [
+        "You ordered the builder to rebuild and pay. Hammurabi's Code was harsher.",
+        "Law 229 commanded that if a builder's poorly made house collapsed and killed its owner, the builder be put to death.",
+        "The Code went further still. Law 230 said that if the collapse killed the owner's son, then the builder's son would be put to death — punishing a child for a parent's crime. The Code held workers strictly responsible, but it also used collective, family punishment."
+      ],
+      "classroomPrompt": "Should a person ever be punished for someone else's crime, as in Law 230?",
+      "choices": [
+        { "text": "Hear the next case.", "nextSceneId": "case5" }
+      ]
+    },
+    "r4b": {
+      "title": "The Code Speaks: Laws 229–230",
+      "step": 5,
+      "body": [
+        "You sentenced the builder to death. Your ruling matched Hammurabi's Code.",
+        "Law 229 commanded that if a builder's poorly made house collapsed and killed its owner, the builder be put to death.",
+        "The Code went further still. Law 230 said that if the collapse killed the owner's son, then the builder's son would be put to death — punishing a child for a parent's crime. The Code held workers strictly responsible, but it also used collective, family punishment."
+      ],
+      "classroomPrompt": "Should a person ever be punished for someone else's crime, as in Law 230?",
+      "choices": [
+        { "text": "Hear the next case.", "nextSceneId": "case5" }
+      ]
+    },
+    "r4c": {
+      "title": "The Code Speaks: Laws 229–230",
+      "step": 5,
+      "body": [
+        "You chose banishment. Hammurabi's Code was harsher.",
+        "Law 229 commanded that if a builder's poorly made house collapsed and killed its owner, the builder be put to death.",
+        "The Code went further still. Law 230 said that if the collapse killed the owner's son, then the builder's son would be put to death — punishing a child for a parent's crime. The Code held workers strictly responsible, but it also used collective, family punishment."
+      ],
+      "classroomPrompt": "Should a person ever be punished for someone else's crime, as in Law 230?",
+      "choices": [
+        { "text": "Hear the next case.", "nextSceneId": "case5" }
+      ]
+    },
+    "r4d": {
+      "title": "The Code Speaks: Laws 229–230",
+      "step": 5,
+      "body": [
+        "You ruled it a blameless accident. Hammurabi's Code was far harsher.",
+        "Law 229 commanded that if a builder's poorly made house collapsed and killed its owner, the builder be put to death.",
+        "The Code went further still. Law 230 said that if the collapse killed the owner's son, then the builder's son would be put to death — punishing a child for a parent's crime. The Code held workers strictly responsible, but it also used collective, family punishment."
+      ],
+      "classroomPrompt": "Should a person ever be punished for someone else's crime, as in Law 230?",
+      "choices": [
+        { "text": "Hear the next case.", "nextSceneId": "case5" }
+      ]
+    },
+
+    "case5": {
+      "title": "Case Five: A Debt After a Bad Harvest",
+      "step": 6,
+      "body": [
+        "A farmer borrowed silver to plant his fields, but his harvest failed. Now he cannot repay what he owes, and his creditor demands payment.",
+        "The farmer has little but his land and his family. The creditor asks the court to let the debt be worked off.",
+        "How will you settle the unpaid debt?"
+      ],
+      "choices": [
+        { "text": "Allow a family member to be given for debt-service with no time limit.", "nextSceneId": "r5a" },
+        { "text": "Allow debt-service, but only for three years, then they go free.", "nextSceneId": "r5b" },
+        { "text": "Seize the farmer's land and goods, but never his family.", "nextSceneId": "r5c" },
+        { "text": "Cancel the debt completely.", "nextSceneId": "r5d" }
+      ]
+    },
+    "r5a": {
+      "title": "The Code Speaks: Law 117",
+      "step": 6,
+      "body": [
+        "You allowed debt-service with no limit. Here, Hammurabi's Code was actually more lenient than your ruling.",
+        "Law 117 did allow a man in debt to give his wife, son, or daughter for debt-service. But it set a limit: they worked in the creditor's house for three years, and in the fourth year they were to be set free.",
+        "Not every law in the Code was maximally harsh. Here the Code accepted a hard practice, debt bondage, but placed a clear boundary on it."
+      ],
+      "classroomPrompt": "Does setting limits on a harsh practice, like capping debt-service at three years, make a legal system more fair?",
+      "choices": [
+        { "text": "Hear the final case.", "nextSceneId": "case6" }
+      ]
+    },
+    "r5b": {
+      "title": "The Code Speaks: Law 117",
+      "step": 6,
+      "body": [
+        "You allowed three years of debt-service, then freedom. Your ruling matched Hammurabi's Code.",
+        "Law 117 allowed a man in debt to give his wife, son, or daughter for debt-service, but it set a limit: they worked in the creditor's house for three years, and in the fourth year they were to be set free.",
+        "Not every law in the Code was maximally harsh. Here the Code accepted a hard practice, debt bondage, but placed a clear boundary on it."
+      ],
+      "classroomPrompt": "Does setting limits on a harsh practice, like capping debt-service at three years, make a legal system more fair?",
+      "choices": [
+        { "text": "Hear the final case.", "nextSceneId": "case6" }
+      ]
+    },
+    "r5c": {
+      "title": "The Code Speaks: Law 117",
+      "step": 6,
+      "body": [
+        "You protected the family and took only property. Hammurabi's Code allowed something harder on the family than your ruling.",
+        "Law 117 allowed a man in debt to give his wife, son, or daughter for debt-service. But it set a limit: they worked in the creditor's house for three years, and in the fourth year they were to be set free.",
+        "Not every law in the Code was maximally harsh. Here the Code accepted a hard practice, debt bondage, but placed a clear boundary on it."
+      ],
+      "classroomPrompt": "Does setting limits on a harsh practice, like capping debt-service at three years, make a legal system more fair?",
+      "choices": [
+        { "text": "Hear the final case.", "nextSceneId": "case6" }
+      ]
+    },
+    "r5d": {
+      "title": "The Code Speaks: Law 117",
+      "step": 6,
+      "body": [
+        "You canceled the debt. Hammurabi's Code was less generous to the debtor than your ruling.",
+        "Law 117 allowed a man in debt to give his wife, son, or daughter for debt-service. It set a limit: they worked in the creditor's house for three years, and in the fourth year they were to be set free.",
+        "Not every law in the Code was maximally harsh. Here the Code accepted a hard practice, debt bondage, but placed a clear boundary on it."
+      ],
+      "classroomPrompt": "Does setting limits on a harsh practice, like capping debt-service at three years, make a legal system more fair?",
+      "choices": [
+        { "text": "Hear the final case.", "nextSceneId": "case6" }
+      ]
+    },
+
+    "case6": {
+      "title": "Case Six: A Charge of Sorcery",
+      "step": 7,
+      "body": [
+        "A man accuses his rival of casting a harmful spell against him. In Babylon, many people believe sorcery is real and dangerous.",
+        "The accuser offers no proof — only his word. The accused denies everything.",
+        "How will you decide a charge of sorcery that cannot be proven?"
+      ],
+      "choices": [
+        { "text": "Dismiss the case, since there is no evidence.", "nextSceneId": "r6a" },
+        { "text": "Order the accused to undergo the river ordeal and let the gods decide.", "nextSceneId": "r6b" },
+        { "text": "Pressure the accused until they confess.", "nextSceneId": "r6c" },
+        { "text": "Punish the accuser at once for a baseless charge.", "nextSceneId": "r6d" }
+      ]
+    },
+    "r6a": {
+      "title": "The Code Speaks: Law 2",
+      "step": 7,
+      "body": [
+        "You dismissed the case for lack of evidence — close to how a modern court might think. Hammurabi's Code took a very different path.",
+        "Law 2 called for a trial by ordeal. The accused would plunge into the river. If the river 'overcame' them, they were judged guilty and the accuser took their house. If they survived, they were judged innocent — and then the false accuser was put to death.",
+        "In this system, justice depended on the river and the will of the gods, not on evidence as we understand it today."
+      ],
+      "classroomPrompt": "What does trial by ordeal tell us about how Babylonians understood truth and the role of the gods in justice?",
+      "choices": [
+        { "text": "See your final reflection.", "nextSceneId": "ending" }
+      ]
+    },
+    "r6b": {
+      "title": "The Code Speaks: Law 2",
+      "step": 7,
+      "body": [
+        "You ordered the river ordeal. Your ruling matched Hammurabi's Code.",
+        "Law 2 called for a trial by ordeal. The accused would plunge into the river. If the river 'overcame' them, they were judged guilty and the accuser took their house. If they survived, they were judged innocent — and then the false accuser was put to death.",
+        "In this system, justice depended on the river and the will of the gods, not on evidence as we understand it today."
+      ],
+      "classroomPrompt": "What does trial by ordeal tell us about how Babylonians understood truth and the role of the gods in justice?",
+      "choices": [
+        { "text": "See your final reflection.", "nextSceneId": "ending" }
+      ]
+    },
+    "r6c": {
+      "title": "The Code Speaks: Law 2",
+      "step": 7,
+      "body": [
+        "You chose to force a confession. Hammurabi's Code took a different path — it handed the decision to the river and the gods.",
+        "Law 2 called for a trial by ordeal. The accused would plunge into the river. If the river 'overcame' them, they were judged guilty and the accuser took their house. If they survived, they were judged innocent — and then the false accuser was put to death.",
+        "In this system, justice depended on the river and the will of the gods, not on evidence as we understand it today."
+      ],
+      "classroomPrompt": "What does trial by ordeal tell us about how Babylonians understood truth and the role of the gods in justice?",
+      "choices": [
+        { "text": "See your final reflection.", "nextSceneId": "ending" }
+      ]
+    },
+    "r6d": {
+      "title": "The Code Speaks: Law 2",
+      "step": 7,
+      "body": [
+        "You punished the accuser right away. Hammurabi's Code first tested the accused — and only then turned on a false accuser.",
+        "Law 2 called for a trial by ordeal. The accused would plunge into the river. If the river 'overcame' them, they were judged guilty and the accuser took their house. If they survived, they were judged innocent — and then the false accuser was put to death.",
+        "In this system, justice depended on the river and the will of the gods, not on evidence as we understand it today."
+      ],
+      "classroomPrompt": "What does trial by ordeal tell us about how Babylonians understood truth and the role of the gods in justice?",
+      "choices": [
+        { "text": "See your final reflection.", "nextSceneId": "ending" }
+      ]
+    },
+
+    "ending": {
+      "title": "Court Adjourned",
+      "step": 8,
+      "body": [
+        "You have judged six cases. In some, Hammurabi's Code was far harsher than you were. In at least one, it set limits you may not have expected. And again and again, it treated people differently depending on their class.",
+        "Look back over the six reveals. Count how many of your rulings MATCHED the Code, how many were HARSHER, and how many were MORE LENIENT. That tally is your 'fidelity to the Code' — but remember, matching Hammurabi is not the same thing as being fair.",
+        "Hammurabi's Code was a landmark. Writing laws down and setting them up in public was an early step toward the rule of law: punishments were fixed and known in advance, not invented on the spot by whoever held power. Yet those same laws rested on 'an eye for an eye' and on a strict social hierarchy that valued people unequally."
+      ],
+      "ending": "neutral",
+      "teachingSummary": "Hammurabi's Code (about 1754 BCE) was one of the first written, public law codes, which made it an early example of the rule of law: the laws were fixed, known in advance, and applied to a whole society rather than decided case by case by a ruler. At the same time, the Code relied on lex talionis ('an eye for an eye') and on a social hierarchy in which awilum, mushkenum, and enslaved people received very different punishments for the same acts. Studying it helps us weigh what 'fair' and 'just' have meant in different times and places.",
+      "reflectionQuestions": [
+        "Which of Hammurabi's punishments seemed most unfair to you, and why?",
+        "Give one example from your cases where a person's social class changed the punishment for the very same crime.",
+        "A written, public law code lets everyone know the law in advance. How is that more fair than unwritten rules, even when the punishments are harsh?",
+        "'An eye for an eye' tries to make the punishment equal to the crime. Is equal always the same as fair?",
+        "If you could rewrite one of these six laws for your own community, which would you change, and how?"
+      ]
+    }
+  }
+}

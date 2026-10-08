@@ -1,5 +1,12 @@
 [
   {
+    "id": "hammurabi-babylon-judge",
+    "title": "The Scales of Babylon: Judge Under Hammurabi's Code",
+    "topic": "Ancient Mesopotamia",
+    "description": "Sit as a judge in Hammurabi's Babylon, rule on real cases, then see how the Code actually punished them and weigh how fair those laws were.",
+    "file": "content/adventures/hammurabi-babylon-judge.json"
+  },
+  {
     "id": "black-death-peasant-survival-deep-tree",
     "title": "The Bell Behind You: A Peasant During the Black Death",
     "topic": "Medieval Europe",
