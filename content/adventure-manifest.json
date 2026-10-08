@@ -1,17 +1,17 @@
 [
   {
-    "id": "hammurabi-babylon-judge",
-    "title": "The Scales of Babylon: Judge Under Hammurabi's Code",
-    "topic": "Ancient Mesopotamia",
-    "description": "Sit as a judge in Hammurabi's Babylon, rule on real cases, then see how the Code actually punished them and weigh how fair those laws were.",
-    "file": "content/adventures/hammurabi-babylon-judge.json"
+    "id": "ancient-rome-caesar-general-government-deep-tree",
+    "title": "After Caesar: Build the Future of Rome",
+    "topic": "Ancient Rome",
+    "description": "Play as a top general in Julius Caesar's army after his assassination and decide whether Rome becomes a restored Republic, a stable Empire, or a state torn apart by civil war.",
+    "file": "content/adventures/after-caesar-build-the-future-of-rome.json"
   },
   {
-    "id": "black-death-peasant-survival-deep-tree",
-    "title": "The Bell Behind You: A Peasant During the Black Death",
-    "topic": "Medieval Europe",
-    "description": "Try to survive the Black Death as a peasant in medieval Europe.",
-    "file": "content/adventures/black-death-peasant-survival-deep-tree.json"
+    "id": "Forge-The-Polis-Ancient-Greece",
+    "title": "A Perfect Polis: City-States in Ancient Greece",
+    "topic": "Ancient Greece",
+    "description": "Build your perfect city-state to rival the strength of Athens and Sparta.",
+    "file": "content/adventures/Forge-The-Polis-Ancient-Greece.json"
   },
   {
     "id": "high-middle-ages-feudal-lord-crusades-deep-tree",
@@ -35,17 +35,17 @@
     "file": "content/adventures/seeds-of-change-paleolithic-deep-tree.json"
   },
   {
-    "id": "Forge-The-Polis-Ancient-Greece",
-    "title": "A Perfect Polis: City-States in Ancient Greece",
-    "topic": "Ancient Greece",
-    "description": "Build your perfect city-state to rival the strength of Athens and Sparta.",
-    "file": "content/adventures/Forge-The-Polis-Ancient-Greece.json"
+    "id": "black-death-peasant-survival-deep-tree",
+    "title": "The Bell Behind You: A Peasant During the Black Death",
+    "topic": "Medieval Europe",
+    "description": "Try to survive the Black Death as a peasant in medieval Europe.",
+    "file": "content/adventures/black-death-peasant-survival-deep-tree.json"
   },
   {
-    "id": "ancient-rome-caesar-general-government-deep-tree",
-    "title": "After Caesar: Build the Future of Rome",
-    "topic": "Ancient Rome",
-    "description": "Play as a top general in Julius Caesar's army after his assassination and decide whether Rome becomes a restored Republic, a stable Empire, or a state torn apart by civil war.",
-    "file": "content/adventures/after-caesar-build-the-future-of-rome.json"
+    "id": "hammurabi-babylon-judge",
+    "title": "The Scales of Babylon: Judge Under Hammurabi's Code",
+    "topic": "Ancient Mesopotamia",
+    "description": "Sit as a judge in Hammurabi's Babylon, rule on real cases, then see how the Code actually punished them and weigh how fair those laws were.",
+    "file": "content/adventures/hammurabi-babylon-judge.json"
   }
 ]

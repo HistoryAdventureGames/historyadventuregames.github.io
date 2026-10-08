@@ -54,6 +54,13 @@ Use a relative file path:
 }
 ```
 
+The library always displays adventures **alphabetically by title** (`adventures/app.js`
+sorts them at render time, case- and accent-insensitive, with natural number
+ordering). So you can add the new entry anywhere in the manifest — it will slot
+into the correct alphabetical position automatically, and you never have to keep
+the manifest hand-sorted. (The manifest is kept in title order anyway, just for
+easy reading.)
+
 ## Add a New Arcade Game
 
 The Arcade hub is manifest-driven, the same pattern as the adventure library:
